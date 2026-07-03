@@ -1,0 +1,16 @@
+# Toolchain for the audiobook / Hörspiel production pipeline.
+#
+# Tools used by the pipeline:
+#   python  — scripts/el.py (ElevenLabs API CLI) and the scene/podcast orchestrators
+#   ffmpeg  — audio assembly (mixing, ducking, reverb, loudnorm) + ffprobe for durations
+#   jq      — inspecting ElevenLabs API JSON responses
+#   curl    — ad-hoc API smoke tests
+#
+# NOTE: a system ffmpeg lives at /usr/bin/ffmpeg (v4.4.2). The orchestrators
+# auto-pick the first *working* ffmpeg/ffprobe (env FFMPEG_BIN > PATH > /usr/bin),
+# so the pipeline runs even if a mise-provided ffmpeg is unavailable.
+[tools]
+python = "3.12"
+"conda:ffmpeg" = "latest"          # self-contained build with bundled av* libs
+"aqua:jqlang/jq" = "1.8.2"
+"aqua:stunnel/static-curl" = "8.21.0"

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munt, Wergeld, Allod — Die Rechtsstellung der Frau von der Germania bis zur Moderne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0e14;
+  --bg-raised: #121722;
+  --bg-inset: #0e1219;
+  --ink: #e8e6df;
+  --ink-dim: #9aa3b2;
+  --ink-faint: #5c6675;
+  --gold: #d4a24e;
+  --gold-dim: rgba(212,162,78,0.14);
+  --oxblood: #b0563f;
+  --moss: #7fa06a;
+  --line: rgba(232,230,223,0.10);
+  --line-strong: rgba(232,230,223,0.22);
+  --chip-belegt: #7fa06a;
+  --chip-plausibel: #d4a24e;
+  --chip-umstritten: #c07a5a;
+  --chip-these: #8ea6c8;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --grotesk: 'Space Grotesk', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+}
+[data-theme="light"] {
+  --bg: #f5f2ea;
+  --bg-raised: #fdfbf5;
+  --bg-inset: #edeade;
+  --ink: #1d222c;
+  --ink-dim: #4c5563;
+  --ink-faint: #8a92a0;
+  --gold: #9a6f22;
+  --gold-dim: rgba(154,111,34,0.10);
+  --oxblood: #99432e;
+  --moss: #55794a;
+  --line: rgba(29,34,44,0.12);
+  --line-strong: rgba(29,34,44,0.28);
+  --chip-belegt: #55794a;
+  --chip-plausibel: #9a6f22;
+  --chip-umstritten: #a35a3a;
+  --chip-these: #4a6a96;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.75;
+  transition: background .3s, color .3s;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Header ---------- */
+header {
+  border-bottom: 1px solid var(--line-strong);
+  padding: 56px 0 40px;
+  position: relative;
+}
+.meta-row {
+  display:flex; justify-content:space-between; align-items:center;
+  font-family: var(--mono); font-size: 12px; color: var(--ink-faint);
+  letter-spacing: .06em; text-transform: uppercase;
+  margin-bottom: 36px; flex-wrap: wrap; gap: 12px;
+}
+#themeToggle {
+  background: none; border: 1px solid var(--line-strong); color: var(--ink-dim);
+  font-family: var(--mono); font-size: 11px; padding: 6px 14px; cursor: pointer;
+  letter-spacing: .08em; text-transform: uppercase; border-radius: 3px;
+  transition: all .2s;
+}
+#themeToggle:hover { border-color: var(--gold); color: var(--gold); }
+#themeToggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.eyebrow {
+  font-family: var(--mono); font-size: 13px; color: var(--gold);
+  letter-spacing: .18em; text-transform: uppercase; margin-bottom: 18px;
+}
+h1 {
+  font-family: var(--grotesk); font-weight: 700;
+  font-size: clamp(30px, 5.4vw, 52px); line-height: 1.12;
+  letter-spacing: -0.015em; margin-bottom: 22px;
+}
+h1 .accent { color: var(--gold); }
+.subtitle {
+  font-size: 19px; color: var(--ink-dim); max-width: 700px; line-height: 1.6;
+  font-style: italic;
+}
+
+/* ---------- Chips ---------- */
+.chip {
+  display:inline-block; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: 2px 9px 3px; border-radius: 3px; vertical-align: 2px;
+  border: 1px solid; margin-left: 6px; white-space: nowrap;
+}
+.chip.belegt { color: var(--chip-belegt); border-color: var(--chip-belegt); background: color-mix(in srgb, var(--chip-belegt) 10%, transparent); }
+.chip.plausibel { color: var(--chip-plausibel); border-color: var(--chip-plausibel); background: color-mix(in srgb, var(--chip-plausibel) 10%, transparent); }
+.chip.umstritten { color: var(--chip-umstritten); border-color: var(--chip-umstritten); background: color-mix(in srgb, var(--chip-umstritten) 10%, transparent); }
+.chip.these { color: var(--chip-these); border-color: var(--chip-these); background: color-mix(in srgb, var(--chip-these) 10%, transparent); }
+
+/* ---------- TOC ---------- */
+nav.toc {
+  margin: 44px 0; padding: 28px 30px;
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 6px;
+}
+nav.toc h2 {
+  font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-faint); margin-bottom: 16px;
+  border: none; padding: 0;
+}
+nav.toc ol { list-style: none; counter-reset: toc; columns: 2; column-gap: 40px; }
+nav.toc li { counter-increment: toc; margin-bottom: 9px; break-inside: avoid; }
+nav.toc a {
+  color: var(--ink-dim); text-decoration: none; font-family: var(--grotesk);
+  font-size: 15px; transition: color .15s;
+}
+nav.toc a::before {
+  content: counter(toc, decimal-leading-zero); font-family: var(--mono);
+  font-size: 11px; color: var(--gold); margin-right: 12px;
+}
+nav.toc a:hover { color: var(--gold); }
+@media (max-width: 640px) { nav.toc ol { columns: 1; } }
+
+/* ---------- Sections ---------- */
+section { padding: 52px 0 8px; }
+h2 {
+  font-family: var(--grotesk); font-weight: 600; font-size: 29px;
+  letter-spacing: -0.01em; margin-bottom: 8px; line-height: 1.25;
+  scroll-margin-top: 24px;
+}
+.section-no {
+  font-family: var(--mono); font-size: 12px; color: var(--gold);
+  letter-spacing: .16em; display:block; margin-bottom: 10px;
+}
+h3 {
+  font-family: var(--grotesk); font-weight: 600; font-size: 20px;
+  margin: 36px 0 14px; color: var(--ink);
+}
+p { margin-bottom: 18px; color: var(--ink); }
+p.lede { font-size: 18.5px; color: var(--ink-dim); }
+em { font-style: italic; }
+strong { font-weight: 600; color: var(--ink); }
+.latin { font-style: italic; }
+
+/* ---------- Quote blocks ---------- */
+blockquote {
+  margin: 28px 0; padding: 22px 28px;
+  border-left: 3px solid var(--gold);
+  background: var(--gold-dim); border-radius: 0 6px 6px 0;
+  font-style: italic; color: var(--ink);
+}
+blockquote .src {
+  display:block; margin-top: 12px; font-family: var(--mono);
+  font-size: 12px; font-style: normal; color: var(--ink-faint);
+  letter-spacing: .04em;
+}
+
+/* ---------- Callout ---------- */
+.callout {
+  margin: 30px 0; padding: 24px 28px;
+  background: var(--bg-raised); border: 1px solid var(--line-strong);
+  border-radius: 6px;
+}
+.callout .label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display:block;
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout.critique { border-left: 3px solid var(--oxblood); }
+.callout.critique .label { color: var(--oxblood); }
+
+/* ---------- Tables ---------- */
+.tbl-wrap { overflow-x: auto; margin: 28px 0; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; background: var(--bg-raised); }
+caption {
+  caption-side: top; text-align: left; font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint); padding: 14px 18px 10px; background: var(--bg-raised);
+}
+th {
+  font-family: var(--grotesk); font-weight: 600; font-size: 13px;
+  text-align: left; padding: 10px 18px; color: var(--gold);
+  border-bottom: 1px solid var(--line-strong); letter-spacing: .03em;
+}
+td { padding: 10px 18px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-dim); }
+td:first-child { color: var(--ink); font-weight: 600; font-family: var(--grotesk); font-size: 13.5px; }
+tr:last-child td { border-bottom: none; }
+td .num { font-family: var(--mono); color: var(--gold); }
+
+/* ---------- Timeline ---------- */
+.timeline { margin: 34px 0; position: relative; padding-left: 34px; }
+.timeline::before {
+  content:''; position:absolute; left: 8px; top: 4px; bottom: 4px;
+  width: 2px; background: linear-gradient(var(--gold), var(--oxblood));
+  opacity: .55;
+}
+.tl-item { position: relative; margin-bottom: 26px; }
+.tl-item::before {
+  content:''; position:absolute; left: -32px; top: 7px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--gold);
+}
+.tl-item .tl-date {
+  font-family: var(--mono); font-size: 12.5px; color: var(--gold);
+  letter-spacing: .06em; display:block; margin-bottom: 3px;
+}
+.tl-item .tl-text { font-size: 15.5px; color: var(--ink-dim); line-height: 1.6; }
+.tl-item .tl-text strong { color: var(--ink); }
+
+/* ---------- Footnotes / Literatur ---------- */
+.fn { font-size: 12px; vertical-align: super; color: var(--gold); font-family: var(--mono); }
+.lit { list-style: none; }
+.lit li {
+  padding: 12px 0; border-bottom: 1px solid var(--line);
+  font-size: 15px; color: var(--ink-dim);
+}
+.lit li strong { color: var(--ink); font-family: var(--grotesk); font-weight: 600; font-size: 14.5px; }
+.lit .cat {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 2px;
+}
+
+footer {
+  margin-top: 70px; padding: 30px 0 50px;
+  border-top: 1px solid var(--line-strong);
+  font-family: var(--mono); font-size: 12px; color: var(--ink-faint);
+  letter-spacing: .05em; line-height: 2;
+}
+hr.sep { border: none; border-top: 1px solid var(--line); margin: 44px 0 0; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  header { padding: 36px 0 30px; }
+  section { padding: 38px 0 4px; }
+  blockquote, .callout { padding: 18px 20px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="meta-row">
+      <span>Observatory · Historische Analyse · 2026-07-01</span>
+      <button id="themeToggle" aria-label="Farbschema wechseln">Hell / Dunkel</button>
+    </div>
+    <div class="eyebrow">Rechts- und Sozialgeschichte · Langzeitperspektive</div>
+    <h1>Munt, Wergeld, Allod:<br>Die Rechtsstellung der Frau <span class="accent">von der Germania bis zur Moderne</span></h1>
+    <p class="subtitle">Eine quellenkritische Untersuchung der These, dass die Einschränkung weiblicher Rechte im Frühmittelalter primär durch Kirche und Feudalisierung — und nicht durch „die Männer" — vorangetrieben wurde. Mit einem Ausblick auf Neuzeit, Säkularisierung und das 20. Jahrhundert.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc" aria-label="Inhaltsverzeichnis">
+  <h2>Inhalt</h2>
+  <ol>
+    <li><a href="#s1">Fragestellung und These</a></li>
+    <li><a href="#s2">Quellenkritik: Das Tacitus-Problem</a></li>
+    <li><a href="#s2b">Die Geschichtsschreiber: erweiterte Quellenbasis</a></li>
+    <li><a href="#s3">Die germanische Zeit: Sippe und Munt</a></li>
+    <li><a href="#s3a">Frauen vor dem Thing</a></li>
+    <li><a href="#s3b">Schutz statt Selbstbestimmung: Sexualität in den Leges</a></li>
+    <li><a href="#s4">Von der Blutrache zum Wergeld</a></li>
+    <li><a href="#s5">Das Allod und die terra Salica</a></li>
+    <li><a href="#s5b">Homosexualität: von der Ehrenordnung zur Sodomia</a></li>
+    <li><a href="#s6">Christianisierung: eine ambivalente Bilanz</a></li>
+    <li><a href="#s7">Feudalisierung als struktureller Ausschluss</a></li>
+    <li><a href="#s7b">Kein Monolith: die Stämme im Vergleich — und die Normannen</a></li>
+    <li><a href="#s7c">Germanen und Normannen: zwei Welten desselben Sprachraums</a></li>
+    <li><a href="#s8">Prüfung der These</a></li>
+    <li><a href="#s9">Neuzeit bis 20. Jahrhundert: der lange zweite Bogen</a></li>
+    <li><a href="#s10">Säkularisierung und andere Triebkräfte</a></li>
+    <li><a href="#s10b">Die Frau als Wesen: Wertschätzung im Langzeitvergleich</a></li>
+    <li><a href="#s10c">Theorieebene: Patriarchat — Ursache oder Beschreibung?</a></li>
+    <li><a href="#s10d">Glaube als Legitimationsordnung — auch für die Feudalstruktur</a></li>
+    <li><a href="#s10e">Methodische Gegenproben: Wie belastbar sind die Stützpfeiler?</a></li>
+    <li><a href="#s10f">Antwort auf die Leitfrage: Ist „das Patriarchat" schuld?</a></li>
+    <li><a href="#s11">Fazit und Gegenpositionen</a></li>
+    <li><a href="#s12">Quellen und Literatur</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 1 ============ -->
+<section id="s1">
+  <span class="section-no">§ 01</span>
+  <h2>Fragestellung und These</h2>
+  <p class="lede">Zu untersuchen ist die Transformation der soziokulturellen und rechtlichen Stellung der Frau vom germanischen Altertum (ca. 1.–5. Jh.) über das Frühmittelalter (ca. 5.–10. Jh.) bis — in einem zweiten Bogen — zur Neuzeit und zum 20. Jahrhundert.</p>
+  <p>Im Zentrum steht folgende Arbeitsthese: <span class="chip these">These</span></p>
+  <div class="callout">
+    <span class="label">Arbeitsthese</span>
+    <p>Die zunehmende Einschränkung weiblicher Rechte zwischen germanischer Zeit und Hochmittelalter ist <strong>nicht auf „die Männer" als Kollektiv zurückzuführen</strong>, sondern wurde maßgeblich durch zwei institutionelle Kräfte vorangetrieben: den wachsenden normativen Einfluss der <strong>christlichen Kirche</strong> und die Herausbildung <strong>feudaler Strukturen</strong>, die Landbesitz an Waffen- und Lehnsfähigkeit koppelten.</p>
+  </div>
+  <p>Diese These ist prüfbar — und sie ist, wie sich zeigen wird, in Teilen tragfähig, in Teilen korrekturbedürftig. Eine wissenschaftliche Analyse darf sie nicht bloß illustrieren, sondern muss sie an den Quellen messen. Drei Prüfsteine bieten sich an, weil sie den Rechtswandel unmittelbar dokumentieren: der Übergang von der <em>Blutrache</em> zum <em>Wergeld</em> in den Volksrechten (<span class="latin">Leges barbarorum</span>), die Entwicklung des <em>Allods</em> und seines Erbrechts (insbesondere <span class="latin">Lex Salica</span>, Titel „De alodis"), sowie die kirchliche Ehe- und Sittengesetzgebung der Karolingerzeit.</p>
+  <p>Methodisch folgt die Untersuchung einem strukturgeschichtlichen Ansatz: Gefragt wird nicht nach individuellen Absichten, sondern nach institutionellen Anreizsystemen — wer profitierte von welcher Norm, und welche Norm überlebte deshalb. Zugleich wird jede zentrale Aussage mit einem Konfidenzmarker versehen: <span class="chip belegt">belegt</span> für quellennah gesicherte Befunde, <span class="chip plausibel">plausibel</span> für gut begründete, aber interpretationsabhängige Deutungen, <span class="chip umstritten">umstritten</span> für Positionen, über die die Forschung aktiv streitet.</p>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="s2">
+  <span class="section-no">§ 02</span>
+  <h2>Quellenkritik: Das Tacitus-Problem</h2>
+  <p>Fast alles, was populär über die „hochgeachtete germanische Frau" gesagt wird, stammt aus einem einzigen Text: der <em>Germania</em> des Tacitus (um 98 n. Chr.). Dort heißt es über die Germanen:</p>
+  <blockquote>
+    „Inesse quin etiam sanctum aliquid et providum putant, nec aut consilia earum aspernantur aut responsa neglegunt." — Sie glauben sogar, dass den Frauen etwas Heiliges und Seherisches innewohnt; weder verschmähen sie ihren Rat, noch missachten sie ihre Aussprüche.
+    <span class="src">Tacitus, Germania, cap. 8</span>
+  </blockquote>
+  <p>Dieser Befund ist echt — Tacitus nennt mit <strong>Veleda</strong> und <strong>Albruna</strong> namentlich Seherinnen mit realem politischem Einfluss; Veledas Rolle im Bataveraufstand 69/70 n. Chr. ist auch bei anderen Autoren und epigraphisch greifbar. <span class="chip belegt">belegt</span></p>
+  <p>Aber: Die <em>Germania</em> ist keine Ethnographie im modernen Sinn, sondern zu erheblichen Teilen ein <strong>Sittenspiegel für die römische Leserschaft</strong>. Tacitus idealisiert germanische Monogamie und Keuschheit (cap. 18–19), um die aus seiner Sicht dekadente römische Ehemoral zu kritisieren. Die Forschung seit Eduard Norden (1920) und verschärft seit Allan A. Lund liest die Germania daher als <em>interpretatio Romana</em> („römische Ausdeutung" fremder Verhältnisse) mit moralisierender Agenda. <span class="chip belegt">belegt</span></p>
+  <div class="callout critique">
+    <span class="label">Konsequenz für die These</span>
+    <p>Wer die These vom „Verfall" der Frauenrechte prüfen will, darf den Ausgangspunkt nicht überhöhen. Ein romantisiertes germanisches „goldenes Zeitalter der Frau" — im 19. Jahrhundert von der nationalromantischen Geschichtsschreibung gepflegt und später ideologisch missbraucht — hält der Quellenkritik nicht stand. Die germanische Frau war <em>kultisch geachtet</em>, aber <em>rechtlich lebenslang bevormundet</em>. Der Wandel zum Frühmittelalter ist also kein Sturz aus der Gleichberechtigung, sondern eine <strong>Verschiebung innerhalb eines bereits patriarchalen Systems</strong>. <span class="chip belegt">belegt</span></p>
+  </div>
+  <p>Neben Tacitus stützen sich die folgenden Abschnitte auf die archäologische Überlieferung (Grabbeigaben, z. B. Schlüssel als Zeichen der Hausherrschaft), auf die zwischen dem 5. und 9. Jahrhundert verschrifteten Volksrechte (<span class="latin">Lex Salica</span>, <span class="latin">Lex Ribuaria</span>, <span class="latin">Pactus Alamannorum</span>, <span class="latin">Lex Burgundionum</span>, <span class="latin">Leges Langobardorum</span>), auf Kapitularien und Konzilsakten der Karolingerzeit sowie auf urkundliche Zeugnisse (Traditionsbücher, Testamente).</p>
+</section>
+<!-- NEW: Erweiterte Quellenbasis -->
+<section id="s2b">
+  <span class="section-no">§ 03</span>
+  <h2>Die Geschichtsschreiber: erweiterte Quellenbasis</h2>
+  <p class="lede">Tacitus ist nur der prominenteste Zeuge. Wer die Wertschätzung der Frau über die Jahrhunderte verfolgen will, muss vier Überlieferungsstränge nebeneinanderlegen: die römische Außensicht, die gotische Eigengeschichtsschreibung, die fränkisch-langobardisch-angelsächsische Kirchenhistoriographie — und für den Norden Araber, Missionare und Runensteine.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Quellenkorpus zur Stellung der Frau (Auswahl)</caption>
+    <thead>
+      <tr><th>Quelle</th><th>Entstehung</th><th>Blickwinkel</th><th>Ertrag zur Frauenfrage</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Caesar, De bello Gallico</td><td>50er v. Chr.</td><td>römischer Feldherr</td><td>Bei Ariovist entscheiden die <em>matres familiae</em> per Los und Weissagung über den Kampftag (I,50) — weibliche Kultautorität mit operativer Wirkung</td></tr>
+      <tr><td>Strabon; Plutarch</td><td>um Christi Geburt / um 100</td><td>griechische Außensicht</td><td>Graue Priesterinnen der Kimbern opfern Gefangene über dem Kessel (Strabon VII,2,3); Kimbernfrauen töten bei Vercellae fliehende Männer und sich selbst — Frauen als Hüterinnen der Ehre bis in den Tod</td></tr>
+      <tr><td>Tacitus, Germania / Historien / Annalen</td><td>98–110er</td><td>römischer Senator, moralisierend</td><td>sanctum aliquid (Germ. 8); Veleda als Schiedsrichterin (Hist. IV,65); Ehebruchsritual (Germ. 19)</td></tr>
+      <tr><td>Cassius Dio</td><td>um 200</td><td>römischer Senator</td><td>Die Seherin <strong>Ganna</strong>, Veledas Nachfolgerin, wird von Kaiser Domitian ehrenvoll empfangen (LXVII,5) — die sakrale Frauenrolle war institutionell, nicht Einzelfall</td></tr>
+      <tr><td>Ammianus Marcellinus</td><td>um 390</td><td>Offizier, letzter großer röm. Historiker</td><td>Alamannen- und Gotenkriege; Frauen im Tross und in der Verteidigung der Wagenburgen</td></tr>
+      <tr><td><strong>Jordanes, Getica</strong> (nach Cassiodors verlorener Gotengeschichte)</td><td>551</td><td>gotische Eigenperspektive, romanisiert-christlich</td><td>Amazonen-Exkurs und haliurunnae-Episode (unten); Königinnen der Ursprungssage</td></tr>
+      <tr><td><strong>Prokop, Gotenkriege</strong></td><td>um 550</td><td>oströmischer Kriegsberichterstatter</td><td>Regentschaft und Sturz der <strong>Amalasuntha</strong> — der Härtetest weiblicher Herrschaft bei den Ostgoten</td></tr>
+      <tr><td>Gregor von Tours, Historiae</td><td>um 590</td><td>fränkischer Bischof</td><td>Fredegunde und Brunichilde als Machtpolitikerinnen; Synode von Mâcon 585 (unten)</td></tr>
+      <tr><td>Venantius Fortunatus / <strong>Baudonivia</strong>, Radegundis-Viten; <strong>Dhuoda</strong>, Liber manualis</td><td>um 600 / 841–843</td><td>darunter zwei der frühesten <em>Autorinnen</em></td><td>Baudonivia schreibt als Nonne die zweite Radegundis-Vita; Dhuoda verfasst als Laienadlige ein Erziehungshandbuch — weibliche Schriftautorschaft existierte</td></tr>
+      <tr><td>Paulus Diaconus, Historia Langobardorum</td><td>um 790</td><td>langobardischer Mönch</td><td>Theudelinde <em>wählt</em> als Königswitwe ihren zweiten Mann (und macht ihn damit zum König); Rosamundes Rache an Alboin — Königinnen als Handlungsträgerinnen der Stammesgeschichte</td></tr>
+      <tr><td>Beda, Historia ecclesiastica</td><td>731</td><td>angelsächsischer Mönch</td><td>Hilda von Whitby leitet 664 die Synode im eigenen Kloster; Königsäbtissinnen als Normalfall</td></tr>
+      <tr><td>Rimbert, Vita Anskarii; Adam von Bremen, Gesta</td><td>um 875 / um 1075</td><td>Missionsperspektive auf den Norden</td><td>Die Kauffrauen Frideburg und Catla in Birka verfügen selbstständig über Vermögen; Adam bezeugt Polygynie der schwedischen Großen — „nur die Zahl der Frauen begrenzt ihren Rang"</td></tr>
+      <tr><td><strong>Ibn Fadlan</strong>, Reisebericht</td><td>921/22</td><td>arabischer Gesandter bei den Rus</td><td>Schiffsbestattung an der Wolga: eine <em>unfreie</em> Dienerin wird getötet und mitbestattet, Regie führt eine alte Frau („Todesengel") — krasseste Quelle für die Statusspaltung freier/unfreier Frauen</td></tr>
+      <tr><td>Saxo Grammaticus, Gesta Danorum; Snorri; Edda-Dichtung</td><td>um 1200 / 13. Jh.</td><td>christliche Retrospektive auf die Wikingerzeit</td><td>Schildmaiden-Erzählungen (Lathgertha) neben Saxos eigener Misogynie; Hávamál-Zynismus neben Heroinen wie Guðrún</td></tr>
+      <tr><td><strong>Runensteine</strong> (z. B. Dynna, Hillersjö)</td><td>10./11. Jh.</td><td>einzige <em>zeitgenössische Selbstzeugnisse</em> des Nordens</td><td>Frauen als Erbinnen, Stifterinnen, Brückenbauerinnen — Hillersjö dokumentiert eine komplette Erbkette über eine Frau</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3>Gotische Geschichtsschreibung I: die haliurunnae</h3>
+  <p>Die <em>Getica</em> des Jordanes — unsere einzige „Stammesgeschichte" aus quasi-gotischer Feder, ein Auszug aus Cassiodors verlorenem Werk — enthält die vielleicht aufschlussreichste Stelle zur <em>Angstseite</em> des germanischen Frauenbildes: König Filimer, so die Ursprungssage, habe „Zauberweiber" aus dem Volk verstoßen —</p>
+  <blockquote>
+    „… magas mulieres, quas patrio sermone Haliurunnas is ipse cognominat …" — Zauberweiber, die er in der Sprache der Väter selbst Haliurunnen nennt; in die Einöde verbannt, hätten sie sich mit unreinen Geistern vermischt — und daraus sei das Volk der <strong>Hunnen</strong> entstanden.
+    <span class="src">Jordanes, Getica XXIV, 121–122</span>
+  </blockquote>
+  <p>Die Episode ist Ätiologie, keine Ethnographie — aber gerade als Selbsterzählung verräterisch: Dieselbe Kultur, die Seherinnen wie Veleda oder Ganna verehrte, kannte die <strong>Dämonisierung unkontrollierter weiblicher Magie</strong> als Erklärungsfigur für das schlechthin Fremde. Sakrale Überhöhung und Verteufelung sind zwei Ausgänge derselben Zuschreibung — ein Muster, das über die haliurunnae und die nordische <em>völva</em> bis zur frühneuzeitlichen Hexenverfolgung reicht. <span class="chip plausibel">plausibel</span> Bemerkenswert ist auch Jordanes' Amazonen-Exkurs (Getica VII–VIII): Er reklamiert die Amazonen kurzerhand als <em>gotische Frauen</em>, die in Abwesenheit der Männer Kriege führten — kriegerische Weiblichkeit als Ruhmestitel der eigenen Vorzeit, nicht als Skandal. <span class="chip belegt">belegt</span></p>
+  <h3>Gotische Geschichtsschreibung II: der Fall Amalasuntha</h3>
+  <p>Prokop liefert den Härtetest: <strong>Amalasuntha</strong>, Tochter Theoderichs des Großen, führte 526–534 die Regentschaft für ihren Sohn Athalarich — hochgebildet, dreisprachig, von Prokop mit unverhohlenem Respekt gezeichnet. Der gotische Kriegeradel akzeptierte die Regentin, <em>solange sie für einen männlichen Erben stand</em> — und rebellierte an zwei Punkten: gegen die <em>römische Literaten-Erziehung</em> des Thronfolgers (Buchstaben seien „weit entfernt von Mannhaftigkeit", der Knabe gehöre zu Waffen und Gefährten) und gegen ihre Alleinherrschaft nach Athalarichs Tod. Ihr Mitregent Theodahad ließ sie 535 auf einer Insel im Bolsena-See ermorden — der Anlass für Justinians Gotenkrieg. <span class="chip belegt">belegt</span> Der Befund passt exakt zur baugrýgr-Logik des Nordens: Weibliche Herrschaft war als <strong>Platzhalterschaft</strong> denkbar, als eigenständiger Anspruch nicht — und die Grenze verlief entlang der Kriegerideologie, nicht entlang eines Unfähigkeitsverdikts. <span class="chip plausibel">plausibel</span></p>
+  <h3>Mythenkorrektur: Mâcon 585</h3>
+  <p>Zur Quellenhygiene gehört auch ein Gegenbefund gegen ein zähes Gerücht: Auf der Synode von Mâcon (585) wurde <em>nicht</em> verhandelt, „ob die Frau eine Seele habe". Gregor von Tours (Hist. VIII,20) berichtet lediglich, ein Bischof habe die <em>sprachliche</em> Frage aufgeworfen, ob das lateinische <span class="latin">homo</span> („Mensch") auch die Frau umfasse — was die Versammelten unter Verweis auf die Schrift bejahten. Die „Seelen-Debatte" ist eine polemische Zuspitzung des 16.–18. Jahrhunderts. Wer der Kirche die Nachordnung der Frau nachweisen will, hat echte Belege genug — dieser gehört nicht dazu. <span class="chip belegt">belegt</span></p>
+</section>
+
+
+<!-- ============ 3 ============ -->
+<section id="s3">
+  <span class="section-no">§ 04</span>
+  <h2>Die germanische Zeit: Sippe und Munt</h2>
+  <p class="lede">Die Grundeinheit germanischer Gesellschaften war nicht das Individuum, sondern die <strong>Sippe</strong> — der agnatisch dominierte Verwandtschaftsverband, der Schutz, Rache und Erbe organisierte.</p>
+  <h3>Die Munt: Schutz und Gewalt in einem Begriff</h3>
+  <p>Rechtlich stand die freie Frau lebenslang unter der <strong>Munt</strong> (ahd. <em>munt</em>, lat. <span class="latin">mundium</span>) — der Schutz- und Verfügungsgewalt eines männlichen Muntwalts: zuerst des Vaters, dann des Ehemannes, nach dessen Tod des nächsten männlichen Verwandten oder des erwachsenen Sohnes. Die Munt ist doppelgesichtig: Sie ist <em>Schutzpflicht</em> (der Muntwalt haftet für die Frau und rächt Unrecht an ihr) und zugleich <em>Verfügungsmacht</em> (er vertritt sie vor Gericht, verwaltet ihr Gut, gibt sie in die Ehe). <span class="chip belegt">belegt</span></p>
+  <p>Die Ehe war entsprechend primär ein <strong>Vertrag zwischen Sippen</strong>: Bei der <em>Muntehe</em> übertrug die Sippe der Braut die Munt gegen Zahlung des <em>Muntschatzes</em> (Wittum/<span class="latin">dos</span>, „Gabe/Mitgift") an den Bräutigam. Daneben existierten die <em>Friedelehe</em> — eine forschungsgeschichtlich umstrittene, muntfreie Verbindung auf Konsensbasis, deren Existenz als eigenständiges Rechtsinstitut seit den Arbeiten von Andrea Esmyol (2002) stark bezweifelt wird <span class="chip umstritten">umstritten</span> — sowie die <em>Kebsehe</em> mit Unfreien. Polygynie war in der Oberschicht möglich und ist bis in die Merowingerzeit für Könige belegt (Chlothar I., Dagobert I.). <span class="chip belegt">belegt</span></p>
+  <h3>Faktische Spielräume</h3>
+  <p>Innerhalb dieser rechtlichen Bevormundung besaßen Frauen erhebliche <em>faktische</em> Macht: die Schlüsselgewalt über Haus, Vorräte und Gesinde (archäologisch durch Schlüsselbeigaben in Frauengräbern gespiegelt), kultische Autorität als Seherinnen, und in der Oberschicht dynastische Handlungsmacht. Wirtschaftlich trugen Frauen die Textilproduktion — in einer Gesellschaft, in der Tuch quasi Währungscharakter hatte, keine Nebensache. <span class="chip belegt">belegt</span></p>
+  <p>Festzuhalten ist der Ausgangsbefund: <strong>Hohe soziale Wertschätzung bei geringer Rechtsfähigkeit.</strong> Die Frau war Rechts<em>objekt</em> mit Würde — geschützt, geachtet, aber nicht mündig. Dieser Befund relativiert die Ausgangsannahme der These erheblich, denn die Munt ist eine <em>vorchristliche, innergermanische</em> Institution männlicher Verfügungsgewalt. <span class="chip belegt">belegt</span></p>
+</section>
+<!-- NEW: Thing -->
+<section id="s3a">
+  <span class="section-no">§ 05</span>
+  <h2>Frauen vor dem Thing</h2>
+  <p class="lede">Das Thing (Ding) war Gericht, Heeresversammlung und politisches Forum in einem — und es war konstitutiv männlich, weil Thingfähigkeit an Waffenfähigkeit hing.</p>
+  <p>Tacitus beschreibt die Versammlung der Freien: Beraten wird über Krieg, Frieden und Rechtsfälle; Zustimmung äußert sich durch das <em>Zusammenschlagen der Waffen</em> (<span class="latin">frameas concutiunt</span>), Ablehnung durch Murren (Germania, cap. 11–13). Wer die Waffe führt, spricht mit — die Wehrhaftmachung des Jünglings auf dem Thing war zugleich seine Rechtsmündigkeit. Aus dieser Kopplung folgt der Ausschluss der Frau ohne eigenes Verbotsgesetz: Sie war nicht <strong>thingfähig</strong> — kein Stimmrecht, kein Richteramt, keine eigenständige Prozessführung. Vor Gericht handelte für sie der Muntwalt; sie erschien als Partei nur <em>vermittelt</em>. <span class="chip belegt">belegt</span></p>
+  <p>Auch die Beweisfähigkeit war beschnitten: Die Volksrechte kennen Frauen kaum als Urkunds- oder Thingzeuginnen; Eideshilfe leisteten in der Regel Männer der Sippe. Wo Frauen schwören, geschieht es meist in eigenen Sachen und mit männlichen Eideshelfern. <span class="chip belegt">belegt</span></p>
+  <h3>Die Ausnahme bestätigt die Struktur</h3>
+  <p>Bemerkenswert ist, dass weibliche Autorität dort auftaucht, wo sie <em>nicht</em> über die Waffen-, sondern über die Kultschiene lief: Die Seherin <strong>Veleda</strong> fungierte 69/70 n. Chr. als anerkannte <em>Schiedsrichterin</em> im Konflikt zwischen der Colonia Agrippinensis (Köln) und den Tenkterern — allerdings charakteristisch vermittelt: Sie blieb im Turm, Verwandte trugen Fragen und Sprüche hin und her (Tacitus, Historien IV, 65). Öffentliche weibliche Autorität war möglich, aber als <em>sakrale Sonderrolle</em>, nicht als bürgerliches Recht. <span class="chip belegt">belegt</span></p>
+  <h3>Skandinavischer Kontrast: die Baugrýgr</h3>
+  <p>Die nordischen Thingordnungen (Gulathings- und Frostathingslov, isländische <span class="latin">Grágás</span> — schriftlich erst 12./13. Jh., also quellenkritisch mit Vorsicht) zeigen dieselbe Grundstruktur mit funktionalen Ventilen: Frauen hielten kein Richter- oder Godenamt; eine Isländerin konnte ein <em>goðorð</em> (Godentum) zwar <strong>erben, aber nicht ausüben</strong> — sie musste die Ausübung einem Mann übertragen. Zugleich kannte das norwegische Recht die <strong>baugrýgr</strong> („Ring-Frau"): Eine Tochter ohne Brüder trat in die Wergeld-Position eines Mannes ein — sie <em>empfing und zahlte</em> Bußringe wie ein männlicher Sippenvertreter, bis sie heiratete. <span class="chip belegt">belegt</span> Das ist der Schlüsselbefund: Das System konnte Frauen <em>als Funktionsträgerinnen einwechseln</em>, wenn Männer fehlten — es kannte also keine prinzipielle Unfähigkeit der Frau, sondern eine <strong>Reserveordnung zugunsten der Männer</strong>. <span class="chip plausibel">plausibel</span></p>
+</section>
+
+<!-- NEW: Sexuelle Selbstbestimmung -->
+<section id="s3b">
+  <span class="section-no">§ 06</span>
+  <h2>Schutz statt Selbstbestimmung: Sexualität in den Leges</h2>
+  <p class="lede">Auf die Frage, ob germanische Frauen eigene Rechte hatten oder von Männern geschützt <em>wurden</em>, gibt das Sexualrecht der Volksrechte die schärfste Antwort: Es gab einen dichten Schutzpanzer — aber er gehörte nicht der Frau.</p>
+  <h3>Ein engmaschiges Schutzsystem …</h3>
+  <p>Die Leges tarifieren Übergriffe auf freie Frauen mit erstaunlicher Detailtiefe. Die Lex Salica staffelt Bußen bereits für unerlaubtes <em>Berühren</em>: Finger oder Hand, Arm oberhalb des Ellbogens, Berühren der Brust — jeweils eigene, steigende Solidi-Sätze (Tit. „De eo qui mulierem ingenuam … tetigerit"). Die alamannischen und bairischen Rechte büßen das Abreißen der Kopfbedeckung, das Hochheben des Gewandsaums (<span class="latin">himilzorunga</span>, „Gewandzerrung" in der Lex Baiuvariorum) und verbale Ehrverletzungen. Der <strong>Frauenraub</strong> (<span class="latin">raptus</span>, wörtlich „Raub/Entführung", die Entführungsehe) gehört zu den am höchsten tarifierten Delikten überhaupt; die <strong>Notzucht</strong> an einer freien Frau erreicht in mehreren Rechten die Höhe eines Wergelds. <span class="chip belegt">belegt</span></p>
+  <h3>… das der Sippe gehörte</h3>
+  <p>Entscheidend ist die Zahlungsrichtung: Die Bußen flossen ganz oder überwiegend an den <strong>Muntwalt und die Sippe</strong>, nicht an die Frau. Geschützt wurde ein dreifaches Männerinteresse — die Ehre der Sippe, der Muntschatz-Wert der Tochter, die Legitimität der Nachkommen. Das zeigt sich an drei Asymmetrien: <span class="chip belegt">belegt</span></p>
+  <p><strong>Erstens der Standes-Test:</strong> Dieselbe Tat an einer <em>unfreien</em> Frau war kein Ehrdelikt, sondern Sachbeschädigung — die Buße ging an ihren Herrn. Sexuelle Verfügung des Herrn über eigene Unfreie war straflos. Der Schutz galt also nicht der Frau als Person, sondern dem Rechtsgut ihres Inhabers.</p>
+  <p><strong>Zweitens der Ehebruch-Test:</strong> Der Ehebruch der Frau war ein Kapitalfall — Tacitus (Germania 19) beschreibt bereits das Ritual: Der Ehemann schneidet ihr das Haar, treibt sie entblößt durchs Dorf; die Volksrechte gestatten dem Ehemann bzw. der Sippe vielfach die <strong>straflose Tötung</strong> der auf frischer Tat ertappten Frau und ihres Partners. Der Ehebruch des Mannes mit Unverheirateten oder Unfreien war dagegen rechtlich weitgehend folgenlos. Sexuelle Treue war eine einseitige Pflicht der Frau. <span class="chip belegt">belegt</span></p>
+  <p><strong>Drittens der Konsens-Test:</strong> In der Muntehe war der Wille der Braut rechtlich unerheblich; verhandelt wurde zwischen Bräutigam und brautgebender Sippe. Selbst die Witwe — die freieste weibliche Statusposition — brauchte für die Wiederheirat die Mitwirkung der Sippe des verstorbenen Mannes, die sich den Muntverzicht mit dem <em>Reipus</em> abgelten ließ (Lex Salica, Tit. 44). <span class="chip belegt">belegt</span></p>
+  <div class="callout">
+    <span class="label">Befund</span>
+    <p>Sexuelle <strong>Selbstbestimmung als Recht der Frau existierte nicht</strong> — weder positiv (freie Partnerwahl) noch negativ als eigener Anspruch (die Verletzung wurde als Ehrschaden der Männer kompensiert). Was existierte, war ein hochwirksamer <strong>Schutz der Frau als Trägerin fremder Ehre</strong>. Genau hier setzte die Kirche später ihren folgenreichsten Hebel an: Das Konsensprinzip (§ zur Christianisierung) verlagerte die Verfügung über die Eheschließung erstmals prinzipiell in die Person der Frau — und die Bußbücher sanktionierten, ein echtes Novum, auch den <em>männlichen</em> Ehebruch als Sünde. Gemessen an der sexuellen Verfügungsordnung der Sippe wirkte die Kirche hier <em>egalisierend</em>, um den Preis einer neuen, beide Geschlechter erfassenden Sexualdisziplin mit deutlich schärferem Zugriff auf weibliche Keuschheit (Virginitätsideal). <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+
+<!-- ============ 4 ============ -->
+<section id="s4">
+  <span class="section-no">§ 07</span>
+  <h2>Von der Blutrache zum Wergeld</h2>
+  <p class="lede">Der erste Prüfstein der These ist der Übergang vom Fehderecht der Sippen zum kompositionsrechtlichen System der Volksrechte — und was er über den Wert und Status der Frau verrät.</p>
+  <p>In der sippenrechtlichen Ordnung war eine Tötung keine Sache des „Staates", sondern der betroffenen Verwandtschaft: Sie löste die <strong>Blutrache</strong> (Fehde) aus. Die zwischen dem 5. und 9. Jahrhundert — bereits unter christlich-königlichem Einfluss — verschrifteten <span class="latin">Leges barbarorum</span> kanalisierten dieses System, indem sie für jede Verletzung einen Sühnetarif festlegten: das <strong>Wergeld</strong> (wörtlich „Manngeld", von <em>wer</em> = Mann), zu zahlen an die Sippe des Opfers, plus <em>Friedensgeld</em> (<span class="latin">fredus</span>, wörtlich „Friede[nsanteil]") an den König. Die Blutrache wurde damit nicht abgeschafft, aber zunehmend in ein Ablösesystem überführt — ein zentrales Instrument königlicher Friedenswahrung. <span class="chip belegt">belegt</span></p>
+  <h3>Der überraschende Befund: Frauen waren teurer</h3>
+  <p>Für die Frage nach der Stellung der Frau ist entscheidend, <em>wie</em> die Tarife Frauen bewerteten — und hier liefern die Quellen einen auf den ersten Blick paradoxen Befund: Das Wergeld der Frau lag in mehreren Volksrechten <strong>über</strong> dem des Mannes, insbesondere während der gebärfähigen Jahre.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Wergeldsätze für Freie (Auswahl, in Goldsolidi)</caption>
+    <thead>
+      <tr><th>Rechtsquelle</th><th>Freier Mann</th><th>Freie Frau</th><th>Bemerkung</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lex Salica (frühes 6. Jh.)</td>
+        <td><span class="num">200</span></td>
+        <td><span class="num">600</span> (gebärfähig) / <span class="num">200</span> (vor der Menarche bzw. nach den gebärfähigen Jahren)</td>
+        <td>Dreifachtarif für die Frau, „die Kinder gebären kann"; Schwangere z. T. noch höher bewertet</td>
+      </tr>
+      <tr>
+        <td>Lex Ribuaria (7. Jh.)</td>
+        <td><span class="num">200</span></td>
+        <td><span class="num">600</span> (gebärfähige Jahre)</td>
+        <td>folgt dem salfränkischen Muster</td>
+      </tr>
+      <tr>
+        <td>Pactus Alamannorum / Lex Alamannorum (7./8. Jh.)</td>
+        <td><span class="num">160–200</span></td>
+        <td>doppeltes Wergeld der Frau; zusätzlich detaillierte Bußtarife für Übergriffe (Entblößen des Hauptes, Anfassen, Raub)</td>
+        <td>eigene Schutztatbestände für weibliche Ehre</td>
+      </tr>
+      <tr>
+        <td>Lex Saxonum (802/803)</td>
+        <td>nach Stand <span class="num">120–1440</span></td>
+        <td>im Grundsatz standesgleich, teils erhöht</td>
+        <td>extreme Standesspreizung überlagert die Geschlechterdifferenz</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><em>Hinweis: Die Summen variieren je nach Redaktion und Handschriftenklasse; die Tabelle gibt die in der Forschung gängigen Richtwerte wieder.</em> <span class="chip belegt">belegt</span></p>
+  <h3>Deutung: Preis ist nicht Status</h3>
+  <p>Die naheliegende Lesart — „Frauen waren mehr wert, also höher geachtet" — greift zu kurz. Das erhöhte Wergeld schützt nicht die Frau als Rechtsperson, sondern ihre <strong>Reproduktionsfunktion für die Sippe</strong>: Der Tarif fällt vor der Menarche und nach dem Ende der gebärfähigen Jahre auf den Normalsatz zurück. Die Frau erscheint im Kompositionssystem als besonders wertvolles <em>Schutzobjekt</em>, nicht als handelndes <em>Rechtssubjekt</em>: Empfänger und Zahler des Wergelds waren die männlich repräsentierten Sippen. <span class="chip plausibel">plausibel</span></p>
+  <div class="callout">
+    <span class="label">Relevanz für die These</span>
+    <p>Der Wergeld-Befund stützt die These nur indirekt: Die Verschriftung der Leges erfolgte unter <strong>königlich-kirchlicher Regie</strong> (lateinische Sprache, Prologe mit Gottesbezug, Beteiligung von Klerikern als einziger Schriftkultur-Trägern). Das Kompositionssystem selbst aber kodifiziert <em>ältere, vorchristliche</em> Wertmaßstäbe der Sippengesellschaft. Weder „die Kirche" noch „der Feudalismus" haben die Objektstellung der Frau hier <em>erzeugt</em> — sie haben sie <strong>verschriftlicht und damit verfestigt</strong>. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="s5">
+  <span class="section-no">§ 08</span>
+  <h2>Das Allod und die terra Salica</h2>
+  <p class="lede">Der zweite Prüfstein: das Erbrecht am freien Eigen. Hier lässt sich der Rechtswandel über vier Jahrhunderte fast urkundengenau verfolgen — und er verläuft überraschend <em>zugunsten</em> der Frauen, bevor die Feudalisierung ihn konterkariert.</p>
+  <h3>Lex Salica, Titel 59: „De alodis"</h3>
+  <p>Das <strong>Allod</strong> (afrk. <em>alōd</em>, „Vollgut") bezeichnet das freie, lehnsunabhängige Eigen einer Sippe bzw. Familie — den Gegenbegriff zum später dominierenden Lehen (<span class="latin">feudum</span>). Der berühmte Titel 59 der Lex Salica regelt seine Vererbung und schließt mit dem Satz, der Rechtsgeschichte schrieb:</p>
+  <blockquote>
+    „De terra vero Salica nulla portio hereditatis mulieri veniat, sed ad virilem sexum tota terrae hereditas perveniat." — Vom salischen Land aber soll kein Erbteil an eine Frau fallen, sondern das ganze Landerbe soll an das männliche Geschlecht kommen.
+    <span class="src">Lex Salica, Tit. 59 (De alodis), § 6 — Zählung nach Redaktion variierend</span>
+  </blockquote>
+  <p>Wichtig ist die Differenzierung, die populär oft verloren geht: Ausgeschlossen waren Frauen nur vom Erbe an der <em>terra Salica</em> — nach herrschender Deutung dem alten Sippen-/Hofland — nicht aber von <strong>Fahrhabe, Geld und erworbenem Gut</strong>, das durchaus an Töchter fallen konnte. <span class="chip belegt">belegt</span> Ob <em>terra Salica</em> das Stammland des Herrenhofs, ursprüngliches Siedlungsland oder eine engere Kategorie meint, ist bis heute nicht abschließend geklärt. <span class="chip umstritten">umstritten</span></p>
+  <h3>Das Edikt Chilperichs: Lockerung um 575</h3>
+  <p>Bereits das <strong>Edictum Chilperici</strong> (um 561–584) durchbrach den Ausschluss: Hinterlässt der Erblasser keine Söhne, sollen <strong>Töchter</strong> das Land erben — vor den Brüdern und der weiteren männlichen Verwandtschaft des Verstorbenen. Die Entwicklung des 6.–9. Jahrhunderts läuft insgesamt auf eine <strong>wachsende Erb- und Verfügungsfähigkeit von Frauen</strong> hinaus: Urkunden und Traditionsbücher der Karolingerzeit zeigen Frauen als Erbinnen, Schenkerinnen an Klöster, Testiererinnen und Prozessparteien. <span class="chip belegt">belegt</span></p>
+  <p>Dass ausgerechnet <strong>Kirchen und Klöster</strong> die bevorzugten Empfänger weiblicher Schenkungen waren, ist kein Zufall: Die Kirche hatte ein <em>institutionelles Eigeninteresse</em> an der Verfügungsfähigkeit von Frauen über Grundbesitz — nur wer erben und schenken kann, kann sein Seelenheil durch Landübertragung sichern. Hier arbeitete kirchlicher Einfluss messbar <em>für</em> weibliche Vermögensrechte. <span class="chip plausibel">plausibel</span></p>
+  <h3>Nachleben: Die „Lex Salica" als politischer Mythos</h3>
+  <p>Eine Fußnote mit langer Wirkung: Der Ausschluss von der terra Salica wurde im 14. Jahrhundert von französischen Juristen zur <em>loi salique</em> umgedeutet — dem angeblichen Fundamentalgesetz, das Frauen von der Thronfolge ausschließe (Auslöser: die Kapetinger-Erbfolge 1316/1328, Vorgeschichte des Hundertjährigen Krieges). Das ist eine <strong>Zweckkonstruktion ohne Basis im frühmittelalterlichen Text</strong>, der ausschließlich privates Erbgut betraf — ein Lehrstück dafür, wie „germanisches Recht" nachträglich zur Legitimation von Frauenausschluss instrumentalisiert wurde. <span class="chip belegt">belegt</span></p>
+</section>
+<!-- NEW: Homosexualitaet -->
+<section id="s5b">
+  <span class="section-no">§ 09</span>
+  <h2>Homosexualität: von der Ehrenordnung zur Sodomia</h2>
+  <p class="lede">Kaum ein Feld illustriert die Arbeitsthese so scharf wie der Umgang mit gleichgeschlechtlicher Sexualität: Die germanischen Volksrechte schweigen — die Kriminalisierung ist ein spätantik-römisches und kirchliches Erbe.</p>
+  <h3>Vorbemerkung: eine Kategorie, die es nicht gab</h3>
+  <p>„Homosexualität" als Identitätskategorie ist ein Konzept des 19. Jahrhunderts. Antike und frühmittelalterliche Gesellschaften ordneten gleichgeschlechtliche Handlungen nicht nach der Frage <em>mit wem</em>, sondern nach der Frage <em>in welcher Rolle</em>: Ehrenrelevant war die <strong>passive Rolle des freien Mannes</strong>, die als Preisgabe der Männlichkeit galt. Weibliche gleichgeschlechtliche Sexualität ist in den weltlichen Rechtsquellen der Epoche praktisch <strong>unsichtbar</strong> — sie taucht erst in kirchlichen Bußbüchern auf, dort mit deutlich milderen Bußen als männliche Akte. <span class="chip belegt">belegt</span></p>
+  <h3>Der germanische Befund: Scham, nicht Strafe</h3>
+  <p>Die berühmteste Stelle steht wieder bei Tacitus:</p>
+  <blockquote>
+    „ignavos et imbelles et corpore infames caeno ac palude, iniecta insuper crate, mergunt." — Feiglinge, Kriegsscheue und körperlich Schandbare versenken sie in Schlamm und Sumpf und werfen Flechtwerk darüber.
+    <span class="src">Tacitus, Germania, cap. 12</span>
+  </blockquote>
+  <p>Ob <span class="latin">corpore infames</span> („am Körper Ehrlose") passive Homosexualität meint, ist eine <em>Deutung</em>, keine Aussage des Textes — möglich sind ebenso Prostitution oder andere als entehrend geltende Körperpraktiken. <span class="chip umstritten">umstritten</span> Fatal wurde diese Lesart im 20. Jahrhundert: Die SS instrumentalisierte die Stelle 1937 zusammen mit den Moorleichenfunden als „germanischen Beweis" für die Todeswürdigkeit Homosexueller. Die moderne Archäologie hat diese Verknüpfung verworfen — die Moorleichen streuen über Jahrhunderte, umfassen Männer, Frauen und Kinder und zeigen ganz unterschiedliche Todes- und Deponierungskontexte (Opfer, Hinrichtung, Bestattungssonderformen). <span class="chip belegt">belegt</span></p>
+  <p>Aussagekräftiger ist das nordische Material: Dort kreist alles um <strong>ergi</strong> (Unmännlichkeit) und <strong>níð</strong> (Schmähung). Einen freien Mann <em>ragr</em> oder <em>sannsorðinn</em> („nachweislich gebraucht") zu nennen, gehörte nach Gulathingslov und Grágás zu den schwersten Beleidigungen überhaupt — der Geschmähte durfte mit Waffengewalt antworten bzw. der Schmäher verfiel der vollen Acht. Sanktioniert wurde also primär die <em>Zuschreibung von Passivität als Ehrverlust</em>; eine allgemeine Verfolgung gleichgeschlechtlicher Handlungen kennen die vorchristlich wurzelnden Rechtsschichten nicht. Dasselbe Muster trifft männliche Ausübung weiblich codierter Magie (<em>seiðr</em>). <span class="chip belegt">belegt</span> Das ist keine Toleranz im modernen Sinn — es ist eine <strong>Ehren- und Geschlechterrollenordnung</strong>, die Abweichung sozial, aber nicht kriminalrechtlich bestrafte. <span class="chip plausibel">plausibel</span></p>
+  <h3>Rom: die Eskalation beginnt im christlichen Kaiserreich</h3>
+  <p>Das pagane Rom kannte dieselbe Aktiv/Passiv-Asymmetrie (dazu die kaum je angewandte <span class="latin">Lex Scantinia</span>); statusgebundene Verhältnisse waren alltäglich. Die strafrechtliche Eskalation setzt mit der Christianisierung des Imperiums ein: 342 stellt eine Konstitution der Kaiser Constantius II. und Constans passive Akte unter Strafe (Cod. Theod. 9,7,3), 390 ordnet Theodosius I. den Feuertod für männliche Passiv-Prostitution an (Cod. Theod. 9,7,6), und <strong>Justinian</strong> dehnt 533/538/559 die Todesstrafe unter ausdrücklich biblischer Begründung (Sodom-Motiv, Novellen 77 und 141) auf gleichgeschlechtliche Akte generell aus. <span class="chip belegt">belegt</span></p>
+  <h3>Der Lackmustest: Leges ohne Kirche vs. Leges mit Kirche</h3>
+  <p>Nun der entscheidende Vergleich: Lex Salica, Lex Ribuaria, Lex Alamannorum, Lex Baiuvariorum, Lex Saxonum und der langobardische Edictus Rothari — die gesamte kontinentale Leges-Landschaft — enthalten <strong>keinen einzigen Straftatbestand</strong> gegen gleichgeschlechtliche Handlungen. <span class="chip belegt">belegt</span> Die eine Ausnahme ist das am stärksten romanisierte und am engsten mit der Kirche verflochtene Reich: Das <strong>westgotische Recht</strong> führt unter Chindaswinth (um 650) die Kastration für männliche gleichgeschlechtliche Akte ein; König Egica verschärft 693 im Zusammenspiel mit dem 16. Konzil von Toledo (Kastration, Vermögensverlust, Verbannung, kirchliche Exkommunikation). <span class="chip belegt">belegt</span></p>
+  <p>Die kirchliche Normierung des Frühmittelalters selbst lief über die <strong>Bußbücher</strong>: Sie behandeln gleichgeschlechtliche Akte als schwere Sünde neben Ehebruch und Inzest, gestaffelt nach Akt, Alter und Gewohnheit (typisch mehrjährige Bußfristen) — hart, aber <em>Bußdisziplin, keine Todesstrafe</em>. Die eigentliche Verschärfung ist hochmittelalterlich: Petrus Damiani (<span class="latin">Liber Gomorrhianus</span>, um 1049) prägt den Sodomie-Diskurs, das III. Laterankonzil (1179) verhängt Amtsverlust und Exkommunikation, die scholastische Lehre vom <span class="latin">peccatum contra naturam</span> („Sünde wider die Natur") liefert die Systematik, und ab dem 13. Jahrhundert übernehmen <em>weltliche</em> Rechtsordnungen die Todesstrafe — die 1532 mit Art. 116 der Constitutio Criminalis Carolina reichsrechtlich wird und deren Kette über § 175 RStGB (1871, verschärft 1935, in der Bundesrepublik bis 1969/94 fortgeltend) bis in die Zeitgeschichte reicht. <span class="chip belegt">belegt</span></p>
+  <div class="callout">
+    <span class="label">Relevanz für die These</span>
+    <p>Hier trägt die Arbeitsthese am weitesten: Die <strong>Kriminalisierung</strong> gleichgeschlechtlicher Sexualität ist in Mitteleuropa nachweislich ein Import der spätantik-christlichen Gesetzgebungstradition und ihrer hochmittelalterlichen Radikalisierung — nicht germanisches Erbe. Zwei Einschränkungen bleiben: Die germanisch-nordische ergi-Ordnung war ihrerseits ein repressives System gegen Geschlechtsrollen-Abweichung (nur eben ehrenrechtlich statt strafrechtlich); und die Träger der neuen Normen — Konzilien, Könige, Juristen — waren erneut durchweg Männer. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+
+<!-- ============ 6 ============ -->
+<section id="s6">
+  <span class="section-no">§ 10</span>
+  <h2>Christianisierung: eine ambivalente Bilanz</h2>
+  <p class="lede">Der dritte Prüfstein trifft den Kern der These. Der Befund ist unbequem für jede einseitige Lesart: Die Kirche des Frühmittelalters hat die Rechtsstellung der Frau in manchen Feldern <em>verbessert</em>, in anderen <em>verengt</em> — und die Gewichte verschieben sich im Zeitverlauf.</p>
+  <h3>Was sich zugunsten der Frauen verschob</h3>
+  <p><strong>1. Das Konsensprinzip.</strong> Gegen die Muntehe als Sippenvertrag setzte die Kirche schrittweise durch, dass eine Ehe den <em>Konsens beider Partner</em> erfordert (<span class="latin">consensus facit nuptias</span> — „der Konsens begründet die Ehe"; aus dem römischen Recht übernommen und kirchlich radikalisiert). Damit wurde die Braut vom Vertragsgegenstand prinzipiell zum Vertragssubjekt. Vollständig durchgesetzt wurde das erst im hochmittelalterlichen Kirchenrecht (Gratian, Alexander III., 12. Jh.), aber die Weichenstellung fällt in die Karolingerzeit. <span class="chip belegt">belegt</span></p>
+  <p><strong>2. Einehe und Verstoßungsverbot.</strong> Die Kirche bekämpfte Polygynie, Konkubinat und die einseitige Verstoßung der Ehefrau. Die Synoden des 8./9. Jahrhunderts und Hinkmar von Reims' Intervention im Scheidungsfall Lothars II. (Lotharingischer Ehestreit, 857–869) etablierten die Unauflöslichkeit — für die Ehefrau primär ein <em>Schutzrecht</em> gegen Verstoßung im Alter oder bei Kinderlosigkeit, um den Preis, dass auch sie aus zerrütteten Ehen nicht mehr herauskam. <span class="chip belegt">belegt</span></p>
+  <p><strong>3. Klöster als weibliche Macht- und Bildungsräume.</strong> Frauenklöster boten die einzige Alternative zur Ehe und die einzige institutionalisierte weibliche Bildungs- und Leitungslaufbahn. Äbtissinnen großer Reichsklöster und -stifte (Whitby unter Hilda, später Gandersheim, Quedlinburg, Essen) führten Grundherrschaften, prägten Politik und Literatur (Hrotsvit von Gandersheim) und standen teils Doppelklöstern mit Männerkonventen vor. <span class="chip belegt">belegt</span></p>
+  <h3>Was sich zulasten der Frauen verschob</h3>
+  <p><strong>1. Kultischer Ausschluss.</strong> Die vorchristliche Ordnung kannte weibliche Kultautorität (Seherinnen, Priesterinnen). Das Christentum ersetzte sie durch ein <em>exklusiv männliches Priestertum</em>; die Frau wurde vom Altardienst ausgeschlossen, Diakoninnen-Ämter der Spätantike liefen aus. Damit verschwand der einzige Bereich, in dem Frauen der germanischen Zeit <em>öffentliche Autorität über Männer</em> ausgeübt hatten. <span class="chip belegt">belegt</span></p>
+  <p><strong>2. Theologische Abwertung.</strong> Über die paulinischen Unterordnungsgebote (1 Kor 14,34; Eph 5,22–24), die patristische Eva-Typologie (Tertullian: <span class="latin">„ianua diaboli"</span> — „Einfallstor des Teufels") und Reinheitsvorstellungen (Menstruations- und Wochenbett-Tabus in Bußbüchern) erhielt die Nachordnung der Frau eine <strong>heilsgeschichtliche Begründung</strong>, die das ältere, rein funktionale Sippenrecht nicht gekannt hatte. Aus „die Sippe verfügt über dich" wurde „Gott hat dich nachgeordnet" — eine qualitativ neue, weil unhintergehbare Legitimation. <span class="chip plausibel">plausibel</span></p>
+  <p><strong>3. Verhäuslichung der Ehefrau.</strong> Das karolingische Ehe- und Moralschrifttum (z. B. Jonas von Orléans, <span class="latin">De institutione laicali</span>) wies der Frau Haus, Gehorsam und Keuschheit als Bestimmung zu und lieferte damit das normative Skript, das die spätere ständische Gesellschaft ausbuchstabierte. <span class="chip belegt">belegt</span></p>
+  <div class="callout">
+    <span class="label">Zwischenbilanz</span>
+    <p>Die Kirche wirkte als <strong>Doppelagentin</strong>: Sie stärkte die Frau als <em>Person</em> (Konsens, Schutz vor Verstoßung, Vermögensfähigkeit, Klosterlaufbahn) und schwächte sie als <em>Geschlecht</em> (kultischer Ausschluss, theologische Nachordnung). Die These „die Kirche schränkte die Frauenrechte ein" ist in dieser Pauschalität <strong>nicht haltbar</strong>; haltbar ist: Die Kirche lieferte die <em>Legitimationsordnung</em>, mit der spätere Einschränkungen begründet wurden. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="s7">
+  <span class="section-no">§ 11</span>
+  <h2>Feudalisierung als struktureller Ausschluss</h2>
+  <p class="lede">Deutlich klarer stützen die Quellen den zweiten Teil der These: Die Verkopplung von Landbesitz, Militärdienst und Herrschaft im entstehenden Lehnswesen wirkte strukturell gegen Frauen — ohne dass es dazu einer frauenfeindlichen Absicht bedurfte.</p>
+  <p>Das Lehnswesen des 8.–10. Jahrhunderts band Landleihe (<span class="latin">beneficium</span>, „Wohltat/Gnadengut", später <span class="latin">feudum</span>, „Lehen") an <strong>Vasallendienst</strong>: Treueid, Hoffahrt, vor allem aber <em>berittenen Kriegsdienst</em>. Da Frauen nicht waffenfähig im Rechtssinn waren, waren sie zunächst nicht <strong>lehnsfähig</strong> — sie konnten das dominante Besitz- und Herrschaftsmedium der neuen Ordnung weder empfangen noch weitergeben, außer vermittelt über Ehemann, Sohn oder Vogt. <span class="chip belegt">belegt</span></p>
+  <p>Damit kippte die im Allodialrecht gewonnene Position: Was eine Frau <em>erben</em> konnte (Allod), verlor relativ an Bedeutung gegenüber dem, was sie <em>nicht halten</em> konnte (Lehen, Amt, Grafschaft). Der Erbgang konzentrierte sich zunehmend auf waffenfähige Söhne; wo Töchter Lehen erbten (regional ab dem 11./12. Jh. möglich), übte ein Mann die Rechte aus. Parallel verfestigte die entstehende Grundherrschaft die eheherrliche Munt: Der <em>Herr des Hauses</em> wurde zur Basiszelle der Herrschaftspyramide. <span class="chip belegt">belegt</span></p>
+  <div class="callout">
+    <span class="label">Der strukturelle Mechanismus</span>
+    <p>Hier liegt der stärkste Beleg für den strukturgeschichtlichen Kern der These: Der Ausschluss der Frau folgt nicht aus einem Beschluss von Männern <em>gegen</em> Frauen, sondern aus einer <strong>Systemlogik</strong> — Land gegen Kriegsdienst —, die Geschlecht als Nebenfolge sortierte. Institutionen können diskriminieren, ohne dass Akteure diskriminieren wollen. Allerdings gilt auch: Diese Institutionen wurden von Männern entworfen, besetzt und verteidigt; „Struktur" und „Männer" sind keine Alternativen, sondern zwei Beschreibungsebenen desselben Vorgangs. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+<!-- NEW: Staemme -->
+<section id="s7b">
+  <span class="section-no">§ 12</span>
+  <h2>Kein Monolith: die Stämme im Vergleich — und die Normannen</h2>
+  <p class="lede">„Die Germanen" sind eine Sammelbezeichnung, keine Rechtsgemeinschaft. Zwischen westgotischem Töchtererbrecht und langobardischem Selbstmundschafts-Verbot liegen Welten — und die Differenzen korrelieren auffällig mit dem Grad der Romanisierung.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Rechtsstellung der Frau nach Rechtskreisen (6.–10. Jh., vereinfachend)</caption>
+    <thead>
+      <tr><th>Rechtskreis</th><th>Munt / Geschlechtsvormundschaft</th><th>Erbrecht der Frau</th><th>Charakteristika</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Salfranken (Lex Salica)</td>
+        <td>Munt, aber flexibel; Witwen mit Spielraum</td>
+        <td>Fahrhabe ja; terra Salica nein — ab Chilperich Töchter subsidiär</td>
+        <td>Dreifach-Wergeld der gebärfähigen Frau; Reipus bei Witwenheirat</td>
+      </tr>
+      <tr>
+        <td>Alemannen / Baiern</td>
+        <td>Munt, kirchennah kodifiziert (Herzogs- und Bischofsbeteiligung)</td>
+        <td>zunehmend erbfähig, Sondergut (Gerade)</td>
+        <td>feinste Tarife für sexuelle Belästigung und Ehrverletzung; hohes Frauen-Wergeld</td>
+      </tr>
+      <tr>
+        <td>Langobarden (Edictus Rothari, 643)</td>
+        <td>am striktesten: keine freie Frau darf <span class="latin">selpmundia</span> — selbstmündig — leben (Rothari 204)</td>
+        <td>Töchter nachrangig, aber gesichertes Heiratsgut (faderfio, morgingab)</td>
+        <td>Munt ausdrücklich käuflich/übertragbar; Liutprand (713–735) mildert unter Kircheneinfluss</td>
+      </tr>
+      <tr>
+        <td>Westgoten (Liber Iudiciorum, 654)</td>
+        <td>keine dauerhafte Geschlechtsvormundschaft; Frauen prozess- und geschäftsfähig</td>
+        <td>Töchter erben <strong>gleichrangig</strong> mit Söhnen — römischrechtliches Erbe</td>
+        <td>zugleich schärfstes Sexualstrafrecht (Ehebruch, ab 650 Sodomie) — Autonomie und Moralzwang zusammen</td>
+      </tr>
+      <tr>
+        <td>Burgunder (Lex Burgundionum)</td>
+        <td>gemildert, römisch beeinflusst</td>
+        <td>Witwe erhält Nießbrauch-Drittel; Töchter subsidiär erbfähig</td>
+        <td>Mischrecht für Burgunder und Römer</td>
+      </tr>
+      <tr>
+        <td>Sachsen (Lex Saxonum, 802/03)</td>
+        <td>streng; Frau lebenslang in fremder Gewalt</td>
+        <td>stark agnatisch; Frauen weitgehend nachrangig</td>
+        <td>extreme Standesspreizung des Wergelds; spät und unter fränkischem Zwang verschriftet</td>
+      </tr>
+      <tr>
+        <td>Skandinavier / Normannen (Grágás, Gulathing; Sagas — Überlieferung 12./13. Jh.)</td>
+        <td>Munt-Analogon, aber mit Ventilen (baugrýgr; Scheidungsrecht der Frau)</td>
+        <td>Töchter subsidiär; Witwen und Hoferbinnen mit realer Verfügungsmacht</td>
+        <td>Frau als Hofverwalterin (innan stokks: „innerhalb der Schwelle" mit Schlüsselgewalt); níð/ergi-Ehrenordnung</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Zwei Muster springen heraus. <strong>Erstens die Romanisierungs-Paradoxie:</strong> Je römischer ein Rechtskreis, desto <em>größer</em> die vermögens- und prozessrechtliche Selbstständigkeit der Frau (Westgoten, Burgunder) — und desto <em>schärfer</em> zugleich die moralgesetzliche Kontrolle ihrer Sexualität. Persönliche Rechtsfähigkeit und sexuelle Reglementierung wuchsen im römisch-kirchlichen Einflussbereich <em>gemeinsam</em>. <span class="chip plausibel">plausibel</span> <strong>Zweitens die Verrechtlichungs-Regel:</strong> Am restriktivsten formuliert der Edictus Rothari — ausgerechnet die früheste umfassend systematisierte Kodifikation. Was vorher Gewohnheit mit Grauzonen war, wird als Verbot ausbuchstabiert; Verschriftung wirkte tendenziell fixierend zulasten weiblicher Spielräume. <span class="chip plausibel">plausibel</span></p>
+  <h3>Der normannische Sonderfall</h3>
+  <p>Die Nordleute liefern das aufschlussreichste Gegenbild — mit doppelter Quellenwarnung: Die Sagas sind christliche Literatur des 13. Jahrhunderts über die Wikingerzeit, die Rechtsbücher kaum älter; sie zeigen Idealbilder so gut wie Praxis. <span class="chip umstritten">umstritten</span> Innerhalb dieser Grenzen ist das Bild konsistent: Die skandinavische Frau führte als <em>húsfreyja</em> den Hof mit Schlüsselgewalt, in den langen Abwesenheiten der Männer faktisch allein; sie konnte nach isländischem Recht die <strong>Scheidung erklären</strong> (die Sagas inszenieren das mehrfach, samt Rückforderung der Mitgift); Runensteine wie der von Dynna oder Hillersjö bezeugen Frauen als Erbinnen, Stifterinnen und Brückenbauerinnen; die baugrýgr trat in männliche Wergeldfunktion ein. Eine „Gleichstellung" war auch das nicht — kein Thing-Stimmrecht, kein Godenamt, Verheiratung durch die Sippe —, aber die <strong>funktionale Autonomiezone</strong> war spürbar breiter als im fränkischen Kernraum. <span class="chip plausibel">plausibel</span></p>
+  <p>Und nun das Experiment, das die Geschichte selbst durchgeführt hat: Was geschah, als diese Nordleute 911 in die fränkisch-kirchliche Ordnung eintraten? Die <strong>Normandie</strong> unter Rollo und seinen Nachfolgern assimilierte sich binnen zwei, drei Generationen an fränkisches Lehnsrecht und Kirchenstruktur — und die weiblichen Rechtspositionen glichen sich dem feudalen Umfeld an. Bezeichnend ist das lange Nachleben der Ehe <span class="latin">more danico</span> („nach dänischer Sitte"): Die ersten Herzöge lebten in kirchlich nicht sanktionierten Verbindungen, deren Söhne — darunter Wilhelm der Eroberer, zeitgenössisch „der Bastard" — zunächst ohne Makel erbfähig waren. Erst mit der Durchsetzung des kirchlichen Ehe- und Legitimitätsrechts im 11. Jahrhundert wurde aus der danico-Partnerin ein „Konkubinat" und aus ihren Kindern ein Legitimitätsproblem. <span class="chip belegt">belegt</span> Hier lässt sich in Echtzeit beobachten, wie kirchliche Ehenorm und feudale Erblogik gemeinsam eine ältere, flexiblere Ordnung überschrieben — der stärkste Einzelbeleg des normannischen Materials für die Arbeitsthese. <span class="chip plausibel">plausibel</span></p>
+</section>
+<!-- NEW: Germanen vs Normannen -->
+<section id="s7c">
+  <span class="section-no">§ 13</span>
+  <h2>Germanen und Normannen: zwei Welten desselben Sprachraums</h2>
+  <p class="lede">Vorab eine Begriffsklärung: „Normannen" (Nordleute, Wikinger; im engeren Sinn die 911 in der Normandie Angesiedelten) <em>sind</em> Nordgermanen. Der Vergleich ist also keiner zwischen zwei Völkern, sondern zwischen zwei <strong>Formationen desselben Kulturraums</strong>, getrennt durch ein halbes Jahrtausend und radikal verschiedene Rahmenbedingungen.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Systemvergleich: Völkerwanderungsgermanen vs. Nordleute der Wikingerzeit</caption>
+    <thead>
+      <tr><th>Dimension</th><th>Kontinentalgermanen (1.–8. Jh.)</th><th>Normannen / Nordleute (8.–11. Jh.)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Quellenlage</td><td>fast nur Außensicht (Rom) + lateinische Leges nach der Christianisierung</td><td>eigene volkssprachliche Literatur (aber 200–300 Jahre später verschriftet), arabische und fränkische Außensichten, Runensteine als echte Selbstzeugnisse</td></tr>
+      <tr><td>Religion</td><td>Christianisierung früh: Goten arianisch ab dem 4. Jh., Franken ab 496/508</td><td>pagan bis ins 10./11. Jh. — die nordischen Quellen zeigen die <em>letzte unchristianisierte</em> germanische Geschlechterordnung</td></tr>
+      <tr><td>Ökonomie</td><td>agrarische Kriegerverbände, Gefolgschaft, Landnahme im Reichsgebiet</td><td>maritime Expansion: Raub, Fernhandel (Silber, Sklaven), Siedlung von Island bis Kiew</td></tr>
+      <tr><td>Folge für Frauen</td><td>Frau im Sippenverband präsent, Munt permanent ausübbar</td><td>monatelange Männerabwesenheit → Hof-, Wirtschafts- und Personalführung der húsfreyja als <em>Systemvoraussetzung</em></td></tr>
+      <tr><td>Recht</td><td>verschriftete Leges unter königlich-kirchlicher Regie</td><td>orales Recht (Gesetzessprecher), Thing-Kontinuität; Scheidungsrecht der Frau, baugrýgr</td></tr>
+      <tr><td>Ehe</td><td>Muntehe, Polygynie der Oberschicht auslaufend</td><td>Muntehe-Analogon plus mehr danico-Verbindungen; Konkubinat der Großen bis ins 11. Jh. normal</td></tr>
+      <tr><td>Sklaverei</td><td>vorhanden, agrarisch</td><td>tragende Wirtschaftssäule inkl. Sklavenfernhandel — extreme Statusspaltung unter Frauen</td></tr>
+      <tr><td>Identitätsverhalten</td><td>Goten, Langobarden, Franken halten Eigenrecht über Generationen (Personalitätsprinzip)</td><td>Normandie: Sprach- und Rechtsassimilation binnen 2–3 Generationen — dieselben Leute, die auf Island eine Freistaatsverfassung bauen, werden in Frankreich Mustervasallen</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3>Was der Vergleich für die Frauenfrage austrägt</h3>
+  <p><strong>Erstens: Autonomie folgt der Abwesenheit.</strong> Der größte messbare Unterschied — die breitere weibliche Verfügungszone des Nordens — hat eine unspektakuläre Ursache: Eine Raub- und Fernhandelsökonomie <em>funktioniert nicht</em>, wenn die Daheimgebliebene nicht rechtlich handlungsfähig ist. Die Kauffrauen Frideburg und Catla in Birka (Vita Anskarii), die isländische Landnehmerin <strong>Auðr djúpúðga</strong> (Auð die Tiefsinnige), die als Witwe mit eigenem Schiff, Gefolge und Landverteilung in der Landnámabók steht, und die Erbketten der Runensteine sind Funktionen dieser Ökonomie. Das stützt die strukturelle Lesart der Arbeitsthese von der anderen Seite: <em>Nicht</em> Ideologie, sondern Produktionsweise bestimmte die Reichweite weiblicher Rechte. <span class="chip plausibel">plausibel</span></p>
+  <p><strong>Zweitens: Die sakrale Linie ist ungebrochen — bis die Kirche sie kappt.</strong> Von Caesars losenden matres über Veleda und Ganna zur nordischen <em>völva</em> läuft eine kontinuierliche Institution weiblicher Kultautorität. Die Eiríks saga rauða schildert die Seherin Þorbjörg lítilvölva als Ehrengast mit Ritualstab und Hochsitz; das prunkvollste bekannte Schiffsgrab der Wikingerzeit überhaupt — <strong>Oseberg</strong>, 834, mit Ritualgegenständen — birgt <em>zwei Frauen</em>. Wer dort lag (Königin? Priesterin? beide Rollen in einer Person?), ist offen <span class="chip umstritten">umstritten</span> — aber dass die reichste Bestattung des Nordens Frauen galt, ist ein Faktum. <span class="chip belegt">belegt</span> Auf dem Kontinent war diese Linie zu diesem Zeitpunkt seit Jahrhunderten gekappt: Die Kirche hatte die Seherin nicht widerlegt, sondern <em>ersetzt</em> — und ihre Restbestände als haliurunnae-Erbinnen dem Verdacht überstellt.</p>
+  <p><strong>Drittens: die Schildmaiden-Frage — eine Debatte mit offenem Ausgang.</strong> Saxo und die Sagas erzählen von Kriegerinnen (Lathgertha, Hervör); 2017 ergab die aDNA-Analyse des Waffengrabs <strong>Birka Bj 581</strong> — komplett mit Schwert, Axt, Pfeilen, zwei Pferden und Spielsteinen eines Befehlshabers —, dass die bestattete Person biologisch weiblich war (Hedenstierna-Jonson u. a. 2017). Die Deutung als „Kriegerin" wird seither kontrovers diskutiert: Kritikerinnen wie Judith Jesch wenden ein, Grabbeigaben bezeugten Status und Inszenierung durch die Bestattenden, nicht zwingend gelebte Kampfpraxis; Verteidiger (Neil Price u. a.) halten die Kriegerdeutung für die sparsamste Erklärung. <span class="chip umstritten">umstritten</span> Sauber formulierbar ist: Der Norden konnte sich kriegerische Weiblichkeit <em>vorstellen und ehrenvoll erzählen</em> (wie schon Jordanes' gotische Amazonen) — ob und wie oft sie gelebt wurde, ist offen.</p>
+  <p><strong>Viertens: das dunkle Korrektiv.</strong> Jede Idealisierung der „freien Wikingerfrau" zerschellt an Ibn Fadlan: Die Autonomie der freien húsfreyja und die völlige Verfügbarkeit der unfreien Frau — bis zur Tötung am Grab des Herrn — waren <em>dasselbe System</em>. Die Kategorie, die über das Schicksal einer Frau des Nordens entschied, war nicht das Geschlecht allein, sondern Geschlecht <em>mal</em> Stand. <span class="chip belegt">belegt</span></p>
+</section>
+
+
+
+<!-- ============ 8 ============ -->
+<section id="s8">
+  <span class="section-no">§ 14</span>
+  <h2>Prüfung der These</h2>
+  <p class="lede">Die drei Prüfsteine ergeben ein differenziertes Bild. Die These überlebt die Quellenprüfung nur in modifizierter Form.</p>
+  <div class="tbl-wrap">
+  <table>
+    <caption>Thesenprüfung im Überblick</caption>
+    <thead>
+      <tr><th>Teilaussage der These</th><th>Befund</th><th>Bewertung</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>„Die germanische Frau hatte eine starke Stellung, die später eingeschränkt wurde"</td>
+        <td>Hohe soziale/kultische Achtung, aber lebenslange Munt; kein „goldenes Zeitalter". Der Ausgangspunkt der These ist quellenkritisch überzeichnet (Tacitus-Problem).</td>
+        <td>nur teilweise haltbar</td>
+      </tr>
+      <tr>
+        <td>„Die Einschränkung geht nicht auf Männer zurück"</td>
+        <td>Munt, Sippengewalt und Wergeld-Logik sind vorchristliche, von Männern getragene Institutionen; Kirche und Feudalordnung wurden ebenfalls ausschließlich von Männern geleitet. Die Dichotomie „Männer vs. Institutionen" ist analytisch schief.</td>
+        <td>nicht haltbar als Entlastung; haltbar als Ebenenwechsel (Struktur statt Absicht)</td>
+      </tr>
+      <tr>
+        <td>„Die Kirche trieb die Einschränkung voran"</td>
+        <td>Ambivalent: Konsensprinzip, Verstoßungsschutz, Vermögensfähigkeit und Klosterlaufbahn <em>stärkten</em> Frauen; kultischer Ausschluss und theologische Nachordnung lieferten die <em>dauerhafte Legitimation</em> der Ungleichheit.</td>
+        <td>haltbar für die Legitimationsebene, nicht für die Rechtspraxis insgesamt</td>
+      </tr>
+      <tr>
+        <td>„Feudale Strukturen trieben die Einschränkung voran"</td>
+        <td>Klar belegbar: Kopplung Land–Kriegsdienst schloss Frauen von Lehen, Amt und Herrschaft strukturell aus und entwertete ihre allodialen Erbgewinne.</td>
+        <td>weitgehend haltbar — der stärkste Teil der These</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Die modifizierte, quellenfeste Fassung der These lautet daher: <strong>Die Rechtsstellung der Frau verschlechterte sich vom Früh- zum Hochmittelalter nicht durch einen Bruch, sondern durch eine Verschiebung der Machtmedien.</strong> Solange Vermögen allodial und vererbbar war, gewannen Frauen Rechtsfähigkeit hinzu (6.–9. Jh.) — teils mit aktiver kirchlicher Unterstützung. In dem Maße, wie Herrschaft an waffengebundenes Lehnsgut und geistliches Amt gekoppelt wurde, fielen Frauen strukturell heraus, und die kirchliche Anthropologie lieferte die Begründung, warum das so sein <em>solle</em>. Verantwortung trägt dabei kein abstraktes System „statt" der Männer: Systeme handeln nicht, sie werden gehandelt. <span class="chip plausibel">plausibel</span></p>
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="s9">
+  <span class="section-no">§ 15</span>
+  <h2>Neuzeit bis 20. Jahrhundert: der lange zweite Bogen</h2>
+  <p class="lede">Der zweite Transformationsbogen — von der Frühen Neuzeit bis zum Grundgesetz — zeigt spiegelbildlich denselben Mechanismus: Rechtsgewinne und -verluste folgen den Verschiebungen von Ökonomie, Konfession und Staatlichkeit.</p>
+  <h3>Frühe Neuzeit: Verdichtung, nicht Fortschritt</h3>
+  <p>Die Frühe Neuzeit brachte zunächst eine <em>Verschärfung</em>: Die Reformation wertete die Ehe theologisch auf (gegen das Zölibatsideal), verengte aber zugleich weibliche Lebensentwürfe — mit der Klosterauflösung in protestantischen Territorien verschwand die einzige institutionelle Alternative zur Ehe; das lutherische Pfarrhaus etablierte die Hausmutter als Leitbild. <span class="chip belegt">belegt</span> Die <strong>Hexenverfolgungen</strong> (Höhepunkt ca. 1560–1660, ~80 % der Opfer im Reich weiblich) fallen nicht ins „finstere Mittelalter", sondern in diese Verdichtungsphase konfessionalisierter Staatlichkeit — getragen von weltlichen Gerichten ebenso wie von theologischer Dämonologie, mit erheblicher Beteiligung dörflicher Denunziationsdynamiken beiderlei Geschlechts. <span class="chip belegt">belegt</span></p>
+  <p>Rechtlich schrieb die Neuzeit die eheherrliche Gewalt fort: Das Preußische Allgemeine Landrecht (1794) und der französische <span class="latin">Code civil</span> (1804) kodifizierten Geschlechtsvormundschaft bzw. Gehorsamspflicht der Ehefrau in säkularer Form — ein wichtiger Befund für die Säkularisierungsfrage: <strong>Die Entkirchlichung des Rechts beseitigte die Ungleichheit nicht, sie übersetzte sie nur in Naturrechts- und Vernunftsemantik.</strong> <span class="chip belegt">belegt</span></p>
+  <h3>Das lange 19. Jahrhundert: Industrialisierung und Bewegung</h3>
+  <p>Die Industrialisierung riss die Produktions- vom Haushaltssphäre und schuf damit erstmals massenhaft weibliche Lohnarbeit außerhalb der Munt des Hauses — zugleich zementierte das Bürgertum das Ideal der „Geschlechtscharaktere" (Karin Hausen) mit der Frau als Innenwesen. Aus diesem Widerspruch entstand die organisierte <strong>Frauenbewegung</strong> (ADF 1865, BDF 1894; proletarischer Flügel um Clara Zetkin). Das BGB von 1900 hielt gleichwohl an der Letztentscheidung des Mannes „in allen das gemeinschaftliche eheliche Leben betreffenden Angelegenheiten" (§ 1354 a. F.) und seiner Verwaltung des Frauenvermögens fest. <span class="chip belegt">belegt</span></p>
+  <h3>Das 20. Jahrhundert: nachholende Rechtsangleichung</h3>
+  <div class="timeline">
+    <div class="tl-item"><span class="tl-date">1908</span><div class="tl-text"><strong>Reichsvereinsgesetz:</strong> Frauen dürfen politischen Vereinen beitreten — Ende des politischen Betätigungsverbots.</div></div>
+    <div class="tl-item"><span class="tl-date">1918/19</span><div class="tl-text"><strong>Frauenwahlrecht</strong> (Verordnung 30.11.1918; Art. 109 WRV: „Männer und Frauen haben grundsätzlich dieselben staatsbürgerlichen Rechte und Pflichten").</div></div>
+    <div class="tl-item"><span class="tl-date">1933–1945</span><div class="tl-text"><strong>NS-Rollback:</strong> Verdrängung aus akademischen Berufen und Justiz, Mutterkult — Beleg, dass Säkularität allein keinen Fortschritt garantiert: Das NS-Regime war kirchenkritisch <em>und</em> radikal antiemanzipatorisch.</div></div>
+    <div class="tl-item"><span class="tl-date">1949</span><div class="tl-text"><strong>Art. 3 Abs. 2 GG</strong> („Männer und Frauen sind gleichberechtigt") — gegen erhebliche Widerstände durchgesetzt von Elisabeth Selbert und den drei weiteren „Müttern des Grundgesetzes".</div></div>
+    <div class="tl-item"><span class="tl-date">1957/58</span><div class="tl-text"><strong>Gleichberechtigungsgesetz:</strong> Ende der männlichen Letztentscheidung und der Vermögensverwaltung des Mannes — das definitive Ende der eheherrlichen Munt im deutschen Zivilrecht, rund 1400 Jahre nach der Lex Salica.</div></div>
+    <div class="tl-item"><span class="tl-date">1977</span><div class="tl-text"><strong>Eherechtsreform:</strong> Streichung der gesetzlichen Hausfrauenehe (§ 1356 a. F.: Berufstätigkeit der Frau nur, soweit mit Ehe- und Familienpflichten vereinbar); Zerrüttungs- statt Schuldprinzip.</div></div>
+    <div class="tl-item"><span class="tl-date">1994 / 1997</span><div class="tl-text">Ergänzung Art. 3 GG um staatlichen Förderauftrag; Strafbarkeit der <strong>Vergewaltigung in der Ehe</strong> — bemerkenswert spät, gegen Widerstände quer durch die Fraktionen.</div></div>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section id="s10">
+  <span class="section-no">§ 16</span>
+  <h2>Säkularisierung und andere Triebkräfte</h2>
+  <p>Welche Rolle spielte die <strong>Säkularisierung</strong> in diesem zweiten Bogen? Der Befund ist erneut zweischneidig und spiegelt die frühmittelalterliche Ambivalenz der Kirche:</p>
+  <p><strong>Säkularisierung als Ermöglichung.</strong> Erst die Ablösung der Rechtsordnung von theologischer Letztbegründung machte Gleichheitsargumente prinzipiell gewinnbar: Gegen ein göttliches Schöpfungsranking kann man nicht reformieren, gegen eine als historisch erkannte Konvention schon. Zivilehe (1875), staatliches Scheidungsrecht, koedukative Bildung und die Entmoralisierung des Sexualstrafrechts waren nur gegen kirchliche Positionen durchsetzbar; die Amtskirchen beider Konfessionen opponierten noch 1957 und 1977 gegen zentrale Reformschritte. <span class="chip belegt">belegt</span></p>
+  <p><strong>Säkularisierung als unzureichende Bedingung.</strong> Zugleich zeigen ALR, Code civil, BGB 1900 und der NS-Staat, dass säkulare Ordnungen patriarchale Normen problemlos ohne Gott reproduzierten. Und umgekehrt waren religiöse Milieus teils Träger von Frauenorganisation und -bildung (konfessionelle Frauenverbände, Diakonissen- und Ordensschulen als frühe weibliche Berufswege). <span class="chip belegt">belegt</span></p>
+  <p>Die erklärungsstärkeren Variablen sind — analog zum Frühmittelalter — <strong>ökonomisch-struktureller</strong> Natur: Wo weibliche Arbeit, weibliches Eigentum oder weibliche Qualifikation systemrelevant wurden (Industrialisierung, Weltkriege, Dienstleistungs- und Wissensökonomie, Bildungsexpansion, Kontrolle über Reproduktion), folgte das Recht nach — meist mit ein bis zwei Generationen Verzögerung und stets erst auf organisierten Druck der Frauenbewegung. Säkularisierung wirkte dabei als <em>Katalysator</em>, der die Legitimationsbarriere senkte, nicht als eigentlicher Motor. <span class="chip plausibel">plausibel</span></p>
+  <div class="callout">
+    <span class="label">Die Symmetrie der beiden Bögen</span>
+    <p>Frühmittelalter wie Moderne zeigen dieselbe Grammatik: <strong>Rechtsstellung folgt Funktionsstellung.</strong> Als die Sippe Reproduktion brauchte, war die Frau dreifaches Wergeld wert; als Herrschaft Kriegsdienst brauchte, fiel sie aus dem Lehen; als die Industriegesellschaft ihre Arbeit und die Demokratie ihre Stimme brauchte, erhielt sie Vertrag, Wahlrecht und schließlich Gleichheitssatz. Normative Systeme — Kirche gestern, Naturrechts- und Geschlechtscharakterlehre später — lieferten jeweils die Begründung <em>nachträglich</em>. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+<!-- NEW: Die Frau als Wesen -->
+<section id="s10b">
+  <span class="section-no">§ 17</span>
+  <h2>Die Frau als Wesen: Wertschätzung im Langzeitvergleich</h2>
+  <p class="lede">Von der Rechtsstellung ist die <em>Wesensdeutung</em> zu unterscheiden: Was glaubte eine Epoche, dass eine Frau <strong>ist</strong>? Der Vergleich über fünf Ordnungen zeigt eine erstaunliche Konstante — und einen einzigen echten Bruch.</p>
+  <h3>Germanen: das geahnte Heilige</h3>
+  <p>Das kontinentalgermanische Frauenbild, soweit die Außensicht es erkennen lässt, ist <strong>sakral aufgeladen</strong>: Der Frau wohnt „etwas Heiliges und Seherisches" inne (Tacitus, Germ. 8) — sie ist Grenzgängerin zur Götterwelt, Losdeuterin, Friedensweberin zwischen Sippen und zugleich Trägerin der Sippenehre, deren Verletzung Wergeld in Mannhöhe und mehr kostet. Die Kehrseite derselben Zuschreibung ist die haliurunnae-Angst: Unkontrollierte weibliche Numinosität wird zur Dämonin. Geschätzt wird die Frau also als <em>Medium</em> — des Heiligen, der Fruchtbarkeit, der Ehre — und gerade nicht als selbstzweckhafte Person. <span class="chip plausibel">plausibel</span></p>
+  <h3>Normannen: die Herrin innerhalb der Schwelle</h3>
+  <p>Der Norden verweltlicht dieses Bild zur <strong>Kompetenzachtung</strong>: Die húsfreyja wird als Wirtschaftsführerin, Ratgeberin und — in den Sagas — als <em>Hetzerin</em> (hvöt) geachtet und gefürchtet, die die Männer an ihre Ehrpflichten erinnert und Fehden in Gang setzt; die völva genießt zeremoniellen Ehrenrang. Daneben steht der kälteste Ton der gesamten Überlieferung, die Spruchweisheit des Hávamál:</p>
+  <blockquote>
+    „Meyjar orðum skyli manngi trúa, né því er kveðr kona" — Den Worten eines Mädchens soll niemand trauen, noch dem, was eine Frau spricht; denn auf schwirrendem Rade ward ihnen das Herz geschaffen.
+    <span class="src">Hávamál, Str. 84 — wobei Str. 91 denselben Zynismus über die Männer ausschüttet: „dann reden wir am schönsten, wenn wir am falschesten denken"</span>
+  </blockquote>
+  <p>Achtung nach Leistung und Stand, Misstrauen gegen das „Wesen" — der Norden schätzt die Frau pragmatisch, nicht metaphysisch. Und er zieht die Standesgrenze brutal: Dieselbe Kultur ehrt die freie Hofherrin und opfert die unfreie Magd am Grab. <span class="chip belegt">belegt</span></p>
+  <h3>Rom: die Matrone und der „Leichtsinn"</h3>
+  <p>Rom kennt keine sakrale Überhöhung der Frau (die Vestalinnen sind die verwaltete Ausnahme), sondern ein <strong>Tugendideal</strong>: die <em>matrona</em>, definiert über <span class="latin">pudicitia</span> (Schamhaftigkeit), Wollarbeit und das Lob der <span class="latin">univira</span> — der Frau nur eines Mannes; Lucretia ist die Gründungsikone. Die juristische Wesensbegründung der Geschlechtsvormundschaft — <span class="latin">levitas animi</span>, „Leichtsinn des Gemüts" — wird bemerkenswerterweise von der römischen Jurisprudenz selbst demontiert: Gaius nennt sie ein Argument, das „mehr blendend als wahr" sei (<span class="latin">magis speciosa videtur quam vera</span>, Inst. I,190) — Frauen volljährigen Alters besorgten ihre Angelegenheiten selbst, die tutela sei vielfach bloße Form. <span class="chip belegt">belegt</span> Rom schätzt die Frau also am <em>nüchternsten</em>: kein Heiligtum, kein Dämon, sondern eine im Prinzip geschäftsfähige Person, der die öffentliche Sphäre (Amt, Stimme, Militär) kategorisch verschlossen bleibt — flankiert von einer literarischen Misogynie (Catos Warnung vor der „Gleichheit", Juvenals 6. Satire), die gerade die <em>selbstständige</em> Frau zur Zielscheibe macht, und von philosophischen Gegenstimmen wie Musonius Rufus, der Töchtern denselben Philosophieunterricht wie Söhnen zusprach. <span class="chip belegt">belegt</span></p>
+  <h3>Mittelalter: Eva und Maria — die produktive Spaltung</h3>
+  <p>Das christliche Mittelalter treibt die Doppelcodierung auf die Spitze, indem es sie <strong>theologisch verdoppelt</strong>: Die Frau ist zugleich Eva (Einfallstor der Sünde, Tertullians <span class="latin">ianua diaboli</span>) und — ab dem 12. Jahrhundert mit der explodierenden <strong>Marienfrömmigkeit</strong> — Trägerin des höchsten geschöpflichen Ranges überhaupt. Parallel erhöht der Minnesang die <em>frouwe</em> zur unerreichbaren Herrin. Gegendarstellung dazu aus der Forschung: Georges Duby und andere lesen die Hohe Minne als <strong>homosoziales Männerspiel</strong> — verhandelt werde die Rangordnung junger Ritter am Hof des Lehnsherrn, die besungene Dame sei Projektionsfläche, nicht Nutznießerin; ihr realer Handlungsspielraum wuchs durch das Podest nicht. <span class="chip umstritten">umstritten</span> Realen Autoritätsgewinn erzielten dagegen die Mystikerinnen (Hildegard, Mechthild, Katharina von Siena), deren Gottesunmittelbarkeit die fehlende Amtsautorität ersetzte (Bynum). Die Scholastik lieferte zeitgleich mit dem aristotelischen <span class="latin">mas occasionatus</span> („gleichsam verfehlter, unbeabsichtigter Mann") die naturphilosophische Nachordnung — und am Ausgang des Mittelalters kodifizierte der <strong>Malleus maleficarum</strong> (1486/87) die Wesensangst: Hexerei komme vor allem von der „unersättlichen fleischlichen Begierde" der Frauen. Dass die erste umfassende schriftliche <em>Gegenrede einer Frau</em> — Christine de Pizans <em>Livre de la Cité des Dames</em> (1405), Auftakt der <span class="latin">querelle des femmes</span> — in dieselben Jahrzehnte fällt, ist kein Zufall: Die Wesensfrage war zum offenen Streit geworden. <span class="chip belegt">belegt</span></p>
+  <h3>Neuzeit: vom schönen Geschlecht zur Person</h3>
+  <p>Die querelle läuft durch die Frühe Neuzeit (Agrippa von Nettesheim erklärt 1529 sogar rhetorisch die <em>Überlegenheit</em> des weiblichen Geschlechts), Luther prägt die geachtete, aber häusliche Gehilfin. Die Aufklärung spaltet sich an der Wesensfrage selbst: Rousseau erklärt im Émile (1762), die Frau sei „eigens gemacht, dem Manne zu gefallen" — wogegen Condorcet (1790), Theodor Gottlieb von Hippel (1792) und Mary Wollstonecraft (1792) die Vernunft für geschlechtslos und die „weibliche Natur" für ein Erziehungsprodukt erklären. Das 19. Jahrhundert antwortet mit der Lehre von den <strong>Geschlechtscharakteren</strong>: Die Frau als sittliches, fühlendes Innenwesen wird verehrt („Engel im Haus") und exakt dadurch von Beruf, Besitz und Stimme ferngehalten — die alte Doppelcodierung in bürgerlichem Gewand, nun flankiert von Pathologisierung (Hysterie-Diagnostik; P. J. Möbius, „Über den physiologischen Schwachsinn des Weibes", 1900). <span class="chip belegt">belegt</span></p>
+  <p>Der einzige echte Bruch der ganzen Reihe fällt ins 20. Jahrhundert, und er ist kein neues Frauenbild, sondern die <strong>Verabschiedung der Wesensfrage selbst</strong>: Simone de Beauvoirs „On ne naît pas femme : on le devient" — man kommt nicht als Frau zur Welt, man wird es (Le Deuxième Sexe, 1949) — erklärt jede Wesensbestimmung zur nachträglichen Konstruktion. Erst damit wird denkbar, was keine der früheren Ordnungen dachte: die Frau weder als Heilige, Dämonin, Matrone, Madonna noch als Engel — sondern als Person, die sich selbst bestimmt. <span class="chip belegt">belegt</span></p>
+  <div class="callout">
+    <span class="label">Die Konstante</span>
+    <p>Über Germanen, Normannen, Rom, Mittelalter und bürgerliche Neuzeit variiert der Inhalt, aber nicht die Operation: Die Frau wird als <strong>Wesen</strong> bestimmt — heilig oder leichtfertig, Eva oder Maria, Dämonin oder Engel — und jede dieser Bestimmungen, die überhöhenden eingeschlossen, begründet ihre Sonderbehandlung. Überhöhung und Abwertung sind keine Gegensätze, sondern zwei Ausgänge derselben Weigerung, sie schlicht als Person zu behandeln. Gemessen daran war die höchste „Wertschätzung" (das germanische sanctum aliquid, das Minne-Podest, der viktorianische Engel) den Frauen rechtlich nie nützlicher als die römische Nüchternheit — im Gegenteil: Wo die Frau am höchsten stand, stand sie am sichersten außerhalb. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+<!-- NEW: Patriarchatstheorien -->
+<section id="s10c">
+  <span class="section-no">§ 18</span>
+  <h2>Theorieebene: Patriarchat — Ursache oder Beschreibung?</h2>
+  <p class="lede">Bevor die Leitfrage beantwortet werden kann, muss der Begriff selbst auf den Prüfstand: Was behauptet, wer „das Patriarchat" für die Unterdrückung verantwortlich macht — und was halten die Gegenpositionen dagegen?</p>
+  <h3>Die klassischen Patriarchatstheorien</h3>
+  <p><strong>Gerda Lerner</strong> (Die Entstehung des Patriarchats, engl. 1986) historisiert die Männerherrschaft: Sie sei im Alten Orient (ca. 3100–600 v. Chr.) über die Kontrolle weiblicher Reproduktion, den „Tausch von Frauen" und die Verknüpfung mit der Sklaverei <em>entstanden</em> — mit der politischen Pointe: <em>„it has a beginning; it will have an end"</em> — „es hat einen Anfang, es wird ein Ende haben". Was historisch gemacht wurde, kann abgeschafft werden. <span class="chip belegt">belegt</span> (als These; die Datierung über 2.500 Jahre Synthese ist <span class="chip umstritten">umstritten</span>)</p>
+  <p><strong>Sylvia Walby</strong> (Theorizing Patriarchy, 1990) zerlegt das Patriarchat in sechs teilunabhängige Strukturen — Erwerbsarbeit, Hausarbeit, Kultur, Sexualität, Gewalt, Staat — und unterscheidet ein <em>privates</em> (Ausbeutung im Haushalt) von einem <em>öffentlichen</em> Patriarchat (Ausbeutung über Arbeitsmarkt und Staat). Damit wird der Begriff variationsfähig; in Spätwerken ersetzt Walby ihn selbst durch „gender regimes". <span class="chip belegt">belegt</span></p>
+  <p><strong>Judith Bennett</strong> (History Matters, 2006) liefert als Mediävistin die historisch reifste Fassung, das <strong>„patriarchale Gleichgewicht"</strong>: Die Lebensumstände von Frauen änderten sich über Jahrhunderte massiv, ihre <em>relative</em> Position zum Mann blieb erstaunlich konstant — englische Lohnarbeiterinnen verdienten im 14. Jahrhundert im Schnitt rund 71 % des Männerlohns, britische Frauen Anfang der 2000er etwa 75 %. Wandel ohne Transformation. <span class="chip belegt">belegt</span> (der Lohnvergleich über 600 Jahre ist methodisch angreifbar, als Illustration aber erhellend)</p>
+  <p><strong>Pierre Bourdieu</strong> (Die männliche Herrschaft, frz. 1998) erklärt weniger den Ursprung als die <em>Reibungslosigkeit</em>: Männliche Herrschaft wirke als <strong>symbolische Gewalt</strong> — eine sanfte, von den Beherrschten selbst verkannte Gewalt, die über Wahrnehmungskategorien und Institutionen (Familie, Schule, Kirche, Staat) „Geschichte in Natur verwandelt". Genau das leisteten Eva-Typologie, <span class="latin">mas occasionatus</span> und Geschlechtscharaktere. Kritik (u. a. Burawoy 2019): Der Habitus-Begriff drohe tautologisch zu werden und Wandel nicht erklären zu können. <span class="chip plausibel">plausibel</span></p>
+  <p><strong>Friedrich Engels</strong> (Der Ursprung der Familie, des Privateigentums und des Staats, 1884) liefert die materialistische Urfassung: „Der Umsturz des Mutterrechts war die weltgeschichtliche Niederlage des weiblichen Geschlechts." Kausalkette: Privateigentum → Interesse an gesicherter männlicher Erbfolge → Kontrolle weiblicher Sexualität. Die ethnologische Basis (Bachofens „Mutterrecht", Morgans Stufenmodell) gilt heute als überholt <span class="chip umstritten">umstritten</span> — der Kerngedanke „Eigentum und Erbe als Treiber" lebt in den ökonomischen Erklärungen fort und deckt sich frappierend mit unserem Wergeld- und Allod-Befund. <span class="chip plausibel">plausibel</span></p>
+  <h3>Gegendarstellungen: der Begriff selbst in der Kritik</h3>
+  <p><strong>Sheila Rowbotham</strong> („The Trouble with Patriarchy", 1979) — aus der feministischen Linken selbst: Der Begriff sei <em>ahistorisch und starr</em>, mache die gesamte Geschichte zu einer einzigen Epoche der Unterwerfung, verdecke Variation und Wandel und blende aus, dass Männer auch Verbündete sein können. <span class="chip belegt">belegt</span> Unser Stämmevergleich gibt ihr empirisch recht: Ein Begriff, der westgotisches Töchtererbrecht und sächsische Fast-Rechtlosigkeit gleichermaßen abdeckt, erklärt die Differenz zwischen beiden nicht.</p>
+  <p><strong>Joan W. Scott</strong> („Gender: A Useful Category of Historical Analysis", 1986) vollzog die Wende von der Patriarchats- zur Geschlechtergeschichte: Geschlecht sei „ein konstitutives Element sozialer Beziehungen" und „eine primäre Weise, Machtverhältnisse zu bezeichnen" (Übers. d. Verf.) — zu untersuchen sei die <em>Herstellung</em> von Geschlechterbedeutungen in jeder Epoche neu, nicht eine überzeitliche Struktur. Der Aufsatz wurde zum meistgelesenen Artikel der American Historical Review; die Gegenkritik (etwa Joan Hoff) warf der Wende ihrerseits Relativismus und Entpolitisierung vor. <span class="chip belegt">belegt</span></p>
+  <p><strong>Ökonomisch-technologische Alternativerklärung:</strong> Die auf Ester Boserup zurückgehende <strong>Pflug-These</strong> wurde von Alesina, Giuliano und Nunn („On the Origins of Gender Roles: Women and the Plough", Quarterly Journal of Economics 2013) empirisch geprüft: Gesellschaften mit traditionellem Pflugackerbau (der Oberkörperkraft prämiert, anders als der Hackbau) zeigen bis heute — über 160 Länder, Regionen und sogar Migranten der zweiten Generation hinweg — messbar ungleichere Geschlechternormen. Erklärt wird die Arbeitsteilung hier aus Technik und komparativem Vorteil, nicht aus einem Herrschaftsprinzip. <span class="chip belegt">belegt</span> (der Zusammenhang; die Kausalinterpretation ist methodisch <span class="chip umstritten">umstritten</span>)</p>
+  <div class="callout critique">
+    <span class="label">Der Zirkularitätseinwand</span>
+    <p>Die logische Achillesferse jeder starken Patriarchats-<em>Erklärung</em>: „Patriarchat" bezeichnet den Zustand männlicher Verfügungsgewalt — Munt, Thing-Ausschluss, Lehnsunfähigkeit, § 1354 BGB. Der Satz „das Patriarchat verursachte die Unterdrückung der Frau" sagt dann: Die Männerherrschaft wurde durch die Männerherrschaft verursacht. Das benennt das zu Erklärende (Explanandum), liefert aber keine Erklärung (Explanans). Tragfähig bleibt der Begriff als <strong>analytische Kurzformel für das Ergebnis</strong> — so verwenden ihn Scott, Walby und Bennett der Sache nach. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+<!-- NEW: Religion als Legitimationsordnung -->
+<section id="s10d">
+  <span class="section-no">§ 19</span>
+  <h2>Glaube als Legitimationsordnung — auch für die Feudalstruktur</h2>
+  <p class="lede">Die zweite Hälfte der Leitfrage: Lässt sich die Rechtfertigung der feudalen Ordnung selbst im Glauben verorten? Ja — und zwar mit demselben Textbaukasten, der auch die Geschlechterhierarchie begründete.</p>
+  <h3>Ein Baukasten, zwei Hierarchien</h3>
+  <p>Die theologischen Bausteine sind identisch: die paulinischen Unterordnungsgebote (Haustafeln: Frauen den Männern, Knechte den Herren), Römer 13 (Gehorsam gegen die Obrigkeit, „denn es ist keine Obrigkeit außer von Gott"), das augustinische <span class="latin">ordo</span>-Denken (Friede als „Ruhe der Ordnung", in der jedes Glied seinen Platz hat) und Gregors des Großen Herrschaftstheologie. Ihre reifste Form fand die Ständelegitimation um 1020/30 bei Adalbero von Laon und Gerard von Cambrai:</p>
+  <blockquote>
+    „Triplex ergo Dei domus est … nunc orant, alii pugnant aliique laborant." — Dreifach also ist das Haus Gottes: Die einen beten, andere kämpfen, wieder andere arbeiten.
+    <span class="src">Adalbero von Laon, Carmen ad Rotbertum regem, um 1025</span>
+  </blockquote>
+  <p>Beter, Krieger, Arbeiter — jede Funktion dient den anderen, das Ganze ist gottgewollt: Damit war die feudale Abschöpfung (der Bauer arbeitet für zwei Stände) ebenso heilsgeschichtlich gedeckt wie der Ausschluss der Frau aus zweien der drei Funktionen (Altar und Waffe). Georges Duby (Les trois ordres, 1978) las das Schema als das „Imaginäre des Feudalismus" — die Ordnungsvorstellung, die die Herrschaft träumbar und damit haltbar machte. <span class="chip belegt">belegt</span></p>
+  <h3>Kausalitätsstreit: Marx gegen Weber</h3>
+  <p>War der Glaube nun <em>Ursache</em> oder <em>nachträgliche Rechtfertigung</em>? Die marxistische Lesart (Basis–Überbau): Religion spiegelt und legitimiert die ökonomisch herrschenden Verhältnisse — sie ist Beruhigungsmittel, „Opium des Volkes" (Marx, Einleitung zur Kritik der Hegelschen Rechtsphilosophie, 1844). Max Weber hielt dagegen, religiöse Ideen seien eigenständige kausale Kräfte — verwahrte sich aber ausdrücklich dagegen, „an Stelle einer einseitig ‚materialistischen' eine ebenso einseitig spiritualistische" Geschichtsdeutung zu setzen (Protestantische Ethik, 1904/05). <span class="chip belegt">belegt</span></p>
+  <p>Der Befund dieses Reports liegt näher an einer präzisierten Mittellage: Die Drei-Stände-Lehre <em>entstand nachweislich, nachdem</em> die Ordnung, die sie beschreibt, bereits existierte bzw. in die Krise geriet — Otto Gerhard Oexle (1978) liest sie als <strong>Deutungsschema</strong> einer schon vorhandenen Wirklichkeit, Duby als konservatives Krisenprodukt. Als <em>Ursache</em> der Feudalisierung taugt sie nicht. <span class="chip belegt">belegt</span> Aber als <strong>Dauerhaftigkeitsgarantie</strong> war sie kausal höchst wirksam: Eine Ordnung, die als gottgewollt gilt, ist nicht reformierbar, sondern nur noch sündhaft verletzbar. Der Glaube erzeugte die Strukturen nicht — er nahm ihnen die Verhandelbarkeit. Dasselbe gilt Wort für Wort für die Geschlechterordnung (Eva-Typologie, <span class="latin">mas occasionatus</span> — „gleichsam verfehlter/unbeabsichtigter Mann"). <span class="chip plausibel">plausibel</span></p>
+  <h3>Gegendarstellung: Glaube als Ressource</h3>
+  <p>Die Gegenrechnung ist im Report bereits aufgemacht (Christianisierungs-Kapitel) und wird von der Forschung breit gestützt: Peter Brown (The Body and Society, 1988) zeigt sexuelle Entsagung als spätantiken <em>Autonomiegewinn</em> für Frauen; Caroline Walker Bynum (Holy Feast and Holy Fast, 1987) zeigt Mystikerinnen, die religiöse Symbole aneigneten und eigene Autorität gewannen; die Kanonissinnenforschung (Bodarwé 2004) belegt Bildung und Reichsfürstinnen-Macht der ottonischen Stifte (Gandersheim erhielt 990 Markt-, Münz- und Zollrecht); Walter Simons (Cities of Ladies, 2001) beschreibt die Beginenhöfe als Frauenstädte jenseits von Ehe und Kloster. Und Régine Pernoud datiert die Verschlechterung überhaupt erst auf die Wiederkehr des römischen Rechts, nicht auf das Christentum <span class="chip umstritten">umstritten</span>. Derselbe Glaube, der die Hierarchie zementierte, stellte also die Sprache und die Räume bereit, in denen Frauen sie unterliefen — Anthony Giddens' Strukturationstheorie liefert dafür den Begriff: Strukturen sind <strong>Medium und Ergebnis</strong> des Handelns zugleich, Zwang und Ressource in einem. <span class="chip plausibel">plausibel</span></p>
+</section>
+
+<!-- NEW: Methodische Gegenproben -->
+<section id="s10e">
+  <span class="section-no">§ 20</span>
+  <h2>Methodische Gegenproben: Wie belastbar sind die Stützpfeiler?</h2>
+  <p class="lede">Wissenschaftliche Redlichkeit verlangt, auch die eigenen Erklärungsbausteine dem Gegenwind auszusetzen. Drei Debatten stellen tragende Teile der bisherigen Argumentation in Frage.</p>
+  <h3>1. Ist „Feudalismus" überhaupt eine brauchbare Kategorie?</h3>
+  <p>Elizabeth A. R. Brown („The Tyranny of a Construct", American Historical Review 1974) und Susan Reynolds (Fiefs and Vassals, 1994) haben den Feudalismus-Begriff frontal angegriffen: „Lehen" und „Vasallität" als kohärentes System seien weitgehend eine <strong>Rückprojektion gelehrter Juristen</strong> (ausgehend von den oberitalienischen Libri Feudorum des späten 12. Jahrhunderts) und der Historiker seit dem 17. Jahrhundert; die mittelalterliche Wirklichkeit sei viel heterogener gewesen. <span class="chip belegt">belegt</span> (als einflussreiche Position; die Mediävistik ist gespalten, für den deutschsprachigen Raum haben u. a. Steffen Patzold und Jürgen Dendorfer die Debatte differenziert weitergeführt <span class="chip umstritten">umstritten</span>)</p>
+  <p><em>Konsequenz für diesen Report:</em> Die These „feudale Strukturen schlossen Frauen aus" bleibt haltbar, muss aber präzisiert werden: Nicht ein System „Feudalismus" wirkte, sondern konkrete, einzeln belegbare Logiken — die Kopplung von Landleihe an Waffendienst, die Agnatisierung der Adelsfamilien (Karl Schmid: Übergang von horizontalen Verwandtschaftsverbänden zu patrilinearen Geschlechtern um 1000), Primogenitur und Unteilbarkeit des Patrimoniums. Der Befund überlebt die Begriffskritik, das Etikett nicht unbedingt. <span class="chip plausibel">plausibel</span></p>
+  <h3>2. Die Steigbügel-Lektion: Vorsicht vor Technikdeterminismus</h3>
+  <p>Heinrich Brunner (1887) und Lynn White (1962) erklärten die Entstehung des Lehnswesens technikdeterministisch: Steigbügel → berittener Stoßkampf → Bedarf an teuren Panzerreitern → Landleihe gegen Reiterdienst. Bernard S. Bachrach (1970) zerlegte die Kette: Der Steigbügel war für den Stoßkampf keine Voraussetzung, die Datierungen stimmen nicht, die Kavallerisierung verlief anders. <span class="chip belegt">belegt</span> Die Lektion für unsere Frage: Monokausale Ketten („eine Technik/eine Institution erzeugte den Frauenausschluss") sind fast immer zu schön, um wahr zu sein — auch die hier vertretene Land-Kriegsdienst-Logik ist als <em>eine</em> Triebkraft unter mehreren zu lesen, nicht als Automatismus.</p>
+  <h3>3. Gab es den Machtverlust um 1050 überhaupt?</h3>
+  <p>Die klassische These von Jo Ann McNamara und Suzanne Wemple („The Power of Women through the Family", 1973; McNamaras „Herrenfrage", 1994): Solange Herrschaft über die <em>Familie</em> lief, hatten Frauen Zugriff auf Macht; mit Gregorianischer Reform, Verstaatlichung und Agnatisierung (11./12. Jh.) seien sie herausgefallen. Das deckt sich mit der Verschiebungsthese dieses Reports. <span class="chip plausibel">plausibel</span></p>
+  <p>Die <strong>Gegendarstellung</strong> ist jedoch gewichtig: Theodore Evergates, Amy Livingstone und Kimberly LoPrete (Aristocratic Women in Medieval France, 1999; LoPrete 2007) haben anhand von Urkundenkorpora gezeigt, dass adlige Frauen in Frankreich auch im 11.–13. Jahrhundert <em>routinemäßig</em> Herrschaft ausübten — als Burgherrinnen, Regentinnen, Prozessparteien, Sieglerinnen; LoPrete spricht von weiblichen Herrschaftsträgerinnen als einem „gewöhnlichen und akzeptierten Teil der politischen Landschaft" (Übers. d. Verf.), mit Adela von Blois als Musterfall. Auch die frühmittelalterliche Genderforschung (Pauline Stafford, Janet Nelson, Régine Le Jan, Hans-Werner Goetz) betont eher Kontinuität relationaler, über Familie und Besitz vermittelter Frauenmacht als einen scharfen Bruch. <span class="chip belegt">belegt</span> Der Streit ist offen — quantitativ entschieden ist er nicht. <span class="chip umstritten">umstritten</span></p>
+  <div class="callout">
+    <span class="label">Was von den Gegenproben übrig bleibt</span>
+    <p>Alle drei Debatten schwächen die <em>starken</em> Fassungen der Strukturthese (System-Feudalismus, Technikautomatik, scharfer Bruch um 1050) — und stärken paradoxerweise die <em>schwache, präzise</em> Fassung: Es gab keine einheitliche Maschine der Unterdrückung, sondern ein Bündel regional und zeitlich variabler Land-, Erb- und Legitimationslogiken, innerhalb derer Frauen real Macht ausübten, ohne dass sich ihre <em>relative</em> Rechtsposition dauerhaft verbesserte. Das ist fast wörtlich Bennetts „patriarchales Gleichgewicht" — von der Gegenseite her bestätigt. <span class="chip plausibel">plausibel</span></p>
+  </div>
+</section>
+
+<!-- NEW: Antwort auf die Leitfrage -->
+<section id="s10f">
+  <span class="section-no">§ 21</span>
+  <h2>Antwort auf die Leitfrage: Ist „das Patriarchat" schuld?</h2>
+  <p class="lede">Nach Quellen, Stämmevergleich, Theoriedebatte und Gegenproben lässt sich die Frage präzise beantworten — in drei Sätzen und einer Verantwortungsklausel.</p>
+  <p><strong>Erstens: Als Name ja, als Erklärung nein.</strong> „Patriarchat" ist die zutreffende Sammelbezeichnung für den über alle untersuchten Epochen belegten Zustand männlicher Verfügungsgewalt — von der Munt über die Lehnsunfähigkeit bis zu § 1354 BGB a. F. Als <em>Ursache</em> gesetzt wird der Begriff zirkulär: Die Männerherrschaft kann nicht die Männerherrschaft verursacht haben. Er benennt, was zu erklären ist — er erklärt es nicht.</p>
+  <p><strong>Zweitens: Die Ursachen waren überwiegend materiell.</strong> Wo immer dieser Report konkrete Mechanismen fassen konnte, waren es Reproduktions-, Eigentums- und Kriegslogiken: das Wergeld, das die Gebärfähige dreifach bewertete; das Erbrecht, das Land in der Schwertlinie hielt; die Landleihe gegen Waffendienst; die Ökonomien, die weibliche Autonomie genau dort zuließen, wo sie gebraucht wurde (húsfreyja, baugrýgr, Kauffrauen von Birka) — und dort kassierten, wo sie nicht mehr gebraucht wurde. Die Pflug-These und Engels' Erbfolge-Argument formulieren dieselbe Grammatik theoretisch: <strong>Rechtsstellung folgt Funktionsstellung.</strong></p>
+  <p><strong>Drittens: Die Dauerhaftigkeit war ideologisch — und hier sitzt der Glaube.</strong> Materielle Lagen ändern sich; dass die relative Position der Frau über völlig verschiedene Ökonomien hinweg so zäh konstant blieb (Bennetts Gleichgewicht), leisteten die Wesens- und Ordnungslehren: Eva-Typologie, mas occasionatus, Drei-Stände-Lehre, später Naturrecht und Geschlechtscharaktere. Sie erzeugten die Strukturen nicht — sie <em>naturalisierten</em> sie und nahmen ihnen die Verhandelbarkeit (Bourdieus symbolische Gewalt). Insofern beantwortet sich auch die Teilfrage nach der Feudalordnung: Deren Rechtfertigung lag tatsächlich im Glauben (Adalberos Drei-Stände-Haus), ihre Entstehung nicht.</p>
+  <p><strong>Die Verantwortungsklausel.</strong> Zwei redliche Vorbehalte bleiben. Der eine kommt von der Patriarchatstheorie selbst: Gerade die epochenübergreifende Stabilität ist erklärungsbedürftig — reine Materialerklärungen hätten mehr Wandel vorhersagen müssen; wer das Gleichgewicht ernst nimmt, kann Lerner und Walby nicht einfach abtun. Der andere richtet sich gegen jede Entlastung durch Strukturbegriffe: Systeme handeln nicht, sie werden gehandelt. Die Alternativen waren jeweils bekannt — das Edictum Chilperici, die baugrýgr, Gaius' eigener Zweifel an der levitas animi („mehr blendend als wahr"), Christine de Pizans Gegenrede — und wurden von konkreten, durchweg männlichen Entscheidungsträgern verworfen oder marginalisiert. <strong>„Schuld" ist die falsche Kategorie für ein System; Verantwortung ist die richtige für seine Träger.</strong> Die wissenschaftlich sauberste Formel lautet daher: Das Patriarchat ist nicht der Täter der Geschichte — es ist ihr Tatbestand. Die Ursachen liegen in materiellen Verwertungslogiken, die Haltbarkeit in religiös-ideologischer Naturalisierung, und die Verantwortung bei den Akteuren, die beides je neu in Kraft setzten.</p>
+</section>
+
+
+
+<!-- ============ 11 ============ -->
+<section id="s11">
+  <span class="section-no">§ 22</span>
+  <h2>Fazit und Gegenpositionen</h2>
+  <p>Die Ausgangsthese lässt sich nach der Quellenprüfung so reformulieren: Die Einschränkung weiblicher Rechte zwischen Antike und Hochmittelalter war <strong>kein Absturz aus germanischer Gleichheit</strong> (die es nicht gab), sondern die <strong>Umcodierung einer bestehenden Ungleichheit</strong> — von der funktionalen Verfügungsgewalt der Sippe (Munt, Wergeld-Logik) über die theologische Nachordnung der Kirche bis zum strukturellen Ausschluss der Feudalordnung. Der feudale Teil der These ist quellenfest; der kirchliche Teil gilt nur für die Legitimations-, nicht für die Rechtspraxisebene; die Entlastung „der Männer" scheitert daran, dass alle drei Ordnungen von Männern getragen wurden — tragfähig ist lediglich der Ebenenwechsel von der Absichts- zur Strukturerklärung.</p>
+  <p>Der Redlichkeit halber seien die wichtigsten <strong>Gegenpositionen</strong> ausgewiesen, die in der Forschung vertreten werden:</p>
+  <p><em>Erstens</em> die kirchenfreundliche Lesart (in der Tradition von Régine Pernoud, teils Suzanne F. Wemple): Das Christentum habe die Frau per Saldo <em>aufgewertet</em> — Konsensehe, Seelengleichheit vor Gott, Klosterkultur —, und die eigentliche Verschlechterung sei erst hochmittelalterlich (Gregorianische Reform, Wiederentdeckung des römischen Rechts und der aristotelischen Anthropologie ab dem 12./13. Jh.). <em>Zweitens</em> die Position, die den Kontinuitätsbruch überhaupt bestreitet: Patriarchale Verfügungsgewalt sei die Konstante, die Institutionen nur wechselnde Kleider (so tendenziell die ältere feministische Mediävistik um Shulamith Shahar bzw. Gerda Lerners Langzeitthese). <em>Drittens</em> die quellenskeptische Position: Die Leges seien Königsideologie, keine Rechtswirklichkeit; über die tatsächliche Praxis des 6.–8. Jahrhunderts wüssten wir zu wenig für starke Thesen jeder Richtung. <em>Viertens</em> wird gegen die hier vertretene Strukturerklärung eingewandt, sie entlaste historische Akteure zu Unrecht: Konzilsväter, Gesetzgeber und Lehnsherren hätten Alternativen gekannt (etwa erbende Töchter nach dem Edictum Chilperici) und sich bewusst dagegen entschieden. Alle vier Einwände haben Substanz; die vorliegende Analyse versteht sich als begründete Position innerhalb dieser Debatte, nicht als deren Ende.</p>
+</section>
+
+<!-- ============ 12 ============ -->
+<section id="s12">
+  <span class="section-no">§ 23</span>
+  <h2>Quellen und Literatur</h2>
+  <ul class="lit">
+    <li><span class="cat">Quelle</span><strong>Tacitus, P. Cornelius:</strong> Germania (De origine et situ Germanorum), um 98 n. Chr. — bes. cap. 7–8, 18–20. Zweisprachige Ausgaben u. a. bei Reclam (hg. Städele/Fuhrmann).</li>
+    <li><span class="cat">Quelle</span><strong>Pactus legis Salicae / Lex Salica</strong>, hg. v. Karl August Eckhardt, MGH Leges nat. Germ. IV,1–2, Hannover 1962/69 — bes. Tit. 59 „De alodis" und die Wergeldtitel (u. a. Tit. 24, 41).</li>
+    <li><span class="cat">Quelle</span><strong>Edictum Chilperici</strong>, MGH Capitularia regum Francorum I, Nr. 4.</li>
+    <li><span class="cat">Quelle</span><strong>Lex Ribuaria; Pactus / Lex Alamannorum; Lex Saxonum; Leges Langobardorum (Edictus Rothari)</strong>, jeweils MGH Leges nat. Germ.</li>
+    <li><span class="cat">Quelle</span><strong>Jonas von Orléans:</strong> De institutione laicali, um 828 (PL 106).</li>
+    <li><span class="cat">Literatur</span><strong>Ennen, Edith:</strong> Frauen im Mittelalter, 6. Aufl., München 1999 — Standardüberblick zur Rechts- und Sozialstellung.</li>
+    <li><span class="cat">Literatur</span><strong>Wemple, Suzanne F.:</strong> Women in Frankish Society. Marriage and the Cloister, 500–900, Philadelphia 1981 — zentrale Studie zur fränkischen Ehe- und Klosterpraxis.</li>
+    <li><span class="cat">Literatur</span><strong>Goetz, Hans-Werner:</strong> Frauen im frühen Mittelalter. Frauenbild und Frauenleben im Frankenreich, Weimar/Köln 1995.</li>
+    <li><span class="cat">Literatur</span><strong>Esmyol, Andrea:</strong> Geliebte oder Ehefrau? Konkubinen im frühen Mittelalter, Köln 2002 — Dekonstruktion der „Friedelehe".</li>
+    <li><span class="cat">Literatur</span><strong>Nehlsen, Hermann / Schmidt-Wiegand, Ruth:</strong> Arbeiten zu Leges, Wergeld und Rechtssprache (u. a. Art. in HRG / RGA).</li>
+    <li><span class="cat">Literatur</span><strong>Lund, Allan A.:</strong> Kritischer Forschungsbericht zur „Germania" des Tacitus, in: ANRW II 33.3 (1991) — zur Quellenkritik.</li>
+    <li><span class="cat">Literatur</span><strong>Hausen, Karin:</strong> Die Polarisierung der „Geschlechtscharaktere", in: Conze (Hg.), Sozialgeschichte der Familie in der Neuzeit Europas, Stuttgart 1976.</li>
+    <li><span class="cat">Literatur</span><strong>Gerhard, Ute:</strong> Unerhört. Die Geschichte der deutschen Frauenbewegung, Reinbek 1990; dies. (Hg.): Frauen in der Geschichte des Rechts, München 1997.</li>
+    <li><span class="cat">Literatur</span><strong>Behringer, Wolfgang:</strong> Hexen. Glaube, Verfolgung, Vermarktung, 7. Aufl., München 2020 — zur Einordnung der frühneuzeitlichen Verfolgungen.</li>
+    <li><span class="cat">Literatur</span><strong>Lerner, Gerda:</strong> The Creation of Patriarchy, New York 1986 — Langzeitperspektive, Gegenposition zur Institutionenthese.</li>
+        <li><span class="cat">Quelle</span><strong>Edictus Rothari</strong> (643), bes. c. 204 (Verbot der selpmundia), in: MGH Leges IV (Leges Langobardorum).</li>
+    <li><span class="cat">Quelle</span><strong>Liber Iudiciorum / Lex Visigothorum</strong>, MGH Leges nat. Germ. I — bes. III,5,4 (Chindaswinth) und die Novelle Egicas (693) zum 16. Konzil von Toledo.</li>
+    <li><span class="cat">Quelle</span><strong>Codex Theodosianus</strong> 9,7,3 und 9,7,6; <strong>Justinian</strong>, Novellen 77 und 141.</li>
+    <li><span class="cat">Quelle</span><strong>Grágás; Gulathings- und Frostathingslov</strong> (Aufzeichnung 12./13. Jh.) — u. a. baugrýgr, níð-Bestimmungen.</li>
+        <li><span class="cat">Quelle</span><strong>Jordanes:</strong> Getica (551), hg. Mommsen, MGH AA V,1 — bes. VII–VIII (Amazonen-Exkurs), XXIV,121–122 (haliurunnae).</li>
+    <li><span class="cat">Quelle</span><strong>Prokop:</strong> Bella V–VIII (Gotenkriege), um 550 — zur Regentschaft und Ermordung Amalasunthas.</li>
+    <li><span class="cat">Quelle</span><strong>Caesar</strong>, De bello Gallico I,50; <strong>Strabon</strong>, Geographika VII,2,3; <strong>Plutarch</strong>, Marius; <strong>Cassius Dio</strong> LXVII,5 (Ganna).</li>
+    <li><span class="cat">Quelle</span><strong>Gregor von Tours:</strong> Historiarum libri X (um 590), bes. VIII,20 (Mâcon); <strong>Paulus Diaconus:</strong> Historia Langobardorum (um 790); <strong>Beda:</strong> Historia ecclesiastica (731).</li>
+    <li><span class="cat">Quelle</span><strong>Baudonivia:</strong> Vita Radegundis II (um 600); <strong>Dhuoda:</strong> Liber manualis (841–843) — frühe Autorinnen.</li>
+    <li><span class="cat">Quelle</span><strong>Rimbert:</strong> Vita Anskarii (um 875); <strong>Adam von Bremen:</strong> Gesta Hammaburgensis ecclesiae pontificum (um 1075).</li>
+    <li><span class="cat">Quelle</span><strong>Ibn Fadlan:</strong> Risala (921/22), Bericht über die Rus an der Wolga.</li>
+    <li><span class="cat">Quelle</span><strong>Saxo Grammaticus:</strong> Gesta Danorum (um 1200); <strong>Hávamál</strong> (Lieder-Edda, Codex Regius, 13. Jh.), Str. 84 und 90–102; <strong>Eiríks saga rauða</strong>, c. 4 (Þorbjörg lítilvölva); <strong>Landnámabók</strong> (Auðr djúpúðga).</li>
+    <li><span class="cat">Quelle</span><strong>Gaius:</strong> Institutiones I,190 (levitas animi als „magis speciosa quam vera"); <strong>Livius</strong> XXXIV,1–8 (Cato zur lex Oppia); <strong>Juvenal</strong>, Satire 6; <strong>Musonius Rufus</strong>, Diatriben 3–4.</li>
+    <li><span class="cat">Quelle</span><strong>Christine de Pizan:</strong> Le Livre de la Cité des Dames (1405); <strong>Heinrich Kramer (Institoris):</strong> Malleus maleficarum (1486/87); <strong>Agrippa von Nettesheim:</strong> De nobilitate et praecellentia foeminei sexus (1529).</li>
+    <li><span class="cat">Quelle</span><strong>Rousseau:</strong> Émile, Buch V (1762); <strong>Condorcet:</strong> Sur l'admission des femmes au droit de cité (1790); <strong>Hippel:</strong> Über die bürgerliche Verbesserung der Weiber (1792); <strong>Wollstonecraft:</strong> A Vindication of the Rights of Woman (1792); <strong>Möbius:</strong> Über den physiologischen Schwachsinn des Weibes (1900); <strong>Beauvoir:</strong> Le Deuxième Sexe (1949).</li>
+        <li><span class="cat">Theorie</span><strong>Lerner, Gerda:</strong> The Creation of Patriarchy, New York 1986 (dt.: Die Entstehung des Patriarchats, 1991).</li>
+    <li><span class="cat">Theorie</span><strong>Walby, Sylvia:</strong> Theorizing Patriarchy, Oxford 1990.</li>
+    <li><span class="cat">Theorie</span><strong>Bennett, Judith M.:</strong> History Matters. Patriarchy and the Challenge of Feminism, Philadelphia 2006 — „patriarchal equilibrium".</li>
+    <li><span class="cat">Theorie</span><strong>Bourdieu, Pierre:</strong> La domination masculine, Paris 1998 (dt.: Die männliche Herrschaft, 2005).</li>
+    <li><span class="cat">Theorie</span><strong>Engels, Friedrich:</strong> Der Ursprung der Familie, des Privateigentums und des Staats, Zürich 1884 (MEW 21).</li>
+    <li><span class="cat">Theorie</span><strong>Rowbotham, Sheila:</strong> The Trouble with Patriarchy, in: New Statesman (1979); wieder in: Feminist Anthology Collective (Hg.), No Turning Back, 1981.</li>
+    <li><span class="cat">Theorie</span><strong>Scott, Joan W.:</strong> Gender: A Useful Category of Historical Analysis, in: American Historical Review 91/5 (1986), S. 1053–1075.</li>
+    <li><span class="cat">Theorie</span><strong>Alesina, Alberto / Giuliano, Paola / Nunn, Nathan:</strong> On the Origins of Gender Roles: Women and the Plough, in: Quarterly Journal of Economics 128/2 (2013), S. 469–530.</li>
+    <li><span class="cat">Theorie</span><strong>Giddens, Anthony:</strong> The Constitution of Society, Cambridge 1984 — Strukturationstheorie.</li>
+    <li><span class="cat">Literatur</span><strong>Duby, Georges:</strong> Les trois ordres ou l'imaginaire du féodalisme, Paris 1978 (dt.: Die drei Ordnungen, 1981); <strong>Oexle, Otto Gerhard:</strong> Die funktionale Dreiteilung der „Gesellschaft" bei Adalbero von Laon, in: Frühmittelalterliche Studien 12 (1978), S. 1–54.</li>
+    <li><span class="cat">Literatur</span><strong>Brown, Elizabeth A. R.:</strong> The Tyranny of a Construct: Feudalism and Historians of Medieval Europe, in: American Historical Review 79/4 (1974), S. 1063–1088; <strong>Reynolds, Susan:</strong> Fiefs and Vassals. The Medieval Evidence Reinterpreted, Oxford 1994.</li>
+    <li><span class="cat">Literatur</span><strong>Bachrach, Bernard S.:</strong> Charles Martel, Mounted Shock Combat, the Stirrup, and Feudalism, in: Studies in Medieval and Renaissance History 7 (1970), S. 47–75.</li>
+    <li><span class="cat">Literatur</span><strong>McNamara, Jo Ann / Wemple, Suzanne:</strong> The Power of Women through the Family in Medieval Europe, 500–1100, in: Feminist Studies 1 (1973); <strong>McNamara, Jo Ann:</strong> The Herrenfrage, in: Lees (Hg.), Medieval Masculinities, 1994.</li>
+    <li><span class="cat">Literatur</span><strong>Evergates, Theodore (Hg.):</strong> Aristocratic Women in Medieval France, Philadelphia 1999 (mit Beiträgen von LoPrete, Livingstone, Nicholas); <strong>LoPrete, Kimberly:</strong> Women, Gender and Lordship in France, c. 1050–1250, in: History Compass 5/6 (2007).</li>
+    <li><span class="cat">Literatur</span><strong>Stafford, Pauline:</strong> Queens, Concubines, and Dowagers, Athens/GA 1983; <strong>Le Jan, Régine:</strong> Femmes, pouvoir et société dans le haut Moyen Âge, Paris 2001; <strong>Brown, Peter:</strong> The Body and Society, New York 1988; <strong>Bynum, Caroline Walker:</strong> Holy Feast and Holy Fast, Berkeley 1987; <strong>Bodarwé, Katrinette:</strong> Sanctimoniales litteratae, Münster 2004; <strong>Simons, Walter:</strong> Cities of Ladies, Philadelphia 2001.</li>
+    <li><span class="cat">Literatur</span><strong>Schmid, Karl:</strong> Zur Problematik von Familie, Sippe und Geschlecht … beim mittelalterlichen Adel, in: ZGO 105 (1957) — Agnatisierungsthese; <strong>Patzold, Steffen:</strong> Das Lehnswesen, München 2012 — Forschungsbilanz nach Reynolds.</li>
+    <li><span class="cat">Literatur</span><strong>Hedenstierna-Jonson, Charlotte u. a.:</strong> A female Viking warrior confirmed by genomics, in: American Journal of Physical Anthropology 164 (2017) — Birka Bj 581; dazu kritisch <strong>Jesch, Judith</strong> (Blogbeiträge/Aufsätze 2017 ff.) und ausführlich <strong>Price, Neil u. a.:</strong> Viking warrior women? Reassessing Birka chamber grave Bj.581, in: Antiquity 93 (2019).</li>
+    <li><span class="cat">Literatur</span><strong>Duby, Georges:</strong> Mâle Moyen Âge / Que sait-on de l'amour en France au XIIe siècle? — zur Minne als homosozialem Spiel.</li>
+    <li><span class="cat">Literatur</span><strong>Wolfram, Herwig:</strong> Die Goten, 5. Aufl., München 2009 — zu Getica, Amalasuntha und gotischer Überlieferung.</li>
+    <li><span class="cat">Literatur</span><strong>Brundage, James A.:</strong> Law, Sex, and Christian Society in Medieval Europe, Chicago 1987 — Standardwerk zu Sexualrecht und Kirche.</li>
+    <li><span class="cat">Literatur</span><strong>Hergemöller, Bernd-Ulrich:</strong> Sodom und Gomorrha. Zur Alltagswirklichkeit und Verfolgung Homosexueller im Mittelalter, Hamburg 2000.</li>
+    <li><span class="cat">Literatur</span><strong>Meulengracht Sørensen, Preben:</strong> The Unmanly Man. Concepts of Sexual Defamation in Early Northern Society, Odense 1983 — zu ergi und níð.</li>
+    <li><span class="cat">Literatur</span><strong>Jochens, Jenny:</strong> Women in Old Norse Society, Ithaca 1995 — quellenkritisch zur Stellung der nordischen Frau.</li>
+    <li><span class="cat">Literatur</span><strong>Searle, Eleanor:</strong> Predatory Kinship and the Creation of Norman Power, 840–1066, Berkeley 1988 — zu more danico und normannischer Assimilation.</li>
+    <li><span class="cat">Literatur</span><strong>van der Sanden, Wijnand:</strong> Mumien aus dem Moor, Amsterdam 1996 — zur Revision der Moorleichen-Deutung.</li>
+    <li><span class="cat">Literatur</span><strong>Pernoud, Régine:</strong> La femme au temps des cathédrales, Paris 1980 — kirchenfreundliche Gegenposition.</li>
+  </ul>
+  <p style="margin-top:22px; font-size:14px; color:var(--ink-faint);"><em>Hinweis: Wergeldbeträge und Titelzählungen variieren zwischen den Redaktionen der Leges; die Angaben folgen den gängigen Referenzwerten der MGH-Editionen und der Handbuchliteratur. Für zitierfähige wissenschaftliche Arbeiten sind die Editionen im Original zu prüfen.</em></p>
+</section>
+
+<hr class="sep">
+<footer>
+  <div>OBSERVATORY · HISTORISCHE ANALYSE</div>
+  <div>2026-07-01_rechtsstellung-der-frau_germanen-bis-moderne_analyse_v4.html</div>
+  <div>Konfidenzmarker: belegt = quellennah gesichert · plausibel = begründete Deutung · umstritten = aktive Forschungskontroverse</div>
+</footer>
+
+</div><!-- /wrap -->
+
+<script>
+(function(){
+  var btn = document.getElementById('themeToggle');
+  var root = document.documentElement;
+  btn.addEventListener('click', function(){
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Reise ins Allerkleinste</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#000000;
+    --bg2:#000000;
+    --panel:#121a2e;
+    --ink:#e9edf7;
+    --muted:#8791a8;
+    --line:#243049;
+
+    --proton:#ff6b5e;   /* up-quark / proton  */
+    --neutron:#7fb2d9;  /* neutron            */
+    --electron:#57e0e6; /* elektron / lepton  */
+    --quark:#b98bff;    /* quarks             */
+    --force:#ffcb52;    /* kraft / energie    */
+    --bio:#6fe6a6;      /* zelle / biologie   */
+
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --serif:'Source Serif 4',Georgia,serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+
+  html,body{background:#000;}
+  .reveal .slides section{background-color:#000;}
+  .reveal{
+    font-family:var(--serif);
+    color:var(--ink);
+    font-size:30px;
+  }
+  .reveal .slides{ text-align:left; }
+  .reveal .slides section{ height:100%; }
+
+  /* radiale Tiefen-Atmosphäre */
+  .reveal:before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:
+      radial-gradient(1100px 700px at 78% 12%, rgba(87,224,230,.09), transparent 60%),
+      radial-gradient(900px 700px at 10% 92%, rgba(185,139,255,.10), transparent 60%);
+  }
+
+  .reveal h1,.reveal h2,.reveal h3,.reveal .eyebrow{
+    font-family:var(--display); text-transform:none; letter-spacing:-.01em; line-height:1.05;
+  }
+  .reveal h1{ font-size:2.15em; font-weight:700; margin:0 0 .25em; }
+  .reveal h2{ font-size:1.5em; font-weight:600; margin:0 0 .5em; }
+  .reveal h3{ font-size:1.05em; font-weight:600; margin:0 0 .35em; }
+  .reveal p{ line-height:1.4; }
+  .reveal strong{ color:#fff; font-weight:600; }
+  .reveal em{ font-style:normal; }
+
+  .eyebrow{
+    font-family:var(--mono); font-size:.5em; font-weight:500;
+    letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
+    display:flex; gap:.6em; align-items:center; margin-bottom:1.1em;
+  }
+  .eyebrow .dot{ width:.55em; height:.55em; border-radius:50%; background:var(--force); box-shadow:0 0 14px currentColor; }
+  .eyebrow .scale{ margin-left:auto; color:#5f6b85; letter-spacing:.1em; }
+
+  .lead{ font-size:1.05em; color:#c9d2e6; max-width:20em; }
+  .muted{ color:var(--muted); }
+  .tiny{ font-family:var(--mono); font-size:.62em; color:var(--muted); letter-spacing:.04em; }
+
+  /* Layout-Hilfen */
+  .grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:1.4em; align-items:center; height:100%; }
+  .center{ display:flex; flex-direction:column; justify-content:center; height:100%; }
+  .stage{ display:flex; align-items:center; justify-content:center; }
+
+  .chip{
+    display:inline-flex; align-items:center; gap:.5em;
+    font-family:var(--mono); font-size:.55em; letter-spacing:.03em;
+    padding:.3em .7em; border:1px solid var(--line); border-radius:999px;
+    background:rgba(255,255,255,.02); color:#cdd6ea;
+  }
+  .chip .sw{ width:.7em; height:.7em; border-radius:50%; }
+
+  ul.clean{ list-style:none; margin:.2em 0 0; padding:0; }
+  ul.clean li{ position:relative; padding:.28em 0 .28em 1.3em; font-size:.86em; color:#d6ddee; line-height:1.35; }
+  ul.clean li:before{ content:""; position:absolute; left:0; top:.62em; width:.5em; height:.5em; border-radius:50%; background:var(--force); }
+
+  /* ---------- TITEL ---------- */
+  .title-wrap{ height:100%; display:flex; flex-direction:column; justify-content:center; }
+  .kicker{ font-family:var(--mono); font-size:.55em; letter-spacing:.3em; text-transform:uppercase; color:var(--electron); margin-bottom:1em; }
+  .title-wrap h1{ font-size:3em; }
+  .title-wrap .sub{ font-family:var(--display); font-weight:400; font-size:1.15em; color:var(--muted); margin-top:.15em; }
+  .scale-rail{ display:flex; gap:.4em; align-items:center; margin-top:2em; font-family:var(--mono); font-size:.5em; color:#5f6b85; letter-spacing:.06em; flex-wrap:wrap; }
+  .scale-rail .step{ padding:.35em .6em; border:1px solid var(--line); border-radius:6px; }
+  .scale-rail .arrow{ color:var(--force); }
+
+  /* ---------- ATOM ---------- */
+  .atom{ position:relative; width:340px; height:340px; }
+  .atom .ring{ position:absolute; inset:0; border:1px solid rgba(87,224,230,.28); border-radius:50%; }
+  .atom .ring.r2{ inset:44px; transform:rotate(60deg); }
+  .atom .ring.r3{ inset:88px; transform:rotate(-40deg); }
+  .atom .spin{ position:absolute; inset:0; animation:spin 14s linear infinite; }
+  .atom .spin.s2{ inset:44px; animation-duration:9s; animation-direction:reverse; }
+  .atom .spin.s3{ inset:88px; animation-duration:6s; }
+  .atom .e{
+    position:absolute; top:-9px; left:50%; margin-left:-9px;
+    width:18px; height:18px; border-radius:50%;
+    background:var(--electron); box-shadow:0 0 16px var(--electron);
+  }
+  .atom .nucleus{
+    position:absolute; top:50%; left:50%; width:74px; height:74px; margin:-37px 0 0 -37px;
+    border-radius:50%; display:grid; grid-template-columns:repeat(3,1fr); gap:2px; place-items:center;
+    padding:8px; box-sizing:border-box; background:rgba(255,107,94,.06);
+    box-shadow:0 0 40px rgba(255,107,94,.35), inset 0 0 20px rgba(255,255,255,.05);
+  }
+  .atom .nucleus b{ width:16px; height:16px; border-radius:50%; }
+  .p{ background:var(--proton); box-shadow:0 0 10px var(--proton); }
+  .n{ background:var(--neutron); box-shadow:0 0 10px var(--neutron); }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  /* ---------- KERN / NUKLEONEN ---------- */
+  .nucleon{
+    width:230px; height:230px; border-radius:34% 66% 60% 40% / 50% 40% 60% 50%;
+    position:relative; display:flex; align-items:center; justify-content:center;
+    background:rgba(255,255,255,.02);
+    box-shadow:inset 0 0 40px rgba(255,255,255,.04);
+  }
+  .nucleon.pro{ border:2px solid rgba(255,107,94,.5); box-shadow:inset 0 0 40px rgba(255,107,94,.18),0 0 30px rgba(255,107,94,.12); }
+  .nucleon.neu{ border:2px solid rgba(127,178,217,.5); box-shadow:inset 0 0 40px rgba(127,178,217,.18),0 0 30px rgba(127,178,217,.12); }
+  .quarks{ position:relative; width:150px; height:140px; }
+  .q{
+    position:absolute; width:66px; height:66px; border-radius:50%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    font-family:var(--mono); color:#0a0e1a; font-weight:600;
+  }
+  .q .lab{ font-size:22px; line-height:1; }
+  .q .chg{ font-size:11px; opacity:.8; margin-top:2px; }
+  .q.up{ background:var(--proton); box-shadow:0 0 20px rgba(255,107,94,.5); }
+  .q.dn{ background:var(--quark); box-shadow:0 0 20px rgba(185,139,255,.5); }
+  .q.a{ top:0; left:42px; } .q.b{ bottom:0; left:0; } .q.c{ bottom:0; right:0; }
+
+  .math{
+    font-family:var(--mono); font-size:.72em; color:#cdd6ea; margin-top:.9em;
+    background:rgba(255,255,255,.03); border:1px solid var(--line);
+    border-radius:10px; padding:.7em .9em; display:inline-block;
+  }
+  .math .res{ color:var(--force); }
+
+  /* ---------- KARTEN ---------- */
+  .cards{ display:grid; grid-template-columns:1fr 1fr; gap:1em; }
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:1em 1.05em; position:relative; overflow:hidden;
+  }
+  .card:before{ content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent,var(--force)); }
+  .card h3{ display:flex; align-items:center; gap:.5em; font-size:.92em; }
+  .card .ic{ font-size:1.2em; }
+  .card p{ font-size:.66em; color:#c4cde2; margin:.2em 0 0; line-height:1.35; }
+  .card .who{ font-family:var(--mono); font-size:.52em; color:var(--muted); margin-top:.6em; letter-spacing:.02em; }
+
+  .fam{ display:grid; grid-template-columns:1fr 1fr; gap:1.1em; }
+  .fam .box{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:1.1em; }
+  .fam .box.qk{ border-color:rgba(185,139,255,.4); }
+  .fam .box.lp{ border-color:rgba(87,224,230,.4); }
+  .fam .box h3{ font-size:1em; }
+  .pill-row{ display:flex; flex-wrap:wrap; gap:.4em; margin-top:.7em; }
+  .pill{ font-family:var(--mono); font-size:.5em; padding:.35em .6em; border-radius:8px; background:rgba(255,255,255,.04); border:1px solid var(--line); }
+  .pill.hot{ color:#0a0e1a; font-weight:600; }
+
+  .ladder{ display:flex; flex-direction:column; gap:.35em; font-family:var(--display); }
+  .ladder .row{ display:flex; align-items:center; gap:.7em; padding:.4em .7em; border-radius:10px; background:rgba(255,255,255,.02); border:1px solid var(--line); }
+  .ladder .row .n{ font-family:var(--mono); font-size:.5em; color:var(--muted); width:2.4em; }
+  .ladder .row .t{ font-size:.72em; }
+  .ladder .row .s{ margin-left:auto; font-family:var(--mono); font-size:.48em; color:#5f6b85; }
+  .ladder .row .d{ width:.7em; height:.7em; border-radius:50%; }
+
+  .reveal .footer{ position:fixed; bottom:14px; left:22px; font-family:var(--mono); font-size:13px; letter-spacing:.14em; color:#3f4a63; z-index:5; }
+  .reveal .progress{ color:var(--force); height:4px; }
+  .reveal .controls{ color:var(--muted); }
+  .reveal .slide-number{ font-family:var(--mono); background:transparent; color:#3f4a63; }
+
+  .big-fact{ font-family:var(--display); font-weight:700; font-size:2.4em; line-height:1.08; }
+  .big-fact .hi{ color:var(--force); }
+
+  @media (prefers-reduced-motion: reduce){
+    .atom .spin{ animation:none; }
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+  <!-- 1 · TITEL -->
+  <section data-background-color="#000000">
+    <div class="title-wrap">
+      <div class="kicker">Eine Reise durch die Größen der Welt</div>
+      <h1>Die Reise ins<br>Allerkleinste</h1>
+      <div class="sub">Woraus ist eigentlich <em>alles</em> gemacht?</div>
+      <div class="scale-rail">
+        <span class="step">Zelle</span><span class="arrow">→</span>
+        <span class="step">Molekül</span><span class="arrow">→</span>
+        <span class="step">Atom</span><span class="arrow">→</span>
+        <span class="step">Kern</span><span class="arrow">→</span>
+        <span class="step">Proton · Neutron</span><span class="arrow">→</span>
+        <span class="step" style="border-color:var(--quark);color:#d8c4ff">Quark</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · IDEE -->
+  <section>
+    <div class="center">
+      <div class="eyebrow"><span class="dot"></span> Die Grundidee</div>
+      <h2>Alles besteht aus <em>kleineren</em> Dingen.</h2>
+      <p class="lead">Ein Haus aus Steinen. Ein Stein aus Sandkörnern. Und ein Sandkorn?
+      Das geht immer weiter — bis zu Bausteinen, die man <strong>nicht mehr zerteilen</strong> kann.</p>
+      <p class="lead" style="margin-top:.8em">Wir zoomen jetzt Schritt für Schritt hinein. Halt dich fest — es wird <em>winzig</em>. 🔎</p>
+    </div>
+  </section>
+
+  <!-- 3 · ZELLE -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--bio)"></span> Station 1 · Leben
+          <span class="scale">≈ 0,00001 m</span></div>
+        <h2 style="color:var(--bio)">Die Zelle</h2>
+        <p class="lead">Der kleinste <strong>lebendige</strong> Baustein. Du bestehst aus etwa
+        <strong>30 Billionen</strong> davon — Hautzellen, Muskelzellen, Nervenzellen.</p>
+        <ul class="clean" style="--f:var(--bio)">
+          <li>So klein, dass man ein Mikroskop braucht.</li>
+          <li>In ihr arbeiten winzige „Maschinen".</li>
+          <li>Und die bestehen aus <strong>Molekülen</strong> → weiter geht's!</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <svg width="300" height="300" viewBox="0 0 300 300">
+          <defs><radialGradient id="cell" cx="50%" cy="45%" r="60%">
+            <stop offset="0%" stop-color="#123a2a"/><stop offset="100%" stop-color="#0c1c17"/>
+          </radialGradient></defs>
+          <circle cx="150" cy="150" r="120" fill="url(#cell)" stroke="#6fe6a6" stroke-opacity=".5" stroke-width="2"/>
+          <circle cx="150" cy="150" r="120" fill="none" stroke="#6fe6a6" stroke-opacity=".15" stroke-width="10"/>
+          <circle cx="135" cy="140" r="42" fill="#6fe6a6" fill-opacity=".18" stroke="#6fe6a6" stroke-opacity=".6"/>
+          <circle cx="200" cy="185" r="16" fill="#6fe6a6" fill-opacity=".25"/>
+          <circle cx="105" cy="205" r="11" fill="#6fe6a6" fill-opacity=".25"/>
+          <circle cx="205" cy="110" r="9" fill="#6fe6a6" fill-opacity=".25"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · MOLEKÜL -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--electron)"></span> Station 2 · Bausteine des Lebens
+          <span class="scale">≈ 0,000000001 m</span></div>
+        <h2>Moleküle</h2>
+        <p class="lead">Ein Molekül ist eine <strong>Gruppe von Atomen</strong>, die zusammenhalten —
+        wie Bausteine, die zusammengesteckt sind.</p>
+        <p class="lead" style="margin-top:.7em">Das bekannteste: <strong>Wasser</strong>.
+        Zwei Wasserstoff-Atome + ein Sauerstoff-Atom. Fertig ist ein Tropfen-Baustein.</p>
+      </div>
+      <div class="stage">
+        <svg width="300" height="240" viewBox="0 0 300 240">
+          <line x1="150" y1="120" x2="80" y2="70" stroke="#57e0e6" stroke-opacity=".5" stroke-width="6"/>
+          <line x1="150" y1="120" x2="220" y2="70" stroke="#57e0e6" stroke-opacity=".5" stroke-width="6"/>
+          <circle cx="150" cy="120" r="46" fill="#ff6b5e" fill-opacity=".22" stroke="#ff6b5e" stroke-width="2"/>
+          <text x="150" y="128" text-anchor="middle" fill="#ffd7d2" font-family="IBM Plex Mono" font-size="26">O</text>
+          <circle cx="80" cy="70" r="30" fill="#57e0e6" fill-opacity=".2" stroke="#57e0e6" stroke-width="2"/>
+          <text x="80" y="78" text-anchor="middle" fill="#d7fbfc" font-family="IBM Plex Mono" font-size="20">H</text>
+          <circle cx="220" cy="70" r="30" fill="#57e0e6" fill-opacity=".2" stroke="#57e0e6" stroke-width="2"/>
+          <text x="220" y="78" text-anchor="middle" fill="#d7fbfc" font-family="IBM Plex Mono" font-size="20">H</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · ATOM -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--proton)"></span> Station 3 · Der Grundbaustein
+          <span class="scale">≈ 0,0000000001 m</span></div>
+        <h2>Das Atom</h2>
+        <p class="lead">Der Baustein von <strong>allem</strong> — von der Luft, vom Wasser, von dir.
+        Ein Atom hat zwei Teile:</p>
+        <div style="display:flex;gap:.5em;flex-wrap:wrap;margin-top:.8em">
+          <span class="chip"><span class="sw" style="background:var(--proton)"></span> Kern &nbsp;<span class="muted">winzig, schwer</span></span>
+          <span class="chip"><span class="sw" style="background:var(--electron)"></span> Elektronen-Hülle</span>
+        </div>
+        <p class="tiny" style="margin-top:1.1em">Verrückt: Ein Atom ist fast komplett <strong style="color:#fff">leer</strong>.
+        Der Kern ist wie eine Murmel in einem ganzen Fußballstadion.</p>
+      </div>
+      <div class="stage">
+        <div class="atom">
+          <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+          <div class="spin"><span class="e"></span></div>
+          <div class="spin s2"><span class="e"></span></div>
+          <div class="spin s3"><span class="e"></span></div>
+          <div class="nucleus">
+            <b class="p"></b><b class="n"></b><b class="p"></b>
+            <b class="n"></b><b class="p"></b><b class="n"></b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · KERN -->
+  <section>
+    <div class="center">
+      <div class="eyebrow"><span class="dot" style="background:var(--proton)"></span> Im Atomkern</div>
+      <h2>Zwei Sorten Teilchen im Kern</h2>
+      <div class="cards" style="max-width:16em;margin-top:.4em">
+        <div class="card" style="--accent:var(--proton)">
+          <h3><span class="ic">🔴</span> Proton</h3>
+          <p>Trägt eine <strong>positive</strong> Ladung <span class="mono">(+)</span>. Wie viele davon im Kern sind, bestimmt, <em>welcher Stoff</em> es ist.</p>
+        </div>
+        <div class="card" style="--accent:var(--neutron)">
+          <h3><span class="ic">🔵</span> Neutron</h3>
+          <p>Trägt <strong>keine</strong> Ladung <span class="mono">(0)</span>, ist <em>neutral</em>. Es macht den Kern schwerer und stabiler.</p>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:1.1em">Zusammen heißen sie <strong>Nukleonen</strong>. Sie sitzen ganz dicht gepackt in der Mitte.</p>
+    </div>
+  </section>
+
+  <!-- 7 · ELEKTRON -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--electron)"></span> Um den Kern herum</div>
+        <h2 style="color:var(--electron)">Das Elektron</h2>
+        <p class="lead">Winzig leicht und <strong>negativ</strong> geladen <span class="mono">(−)</span>.
+        Es flitzt in der Hülle um den Kern.</p>
+        <ul class="clean" style="--f:var(--electron)">
+          <li><strong>+</strong> und <strong>−</strong> ziehen sich an — deshalb bleibt die Hülle beim Kern.</li>
+          <li>Elektronen sind für <strong>Strom</strong>, <strong>Blitze</strong> und alle Chemie verantwortlich.</li>
+          <li>Und: das Elektron ist ein <strong>echtes Grundteilchen</strong> — man kann es nicht zerlegen. Es gehört zur Familie der <strong>Leptonen</strong>.</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="atom" style="width:250px;height:250px">
+          <div class="ring"></div>
+          <div class="spin s3" style="inset:0"><span class="e"></span></div>
+          <div class="nucleus" style="grid-template-columns:repeat(2,1fr);width:56px;height:56px;margin:-28px 0 0 -28px">
+            <b class="p"></b><b class="n"></b><b class="n"></b><b class="p"></b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · TIEFER -->
+  <section data-background-color="#000000">
+    <div class="center" style="align-items:flex-start">
+      <div class="eyebrow"><span class="dot" style="background:var(--quark)"></span> Noch tiefer hinein</div>
+      <p class="big-fact">Aber Proton und Neutron<br>sind <span class="hi">nicht</span> das Ende.</p>
+      <p class="lead" style="margin-top:1em">Zoomt man <em>noch weiter</em> hinein, sieht man: In jedem Proton
+      und Neutron stecken <strong style="color:var(--quark)">drei noch kleinere Kügelchen</strong> …</p>
+    </div>
+  </section>
+
+  <!-- 9 · QUARKS -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--quark)"></span> Station 4 · Grundteilchen
+          <span class="scale">&lt; 0,000000000000000001 m</span></div>
+        <h2 style="color:var(--quark)">Quarks</h2>
+        <p class="lead">Das sind die Bausteine <em>im</em> Proton und Neutron.
+        Für den Alltag reichen zwei Sorten:</p>
+        <div class="pill-row" style="margin-top:.5em">
+          <span class="pill hot" style="background:var(--proton)">up-Quark · Ladung +⅔</span>
+          <span class="pill hot" style="background:var(--quark)">down-Quark · Ladung −⅓</span>
+        </div>
+        <p class="tiny" style="margin-top:1em">Je nachdem, wie man sie kombiniert, entsteht ein Proton <em>oder</em> ein Neutron. 👇</p>
+      </div>
+      <div class="stage">
+        <div class="nucleon pro">
+          <div class="quarks">
+            <div class="q up a"><span class="lab">u</span><span class="chg">+⅔</span></div>
+            <div class="q up b"><span class="lab">u</span><span class="chg">+⅔</span></div>
+            <div class="q dn c"><span class="lab">d</span><span class="chg">−⅓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · REZEPT -->
+  <section>
+    <div class="center" style="align-items:center;text-align:center">
+      <div class="eyebrow" style="justify-content:center"><span class="dot" style="background:var(--quark)"></span> Das Bau-Rezept</div>
+      <h2>Wie Quarks Proton &amp; Neutron bauen</h2>
+      <div style="display:flex;gap:2.4em;align-items:flex-start;margin-top:.6em;flex-wrap:wrap;justify-content:center">
+        <div style="display:flex;flex-direction:column;align-items:center">
+          <div class="nucleon pro" style="width:170px;height:170px">
+            <div class="quarks" style="width:118px;height:110px">
+              <div class="q up a" style="width:52px;height:52px;left:33px"><span class="lab">u</span></div>
+              <div class="q up b" style="width:52px;height:52px"><span class="lab">u</span></div>
+              <div class="q dn c" style="width:52px;height:52px"><span class="lab">d</span></div>
+            </div>
+          </div>
+          <div class="math" style="margin-top:.6em">Proton = u + u + d<br>+⅔ +⅔ −⅓ = <span class="res">+1</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center">
+          <div class="nucleon neu" style="width:170px;height:170px">
+            <div class="quarks" style="width:118px;height:110px">
+              <div class="q up a" style="width:52px;height:52px;left:33px"><span class="lab">u</span></div>
+              <div class="q dn b" style="width:52px;height:52px"><span class="lab">d</span></div>
+              <div class="q dn c" style="width:52px;height:52px"><span class="lab">d</span></div>
+            </div>
+          </div>
+          <div class="math" style="margin-top:.6em">Neutron = u + d + d<br>+⅔ −⅓ −⅓ = <span class="res">0</span></div>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:1.1em">Ein Quark mehr oder weniger — und aus einem Proton wird ein Neutron. Wie beim Umbauen mit Legosteinen. 🧱</p>
+    </div>
+  </section>
+
+  <!-- 11 · FAMILIEN -->
+  <section>
+    <div class="center">
+      <div class="eyebrow"><span class="dot" style="background:var(--quark)"></span> Die Grundbausteine der Welt</div>
+      <h2>Zwei Familien von Grundteilchen</h2>
+      <p class="lead" style="max-width:24em;margin-bottom:.9em">Alles Feste besteht am Ende aus zwei „Familien" — kleiner geht es nicht.</p>
+      <div class="fam">
+        <div class="box qk">
+          <h3 style="color:var(--quark)">🧩 Quarks</h3>
+          <p class="tiny" style="letter-spacing:0">Bleiben immer zu mehreren zusammen — z.&nbsp;B. im Proton &amp; Neutron.</p>
+          <div class="pill-row">
+            <span class="pill hot" style="background:var(--proton)">up</span>
+            <span class="pill hot" style="background:var(--quark)">down</span>
+            <span class="pill">+ 4 seltene</span>
+          </div>
+        </div>
+        <div class="box lp">
+          <h3 style="color:var(--electron)">⚡ Leptonen</h3>
+          <p class="tiny" style="letter-spacing:0">Sind gern allein unterwegs — das bekannteste ist das Elektron.</p>
+          <div class="pill-row">
+            <span class="pill hot" style="background:var(--electron)">Elektron</span>
+            <span class="pill">Neutrino</span>
+            <span class="pill">+ 4 seltene</span>
+          </div>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:.9em">Das <strong>Neutrino</strong> ist ein Geisterteilchen: Milliarden fliegen gerade lautlos durch dich hindurch. 👻</p>
+    </div>
+  </section>
+
+  <!-- 12 · KRÄFTE INTRO -->
+  <section data-background-color="#000000">
+    <div class="center" style="align-items:flex-start">
+      <div class="eyebrow"><span class="dot"></span> Die große Frage</div>
+      <p class="big-fact">Was hält das alles<br><span class="hi">zusammen?</span></p>
+      <p class="lead" style="margin-top:1em">Warum fällt der Kern nicht auseinander? Warum bleiben die Elektronen dran?
+      Dafür sorgen <strong>vier Grundkräfte</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 13 · VIER KRÄFTE -->
+  <section>
+    <div class="center">
+      <div class="eyebrow"><span class="dot"></span> Die vier Grundkräfte</div>
+      <div class="cards" style="grid-template-columns:1fr 1fr">
+        <div class="card" style="--accent:var(--proton)">
+          <h3><span class="ic">💪</span> Starke Kraft</h3>
+          <p>Der stärkste Kleber überhaupt. Hält die <strong>Quarks</strong> zusammen und klebt Protonen &amp; Neutronen zum Kern.</p>
+          <div class="who">Bote: Gluon · Reichweite: winzig</div>
+        </div>
+        <div class="card" style="--accent:var(--electron)">
+          <h3><span class="ic">🧲</span> Elektromagnetische Kraft</h3>
+          <p>Zieht <strong>+</strong> und <strong>−</strong> zusammen. Hält die Elektronen am Kern und macht Licht, Magnete &amp; Chemie.</p>
+          <div class="who">Bote: Photon (Lichtteilchen)</div>
+        </div>
+        <div class="card" style="--accent:var(--quark)">
+          <h3><span class="ic">☢️</span> Schwache Kraft</h3>
+          <p>Kann Teilchen <strong>umwandeln</strong>. Sie steckt hinter Radioaktivität und lässt die <strong>Sonne</strong> leuchten.</p>
+          <div class="who">Boten: W- und Z-Teilchen</div>
+        </div>
+        <div class="card" style="--accent:var(--force)">
+          <h3><span class="ic">🌍</span> Gravitation</h3>
+          <p>Die Schwerkraft. Am <strong>schwächsten</strong>, aber unendlich weit: hält dich am Boden und Planeten um die Sonne.</p>
+          <div class="who">Reichweite: unendlich</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · QUANTEN -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Die Quantenwelt</div>
+        <h2 style="color:var(--force)">Alles kommt in Portionen</h2>
+        <p class="lead">In der Welt der kleinsten Dinge gibt es nichts „ein bisschen".
+        Energie und Licht kommen nur in festen <strong>Päckchen</strong>.</p>
+        <p class="lead" style="margin-top:.7em">So ein kleinstes Päckchen heißt ein <strong style="color:var(--force)">Quant</strong>.
+        Ein Lichtteilchen (Photon) ist ein Quant von Licht.</p>
+        <p class="tiny" style="margin-top:1em">Und ganz seltsam: Ein Elektron kreist <em>nicht</em> wie ein Planet.
+        Es ist eher eine <strong>Wolke</strong> aus „vielleicht hier, vielleicht dort". 🌫️</p>
+      </div>
+      <div class="stage">
+        <svg width="280" height="280" viewBox="0 0 280 280">
+          <g fill="none" stroke="#ffcb52" stroke-opacity=".7">
+            <circle cx="140" cy="140" r="10" fill="#ffcb52"/>
+            <circle cx="140" cy="140" r="40" stroke-dasharray="3 6"/>
+            <circle cx="140" cy="140" r="72" stroke-opacity=".4" stroke-dasharray="3 8"/>
+            <circle cx="140" cy="140" r="104" stroke-opacity=".22" stroke-dasharray="3 10"/>
+          </g>
+          <g fill="#ffe6a0">
+            <circle cx="180" cy="140" r="4"/><circle cx="120" cy="100" r="3"/>
+            <circle cx="95"  cy="165" r="3"/><circle cx="205" cy="110" r="2.5"/>
+            <circle cx="150" cy="235" r="2.5"/><circle cx="60" cy="120" r="2"/>
+            <circle cx="230" cy="175" r="2"/><circle cx="110" cy="205" r="3"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 · VERSCHRÄNKUNG -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot" style="background:var(--electron)"></span> Quantenwelt · das Wunder
+          <span class="scale">im Labor bewiesen</span></div>
+        <h2 style="color:var(--electron)">Verschränkung</h2>
+        <p class="lead">Zwei Teilchen können <strong>magisch verbunden</strong> sein. Schaust du dir das eine an,
+        weißt du <em>im selben Augenblick</em>, wie das andere ist — selbst wenn es am anderen Ende der Galaxie schwebt.</p>
+        <ul class="clean" style="--f:var(--electron)">
+          <li>Wie zwei Zauber-Münzen, die immer zusammenpassen …</li>
+          <li>… aber das Verrückte: Es steht <strong>vorher gar nicht fest</strong>. Erst beim Hinschauen entscheidet sich beides gleichzeitig.</li>
+          <li>Einstein fand das unheimlich: <em>„spukhafte Fernwirkung"</em>.</li>
+        </ul>
+        <p class="tiny" style="margin-top:.8em">Trotzdem kann man so keine Nachricht schneller als Licht schicken — das Universum passt auf. 😉
+        Aber <strong>Quantencomputer</strong> nutzen genau diesen Trick.</p>
+      </div>
+      <div class="stage">
+        <svg width="300" height="260" viewBox="0 0 300 260">
+          <path d="M70 130 C 130 60, 170 200, 230 130" fill="none" stroke="#57e0e6" stroke-opacity=".55" stroke-width="2" stroke-dasharray="4 8"/>
+          <g>
+            <circle cx="70" cy="130" r="34" fill="#57e0e6" fill-opacity=".14" stroke="#57e0e6" stroke-width="2"/>
+            <text x="70" y="140" text-anchor="middle" fill="#d7fbfc" font-family="IBM Plex Mono" font-size="26">?</text>
+          </g>
+          <g>
+            <circle cx="230" cy="130" r="34" fill="#57e0e6" fill-opacity=".14" stroke="#57e0e6" stroke-width="2"/>
+            <text x="230" y="140" text-anchor="middle" fill="#d7fbfc" font-family="IBM Plex Mono" font-size="26">?</text>
+          </g>
+          <text x="150" y="235" text-anchor="middle" fill="#8791a8" font-family="IBM Plex Mono" font-size="13">für immer verbunden</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 · ZWEI THEORIEN -->
+  <section>
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Zwei Regelbücher fürs Universum</div>
+        <h2>Wie werden die Kräfte beschrieben?</h2>
+        <p class="lead" style="margin-bottom:.7em">Es gibt zwei geniale Theorien — jede für ihre eigene Welt:</p>
+        <div class="card" style="--accent:var(--quark);margin-bottom:.7em">
+          <h3><span class="ic">⚛️</span> Quantentheorie · für das Winzige</h3>
+          <p>Drei Kräfte funktionieren, indem sich Teilchen <strong>Botenteilchen zuwerfen</strong>
+          (Gluon, Photon, W/Z) — wie Bälle beim Fangen. Klappt unglaublich genau.</p>
+        </div>
+        <div class="card" style="--accent:var(--force)">
+          <h3><span class="ic">🌌</span> Relativitätstheorie · für das Riesige</h3>
+          <p>Einsteins Idee: Gravitation ist gar keine Ziehkraft. Schwere Dinge
+          <strong>verbiegen Raum und Zeit</strong> — und alles rollt in die Delle.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <svg width="300" height="300" viewBox="0 0 300 300">
+          <g fill="none" stroke="#ffcb52" stroke-opacity=".4">
+            <ellipse cx="150" cy="165" rx="130" ry="46"/>
+            <ellipse cx="150" cy="158" rx="100" ry="40"/>
+            <ellipse cx="150" cy="150" rx="72"  ry="34"/>
+            <ellipse cx="150" cy="140" rx="46"  ry="26"/>
+            <ellipse cx="150" cy="128" rx="24"  ry="16"/>
+          </g>
+          <g stroke="#ffcb52" stroke-opacity=".25">
+            <line x1="20" y1="165" x2="150" y2="118"/><line x1="280" y1="165" x2="150" y2="118"/>
+            <line x1="55" y1="120" x2="150" y2="118"/><line x1="245" y1="120" x2="150" y2="118"/>
+          </g>
+          <circle cx="150" cy="112" r="20" fill="#ffcb52" fill-opacity=".9"/>
+          <circle cx="150" cy="112" r="20" fill="none" stroke="#fff4d0" stroke-opacity=".6"/>
+          <text x="150" y="285" text-anchor="middle" fill="#8791a8" font-family="IBM Plex Mono" font-size="13">Masse dellt den Raum ein</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 · GRAVITATION ALS PROBLEM -->
+  <section data-background-color="#000000">
+    <div class="center" style="align-items:flex-start">
+      <div class="eyebrow"><span class="dot" style="background:var(--force)"></span> Das größte ungelöste Rätsel</div>
+      <p class="big-fact">Nur die zwei Regelbücher<br><span class="hi">passen nicht zusammen.</span></p>
+      <div class="cards" style="grid-template-columns:1fr 1fr;margin-top:1em;max-width:24em">
+        <div class="card" style="--accent:var(--electron)">
+          <h3><span class="ic">🧩</span> Jedes für sich perfekt</h3>
+          <p>Quantentheorie regiert das Kleine, Relativität das Große. Getrennt funktionieren beide traumhaft.</p>
+        </div>
+        <div class="card" style="--accent:var(--proton)">
+          <h3><span class="ic">💥</span> Zusammen: Chaos</h3>
+          <p>Wo etwas <strong>winzig UND super-schwer</strong> ist — im Schwarzen Loch, im Urknall — bräuchte man beide. Dann spuckt die Mathematik Unsinn aus.</p>
+        </div>
+        <div class="card" style="--accent:var(--quark)">
+          <h3><span class="ic">🔍</span> Das fehlende Teilchen</h3>
+          <p>Für die Gravitation sucht man ein <strong>„Graviton"</strong>. Gefunden hat es bis heute niemand.</p>
+        </div>
+        <div class="card" style="--accent:var(--force)">
+          <h3><span class="ic">🪶</span> Viel zu schwach</h3>
+          <p>Ein kleiner Kühlschrank­magnet hält eine Büroklammer — gegen die <em>ganze</em> Erde. Da fehlt uns noch etwas.</p>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:1em">Vielleicht löst dieses Rätsel ja mal jemand, der das hier gerade hört. 🚀</p>
+    </div>
+  </section>
+
+  <!-- 18 · ÜBERBLICK -->
+  <section>
+    <div class="center">
+      <div class="eyebrow"><span class="dot"></span> Die ganze Reise auf einen Blick</div>
+      <h2>Von groß nach winzig</h2>
+      <div class="ladder" style="margin-top:.3em">
+        <div class="row"><span class="n">10⁻⁵</span><span class="d" style="background:var(--bio)"></span><span class="t">Zelle</span><span class="s">lebendiger Baustein</span></div>
+        <div class="row"><span class="n">10⁻⁹</span><span class="d" style="background:var(--electron)"></span><span class="t">Molekül</span><span class="s">Atome zusammengesteckt</span></div>
+        <div class="row"><span class="n">10⁻¹⁰</span><span class="d" style="background:var(--proton)"></span><span class="t">Atom</span><span class="s">Kern + Elektronenhülle</span></div>
+        <div class="row"><span class="n">10⁻¹⁵</span><span class="d" style="background:var(--neutron)"></span><span class="t">Proton &amp; Neutron</span><span class="s">im Kern</span></div>
+        <div class="row"><span class="n">&lt;10⁻¹⁸</span><span class="d" style="background:var(--quark)"></span><span class="t">Quarks &amp; Elektron</span><span class="s">Grundbausteine — hier ist Schluss</span></div>
+      </div>
+      <p class="tiny" style="margin-top:1em">…und <strong>vier Kräfte</strong> halten jede Stufe zusammen. Fertig ist das Universum. ✨</p>
+    </div>
+  </section>
+
+  <!-- 16 · SCHLUSS -->
+  <section data-background-color="#000000">
+    <div class="center" style="align-items:flex-start">
+      <div class="eyebrow"><span class="dot" style="background:var(--electron)"></span> Zum Schluss</div>
+      <p class="big-fact">Du bestehst aus<br>denselben Bausteinen<br>wie die <span class="hi">Sterne</span>.</p>
+      <p class="lead" style="margin-top:1em">Die Quarks und Elektronen in dir wurden vor Milliarden Jahren
+      in riesigen Sternen gemacht. Du bist ein Stück <strong>Universum</strong>, das sich selbst anschauen kann. 🌟</p>
+      <p class="tiny" style="margin-top:1.4em">Ende der Reise · Fragen sind ausdrücklich erlaubt.</p>
+    </div>
+  </section>
+
+  </div>
+</div>
+
+<div class="footer">DIE REISE INS ALLERKLEINSTE</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script>
+  Reveal.initialize({
+    hash:true, controls:true, progress:true, center:false, backgroundColor:'#000000',
+    slideNumber:'c/t', transition:'slide', backgroundTransition:'fade',
+    width:1180, height:740, margin:0.06, minScale:0.2, maxScale:1.6
+  });
+</script>
+</body>
+</html>

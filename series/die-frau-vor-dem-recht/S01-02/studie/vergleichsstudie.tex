@@ -1,0 +1,301 @@
+\documentclass[11pt,a4paper,ngerman]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{a4paper, top=30mm, bottom=32mm, left=28mm, right=28mm}
+\usepackage{xcolor}
+\definecolor{chipgreen}{HTML}{3E6B34}
+\definecolor{chipamber}{HTML}{8A6114}
+\definecolor{chipred}{HTML}{9A4A2E}
+\definecolor{chipblue}{HTML}{2F5378}
+\definecolor{gold}{HTML}{8A6114}
+\definecolor{oxblood}{HTML}{7A3222}
+\usepackage{booktabs, longtable, tabularx, array}
+\usepackage{enumitem}
+\setlist[description]{style=nextline, leftmargin=2.2em, labelsep=0.6em, font=\normalfont\scshape\color{gold}}
+\usepackage{framed}
+\usepackage[colorlinks=true, linkcolor=chipblue, urlcolor=chipblue, pdftitle={Mahr, Wilaya, Fitna}, pdfauthor={Observatory -- Historische Studie}]{hyperref}
+
+% Konfidenzmarker
+\newcommand{\chipbase}[2]{\hspace{0pt}{\footnotesize\textcolor{#1}{[\textsc{#2}]}}}
+\newcommand{\chipbelegt}[1]{\chipbase{chipgreen}{#1}}
+\newcommand{\chipplausibel}[1]{\chipbase{chipamber}{#1}}
+\newcommand{\chipumstritten}[1]{\chipbase{chipred}{#1}}
+\newcommand{\chipthese}[1]{\chipbase{chipblue}{#1}}
+
+% Callout-Umgebung
+\newenvironment{callout}[2]{%
+  \def\FrameCommand{{\color{#1}\vrule width 2pt}\hspace{8pt}}%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent{\small\scshape\color{#1}#2}\par\smallskip\small
+}{\endMakeFramed\medskip}
+
+% Literatureintrag mit haengendem Einzug
+\newcommand{\litentry}[2]{\par\noindent\hangindent=1.6em\hangafter=1
+  {\footnotesize\scshape\textcolor{gold}{#1}}\quad #2\par\smallskip}
+
+\setkomafont{disposition}{\rmfamily\bfseries}
+\setkomafont{caption}{\small\scshape}
+\setcapindent{0pt}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{\footnotesize\scshape Mahr, Wilaya, Fitna}
+\ohead{\footnotesize\scshape Historische Studie}
+\cfoot{\pagemark}
+
+\emergencystretch=1.6em
+\begin{document}
+\shorthandoff{"}
+
+\begin{titlepage}
+\centering
+{\footnotesize\scshape Observatory \quad·\quad Rechts- und Sozialgeschichte \quad·\quad Vergleichsstudie\par}
+\vspace{2.5cm}
+{\Huge\bfseries Mahr, Wilaya, Fitna:\\Die Rechtsstellung der Frau im Islam\par}
+\vspace{1.2cm}
+{\large\itshape Eine Parallelstudie zu \enquote{Munt, Wergeld, Allod} --- von der Spätantike über das klassische islamische Recht bis zur migrantischen Gegenwart in Deutschland. Mit denselben Prüfsteinen, derselben Methodik und einer Prüfung der Leitformel: Rechtsstellung folgt Funktionsstellung --- der Glaube erzeugt die Strukturen nicht, er nimmt ihnen die Verhandelbarkeit.\par}
+\vfill
+{\small Konfidenzmarker: \chipbelegt{belegt} quellennah gesichert \quad \chipplausibel{plausibel} begründete Deutung \quad \chipumstritten{umstritten} aktive Forschungskontroverse\par}
+\vspace{1cm}
+{\large 2. Juli 2026\par}
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Fragestellung, Methode, Parallelanlage}
+\noindent\textit{Diese Studie überträgt das Prüfprogramm der Erststudie \enquote{Munt, Wergeld, Allod} auf den islamischen Kulturraum --- Kapitel für Kapitel, Prüfstein für Prüfstein.}
+\medskip
+
+Die Erststudie hatte für den germanisch-europäischen Raum drei Befunde erarbeitet: \textbf{Erstens} folgt die Rechtsstellung der Frau der Funktionsstellung --- Rechte wuchsen, wo weibliche Arbeit, weibliches Eigentum oder weibliche Reproduktion systemrelevant waren, und schrumpften, wo nicht. \textbf{Zweitens} wirkte Religion nicht als Ursache, sondern als Dauerhaftigkeitsgarantie: Sie naturalisierte bestehende Ordnungen und nahm ihnen die Verhandelbarkeit. \textbf{Drittens} ist \enquote{das Patriarchat} als Name des Zustands tauglich, als Erklärung zirkulär. Zu prüfen ist, ob diese Befunde auch für die islamische Welt tragen --- oder wo die Parallele bricht.
+
+Die Prüfsteine sind identisch angelegt: Vormundschaft (Munt vs. \emph{wilaya}), Brautgabe (Muntschatz vs. \emph{mahr}), Blutgeld (Wergeld vs. \emph{diya}), Erbrecht (\emph{terra Salica} vs. Sure 4:11), Scheidungsasymmetrie, Zeugnisfähigkeit, sakrale Frauenrollen und Wesensdeutung. Durchgängig unterschieden werden \textbf{formales Recht}, \textbf{informelle Macht} und \textbf{soziale Praxis} --- die Erststudie hatte gezeigt, dass alle drei Ebenen auseinanderfallen können. Ebenso durchgängig gilt das Gebot der Binnenpluralität: \enquote{Der Islam} ist so wenig ein Monolith wie \enquote{die Germanen} --- zwischen den Rechtsschulen, zwischen Bosnien und Afghanistan, zwischen einer säkularen iranischen Exilfamilie und einem wahhabitischen Gelehrtenhaushalt liegen Welten. Wer den Stämmevergleich der Erststudie ernst nahm (westgotisches Töchtererbrecht neben sächsischer Fast-Rechtlosigkeit), wird hier dieselbe Spreizung erwarten --- und finden. \chipbelegt{belegt}
+
+\section{Quellenkritik: Das Sira-Problem}
+\noindent\textit{Die Erststudie begann mit dem Tacitus-Problem: Der Kronzeuge schrieb mit Agenda. Die islamische Frühzeit hat ihr exaktes Gegenstück --- nur schärfer.}
+\medskip
+
+Fast alles, was über die Stellung der Frau im Arabien des Propheten berichtet wird, stammt aus Quellen, die \textbf{150 bis 250 Jahre nach den Ereignissen} verschriftet wurden: die Prophetenbiographie (\emph{Sira}) des Ibn Ishaq in der Bearbeitung Ibn Hischams (gest. 833), die großen Hadith-Sammlungen (al-Buchari gest. 870, Muslim gest. 875), die Rechts- und Geschichtswerke der Abbasidenzeit. Joseph Schacht zeigte 1950, dass zahlreiche Überliefererketten (\emph{isnade}) rückwirkend konstruiert wurden --- je später die Quelle, desto vollständiger die Kette; die revisionistische Schule (John Wansbrough; Patricia Crone und Michael Cook, \emph{Hagarism}, 1977) radikalisierte den Zweifel bis zur Unbrauchbarkeit der Tradition. \chipbelegt{belegt} Die Gegenposition (Harald Motzki u.\,a.) hat mit der Isnad-cum-Matn-Analyse gezeigt, dass sich Teile der Überlieferung bis ins frühe 8., teils späte 7. Jahrhundert zurückverfolgen lassen --- der Extremrevisionismus gilt heute als überzogen, die grundsätzliche Quellenskepsis nicht. \chipumstritten{umstritten}
+
+Für unsere Frage folgt daraus dasselbe Doppelgebot wie bei Tacitus: \textbf{Erstens} ist das Bild der vorislamischen Zeit (\emph{Dschahiliyya}, \enquote{Zeit der Unwissenheit}) eine \textbf{Kontrastfolie} --- die islamische Tradition zeichnet sie so dunkel wie möglich, um die Sendung des Propheten hell erscheinen zu lassen. Das berühmteste Motiv, die Tötung neugeborener Mädchen (\emph{wa'd al-banat}, Koran 81:8--9: das lebendig begrabene Mädchen wird am Jüngsten Tag gefragt, für welche Schuld es getötet wurde), ist koranisch bezeugt und plausibel als real existierende Praxis --- \textbf{wie verbreitet} sie war, ist aus der Kontrastfolie heraus nicht mehr zu bestimmen. \chipplausibel{plausibel} \textbf{Zweitens} gilt umgekehrt: Auch das \emph{goldene} Bild der Frühzeit --- die starken Frauen um den Propheten --- ist Traditionsliteratur mit Verklärungsinteresse. Beide Richtungen der Idealisierung sind quellenkritisch zu bremsen; genau wie das \enquote{goldene germanische Frauenzeitalter} der Nationalromantik.
+
+\section{Ausgangslage: Das vorislamische Arabien}
+\noindent\textit{Parallelkapitel zur \enquote{germanischen Zeit}: Wie stand die Frau, bevor die neue Religion kam?}
+\medskip
+
+Trotz der Kontrastfolien-Problematik lassen sich Konturen sichern. Das Arabien des 6.~Jahrhunderts war eine \textbf{Stammesgesellschaft ohne Staat} --- wie die germanische Welt organisierte die Sippe Schutz, Rache und Ehre; Blutrache und Blutgeldverhandlungen entsprechen strukturell dem Fehde-Wergeld-Komplex. Die Stellung der Frau variierte erheblich zwischen Beduinen und Stadtkulturen (Mekka, Yathrib) und nach Stand. \chipbelegt{belegt}
+
+Zwei gegenläufige Befunde ragen heraus. Auf der einen Seite die Verfügungsordnung: Ehen als Sippenverträge, Polygynie ohne Obergrenze, die Witwe teils als \emph{vererbbarer} Bestandteil des Nachlasses (vom Koran 4:19 ausdrücklich verboten --- das Verbot belegt die Praxis), kein gesicherter Erbanspruch der Frau. Auf der anderen Seite: \textbf{Khadidscha} --- die erste Frau des Propheten war eine vermögende mekkanische Fernhandelskauffrau, die Muhammad als Karawanenführer \emph{anstellte} und ihm nach der Überlieferung selbst die Ehe \emph{antrug}; sie blieb bis zu ihrem Tod seine einzige Frau. Eine Frau als selbstständige Unternehmerin mit eigener Partnerwahl war im mekkanischen Handelsmilieu also möglich. \chipbelegt{belegt} Die ältere These matrilinearer Strukturen im vorislamischen Arabien (W.~Robertson Smith, 1885) gilt heute als überdehnt; Reste matrilokaler Ehe- und Abstammungspraxis in einzelnen Stämmen sind aber plausibel (Leila Ahmed, \emph{Women and Gender in Islam}, 1992). \chipumstritten{umstritten}
+
+Der Befund gleicht dem germanischen Ausgangsbild frappierend: \textbf{erhebliche faktische Spielräume für Frauen von Stand --- ohne gesicherte Rechtsposition}. Khadidscha ist das arabische Gegenstück zur húsfreyja mit Schlüsselgewalt: Beweis dessen, was möglich war, nicht dessen, was garantiert war.
+
+\section{Der spätantike Kontext: Byzanz und Persien}
+\noindent\textit{Parallelkapitel zu \enquote{Rom}: Die Eroberer trafen auf Hochkulturen --- und erbten deren Geschlechterordnungen.}
+\medskip
+
+Als die arabischen Heere im 7.~Jahrhundert Syrien, Ägypten, den Irak und Iran eroberten, trafen sie auf zwei alte Ordnungen. Das \textbf{byzantinische} Recht justinianischer Prägung kannte die geschäftsfähige Frau mit Mitgiftschutz --- aber unter christlichem Einfluss zunehmend erschwerte Scheidung und ein ausgeprägtes Ideal weiblicher Zurückgezogenheit; die Oberschichtsfrau lebte in der \emph{Gynaikonitis}, dem Frauenbereich des Hauses. Das \textbf{sassanidische} Persien kannte zoroastrisches Eherecht mit starker Ehemannsgewalt, Nebenehen und strikter Geschlechtertrennung der Eliten. Und vor allem: Die \textbf{Verschleierung} der ehrbaren Frau war in diesem Raum seit über tausend Jahren Statuszeichen --- assyrische Rechtstexte des 13.~Jahrhunderts v.~Chr. \emph{geboten} den Schleier der freien Frau und \emph{verboten} ihn der Sklavin und Prostituierten; griechische, jüdische, christlich-syrische und persische Oberschichten führten die Praxis fort. \chipbelegt{belegt}
+
+Daraus folgt die einflussreiche These Leila Ahmeds: Wesentliche Elemente der später als \enquote{islamisch} geltenden Geschlechterordnung --- Schleier, Frauenräume, Abschließung (\emph{Harem} von \emph{haram}, \enquote{verboten/geschützt}) --- seien \textbf{übernommenes Erbe der eroberten Hochkulturen}, das die anfangs egalitärere arabische Praxis der Eroberer überformte; der Koran selbst schreibe die Gesichtsverschleierung nirgends vor. \chipplausibel{plausibel} Die Gegendarstellung: Kritiker wenden ein, die Übernahme-These entlaste die islamische Rechtstradition zu bequem --- die Rechtsschulen hätten die Abschließung nicht nur geerbt, sondern aktiv verrechtlicht und religiös aufgeladen; zudem sei die Trennlinie \enquote{arabisch-egalitär vs. persisch-restriktiv} ihrerseits eine Idealisierung (vgl. Kecia Ali zur Frühzeit des Eherechts). \chipumstritten{umstritten} Für unsere Leitthese ist der Streit selbst der Befund: Wie im Westen (römisches Recht, christliche Theologie, germanische Sitte) ist auch hier die Geschlechterordnung ein \textbf{Legierungsprodukt} --- und die Religion übernahm die Rolle, der Legierung göttliche Herkunft zu bescheinigen.
+\section{Der koranische Befund und die Frühzeit}
+\noindent\textit{Parallelkapitel zu den \enquote{Leges barbarorum}: Was regelt der normative Grundtext konkret --- und was verrät die Zahlungsrichtung?}
+\medskip
+
+Der Koran enthält --- anders als die Evangelien, ähnlich den Leges --- konkretes Recht. Die zentralen Bestimmungen:
+
+\textbf{Erbrecht (4:11):} \enquote{Allah verordnet euch hinsichtlich eurer Kinder: dem männlichen Erben das Doppelte des weiblichen.} Die halbe Quote ist die berühmte Asymmetrie --- der historische Witz liegt aber im Vergleich: Die \emph{terra Salica} schloss die Tochter vom Landerbe ganz aus; Sure 4:11 \textbf{garantiert} ihr erstmals einen unentziehbaren Anteil an allem, auch am Land. Gemessen am jeweiligen Ausgangszustand war die koranische Regel die \emph{fortschrittlichere} --- gemessen am Gleichheitsmaßstab beide diskriminierend. \chipbelegt{belegt}
+
+\textbf{Brautgabe (4:4):} Der \emph{mahr} geht \textbf{an die Braut selbst}, nicht an ihren Vormund --- der schärfste Einzelkontrast zur germanischen Ordnung, wo der Muntschatz an die \emph{Sippe} floss und die Munt über die Frau mitverkaufte. Die Muslimin wurde durch die Ehe \emph{Eigentümerin}; ihr Vermögen blieb rechtlich getrennt, der Ehemann hatte daran keinerlei Verwaltungsrecht --- eine Position, die europäische Ehefrauen erst im 19./20.~Jahrhundert erreichten (das BGB von 1900 gab dem Mann noch die Verwaltung des Frauenguts). \chipbelegt{belegt}
+
+\textbf{Zeugnis (2:282):} Im Schuldvertragsrecht zählen zwei Frauen wie ein Mann, \enquote{damit, wenn die eine irrt, die andere sie erinnere}. Die Rechtsschulen generalisierten die Regel weit über den Vertragskontext hinaus. \chipbelegt{belegt}
+
+\textbf{Polygynie (4:3):} Begrenzung auf vier Frauen unter Gerechtigkeitsvorbehalt --- den Vers 4:129 (\enquote{ihr werdet es nicht vermögen, gerecht zu sein zwischen den Frauen, wie sehr ihr euch auch bemüht}) nach reformerischer Lesart selbst wieder einzieht: Wenn Gerechtigkeit Bedingung und zugleich unmöglich ist, sei faktisch die Einehe gemeint (so schon Muhammad Abduh um 1900; Tunesien verbot die Polygamie 1956 mit exakt diesem Argument). \chipumstritten{umstritten}
+
+\textbf{Der Züchtigungsvers (4:34):} Männer als \emph{qawwamun} (\enquote{Verantwortliche/Vorgesetzte}) über die Frauen; bei Widersetzlichkeit die Stufenfolge Ermahnen, Meiden des Ehebetts, \emph{daraba} --- klassisch \enquote{schlagen}, in modernen Deutungen von \enquote{leicht schlagen} über \enquote{sich trennen} bis zur Neuvokalisierung umkämpft. Kein Vers wird in der innerislamischen Debatte härter umkämpft; die feministische Exegese (Amina Wadud, \emph{Qur'an and Woman}, 1992) liest ihn kontextgebunden, die klassische Tradition las ihn als Eheherrschaftsnorm. \chipumstritten{umstritten}
+
+\textbf{Verschleierung (24:31; 33:59):} Wörtlich gefordert sind das Bedecken des Ausschnitts mit dem \emph{chimar} (Tuch) und das \enquote{Über-sich-Ziehen} des \emph{dschilbab} zur Erkennbarkeit als ehrbare Frau; der Begriff \emph{hidschab} bezeichnet im Koran den \textbf{Vorhang}, hinter dem die Frauen des Propheten zu befragen sind (33:53) --- also ursprünglich eine Elitennorm für einen konkreten Haushalt. Gesichtsschleier und allgemeine Abschließung sind nachkoranische Rechtsentwicklung. \chipbelegt{belegt}
+
+\textbf{Scheidung:} Der Mann verstößt formfrei (\emph{talaq}), die Frau kann sich nur gegen Rückgabe des mahr loskaufen (\emph{khul}, nach 2:229) oder richterliche Auflösung aus engen Gründen erwirken --- die Asymmetrie entspricht strukturell dem germanischen Befund (Verstoßungsrecht des Mannes), mit dem Unterschied, dass die Frau hier immerhin einen eigenen, wenn auch teuren Ausweg besaß. \chipbelegt{belegt}
+
+Die Frühzeit zeigt zudem Akteurinnen, deren Format die spätere Tradition selbst verlegen machte: \textbf{Aischa} führte 656 in der \enquote{Kamelschlacht} de facto eine Kriegspartei an --- und wurde zur wichtigsten Hadith-Überlieferin überhaupt (über 2.000 Traditionen); dass just ihr die Niederlage zugeschrieben und daraus das Verdikt gegen weibliche Herrschaft gesponnen wurde (\enquote{Kein Volk wird gedeihen, das seine Angelegenheiten einer Frau anvertraut} --- ein Hadith, dessen Situationsbindung und Authentizität Fatima Mernissi 1987 forensisch zerlegte), ist das arabische Gegenstück zur Amalasuntha-Logik: Weibliche Führung war real --- und wurde nachträglich zur Anomalie erklärt. \chipplausibel{plausibel}
+
+\textbf{Zwischenbilanz --- die Verbesserungsthese:} Gemessen am rekonstruierbaren Ausgangszustand brachte der Islam des 7.~Jahrhunderts der Frau \emph{Rechtsgewinne}: garantiertes Erbe, eigenes Vermögen, mahr an sie selbst, Verbot der Witwenvererbung und des Mädchenmords, Vertragssubjektivität. Das ist die exakte Parallele zur ambivalenten Kirchenbilanz der Erststudie (Konsensprinzip, Verstoßungsschutz). \chipplausibel{plausibel} Die Gegendarstellung (Kecia Ali, \emph{Marriage and Slavery in Early Islam}, 2010): Das frühe Eherecht blieb strukturell ein \textbf{Verfügungsrecht} --- die Rechtsgelehrten konzipierten die Ehe analog zum Kauf (der mahr als Gegenleistung für die eheliche Verfügbarkeit), und die Sklaverei samt Konkubinat blieb unangetastet; von \enquote{Befreiung} zu sprechen, romantisiere ein Besitzmodell mit verbesserten Konditionen. \chipumstritten{umstritten}
+
+\section{Das klassische islamische Recht}
+\noindent\textit{Parallelkapitel zu Munt, Wergeld und Allod: Die Rechtsschulen des 8.--10.~Jahrhunderts bauen aus Koran, Hadith und Lokalpraxis ein System --- und fixieren es.}
+\medskip
+
+\textbf{Wilaya --- die islamische Munt.} Die Eheschließung der Frau erfordert(e) nach Mehrheitsmeinung den \emph{wali} (Ehevormund); der \emph{wali mudschbir} der schafiitischen, malikitischen und hanbalitischen Schule konnte die \textbf{minderjährige Jungfrau ohne ihren Konsens} verheiraten --- die strukturgleiche Figur zum Muntwalt. Die hanafitische Schule (später osmanisches Reichsrecht) ließ die volljährige Frau dagegen \emph{ohne} wali gültig heiraten --- die Rechtsschul-Spreizung entspricht exakt dem Stämmevergleich der Erststudie (westgotisches Töchtererbrecht neben Rotharis \emph{selpmundia}-Verbot). \chipbelegt{belegt}
+
+\textbf{Diya --- das umgekehrte Wergeld.} Das Blutgeld für eine getötete Frau beträgt nach klassischer Mehrheitslehre die \textbf{Hälfte} des Mannes. Der Kontrast zur Lex Salica (Dreifach-Wergeld der Gebärfähigen) ist der lehrreichste Einzelbefund der ganzen Parallele: Beide Systeme bewerten die Frau als Objekt mit Preisschild --- aber nach entgegengesetzter Logik. Das germanische Wergeld preist ihre \emph{Reproduktionsfunktion für die Sippe} ein; die diya bemisst den \emph{ökonomischen Ersatzwert für die Erben} --- und der orientierte sich am Unterhaltsleister, der die Frau definitionsgemäß nicht war. Dieselbe Objektstellung, zwei Verwertungslogiken: stärker lässt sich \enquote{Rechtsstellung folgt Funktionsstellung} kaum bestätigen. \chipplausibel{plausibel}
+
+\textbf{Weitere Bausteine:} Das Sorgerecht (\emph{hadana}) gab der geschiedenen Mutter die Kleinkinder und nahm sie ihr ab einem Schwellenalter wieder; das \emph{zina}-Recht (außerehelicher Verkehr) bedrohte beide Geschlechter, traf durch Beweislast und Schwangerschaft als Indiz faktisch die Frau --- die \textbf{Steinigung} steht nicht im Koran (dort 24:2: hundert Hiebe), sondern kam über Hadith und Umar-Überlieferung ins Recht. Die \textbf{Abschließung} ehrbarer Frauen wurde verrechtlicht --- blieb aber, wie in der Erststudie der Schleier der Standesdifferenz, ein \textbf{Oberschichtsphänomen}: Bäuerinnen und einfache Städterinnen arbeiteten sichtbar; nur wer Frauen dem Blick entziehen konnte, bewies damit Rang. \chipbelegt{belegt} Sklavinnen standen außerhalb des Ehrsystems --- die \emph{umm walad} (Sklavin, die dem Herrn ein Kind gebar) erlangte Unverkäuflichkeit und Freiheit mit seinem Tod: dieselbe Stand-mal-Geschlecht-Matrix, die Ibn Fadlans Wolga-Szene für den Norden bezeugte. \chipbelegt{belegt}
+
+\textbf{Die Gegenrechnung --- gelehrte Frauen:} Wie die Erststudie neben die Rechtsnachordnung die Äbtissinnen stellte, gehören hier die \emph{muhaddithat} ins Bild: Muhammad Akram Nadwis Erhebung (2007) dokumentiert über 8.000 weibliche Hadith-Gelehrte über die Jahrhunderte, mit Ausbildungs- und Lehrautorität auch über Männer; \textbf{Fatima al-Fihri} stiftete 859 in Fes die al-Qarawiyyin-Hochschule; die Sufi-Heilige \textbf{Rabia al-Adawiyya} (8.~Jh.) wurde zur Gründungsfigur der Liebesmystik --- das islamische Gegenstück zur Mystikerinnen-Autorität einer Hildegard: Gottesunmittelbarkeit als Umgehung der verweigerten Amtsautorität. \chipbelegt{belegt} Und wie dort gilt die Doppelcodierung: Dieselbe Kultur, die die Heilige verehrte, prägte mit \emph{fitna} (Versuchung/Chaos) einen Zentralbegriff, der weibliche Präsenz selbst zur Gefahrenquelle für die soziale Ordnung erklärte --- Fatima Mernissis These (\emph{Beyond the Veil}, 1975): Nicht Verachtung der Frau, sondern \textbf{Angst vor ihrer Macht} organisiere die Abschließung. Das ist die haliurunnae-Operation mit umgekehrtem Vorzeichen. \chipplausibel{plausibel}
+
+Gegen das Bild monolithischer Erstarrung schließlich Wael Hallaq: Die Scharia-Praxis der Vormoderne sei flexibel, lokal und fallbezogen gewesen; die \textbf{Kodifizierung} durch Kolonialmächte und Nationalstaaten habe sie erst starr gemacht. \chipumstritten{umstritten}
+
+\section{Osmanische Probe: Die Frauen vor dem Kadi}
+\noindent\textit{Parallelkapitel zur Feudalisierungs- und Aktenprobe: Was zeigen Gerichtsakten statt Normtexte?}
+\medskip
+
+Die osmanischen Kadi-Register sind das Gegenstück zu den Urkundenkorpora, mit denen Evergates und LoPrete die These vom Machtverlust der Europäerinnen relativierten --- und sie zeigen Vergleichbares: Ronald Jennings (Kayseri-Akten, 17.~Jh.) und Leslie Peirce (\emph{Morality Tales}, Aintab 1540) fanden Frauen als \textbf{routinemäßige Prozessparteien}, die Eigentum einklagten, Ehemänner verklagten, vor Gericht gewannen; Frauen stifteten einen erheblichen Teil der frommen Stiftungen (\emph{waqf}) --- in manchen Städten über ein Drittel --- und sicherten damit Vermögen vor dem Zugriff der Männerlinie. Im Palast regierte im 16./17.~Jahrhundert das \enquote{Sultanat der Frauen}: Hürrem, Kösem und Turhan Sultan lenkten als Favoritinnen und Regentenmütter faktisch Reichspolitik --- Peirce (\emph{The Imperial Harem}, 1993) hat gezeigt, dass der Harem keine Lustkulisse, sondern eine \textbf{politische Institution} war. \chipbelegt{belegt}
+
+Der Befund bestätigt die Erststudien-Trias exakt: formale Nachordnung, reale Vermögens- und Prozessfähigkeit, informelle Spitzenmacht über Familie und Dynastie --- Bennetts \enquote{patriarchales Gleichgewicht} in osmanischer Ausführung: Wandel und Handlungsmacht ohne Verschiebung der relativen Position. \chipplausibel{plausibel}
+
+\section{Reformzeit: Kolonialismus, Aufbruch, Gegenschlag}
+\noindent\textit{Parallelkapitel zur Säkularisierung: Auch hier ist sie Katalysator --- und kein Garant. Und sie kommt mit Zwang in beide Richtungen.}
+\medskip
+
+Die Reformdebatte beginnt im kolonialen Ägypten: Qasim Amins \emph{Tahrir al-mar'a} (\enquote{Die Befreiung der Frau}, 1899) machte die Frauenfrage zur Nationalfrage; Huda Schaarawi nahm 1923 auf dem Kairoer Bahnhof öffentlich den Gesichtsschleier ab und gründete die ägyptische Frauenunion. Es folgte die staatliche Reform von oben: \textbf{Atatürk} ersetzte 1926 das islamische Familienrecht durch das Schweizer Zivilgesetzbuch und gab 1934 das volle Wahlrecht --- vor Frankreich; \textbf{Reza Schah} verbot 1936 den Schleier polizeilich (\emph{kaschf-e hidschab}); \textbf{Bourguiba} verbot 1956 in Tunesien die Polygamie. \chipbelegt{belegt}
+
+Zwei Lehren, beide aus der Erststudie vertraut. \textbf{Erstens:} Der Zwang wechselte nur die Richtung --- Gendarmen, die Frauen 1936 den Schleier herunterrissen, und Revolutionswächter, die ihn 1979 erzwangen, exekutieren dieselbe Grammatik: Der weibliche Körper als Plakatfläche staatlicher Ordnungsprogramme. \chipplausibel{plausibel} \textbf{Zweitens:} Säkularisierung garantiert nichts --- die säkularen Baath- und Militärregime blieben patriarchal (die NS-Parallele der Erststudie: säkular \emph{und} antiemanzipatorisch ist möglich), und die \textbf{iranische Revolution 1979} bewies die Reversibilität: Rücknahme des Familienschutzgesetzes, Herabsetzung des Ehealters, Hidschabpflicht. Der Gegenschlag kam nicht aus dem Mittelalter, sondern aus der Moderne --- als Identitätspolitik gegen als kolonial empfundene Verwestlichung (Ausarbeitung bei Leila Ahmed: der Schleier als antikolonialer Signifikant). \chipbelegt{belegt}
+\section{Ländervergleich der Moderne}
+\noindent\textit{Parallelkapitel zum Stämmevergleich: \enquote{Der Islam} ist keine Rechtsgemeinschaft --- die Spreizung zwischen Sarajevo und Kandahar ist größer als die zwischen Westgoten und Sachsen.}
+\medskip
+
+\begin{small}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}}
+\caption{Rechtsstellung der Frau nach Staaten (Stand ca. 2025, vereinfachend)}\\
+\toprule
+\textbf{Staat} & \textbf{Rechtsrahmen} & \textbf{Kernbefunde} & \textbf{Dynamik}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Staat} & \textbf{Rechtsrahmen} & \textbf{Kernbefunde} & \textbf{Dynamik}\\
+\midrule
+\endhead
+\textbf{Türkei} & laizistische Verfassung, ZGB-Tradition seit 1926 & formale Gleichstellung; hohe Femizidraten; Kopftuch vom Verbot (Hochschulen) zur Normalität & Austritt aus der Istanbul-Konvention 2021; religiös-konservative Rollenrhetorik der AKP-Ära \\
+\addlinespace[2pt]
+\textbf{Saudi-Arabien} & wahhabitisch-hanbalitisch; männliches Vormundschaftssystem (wilaya) & Fahrerlaubnis 2018; Reisen/Pass ohne Vormund ab 21 (2019); Personalstatusgesetz 2022 kodifiziert erstmals --- und schreibt Gehorsamspflichten fest & Top-down-Modernisierung bei gleichzeitiger Inhaftierung der Aktivistinnen, die sie gefordert hatten (Loujain al-Hathloul 2018--2021) \\
+\addlinespace[2pt]
+\textbf{Iran} & schiitische Theokratie & Hidschabpflicht; Zeugnis und diya der Frau hälftig; Scheidung/Sorgerecht asymmetrisch; zugleich Studentinnenmehrheit an Universitäten & \enquote{Frau, Leben, Freiheit}-Proteste nach dem Tod Mahsa Aminis 2022; verschärftes Keuschheitsgesetz 2023/24; offener Systemkonflikt \\
+\addlinespace[2pt]
+\textbf{Indonesien} & säkulare Verfassung, größte muslimische Bevölkerung & vergleichsweise liberale Praxis, Frauen in Politik und Wirtschaft präsent & Scharia-Sonderzone Aceh (Prügelstrafen); islamistische Mobilisierung vs. traditionell synkretistische Praxis \\
+\addlinespace[2pt]
+\textbf{Bosnien} & säkularer Staat, hanafitische Tradition, europäische Prägung & Islam als Kultur- und Identitätsmarker bei weitgehend säkularer Lebensführung & Beleg, dass ein \enquote{europäischer Islam} keine Neuerfindung braucht --- er existiert seit Jahrhunderten \\
+\addlinespace[2pt]
+\textbf{Ägypten} & Mischsystem: Verfassungsislam + reformiertes Familienrecht & khul-Scheidung per Gesetz 2000; FGM verboten (2008, verschärft 2016) --- aber Prävalenz weiterhin hoch: Rechtsnorm und Sozialnorm klaffen & Reformen von oben, konservative Gesellschaft; al-Azhar als umkämpfte Deutungsinstanz \\
+\addlinespace[2pt]
+\textbf{Marokko} & Mudawwana-Reform 2004 als Musterfall & Ehemündigkeit 18, Scheidungsrechte, Selbstverheiratung ohne wali möglich; neue Reformrunde seit 2023/24 (Sorgerecht, Erbfragen im Streit) & zeigt Reformfähigkeit \emph{innerhalb} des religiösen Rahmens (König als \enquote{Führer der Gläubigen} legitimiert die Reform religiös) \\
+\addlinespace[2pt]
+\textbf{Afghanistan} & Taliban-Emirat seit 2021 & Sekundarschul- und Universitätsverbot, Arbeitsverbote, Bewegungs- und Sichtbarkeitsverbote (\enquote{Tugendgesetz} 2024) & Extrempol; UN-Debatte um den Begriff \enquote{Gender-Apartheid} \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+Zwei Muster tragen die Tabelle. \textbf{Erstens} die Erststudien-Regel: Die Spreizung folgt weniger der Theologie als \textbf{Staatsform, Ökonomie und Rechtsschule} --- hanafitische, staatlich kodifizierte, arbeitsmarktintegrierte Kontexte liegen vorn; Renten- und Milizökonomien hinten. Michael Ross (\emph{Oil, Islam, and Women}, APSR 2008) hat statistisch argumentiert, nicht der Islam, sondern die \textbf{Ölrente} drücke die weibliche Erwerbs- und damit Rechtsposition (Öl verdrängt exportnahe Frauenarbeitsplätze, hohe Männerlöhne finanzieren den Alleinverdienerhaushalt) --- die Gegenkritik (u.\,a. Norris/Inglehart; Charrad) hält kulturelle und rechtshistorische Faktoren dagegen und verweist auf öllose, dennoch restriktive Staaten. \chipumstritten{umstritten} \textbf{Zweitens} die Reversibilität: Iran 1979, Afghanistan 2021 und der türkische Konventionsaustritt zeigen, dass Rechtspositionen von Frauen \textbf{politisch kassierbar} bleiben --- Bennetts Gleichgewicht kennt auch Rückwärtsbewegungen. \chipbelegt{belegt}
+
+\section{Brückenschlag: Muslimische Frauen in Deutschland}
+\noindent\textit{Vom Weltvergleich in die Nachbarschaft: Migration bringt alle Varianten der Tabelle in dieselbe Stadt --- und in dieselbe Familie.}
+\medskip
+
+Zuerst die Größenordnungen, gegen jede Pauschalisierung: In Deutschland leben rund 5,3 bis 5,6 Millionen Muslime (MLD-Studie des BAMF 2020) --- türkeistämmige Familien der zweiten und dritten Generation, arabische, kurdische, bosnische, iranische (mehrheitlich säkular geprägte Exilmilieus), seit 2015 verstärkt syrische und afghanische Communities. Religiosität, Geschlechterbilder und Rechtsverständnis \textbf{spreizen sich innerhalb} dieser Gruppen so stark wie zwischen den Staaten der Tabelle. Die empirische Grundlinie: Die Mehrheit muslimischer Frauen in Deutschland lebt selbstbestimmt; muslimische Töchter der Einwandererfamilien gehören zu den auffälligsten \textbf{Bildungsaufsteigerinnen} des Landes (El-Mafaalani, \emph{Das Integrationsparadox}, 2018: Konflikte entstehen gerade \emph{weil} Teilhabe wächst). \chipbelegt{belegt}
+
+Zugleich existieren belegbare Konfliktphänomene, die zu benennen keine Islamophobie ist --- und zu pauschalisieren keine Aufklärung: Die BMFSFJ-Studie \emph{Zwangsverheiratung in Deutschland} (2011) zählte für ein Jahr rund 3.400 Beratungsfälle (Bedrohte und Betroffene); die Betroffenen kamen überwiegend, aber nicht ausschließlich aus muslimisch geprägten Familien --- auch jesidische und andere Kontexte sind vertreten, was die \textbf{Konfundierung von Religion, Herkunftsregion und Clan-/Ehrkultur} anzeigt: Der prädiktive Faktor ist weniger der Glaube als die patrilineare Ehrökonomie --- exakt die Sippenlogik, die die Erststudie für die Germanen beschrieb. \chipplausibel{plausibel} Der Rechtsstaat hat reagiert: \S~237 StGB (Zwangsheirat als eigener Straftatbestand, 2011), Gesetz gegen Kinderehen (2017, Ehemündigkeit ausnahmslos 18), Gewaltschutzgesetz, spezialisierte Beratungsstrukturen (Papatya, Terre des Femmes). Die MPI-Studie von Oberwittler und Kasselt (2011) zählte für 1996--2005 im Schnitt etwa zwölf \enquote{Ehrenmorde} pro Jahr --- jede einzelne Tat monströs (Fall Hatun Sürücü, Berlin 2005), die Größenordnung aber weit unterhalb der medialen Dauerpräsenz. \chipbelegt{belegt}
+
+Die Deutungskämpfe der Mehrheitsgesellschaft spiegeln die alte Doppelcodierung: Das Kopftuch wurde vom Bundesverfassungsgericht 2003 und 2015 als Fall der Glaubensfreiheit mit Verhältnismäßigkeitsschranken justiert --- gesellschaftlich changiert es zwischen Unterdrückungssymbol und Selbstermächtigungszeichen, und die empirische Antwort lautet: je nach Trägerin beides, oft keins von beidem. Ruud Koopmans' Befunde zu fundamentalistischen Einstellungen unter europäischen Muslimen (Sechs-Länder-Studie 2013: erhebliche Minderheiten mit rigiden Auslegungen) stehen gegen die Kritik an Stichproben und Item-Konstruktion (u.\,a. aus der Religionsmonitor-Forschung um Detlef Pollack) --- der ehrliche Befund: Es gibt sowohl ein reales fundamentalistisches Segment als auch eine säkularisierende Mehrheitsdrift der Folgegenerationen. \chipumstritten{umstritten} Und wie in jeder Epoche dieser Studie gibt es die innerreligiöse Gegenrede: den islamischen Feminismus (Amina Wadud; die Musawah-Bewegung; Ziba Mir-Hosseini), in Deutschland Seyran Ateş' liberale Ibn-Rushd-Goethe-Moschee --- die Christine-de-Pizan-Position dieser Erzählung: Reform \emph{aus} der Tradition, nicht gegen sie. \chipbelegt{belegt}
+
+\section{Paralleljustiz: Der \enquote{Friedensrichter}}
+\noindent\textit{Analytische Grundlage für die Schlussszene: Was ist dran am Schlagwort --- und wo verläuft die Rechtsgrenze?}
+\medskip
+
+Den Begriff prägte Joachim Wagner (\emph{Richter ohne Gesetz}, 2011): In arabisch- und kurdischstämmigen Großfamilienmilieus schlichten angesehene Vermittler (\emph{muslih}, umgangssprachlich \enquote{Friedensrichter}) Konflikte von der Erbsache bis zur Körperverletzung --- inklusive Fällen, in denen Zeugen vor deutschen Strafgerichten ihre Aussagen \enquote{anpassen}, nachdem die Familien sich geeinigt haben. Die Kritik an Wagner: anekdotische Basis, Dunkelfeld unbeziffert, Alarmbegriff. Die differenzierte Forschung (Mathias Rohe, Erlanger Zentrum; Studien für Justizministerien ab 2014/2019) bestätigt das Phänomen dem Grunde nach, verortet es aber primär in \textbf{Clanstrukturen bestimmter Milieus} --- nicht im Islam als solchem (die Schlichtungsfigur ist vorislamisch-stammesgesellschaftlich; ihre Autorität speist sich aus Familienmacht, nicht aus Theologie) --- und warnt vor beidem: Verharmlosung wie Moralpanik. \chipplausibel{plausibel}
+
+Die Rechtslage ist klar konturiert: \textbf{Zivilrechtlich} ist private Schlichtung legitim --- Schiedsverfahren (\S\S~1025\,ff. ZPO) und Mediation stehen jedem offen, auch religiös gerahmt; Grenze ist der \emph{ordre public} (keine Anerkennung von Kinderehen, Mehrehen, entschädigungslosem talaq). \textbf{Strafrecht dagegen ist unverhandelbar}: Das staatliche Gewaltmonopol duldet keinen privaten \enquote{Täter-Opfer-Ausgleich} an den Gerichten vorbei; organisierte Zeugenbeeinflussung ist selbst strafbar. Und im Familienkonflikt verläuft die Linie zwischen legitimer innerfamiliärer Vermittlung und \S\S~237, 240 StGB dort, wo aus Rat \textbf{Druck} und aus Vermittlung \textbf{Durchsetzung} wird. Genau auf dieser Linie spielt die folgende Szene.
+\section{Hörspielszene: Die Verheiratung der Tochter --- 2026}
+\noindent\textit{Parallel zur karolingischen Szene der Erststudie: dieselbe Konstellation, zwölf Jahrhunderte später. Machart wie dort --- Rollen, Regie, Dialog, danach die Einordnung.}
+\medskip
+
+\textbf{Rollen:} VATER (Ende 40, Familienoberhaupt, denkt in Ehre und Verpflichtung gegenüber der Familie des Cousins); MUTTER (Mitte 40, ambivalent); AMIRA (17, Gymnasiastin, will das Abitur); ABU KHALED (60er, angesehener Vermittler, ruhig, verbindlich). \emph{Atmo: Wohnzimmer, Teegläser, gedämpfte Straße. Die Doku-Erzählstimme rahmt die Szene wie in der Erststudie.}
+
+\begin{quotation}\small
+\textsc{Erzählstimme:} Eine Wohnung in einer deutschen Großstadt, ein Donnerstagabend. Die Familie hat Besuch. Es geht --- wie vor zwölfhundert Jahren am Herdfeuer des fränkischen Hofes --- um die Zukunft einer Tochter. Nur dass diese Tochter in drei Monaten Abitur schreibt.
+
+\textsc{Abu Khaled:} Bruder, ich bin nicht gekommen, um zu richten. Ich bin gekommen, damit zwei Familien Freunde bleiben. Dein Cousin sagt, es gab ein Wort zwischen euch. Ein Wort ist ein Wort.
+
+\textsc{Vater:} Es gab ein Wort, Abu Khaled. Vor zwei Jahren schon. Sein Sohn ist ein guter Junge, er hat Arbeit, das Haus im Dorf ist fertig. Ich habe nichts versprochen, was ich nicht halten kann. Nur sie --- \emph{(Pause)} --- sie macht mir Schande vor ihm.
+
+\textsc{Amira:} Ich mache niemandem Schande. Ich habe niemandem etwas versprochen. Ich war fünfzehn, als ihr das \enquote{Wort} gegeben habt. Mich hat keiner gefragt.
+
+\textsc{Abu Khaled:} \emph{(freundlich)} Kind, niemand verheiratet dich morgen. Aber eine Verlobung ist kein Gefängnis, sie ist ein Schutz. Dein Vater trägt Verantwortung für dich. Wenn das Wort platzt, verliert er das Gesicht --- und du verlierst mit.
+
+\textsc{Amira:} Nach welchem Recht? \emph{(ruhig, deutlich)} Nach dem Gesetz hier bin ich mit achtzehn frei. Meine Lehrerin sagt --- und die Beratungsstelle sagt es auch: Niemand darf mich verloben, verheiraten, niemand darf mir drohen. Das ist Paragraf 237. Ich habe die Nummer der Beratungsstelle im Handy, Baba. Ich will das nicht benutzen müssen. Ich will, dass wir reden.
+
+\textsc{Mutter:} \emph{(leise, zum Vater)} Hör ihr zu. Sie ist die Erste von uns, die das Abitur macht. Meine Mutter wurde mit sechzehn gegeben, ich mit neunzehn. Vielleicht --- \emph{(Pause)} --- vielleicht ist das Wort, das wir halten müssen, das an unsere Tochter.
+
+\textsc{Abu Khaled:} \emph{(nach einer Stille)} Bruder --- ich sage dir, was ich deinem Cousin sagen werde: Eine Braut, die Nein sagt, ist kein Gewinn, sie ist eine offene Rechnung. Auch der Prophet hat den Konsens der Frau verlangt. Lass mich einen Weg finden, bei dem keiner das Gesicht verliert: kein Bruch --- ein Aufschub. Nach dem Studium sieht man weiter. \emph{(zu Amira)} Und du, Kind: Ehre deinen Vater. Er trägt schwerer an alledem, als du siehst.
+
+\textsc{Erzählstimme:} Kein Urteil, kein Vertrag --- ein Aufschub, der wie Frieden aussieht und ein Waffenstillstand ist. Die karolingische Tochter hatte in dieser Szene keinen Text. Amira hat einen: eine Schule, ein Gesetz, eine Telefonnummer. Das ist der ganze Unterschied von zwölfhundert Jahren --- und er ist gewaltig. Aber der Tisch, an dem über sie verhandelt wird, steht noch.
+\end{quotation}
+
+\subsection*{Einordnung: Wie realistisch ist diese Szene?}
+\textbf{Die Konstellation} (transnationale Verlobungsabsprache, Ehr- und Gesichtswahrungslogik, hinzugezogener Vermittler, ambivalente Mutter, bildungsorientierte Tochter) ist aus Beratungspraxis und Forschung vielfach dokumentiert --- BMFSFJ-Studie 2011, Fallberichte von Papatya und Terre des Femmes; auch der versöhnliche Ausgang über einen \enquote{Aufschub} entspricht realer Schlichtungspraxis. \chipbelegt{belegt} \textbf{Die Häufigkeit} darf nicht überzeichnet werden: Rund 3.400 Beratungsfälle im Erhebungsjahr stehen Hunderttausenden muslimischer Familien gegenüber, in denen keine solche Szene stattfindet; die Konstellation korreliert mit patrilinearen Ehr- und Clanstrukturen bestimmter Herkunftsmilieus, nicht mit Religiosität als solcher --- es gibt sie auch in nichtmuslimischen Kontexten. \chipbelegt{belegt} \textbf{Die Figur des Vermittlers} ist realistisch gezeichnet, wenn sie ambivalent bleibt: Er deeskaliert tatsächlich (und beruft sich zu Recht auf das islamische Konsenserfordernis) --- \emph{und} er stabilisiert zugleich das System, das über die Tochter verhandelt; genau diese Doppelrolle beschreibt die Forschung (Rohe). Strafbar wird die Runde erst, wo Druck zur Nötigung wird (\S\S~237, 240 StGB); die Szene liegt bewusst diesseits der Linie. \chipplausibel{plausibel} \textbf{Die Strukturparallele} zur Karolingerszene trägt: Vater als faktischer wali, Konsens der Tochter normativ vorgesehen (islamrechtlich wie grundgesetzlich!) und faktisch unter Druck, informelle Macht der Mutter als Zünglein. Der entscheidende Unterschied ist institutionell: 2026 existieren Schulsozialarbeit, Jugendamt, \S~237, anonyme Zufluchtseinrichtungen --- die Tochter hat \textbf{Exit-Optionen und damit Verhandlungsmacht}. Die Erststudien-Formel bestätigt sich ein letztes Mal: Nicht die Gesinnung am Tisch hat sich zuerst geändert, sondern die \textbf{Opportunitätsstruktur um den Tisch herum}. \chipplausibel{plausibel}
+
+\section{Synthese: Der Strukturvergleich}
+\noindent\textit{Prüfung der Leitformeln über beide Studien hinweg --- und die Frage, wo die Parallele bricht.}
+\medskip
+
+\begin{small}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}}
+\caption{Strukturvergleich: germanisch-europäische vs. islamische Ordnung}\\
+\toprule
+\textbf{Prüfstein} & \textbf{Germanisch-europäisch} & \textbf{Islamisch (klassisch)}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Prüfstein} & \textbf{Germanisch-europäisch} & \textbf{Islamisch (klassisch)}\\
+\midrule
+\endhead
+\textbf{Vormundschaft} & Munt: lebenslang, umfassend (Person + Vermögen) & wilaya: primär Eheschließung; Vermögen der Frau bleibt ihr eigen --- Vormundschaft \emph{schmaler} als die Munt \\
+\addlinespace[2pt]
+\textbf{Brautgabe} & Muntschatz an die \emph{Sippe} --- kauft die Verfügungsgewalt & mahr an die \emph{Frau} --- begründet ihr Eigentum \\
+\addlinespace[2pt]
+\textbf{Blutgeld} & Wergeld der Gebärfähigen: \emph{dreifach} (Reproduktionswert für die Sippe) & diya der Frau: \emph{hälftig} (Ersatzwert des Unterhaltsleisters) --- gleiche Objektlogik, umgekehrte Verwertungsfunktion \\
+\addlinespace[2pt]
+\textbf{Erbrecht} & terra Salica: Ausschluss vom Landerbe & Sure 4:11: garantierter, aber halber Anteil --- Garantie gegen Quote \\
+\addlinespace[2pt]
+\textbf{Scheidung} & Verstoßungsrecht des Mannes; Frau ohne Ausweg & talaq des Mannes; khul der Frau als teurer, aber realer Ausweg \\
+\addlinespace[2pt]
+\textbf{Zeugnis} & faktisch marginal (Eideshelfer der Sippe) & 2:282: zwei Frauen = ein Mann, generalisiert \\
+\addlinespace[2pt]
+\textbf{Sakrale Rolle} & Seherin (Veleda) --- gekappt durch männliches Priesteramt & muhaddithat, Sufi-Heilige --- geduldet neben männlichem Rechtsgelehrtenmonopol \\
+\addlinespace[2pt]
+\textbf{Wesensdeutung} & Doppelcodierung Eva/Maria; haliurunnae-Angst & Doppelcodierung Heilige/fitna --- Frau als Quelle der Versuchung und des Chaos (Mernissi) \\
+\addlinespace[2pt]
+\textbf{Verlaufsform} & frühe Rechtlosigkeit \(\rightarrow\) Verrechtlichung \(\rightarrow\) Säkularisierung als Katalysator \(\rightarrow\) Gleichheitssatz & frühe Rechts\emph{garantien} \(\rightarrow\) Erstarrung der Schulen \(\rightarrow\) fragmentierte, reversible Moderne \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+\textbf{Die Leitformeln bestehen die Probe --- mit einer Bruchstelle.} \enquote{Rechtsstellung folgt Funktionsstellung} bestätigt sich durchgehend: am diya/Wergeld-Kontrast, an den osmanischen Kadi-Akten, an der Ölrenten-Debatte, an der Erwerbsintegration als stärkstem Prädiktor der Gegenwart. \enquote{Religion als Dauerhaftigkeitsgarantie statt Ursache} bestätigt sich ebenfalls: Munt wie wilaya, Schleier wie Abschließung sind älter als ihre jeweilige religiöse Begründung --- die Theologie hat sie geerbt, geheiligt und der Verhandelbarkeit entzogen. \chipplausibel{plausibel}
+
+Die \textbf{Bruchstelle} liegt im Reformmechanismus. Europa besaß mit der Säkularisierung ein Scharnier, das die Legitimationsordnung als menschengemacht --- und damit änderbar --- reklassifizierte. Wo der normative Kerntext als \emph{direktes, ungeschaffenes Gotteswort} gilt, arbeitet Reform unter anderen Bedingungen: nicht unmöglich (Marokko 2004 zeigt religiös \emph{legitimierte} Reform; die historische Scharia-Praxis war wandlungsfähig, Hallaq), aber sie muss durch die Offenbarung hindurch statt an ihr vorbei --- Kontextualisierung, Neuauslegung, maqasid-Argumente. Der islamische Feminismus ist deshalb kein Import des westlichen Wegs, sondern ein eigener: die Christine-de-Pizan-Route unter erschwerten hermeneutischen Bedingungen. \chipumstritten{umstritten}
+
+Damit lässt sich auch die Schlussformel der Erststudie prüfen: \enquote{Das Patriarchat ist nicht der Täter der Geschichte, sondern ihr Tatbestand.} Sie trägt auch hier --- mit derselben Verantwortungsklausel: Die Alternativen waren jeweils bekannt (der mahr an die Frau, das hanafitische Selbstverheiratungsrecht, Sure 4:129 als Einehe-Argument, die Mudawwana), und es waren konkrete Akteure --- Rechtsgelehrte, Dynastien, Revolutionsräte, Familienväter ---, die sie verwarfen oder ergriffen. Für die Gegenwartsdiagnose ist die Formel um einen Satz zu ergänzen: \textbf{Wo der Rechtsstaat der Tochter Exit-Optionen gibt, wird aus dem Tatbestand ein Auslaufmodell --- gehalten nur noch von denen, die den Tisch decken, an dem über sie verhandelt wird.}
+
+\section{Quellen und Literatur (Auswahl)}
+\litentry{Quelle}{\textbf{Koran}, insbes. Suren 2:229; 2:282; 4:3--4; 4:11; 4:19; 4:34; 4:129; 24:2; 24:31; 33:53; 33:59; 81:8--9 (Übersetzungen sinngemäß nach den gängigen wissenschaftlichen Übertragungen).}
+\litentry{Quelle}{\textbf{Ibn Ishaq / Ibn Hischam:} as-Sira an-nabawiyya (9.~Jh.); \textbf{al-Buchari}, \textbf{Muslim}: Hadith-Sammlungen (9.~Jh.).}
+\litentry{Quelle}{\textbf{Mittelassyrische Gesetze}, Tafel A \S 40 (Schleiergebot/-verbot nach Stand, 13.~Jh. v.~Chr.).}
+\litentry{Quelle}{\textbf{Gesetzestexte der Moderne:} türk. ZGB 1926; tunes. Code du statut personnel 1956; ägypt. khul-Gesetz Nr. 1/2000; marokkan. Mudawwana 2004; saud. Personalstatusgesetz 2022; \S\S~237, 240 StGB; \S\S~1025\,ff. ZPO; BVerfGE-Kopftuchentscheidungen 2003 und 2015.}
+\litentry{Literatur}{\textbf{Ahmed, Leila:} Women and Gender in Islam. Historical Roots of a Modern Debate, New Haven 1992 --- Standardwerk; Übernahme-These zum spätantiken Erbe.}
+\litentry{Literatur}{\textbf{Mernissi, Fatima:} Beyond the Veil, 1975; dies.: Le harem politique / The Veil and the Male Elite, 1987 --- fitna-These und Hadith-Kritik.}
+\litentry{Literatur}{\textbf{Ali, Kecia:} Marriage and Slavery in Early Islam, Cambridge/MA 2010 --- Gegendarstellung zur Verbesserungsthese.}
+\litentry{Literatur}{\textbf{Wadud, Amina:} Qur'an and Woman, 1992; \textbf{Mir-Hosseini, Ziba} u.\,a. (Musawah): Men in Charge?, 2015 --- islamisch-feministische Hermeneutik.}
+\litentry{Literatur}{\textbf{Hallaq, Wael:} Shari'a: Theory, Practice, Transformations, Cambridge 2009 --- zur vormodernen Flexibilität und kolonialen Kodifizierung.}
+\litentry{Literatur}{\textbf{Nadwi, Mohammad Akram:} al-Muhaddithat. The Women Scholars in Islam, Oxford 2007.}
+\litentry{Literatur}{\textbf{Peirce, Leslie:} The Imperial Harem, Oxford 1993; dies.: Morality Tales. Law and Gender in the Ottoman Court of Aintab, Berkeley 2003; \textbf{Jennings, Ronald:} Women in Early 17th Century Ottoman Judicial Records, JESHO 18 (1975).}
+\litentry{Literatur}{\textbf{Schacht, Joseph:} The Origins of Muhammadan Jurisprudence, Oxford 1950; \textbf{Crone, Patricia / Cook, Michael:} Hagarism, Cambridge 1977; \textbf{Motzki, Harald:} Die Anfänge der islamischen Jurisprudenz, Stuttgart 1991 --- Quellenkritik-Debatte.}
+\litentry{Literatur}{\textbf{Ross, Michael:} Oil, Islam, and Women, American Political Science Review 102/1 (2008); Gegenkritik u.\,a. \textbf{Norris, Pippa / Inglehart, Ronald:} Sacred and Secular, 2004; \textbf{Charrad, Mounira:} States and Women's Rights, 2001.}
+\litentry{Literatur}{\textbf{Rohe, Mathias:} Das islamische Recht, 3.~Aufl. München 2011; ders. u.\,a.: Studien zu Paralleljustiz (Bayer. StMJ 2014; BMJV-Kontext 2019); \textbf{Wagner, Joachim:} Richter ohne Gesetz, Berlin 2011 --- samt methodischer Kritik.}
+\litentry{Literatur}{\textbf{BAMF:} Muslimisches Leben in Deutschland 2020; \textbf{BMFSFJ:} Zwangsverheiratung in Deutschland, Berlin 2011; \textbf{Oberwittler, Dietrich / Kasselt, Julia:} Ehrenmorde in Deutschland 1996--2005, MPI/BKA 2011; \textbf{Koopmans, Ruud:} Religious Fundamentalism and Hostility against Out-groups, JEMS 41 (2015) --- samt Kritik aus der Religionsmonitor-Forschung (Pollack u.\,a.).}
+\litentry{Literatur}{\textbf{El-Mafaalani, Aladin:} Das Integrationsparadox, Köln 2018; \textbf{Ateş, Seyran:} Der Islam braucht eine sexuelle Revolution, Berlin 2009.}
+
+\medskip
+\noindent{\footnotesize\emph{Hinweis: Koranstellen nach Kairiner Zählung; Rechtslagen der Ländertabelle mit Stand ca. 2025, im Detail änderungsdynamisch. Für zitierfähige Arbeiten sind Primärtexte und aktuelle Gesetzesstände zu prüfen. Die Studie ist als Parallelband zu \enquote{Munt, Wergeld, Allod} konzipiert; Querverweise beziehen sich auf deren Kapitelbefunde.}}
+
+\end{document}
