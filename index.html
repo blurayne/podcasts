@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Frau vor dem Recht — Podcast Studio</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #fafaf8;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8f6f3;
+    --border: #e2e4e9;
+    --text: #1a1c23;
+    --text-secondary: #6b7280;
+    --accent: #b45309;
+    --accent-hover: #92400e;
+    --series1: #1e3a5f;
+    --series1-bg: #eff6ff;
+    --series2: #065f46;
+    --series2-bg: #ecfdf5;
+    --series3: #581c87;
+    --series3-bg: #faf5ff;
+    --badge-pdf-bg: #fee2e2; --badge-pdf: #b91c1c;
+    --badge-script-bg: #dbeafe; --badge-script: #1d4ed8;
+    --badge-scene-bg: #d1fae5; --badge-scene: #065f46;
+    --badge-html-bg: #f3e8ff; --badge-html: #6b21a8;
+    --badge-analysis-bg: #fef3c7; --badge-analysis: #92400e;
+    --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-hover: 0 4px 12px rgba(0,0,0,.10), 0 2px 4px rgba(0,0,0,.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --bg-card: #161b22;
+      --bg-card-hover: #1f2533;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent: #f59e0b;
+      --accent-hover: #fbbf24;
+      --series1: #93c5fd; --series1-bg: #0f1b2d;
+      --series2: #6ee7b7; --series2-bg: #0a1f17;
+      --series3: #c4b5fd; --series3-bg: #1a1030;
+      --badge-pdf-bg: #3b0d0d; --badge-pdf: #fca5a5;
+      --badge-script-bg: #0f1f3d; --badge-script: #93c5fd;
+      --badge-scene-bg: #0a1f17; --badge-scene: #6ee7b7;
+      --badge-html-bg: #1a0d30; --badge-html: #c4b5fd;
+      --badge-analysis-bg: #2d1f00; --badge-analysis: #fbbf24;
+      --shadow: 0 1px 3px rgba(0,0,0,.3);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,.5);
+    }
+  }
+
+  :root[data-theme="light"] {
+    --bg: #fafaf8; --bg-card: #ffffff; --bg-card-hover: #f8f6f3;
+    --border: #e2e4e9; --text: #1a1c23; --text-secondary: #6b7280;
+    --accent: #b45309; --accent-hover: #92400e;
+    --series1: #1e3a5f; --series1-bg: #eff6ff;
+    --series2: #065f46; --series2-bg: #ecfdf5;
+    --series3: #581c87; --series3-bg: #faf5ff;
+    --badge-pdf-bg: #fee2e2; --badge-pdf: #b91c1c;
+    --badge-script-bg: #dbeafe; --badge-script: #1d4ed8;
+    --badge-scene-bg: #d1fae5; --badge-scene: #065f46;
+    --badge-html-bg: #f3e8ff; --badge-html: #6b21a8;
+    --badge-analysis-bg: #fef3c7; --badge-analysis: #92400e;
+    --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-hover: 0 4px 12px rgba(0,0,0,.10);
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0d1117; --bg-card: #161b22; --bg-card-hover: #1f2533;
+    --border: #30363d; --text: #e6edf3; --text-secondary: #8b949e;
+    --accent: #f59e0b; --accent-hover: #fbbf24;
+    --series1: #93c5fd; --series1-bg: #0f1b2d;
+    --series2: #6ee7b7; --series2-bg: #0a1f17;
+    --series3: #c4b5fd; --series3-bg: #1a1030;
+    --badge-pdf-bg: #3b0d0d; --badge-pdf: #fca5a5;
+    --badge-script-bg: #0f1f3d; --badge-script: #93c5fd;
+    --badge-scene-bg: #0a1f17; --badge-scene: #6ee7b7;
+    --badge-html-bg: #1a0d30; --badge-html: #c4b5fd;
+    --badge-analysis-bg: #2d1f00; --badge-analysis: #fbbf24;
+    --shadow: 0 1px 3px rgba(0,0,0,.3);
+    --shadow-hover: 0 4px 16px rgba(0,0,0,.5);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d4f7a 50%, #1a2f4a 100%);
+    color: #fff;
+    padding: 3.5rem 1.5rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(180,83,9,.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(59,130,246,.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .header-inner { position: relative; max-width: 780px; margin: 0 auto; }
+  .header-series {
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 99px;
+    padding: .25rem .75rem;
+    margin-bottom: 1rem;
+    color: #e0e7ff;
+  }
+  .site-header h1 {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.2;
+    margin-bottom: .75rem;
+    color: #ffffff;
+  }
+  .site-header h1 em { color: #fbbf24; font-style: normal; }
+  .site-header .subtitle {
+    font-size: 1.05rem;
+    color: #bfdbfe;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+  /* ── SERIES SECTION ── */
+  .series-section { margin-bottom: 3.5rem; }
+  .series-header {
+    display: flex;
+    align-items: baseline;
+    gap: .75rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: .75rem;
+    border-bottom: 2px solid var(--border);
+  }
+  .series-header h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -.01em;
+  }
+  .series-label {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: .2rem .6rem;
+    border-radius: 99px;
+  }
+  .series-label-1 { background: var(--series1-bg); color: var(--series1); }
+  .series-label-2 { background: var(--series2-bg); color: var(--series2); }
+  .series-label-3 { background: var(--series3-bg); color: var(--series3); }
+
+  /* ── EPISODE BLOCK ── */
+  .episode-block { margin-bottom: 2rem; }
+  .episode-header {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: 1rem;
+  }
+  .episode-number {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: var(--text-secondary);
+    background: var(--border);
+    padding: .25rem .6rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .episode-header h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .episode-header .ep-subtitle {
+    font-size: .9rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  /* ── CARD GRID ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.25rem 1rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow .15s ease, background .15s ease, transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+    background: var(--bg-card-hover);
+    transform: translateY(-1px);
+  }
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+  .card-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
+  .card-badges { display: flex; gap: .35rem; flex-wrap: wrap; justify-content: flex-end; }
+  .badge {
+    font-size: .65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: .2rem .55rem;
+    border-radius: 99px;
+  }
+  .badge-pdf { background: var(--badge-pdf-bg); color: var(--badge-pdf); }
+  .badge-script { background: var(--badge-script-bg); color: var(--badge-script); }
+  .badge-scene { background: var(--badge-scene-bg); color: var(--badge-scene); }
+  .badge-html { background: var(--badge-html-bg); color: var(--badge-html); }
+  .badge-analysis { background: var(--badge-analysis-bg); color: var(--badge-analysis); }
+  .badge-essay { background: var(--badge-analysis-bg); color: var(--badge-analysis); }
+  .badge-audio { background: #fce7f3; color: #9d174d; }
+
+  @media (prefers-color-scheme: dark) {
+    .badge-audio { background: #3b0f26; color: #f9a8d4; }
+  }
+  :root[data-theme="dark"] .badge-audio { background: #3b0f26; color: #f9a8d4; }
+  :root[data-theme="light"] .badge-audio { background: #fce7f3; color: #9d174d; }
+
+  .card-title {
+    font-size: .975rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.35;
+    margin-top: .25rem;
+  }
+  .card-description {
+    font-size: .845rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    flex: 1;
+  }
+  .card-meta {
+    font-size: .75rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+  }
+  .card-meta span { opacity: .5; }
+
+  .card-links {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    padding-top: .75rem;
+    border-top: 1px solid var(--border);
+  }
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .35rem .75rem;
+    border-radius: 6px;
+    transition: background .12s, color .12s;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--bg);
+  }
+  .link-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .link-btn.primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .link-btn.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: .8rem;
+    color: var(--text-secondary);
+    background: var(--bg-card);
+  }
+  .site-footer a { color: var(--accent); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+
+  /* ── THEME TOGGLE ── */
+  .theme-toggle {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: var(--shadow-hover);
+    transition: background .15s;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .theme-toggle:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .site-header { padding: 2.5rem 1rem 2rem; }
+    .container { padding: 1.5rem 1rem 3rem; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── SKIP NAV ── */
+  a.skip-nav {
+    position: absolute;
+    left: -9999px;
+  }
+  a.skip-nav:focus {
+    left: 1rem; top: 1rem;
+    background: var(--accent);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-nav">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-series">Podcast-Studio · blurayne</div>
+    <h1>Die Frau vor dem <em>Recht</em></h1>
+    <p class="subtitle">
+      Doku-Feature-Podcast und Hörspiel-Produktion — 1.900 Jahre Rechtsgeschichte
+      der Frau, von der germanischen Seherin bis zur muslimischen Reformerin.
+    </p>
+  </div>
+</header>
+
+<main id="main">
+<div class="container">
+
+  <!-- ══════════════════════════════════════════════════
+       SERIES 1: DIE FRAU VOR DEM RECHT
+       ══════════════════════════════════════════════════ -->
+  <section class="series-section" aria-label="Staffel 1">
+    <div class="series-header">
+      <h2>Die Frau vor dem Recht</h2>
+      <span class="series-label series-label-1">Staffel 1 · S01</span>
+    </div>
+
+    <!-- EPISODE 1 -->
+    <div class="episode-block">
+      <div class="episode-header">
+        <span class="episode-number">Folge 01</span>
+        <div>
+          <h3>Von der Seherin im Turm <span class="ep-subtitle">· Germanen &amp; Europa</span></h3>
+        </div>
+      </div>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🎙️</div>
+            <div class="card-badges">
+              <span class="badge badge-script">Skript</span>
+              <span class="badge badge-audio">35–40 min</span>
+            </div>
+          </div>
+          <div class="card-title">Doku-Feature-Skript</div>
+          <div class="card-description">
+            Zweistimmiges Doku-Feature — von Veleda, der Seherin der Brukterer (70 n. Chr.),
+            über fränkisches Mündelrecht, mittelhochdeutsches Stadtrecht, bis zur rechtlichen
+            Gleichstellung in der BRD 1977. Kalt eröffnet mit Tacitus-Zitat.
+          </div>
+          <div class="card-meta"><span>·</span> STIMME 1: Mila Winter · STIMME 2: Wolf Spencer</div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-01/podcast.html">Skript lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-01/podcast.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🎭</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">3 Szenen</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Hörspiel-Einlagen — alle drei Szenen</div>
+          <div class="card-description">
+            Drei dramatisierte Szenen für die Doku-Einbettung: <strong>Szene 1</strong> — „Das Thing
+            und das umstrittene Feld" (Germanen, 90 n. Chr.); <strong>Szene 2</strong> — „Die Verheiratung"
+            (Franken, frühes 9. Jh.); <strong>Szene 3</strong> — „Die Frau, die zur Waffe greift"
+            (Island, ~980). Mit Moderationsübergängen und historischer Einordnung.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-01/hoerspiele.html">Skript lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-01/hoerspiele.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">📄</div>
+            <div class="card-badges">
+              <span class="badge badge-pdf">PDF</span>
+              <span class="badge badge-analysis">Wissenschaft</span>
+            </div>
+          </div>
+          <div class="card-title">Wissenschaftliche Studie</div>
+          <div class="card-description">
+            Akademische Begleitstudie zu Folge 1: Rechtsstellung der Frau in der germanischen
+            und frühmittelalterlichen Gesellschaft. Quellen: Tacitus (Germania), Lex Salica,
+            Lex Burgundionum, Stadtrechte. Mit Konfidenzmarkern und Forschungsstand.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-01/studie/studie.pdf">PDF öffnen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-01/studie/analyse.html">HTML-Analyse</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">📋</div>
+            <div class="card-badges">
+              <span class="badge badge-analysis">Produktion</span>
+            </div>
+          </div>
+          <div class="card-title">Produktions- &amp; Planungsdokumente</div>
+          <div class="card-description">
+            Vollständiger Produktionsplan (Stimmenbesetzung, Kreditbudget ~25k, Phasen,
+            ffmpeg-Assembling) und separater Podcast-Plan (Skript-Konventionen,
+            Musik-/Atmo-Einsatz, Ausgabepfade).
+          </div>
+          <div class="card-links">
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-01/PLAN.html">Hörspiel-Plan</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-01/PODCAST-PLAN.html">Podcast-Plan</a>
+          </div>
+        </div>
+
+      </div><!-- /card-grid -->
+    </div><!-- /episode-block -->
+
+    <hr class="section-divider">
+
+    <!-- EPISODE 2 -->
+    <div class="episode-block">
+      <div class="episode-header">
+        <span class="episode-number">Folge 02</span>
+        <div>
+          <h3>Der Parallelbogen <span class="ep-subtitle">· Von Mekka nach Neukölln</span></h3>
+        </div>
+      </div>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🎙️</div>
+            <div class="card-badges">
+              <span class="badge badge-script">Skript</span>
+              <span class="badge badge-audio">55–60 min</span>
+            </div>
+          </div>
+          <div class="card-title">Doku-Feature-Skript</div>
+          <div class="card-description">
+            Zweistimmiges Doku-Feature: Die Rechtsstellung der Frau im Islam, gespiegelt an
+            1.900 Jahren Europa. Von Khadidscha (Mekka, 595) über osmanische Kadi-Gerichte
+            bis zur Mahsa-Amini-Generation und dem deutschen Eherecht 2026. Fünf
+            Hörspiel-Einlagen eingebettet.
+          </div>
+          <div class="card-meta"><span>·</span> STIMME 1: Mila Winter · STIMME 2: Wolf Spencer</div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/podcast.html">Skript lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/podcast.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🏪</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">Szene 1</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Die Kauffrau von Mekka</div>
+          <div class="card-description">
+            Mekka, ~595 n. Chr. Khadidscha bint Khuwailid — erfolgreiche Kauffrau, ~40 Jahre —
+            leitet ihr Handelsgeschäft und entscheidet, Muhammad als Agenten und späteren
+            Ehemann zu gewinnen. Rollen: Khadidscha (Lea), Nafisa (Leonie), Maisara (Otto).
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/szene-1-khadidscha-mekka.html">Szene lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/szene-1-khadidscha-mekka.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">📚</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">Szene 2</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Die Lehrerin der Männer</div>
+          <div class="card-description">
+            Mekka, ~1055 n. Chr. Karima al-Marwaziyya — eine der bedeutendsten Hadith-Gelehrten
+            ihrer Zeit — empfängt al-Chatib aus Bagdad, der eigens anreist, um Sahih al-Bukhari
+            von ihr zu überliefern. Die Szene dramatisiert einen historisch belegten Akt.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/szene-2-karima-mekka.html">Szene lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/szene-2-karima-mekka.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">⚖️</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">Szene 3</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Vor dem Kadi</div>
+          <div class="card-description">
+            Aintab (Gaziantep), Osmanisches Reich, 1541. Fatma — Witwe, 35 — tritt persönlich
+            vor Gericht, um ihren aufgeschobenen Mahr, ihren Erbanteil und einen Weinberg
+            einzufordern. Basiert auf Leslie Peirces Archivauswertung osmanischer Gerichtsprotokolle.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/szene-3-aintab-kadi.html">Szene lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/szene-3-aintab-kadi.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🧣</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">Szene 4</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Der Schleier, dreimal</div>
+          <div class="card-description">
+            Triptychon: Teheran 1936 (Zwangsent-schleierung unter dem Schah), 1979
+            (Zwangsver-schleierung nach der Revolution), 2022 (Mahsa Aminis Generation).
+            Drei Generationen einer Familie — dieselbe Geste, drei politische Vorzeichen.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/szene-4-teheran-schleier.html">Szene lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/szene-4-teheran-schleier.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">🏠</div>
+            <div class="card-badges">
+              <span class="badge badge-scene">Szene 5</span>
+              <span class="badge badge-script">Hörspiel</span>
+            </div>
+          </div>
+          <div class="card-title">Die Verheiratung der Tochter — 2026</div>
+          <div class="card-description">
+            Deutschland, Donnerstagabend, 2026. Amira (17, Gymnasiastin) setzt sich gegen
+            eine arrangierte Heirat zur Wehr — ihr Vater, ihre Mutter und der Familienmediator
+            Abu Khaled agieren im Spannungsfeld zwischen Tradition, Rechtslage und Autonomie.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/szene-5-deutschland-2026.html">Szene lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/szene-5-deutschland-2026.md">Markdown ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">📄</div>
+            <div class="card-badges">
+              <span class="badge badge-pdf">PDF</span>
+              <span class="badge badge-analysis">Wissenschaft</span>
+            </div>
+          </div>
+          <div class="card-title">Vergleichsstudie Islam &amp; Europa</div>
+          <div class="card-description">
+            Akademische Begleitstudie zu Folge 2: vergleichende Rechtsgeschichte der Frau im
+            Islam und in Europa — Eigentum, Erbrecht, Scheidung, Körperautonomie. Deckt
+            Klassik bis Gegenwart ab. Kapitel 12 enthält das Szene-5-Skript im Quellenkontext.
+          </div>
+          <div class="card-links">
+            <a class="link-btn primary" href="series/die-frau-vor-dem-recht/S01-02/studie/vergleichsstudie.pdf">PDF öffnen</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon">📋</div>
+            <div class="card-badges">
+              <span class="badge badge-analysis">Produktion</span>
+            </div>
+          </div>
+          <div class="card-title">Produktionsplan Folge 2</div>
+          <div class="card-description">
+            Vollständiger Produktionsplan: 4 standalone Hörspiele + 1 Feature-Podcast mit
+            eingebetteten Spielszenen. Stimmenbesetzung für alle Rollen, Engineering-Notizen
+            (hoerspiel.py-Erweiterung), Kreditschätzung (~25–28k gegen 82.309 verfügbar).
+          </div>
+          <div class="card-links">
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/PLAN.html">Plan lesen</a>
+            <a class="link-btn" href="series/die-frau-vor-dem-recht/S01-02/PLAN.md">Markdown ↓</a>
+          </div>
+        </div>
+
+      </div><!-- /card-grid -->
+    </div><!-- /episode-block -->
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       SERIES 2: QUARKS FOR KIDS
+       ══════════════════════════════════════════════════ -->
+  <section class="series-section" aria-label="Quarks for Kids">
+    <div class="series-header">
+      <h2>Kleiner geht's nicht</h2>
+      <span class="series-label series-label-2">Quarks for Kids</span>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">⚛️</div>
+          <div class="card-badges">
+            <span class="badge badge-script">Skript</span>
+            <span class="badge badge-audio">10–12 min</span>
+          </div>
+        </div>
+        <div class="card-title">Folge 1 — Die Reise ins Allerkleinste</div>
+        <div class="card-description">
+          Kinderpodcast über Atome, Elektronen, Quarks und die Planck-Länge. Zwei Stimmen:
+          LINA (neugierige Co-Moderatorin) und DR. FUNKE (erklärt ruhig und bildhaft, nie
+          belehrend). Die kleinste mögliche Länge als Reise-Metapher.
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="series/quarks-for-kids/podcast-kleiner-gehts-nicht.html">Skript lesen</a>
+          <a class="link-btn" href="series/quarks-for-kids/reise-ins-allerkleinste.html">HTML-Version</a>
+          <a class="link-btn" href="series/quarks-for-kids/podcast-kleiner-gehts-nicht.md">Markdown ↓</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       ANALYSE & FORSCHUNG
+       ══════════════════════════════════════════════════ -->
+  <section class="series-section" aria-label="Analyse &amp; Forschung">
+    <div class="series-header">
+      <h2>Analyse &amp; Forschung</h2>
+      <span class="series-label series-label-3">Begleitdokumente</span>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">✍️</div>
+          <div class="card-badges">
+            <span class="badge badge-essay">Essay</span>
+          </div>
+        </div>
+        <div class="card-title">Hatten es Frauen bei den Germanen leichter?</div>
+        <div class="card-description">
+          Vierseitiger Editorial-Essay: Vergleich der formalen Rechtslage (Munt vs. Wilaya),
+          Sichtbarkeit und Bewegungsfreiheit (Seherin vs. Muhaddithat) und der ökonomischen
+          Grundlogik (Sippenordnung vs. Handelsstadt). Ergebnis: „Leichter hatte es die Frau
+          jeweils dort, wo sie gebraucht wurde — nirgends, weil man sie als Gleiche dachte."
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="NEXT.html">Essay lesen</a>
+          <a class="link-btn" href="NEXT.md">Markdown ↓</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">🔬</div>
+          <div class="card-badges">
+            <span class="badge badge-analysis">Analyse</span>
+          </div>
+        </div>
+        <div class="card-title">Intersektional-feministische Lektüre</div>
+        <div class="card-description">
+          Langes Analysedokument zu Folge 1 &amp; 2: vier feministische Lesarten (liberal,
+          humanistisch, intersektional, woke), Induktion einer Patriarchat-Definition aus dem
+          Material, Synthese eines Feminismus-Begriffs (ohne Woke-Achse). Geeignet als
+          Begleitlektüre zur Produktion.
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="docs/INTFEM-ANALYSIS.html">Analyse lesen</a>
+          <a class="link-btn" href="docs/INTFEM-ANALYSIS.md">Markdown ↓</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">🧩</div>
+          <div class="card-badges">
+            <span class="badge badge-analysis">Abhandlung</span>
+          </div>
+        </div>
+        <div class="card-title">Woke, Struktur und Identität</div>
+        <div class="card-description">
+          Analytische Abhandlung (abgetrennt von INTFEM-ANALYSIS): Entfaltung der vier
+          Referenten von „woke", Frage ob Woke-Diskurs Struktur in Identität kollabiert,
+          Steelman beider Seiten, offen markierte Forschungsstellen für Verifikation durch
+          stärkere Modelle.
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="docs/NO-WOKE.html">Abhandlung lesen</a>
+          <a class="link-btn" href="docs/NO-WOKE.md">Markdown ↓</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /container -->
+</main>
+
+<footer class="site-footer">
+  <p>
+    Podcast-Studio · <a href="https://github.com/blurayne/podcasts">blurayne/podcasts</a> ·
+    Produziert mit <a href="https://elevenlabs.io">ElevenLabs</a> TTS &amp; SFX ·
+    Alle Skripte und Studien stehen als Markdown/PDF im Repository zur Verfügung.
+  </p>
+</footer>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Theme wechseln" title="Theme wechseln">☀️</button>
+
+<script>
+  (function() {
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    var stored = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (prefersDark ? 'dark' : 'light');
+
+    function apply(t) {
+      root.setAttribute('data-theme', t);
+      btn.textContent = t === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', t);
+    }
+    apply(theme);
+    btn.addEventListener('click', function() {
+      apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>
+</body>
+</html>
