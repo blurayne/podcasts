@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+
+% ============ FONTS ============
+\usepackage{fontspec}
+\setmainfont{SpaceGrotesk-Regular.otf}[
+  Path=./fonts/,
+  BoldFont=SpaceGrotesk-Bold.otf,
+  FontFace={lt}{n}{SpaceGrotesk-Light.otf},
+  FontFace={mb}{n}{SpaceGrotesk-Medium.otf}]
+\newfontfamily\grotesklight{SpaceGrotesk-Light.otf}[Path=./fonts/]
+\newfontfamily\groteskmed{SpaceGrotesk-Medium.otf}[Path=./fonts/]
+\setmonofont{IBMPlexMono-Regular.otf}[
+  Path=./fonts/,
+  BoldFont=IBMPlexMono-Bold.otf,
+  FontFace={md}{n}{IBMPlexMono-Medium.otf}]
+
+% ============ GEOMETRY & COLOR ============
+\usepackage[a4paper,margin=2.3cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[dvipsnames,table]{xcolor}
+
+% Observatory palette (dark slate)
+\definecolor{obsbg}{HTML}{0F172A}       % deep slate (title page)
+\definecolor{obscard}{HTML}{1E293B}     % card slate
+\definecolor{obsink}{HTML}{1A2333}      % near-black ink for body text
+\definecolor{obsmuted}{HTML}{64748B}    % muted slate
+\definecolor{obsline}{HTML}{CBD5E1}     % light rule
+\definecolor{obsaccent}{HTML}{38BDF8}   % sky accent
+\definecolor{obsviolet}{HTML}{818CF8}   % indigo accent
+\definecolor{obspaper}{HTML}{F8FAFC}    % paper
+
+% Confidence chip colors
+\definecolor{cbelegt}{HTML}{059669}     % emerald
+\definecolor{cplausibel}{HTML}{0284C7}  % blue
+\definecolor{cumstritten}{HTML}{D97706} % amber
+\definecolor{cspekulativ}{HTML}{9333EA} % purple
+
+% ============ PACKAGES ============
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{microtype}
+\usepackage[autostyle=false,german=quotes]{csquotes}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=obsaccent,urlcolor=obsviolet,citecolor=obsaccent}
+
+
+\color{obsink}
+
+% ============ HEADERS ============
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{obsline}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\footnotesize\color{obsmuted}\scshape Die Frau vor dem Recht}
+\fancyhead[R]{\footnotesize\color{obsmuted}\scshape Zusatzstudie · Die Funktionskritik}
+\fancyfoot[C]{\footnotesize\color{obsmuted}\thepage}
+
+% ============ SECTION STYLES ============
+\titleformat{\section}
+  {\groteskmed\Large\color{obsink}}
+  {\color{obsaccent}\S\,\thesection}{0.7em}{}
+  [\vspace{-0.6em}{\color{obsline}\rule{\textwidth}{0.4pt}}]
+\titleformat{\subsection}
+  {\groteskmed\large\color{obsink}}
+  {\color{obsviolet}\thesubsection}{0.6em}{}
+\titlespacing{\section}{0pt}{1.4em}{0.8em}
+
+% ============ CONFIDENCE CHIPS ============
+\newtcbox{\chip}[1][obsmuted]{on line,boxsep=0pt,left=5pt,right=5pt,top=1.5pt,bottom=1.5pt,
+  colframe=#1,colback=#1,coltext=white,boxrule=0pt,arc=2pt,fontupper=\ttfamily\scriptsize\bfseries}
+\newcommand{\belegt}{\chip[cbelegt]{belegt}}
+\newcommand{\plausibel}{\chip[cplausibel]{plausibel}}
+\newcommand{\umstritten}{\chip[cumstritten]{umstritten}}
+\newcommand{\spekulativ}{\chip[cspekulativ]{spekulativ}}
+
+% ============ CALLOUT BOXES ============
+\newtcolorbox{gegen}{
+  enhanced,breakable,
+  colback=obspaper,colframe=cumstritten,
+  boxrule=0pt,leftrule=3pt,arc=1pt,
+  left=12pt,right=12pt,top=8pt,bottom=8pt,
+  fontupper=\normalsize,
+  overlay unbroken and first={
+    \node[anchor=north west,font=\ttfamily\scriptsize\bfseries\color{cumstritten}]
+    at ([xshift=12pt,yshift=-4pt]frame.north west){GEGENDARSTELLUNG};},
+  before upper={\vspace{1.1em}}}
+
+\newtcolorbox{merksatz}{
+  enhanced,breakable,
+  colback=obscard,colframe=obscard,
+  coltext=obspaper,
+  boxrule=0pt,arc=3pt,
+  left=16pt,right=16pt,top=12pt,bottom=12pt,
+  fontupper=\groteskmed\large}
+
+\newtcolorbox{datenbox}[1][]{
+  enhanced,breakable,
+  colback=obspaper,colframe=obsaccent,
+  boxrule=0pt,leftrule=3pt,arc=1pt,
+  left=12pt,right=12pt,top=8pt,bottom=8pt,
+  coltitle=obsaccent,fonttitle=\ttfamily\scriptsize\bfseries,
+  title={#1},attach title to upper=\\}
+
+% ============ TABLE HELPERS ============
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.35}
+
+\setlist[itemize]{leftmargin=1.3em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+\begin{document}
+
+% ================= TITLE PAGE =================
+\begin{titlepage}
+\thispagestyle{empty}
+\newgeometry{margin=0pt}
+\colorbox{obsbg}{%
+\begin{minipage}[t][\paperheight][t]{\paperwidth}
+\color{obspaper}
+\vspace{2.6cm}
+\hspace{2.3cm}\begin{minipage}{0.82\textwidth}
+{\ttfamily\footnotesize\color{obsaccent}OBSERVATORY \quad·\quad ZUSATZSTUDIE ZU BAND VII \quad·\quad DIAGNOSE UND PROGRAMM}\\[0.3em]
+{\color{obsmuted}\rule{\linewidth}{0.4pt}}
+
+\vspace{2.4cm}
+{\grotesklight\fontsize{15}{18}\selectfont\color{obsline} Die Frau vor dem Recht --- Werkstatt}\\[0.7em]
+{\groteskmed\fontsize{40}{46}\selectfont Die\\[0.15em] Funktionskritik}\\[1.1em]
+{\grotesklight\fontsize{16}{22}\selectfont\color{obsline}\itshape
+Entwurf einer Disziplin. Korrektur, Erweiterung\\ oder Systemkritik des Feminismus?}
+
+\vspace{2.2cm}
+{\color{obsmuted}\rule{\linewidth}{0.4pt}}\\[0.5em]
+{\grotesklight\normalsize\color{obsline}
+Zwei Zusatzdokumente haben das Verhältnis der Funktionslogik-These zum
+intersektionalen Feminismus vermessen: echte Zieldeckungen, echte Kollisionen,
+und eine Leerstelle, die sich als \textit{Feature mit Bug-Anteilen} erwies.
+Diese Programmschrift zieht die Konsequenz und entwirft die fehlende
+Disziplin --- ihren Gegenstand, ihre Axiome, ihre Methode, ihre Grenzen und
+ihre stärksten Einwände gegen sich selbst.}
+
+\vspace{1.6cm}
+{\ttfamily\scriptsize\color{obsline}
+KONFIDENZMARKER\\[0.5em]
+\textcolor{cbelegt}{$\blacksquare$}~belegt · quellennah/empirisch gesichert \qquad
+\textcolor{cplausibel}{$\blacksquare$}~plausibel · begr\"undete Deutung\\[0.3em]
+\textcolor{cumstritten}{$\blacksquare$}~umstritten · aktive Forschungskontroverse \qquad
+\textcolor{cspekulativ}{$\blacksquare$}~spekulativ · Hypothese jenseits der Evidenz}
+
+\vfill
+{\ttfamily\footnotesize\color{obsmuted}6.~Juli~2026 \quad·\quad Leitformel: Rechtsstellung folgt Funktionsstellung}
+\vspace{2cm}
+\end{minipage}
+\end{minipage}}
+\restoregeometry
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\input{fk_body.tex}
+
+\end{document}

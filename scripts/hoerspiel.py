@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """Reusable Hörspiel production engine.
 
 A scene is described by a `Scene` object (cast, drama timeline, SFX, music,
@@ -38,13 +38,14 @@ FFPROBE = _pick([os.environ.get("FFPROBE_BIN"), "ffprobe", "/usr/bin/ffprobe"])
 class Scene:
     def __init__(self, *, slug, title, scene_index, voices, reverb_roles,
                  drama, narr_heraus, sfx, music, display, bed="atmo_base",
-                 analysis=None, name=None, source_md=None):
-        # slug      = output subdir under out/ (may be nested, e.g. "series/S01-01/scene1")
-        # name      = file basename (defaults to the last path component of slug)
-        # analysis  = explicit tl;dr paragraphs; if None, parsed from source_md by index.
-        # source_md = ROOT-relative markdown to parse the full Einordnung from (Ep. 1).
+                 analysis=None, name=None, source_md=None, narr_out_id=None):
+        # slug        = output subdir under out/ (may be nested, e.g. "series/S01-01/scene1")
+        # name        = file basename (defaults to the last path component of slug)
+        # analysis    = explicit tl;dr paragraphs; if None, parsed from source_md by index.
+        # source_md   = ROOT-relative markdown to parse the full Einordnung from (Ep. 1).
+        # narr_out_id = basename override for the narr-out stem (default: "narr_out")
         self.slug = slug; self.name = name or os.path.basename(slug)
-        self.source_md = source_md
+        self.source_md = source_md; self.narr_out_id = narr_out_id
         self.title = title; self.scene_index = scene_index
         self.voices = voices; self.reverb_roles = set(reverb_roles)
         self.drama = drama; self.narr_heraus = narr_heraus
@@ -97,7 +98,8 @@ def analysis_paragraphs(scene_index, source_md=None):
 
 
 # ---------------------------------------------------------------- GEN
-def phase_gen(sc):
+def phase_gen(sc, model=None):
+    _model = model if model is not None else MODEL
     print("== voices ==")
     for el_ in sc.drama:
         if "id" not in el_:
@@ -106,16 +108,17 @@ def phase_gen(sc):
         if el._exists(out):
             print(f"  skip: {el_['id']}"); continue
         text = (el_.get("tag","") + " " + el_["text"]).strip()
-        el.tts(sc.voices[el_["who"]], text, out, model=MODEL)
+        el.tts(sc.voices[el_["who"]], text, out, model=_model)
         print(f"  ok: {el_['id']}/{el_['who']}")
-    out = os.path.join(sc.VOX, "narr_out.mp3")
+    narr_out_basename = sc.narr_out_id if sc.narr_out_id is not None else "narr_out"
+    out = os.path.join(sc.VOX, narr_out_basename + ".mp3")
     if not el._exists(out):
-        el.tts(sc.voices[NARRATOR_ROLE], sc.narr_heraus, out, model=MODEL); print("  ok: narr_out")
+        el.tts(sc.voices[NARRATOR_ROLE], sc.narr_heraus, out, model=_model); print(f"  ok: {narr_out_basename}")
     for i, p in enumerate(scene_analysis(sc)):
         out = os.path.join(sc.VOX, f"ana_{i:02d}.mp3")
         if el._exists(out):
             print(f"  skip: ana_{i:02d}"); continue
-        el.tts(sc.voices[NARRATOR_ROLE], p, out, model=MODEL); print(f"  ok: ana_{i:02d} ({len(p)}c)")
+        el.tts(sc.voices[NARRATOR_ROLE], p, out, model=_model); print(f"  ok: ana_{i:02d} ({len(p)}c)")
     print("== sfx ==")
     for name, spec in sc.sfx.items():
         out = os.path.join(sc.SFXD, name + ".mp3")
@@ -190,7 +193,8 @@ def render_drama(sc):
     return out
 
 def render_analysis(sc):
-    items=[{"id":"heraus","file":os.path.join(sc.VOX,"narr_out.mp3"),"gap":0.0,"reverb":False}]
+    narr_out_basename = sc.narr_out_id if sc.narr_out_id is not None else "narr_out"
+    items=[{"id":"heraus","file":os.path.join(sc.VOX, narr_out_basename + ".mp3"),"gap":0.0,"reverb":False}]
     i=0
     while os.path.exists(os.path.join(sc.VOX,f"ana_{i:02d}.mp3")):
         items.append({"id":f"ana_{i:02d}","file":os.path.join(sc.VOX,f"ana_{i:02d}.mp3"),
@@ -253,7 +257,8 @@ def render_audiobook(sc):
     drama=[{"id":el_["id"],"file":os.path.join(sc.VOX,el_["id"]+".mp3"),
             "gap":min(el_["gap"],0.7),"reverb":False} for el_ in sc.drama if "id" in el_]
     dbus=os.path.join(sc.WORK,"ab_drama.wav"); build_voice_bus(sc, drama, dbus)
-    ana=[{"id":"heraus","file":os.path.join(sc.VOX,"narr_out.mp3"),"gap":0.0,"reverb":False}]
+    narr_out_basename = sc.narr_out_id if sc.narr_out_id is not None else "narr_out"
+    ana=[{"id":"heraus","file":os.path.join(sc.VOX, narr_out_basename + ".mp3"),"gap":0.0,"reverb":False}]
     i=0
     while os.path.exists(os.path.join(sc.VOX,f"ana_{i:02d}.mp3")):
         ana.append({"id":f"ana_{i:02d}","file":os.path.join(sc.VOX,f"ana_{i:02d}.mp3"),

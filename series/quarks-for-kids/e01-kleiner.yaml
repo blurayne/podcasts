@@ -1,0 +1,72 @@
+slug: quarks-for-kids/e01
+kind: podcast
+title: "Kleiner geht's nicht — Die Reise ins Allerkleinste"
+model: eleven_v3
+transcript: series/quarks-for-kids/podcast-kleiner-gehts-nicht.md
+
+speakers:
+  LINA:
+    voice_id: tnSpp4vdxKPjI9w0GnoV
+    speaker_key: lina
+    stability: 0.55
+    similarity: 0.8
+    speaker_boost: true
+  DR. FUNKE:
+    voice_id: wloRHjPaKZv3ucH7TQOT
+    speaker_key: funke
+    stability: 0.48
+    similarity: 0.8
+    speaker_boost: true
+
+audio_tags:
+  lacht: "[laughs]"
+  flüstert: "[whispers]"
+  leiser: "[softly]"
+  lächelt hörbar: "[smiling]"
+  lächelnd: "[smiling]"
+  ruhig: "[calm]"
+  rechnet: ""
+
+sfx:
+  pling:
+    prompt: "A short bright metallic ping or chime, like a tiny bell struck once, clean and resonant, no reverb tail, very short"
+    dur: 2
+
+music:
+  title_motif:
+    prompt: "Upbeat curious science podcast theme: playful piano over a light synth pad, sense of wonder and discovery, bright and warm, suitable for a kids' science show, no vocals, no drums"
+    ms: 10000
+  transition:
+    prompt: "Short airy science podcast transition: a soft ascending synth chime, two to three notes, light and curious, no vocals"
+    ms: 3000
+  bed:
+    prompt: "Calm ambient science background bed: gentle low synth hum with subtle cosmic texture, barely audible, unobtrusive, loopable, no rhythm, no melody, no vocals"
+    ms: 32000
+
+cue_rules:
+  - keywords: ["pling"]
+    sfx: pling
+  - keywords: ["ton-akzent"]
+    sfx: pling
+  - keywords: ["ausblenden"]
+    action: outro
+  - keywords: ["sirren"]
+    action: intro
+  - keywords: ["reinzoomen"]
+    action: intro
+  - keywords: ["kurz hoch"]
+    action: stinger
+  - keywords: ["kurz", "weg"]
+    action: stinger
+  - keywords: ["sanfte musik"]
+    action: bed_on
+  - keywords: ["musik kommt zurück"]
+    action: bed_on
+
+gaps:
+  base: 0.55
+  switch: 0.90
+  sfx_tail: 0.35
+
+output:
+  final: podcast.mp3

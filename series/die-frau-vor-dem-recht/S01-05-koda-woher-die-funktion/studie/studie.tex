@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper,ngerman]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{a4paper, top=30mm, bottom=32mm, left=28mm, right=28mm}
+\usepackage{xcolor}
+\definecolor{chipgreen}{HTML}{3E6B34}
+\definecolor{chipamber}{HTML}{8A6114}
+\definecolor{chipred}{HTML}{9A4A2E}
+\definecolor{chipblue}{HTML}{2F5378}
+\definecolor{gold}{HTML}{8A6114}
+\definecolor{oxblood}{HTML}{7A3222}
+\usepackage{booktabs, longtable, tabularx, array}
+\usepackage{enumitem}
+\setlist[description]{style=nextline, leftmargin=2.2em, labelsep=0.6em, font=\normalfont\scshape\color{gold}}
+\usepackage{framed}
+\usepackage[colorlinks=true, linkcolor=chipblue, urlcolor=chipblue, pdftitle={Fenster im Patriarchat}, pdfauthor={Observatory -- Historische Studie}]{hyperref}
+
+% Konfidenzmarker
+\newcommand{\chipbase}[2]{\hspace{0pt}{\footnotesize\textcolor{#1}{[\textsc{#2}]}}}
+\newcommand{\chipbelegt}[1]{\chipbase{chipgreen}{#1}}
+\newcommand{\chipplausibel}[1]{\chipbase{chipamber}{#1}}
+\newcommand{\chipumstritten}[1]{\chipbase{chipred}{#1}}
+\newcommand{\chipthese}[1]{\chipbase{chipblue}{#1}}
+
+% Callout-Umgebung
+\newenvironment{callout}[2]{%
+  \def\FrameCommand{{\color{#1}\vrule width 2pt}\hspace{8pt}}%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent{\small\scshape\color{#1}#2}\par\smallskip\small
+}{\endMakeFramed\medskip}
+
+% Literatureintrag mit haengendem Einzug
+\newcommand{\litentry}[2]{\par\noindent\hangindent=1.6em\hangafter=1
+  {\footnotesize\scshape\textcolor{gold}{#1}}\quad #2\par\smallskip}
+
+\setkomafont{disposition}{\rmfamily\bfseries}
+\setkomafont{caption}{\small\scshape}
+\setcapindent{0pt}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{\footnotesize\scshape Fenster im Patriarchat}
+\ohead{\footnotesize\scshape Reihen-Koda · Band V}
+\cfoot{\pagemark}
+
+\emergencystretch=1.6em
+\begin{document}
+\shorthandoff{"}
+\begin{titlepage}
+\centering
+{\footnotesize\scshape Observatory \quad·\quad Rechts- und Sozialgeschichte \quad·\quad Reihen-Koda · Band V\par}
+\vspace{2.5cm}
+{\Huge\bfseries Das Innere und das Äußere:\\Warum die Funktionsstellung?\par}
+\vspace{1.2cm}
+{\large\itshape Die tiefste Frage der Reihe. Warum übernahm die Frau \enquote{das Innere}, der Mann \enquote{das Äußere} --- und war das gemeinsame Fortpflanzung oder Herrschaft? Über Anisogamie, Laktation, Sexualkonflikt und die Grenze zwischen Arbeitsteilung und Hierarchie.\par}
+\vfill
+{\small Konfidenzmarker: \chipbelegt{belegt} quellennah/empirisch gesichert \quad \chipplausibel{plausibel} begründete Deutung \quad \chipumstritten{umstritten} aktive Kontroverse \quad \chipthese{spekulativ} Hypothese jenseits der Evidenz\par}
+\vspace{1cm}
+{\large 5. Juli 2026\par}
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Die Frage unter der Frage}
+\noindent\textit{Vier Bände lang lautete die Antwort: Rechtsstellung folgt Funktionsstellung. Dieser Band fragt, was diese Antwort selbst noch schuldig bleibt --- warum die Funktionen so verteilt waren.}
+\medskip
+
+Die Reihe hat ein stabiles Erklärungsmuster erarbeitet: Frauen hatten Rechte, wo ihre Funktion --- ökonomisch, reproduktiv --- sie erzwang, und verloren sie, wo nicht. Doch das verschiebt die Frage nur eine Ebene tiefer. Denn \emph{warum} fiel der Frau überall die reproduktiv-häusliche Funktion zu (\enquote{das Innere}) und dem Mann die kriegerisch-politische (\enquote{das Äußere})? Und die eigentliche Zuspitzung, die dieser Band prüft: War diese Verteilung womöglich gar keine Unterdrückung, sondern eine \textbf{reproduktive Kooperation} --- zwei Geschlechter mit demselben Interesse am eigenen Nachwuchs, die sich die Arbeit komplementär teilten? Und wenn ja: Warum ausgerechnet übernahm die Frau das Innere --- \emph{weswegen eigentlich}?
+
+Die Frage ist heikel, weil zwei Fehler drohen. Der eine ist der \textbf{Biologismus}: aus einer biologischen Prädisposition eine Naturnotwendigkeit und daraus ein Sollen zu machen. Der andere ist die \textbf{reflexhafte Tabuisierung}: jeden biologischen Faktor als Ideologie abzutun. Dieser Band versucht den schmalen Weg dazwischen --- er nimmt die Biologie ernst, ohne ihr das letzte Wort zu geben. Ein Begriffspaar hilft dabei, das die Verhaltensbiologie bereitstellt: die Unterscheidung von \emph{proximaten} Ursachen (dem unmittelbaren Mechanismus --- \enquote{wie} etwas geschieht) und \emph{ultimaten} Ursachen (der evolutionären Funktion --- \enquote{warum} es sich durchsetzte). \chipbelegt{belegt} Die Nutzerfrage zielt auf die ultimate Ebene; die Antwort muss beide trennen.
+
+\section{Die ultimate Wurzel: Anisogamie}
+\noindent\textit{Ganz unten, vor aller Kultur, liegt eine Asymmetrie der Keimzellen. Sie erklärt viel --- und weniger, als man ihr oft zuschreibt.}
+\medskip
+
+Am Anfang steht die \textbf{Anisogamie}: Die weibliche Keimzelle (Eizelle) ist groß, nährstoffreich und knapp; die männliche (Spermium) ist klein, billig und im Überfluss vorhanden. Daraus leitete Robert Trivers die \textbf{Parental-Investment-Theorie} ab (1972, aufbauend auf A.\,J.\,Bateman 1948): Das Geschlecht mit dem höheren \emph{minimalen} Pflichtinvestment in den Nachwuchs --- bei Säugern eindeutig das Weibchen (Tragzeit, Geburt, Laktation) --- wird zur \enquote{knappen Ressource}, um die das andere Geschlecht konkurriert. Für den Mann ist die theoretisch mögliche Nachkommenzahl fast unbegrenzt und das Pflichtinvestment minimal; für die Frau ist beides umgekehrt. Daraus folgt in der Theorie: stärkere Konkurrenz \emph{unter} Männern, größere Varianz im männlichen Fortpflanzungserfolg (der \enquote{Bateman-Gradient}), und eine Prädisposition zu wählerischeren Weibchen. \chipbelegt{belegt} (als Theorie und für viele Tierarten)
+
+Hier ist jedoch sofort die \textbf{Gegendarstellung} zu nennen, denn sie ist gewichtig: Bateman selbst wurde erschüttert. Patricia Gowaty und Stephen Hubbell wiesen 2012/2013 methodische Fehler in Batemans Originalexperiment (mit Taufliegen) nach und konnten seine Ergebnisse nicht reproduzieren. Zuleyma Tang-Martínez (\emph{Rethinking Bateman's Principles}, 2016) zeigte, dass die Dichotomie der \enquote{wählerischen, monogamen Frau} und des \enquote{promiskuitiven Mannes} empirisch überzogen ist --- Weibchen vieler Arten sind aktiv mehrfachpaarend, und das Investment ist variabler als das Modell unterstellt. \chipumstritten{umstritten} Die Lehre: Anisogamie erzeugt eine \emph{Tendenz}, kein Schicksal. Sie ist der Boden, nicht das Gebäude.
+
+\section{Der eigentliche Grund für \enquote{das Innere}: Laktation}
+\noindent\textit{Hier ist die präziseste Antwort auf die Rückfrage des Nutzers --- warum die Frau das Innere übernahm. Sie lautet nicht \enquote{Schwäche}, sondern \enquote{Stillbarkeit}.}
+\medskip
+
+Die Frage \enquote{warum das Innere?} hat eine erstaunlich konkrete Antwort, und sie stammt nicht aus der Ideologie, sondern aus der Ethnographie. Judith Brown formulierte sie 1970 in einer knappen, folgenreichen Notiz (\emph{A Note on the Division of Labor by Sex}): Der Anteil, den Frauen zur Subsistenz beitragen, hängt überall davon ab, wie gut sich eine Tätigkeit mit \textbf{gleichzeitiger Kinderbetreuung vereinbaren} lässt. Frauenarbeit ist typischerweise das, was \emph{unterbrechbar} ist, \emph{nicht weit vom Zuhause} wegführt, \emph{nicht gefährlich} für Mitgeführte ist und sich \emph{jederzeit anhalten} lässt. \chipbelegt{belegt}
+
+Der harte physiologische Kern dahinter ist nicht die Schwangerschaft allein, sondern die \textbf{Laktation}. In Gesellschaften ohne Ersatznahrung stillten Frauen ihre Kinder auf Verlangen über Jahre (in Wildbeutergruppen typisch drei bis vier Jahre), was zugleich über die Stillunfruchtbarkeit die Geburten staffelte. Ein stillendes Kind ist nicht delegierbar --- es muss mit. Und was mit muss, bestimmt, welche Arbeit möglich ist: sammeln ja, im Nahbereich jagen ja, aber die tage- oder wochenlange Fernjagd, der Kriegszug, die Handelsreise über Monate --- schlecht. \chipbelegt{belegt} Damit ist die Rückfrage beantwortet: Die Frau übernahm \enquote{das Innere} nicht, weil sie schwächer oder geringer war, sondern weil \textbf{Gestation und Laktation die einzigen prinzipiell nicht delegierbaren Aufgaben der Reproduktion sind} --- und alles andere sich um diesen fixen Punkt herum organisierte. Das \enquote{Innere} ist kein Rang, sondern ein \emph{Constraint}, der aus der Stillbarkeit folgt. \chipplausibel{plausibel} (der Mechanismus ist gut belegt; dass er die \emph{gesamte} Arbeitsteilung erklärt, ist die stärkere, umstrittenere Behauptung)
+
+Zwei Korrektive gehören sofort daneben. \textbf{Erstens} war die Arbeitsteilung nie so starr, wie das Klischee \enquote{Mann der Jäger} suggeriert. Die Sammlerinnen lieferten in vielen Wildbeutergesellschaften die kalorische Mehrheit (Sally Slocum 1975; Adrienne Zihlman); jüngere Studien dokumentieren weibliche Jagd weit häufiger als lange angenommen (Anderson et al., \emph{The Myth of Man the Hunter}, 2023) --- wobei diese Arbeit ihrerseits scharf kritisiert wurde (Venkataraman u.\,a.\ 2024: methodische Überdehnung der Belege). \chipumstritten{umstritten} \textbf{Zweitens} verschwindet der Constraint, sobald seine Bedingungen wegfallen --- was ihn als \emph{Constraint} und nicht als Wesensmerkmal ausweist: Wo Ammen, Beikost, später die Flasche das Stillen delegierbar machten, und wo Verhütung die Geburtenzahl entkoppelte, löste sich die zwingende Bindung. Genau das geschah im 20.~Jahrhundert (Band~1--3). Der Grund für das Innere war physiologisch --- \emph{deshalb} war er auch technisch aufhebbar.
+\section{Kooperation oder Zwang? Die zentrale Streitfrage}
+\noindent\textit{Die Nutzerhypothese lautet: gemeinsames Fortpflanzungsinteresse, also Kooperation. Die Forschung kennt eine zweite Antwort: Sexualkonflikt, also Zwang. Beide haben recht --- teilweise.}
+\medskip
+
+\textbf{Die Kooperationsseite.} Die Hypothese des gemeinsamen Interesses ist seriös und gut vertreten. Menschen sind unter den Menschenaffen ungewöhnlich in ihrer \emph{Paarbindung} und im \emph{Teilen von Nahrung}; Modelle des \enquote{male provisioning} (Owen Lovejoy 1981/2009) deuten die komplementäre Spezialisierung --- er trägt bei, was Fernbeschaffung und Risiko verlangt, sie, was mit der Aufzucht vereinbar ist --- als beidseitig vorteilhaften \textbf{Mutualismus}: Beide Eltern teilen ein Fitness-Interesse am selben Kind, also lohnt Arbeitsteilung. \chipplausibel{plausibel} Diese Lesart stützt die Nutzerintuition: Das \enquote{Innen/Außen} war zuerst eine \emph{ökonomisch effiziente Koevolution}, kein Herrschaftsprogramm.
+
+Noch weiter geht ein aufsehenerregender Befund zur Wildbeuter-Egalität: Mark Dyble und Kollegen (\emph{Science}, 2015) zeigten mit einem Modell plus Felddaten (Agta, Mbendjele), dass \textbf{Geschlechter-Gleichheit den mobilen Wildbeuter-Alltag am besten erklärt} --- wenn Männer \emph{und} Frauen gleichberechtigt mitbestimmen, wo die Gruppe lebt, sinkt die Verwandtschaftsdichte im Lager, was die für den Menschen typische Kooperation mit Nicht-Verwandten erst ermöglicht. Geschlechter-Egalität wäre demnach kein spätes Ideal, sondern der evolutionäre \emph{Ausgangszustand} unserer Art; das Patriarchat die spätere Folge von Sesshaftigkeit und Akkumulation. \chipplausibel{plausibel} Das fügt sich exakt an die \enquote{Fenster}-These aus Band~4: Die Ungleichheit schloss sich mit dem Reichtum, nicht mit der Menschwerdung.
+
+\textbf{Die Konfliktseite.} Dagegen steht die \textbf{Sexualkonflikt-Theorie}. Barbara Smuts' Schlüsseltext \emph{The Evolutionary Origins of Patriarchy} (1995) argumentiert: Weil die Reproduktionsinteressen von Männchen und Weibchen \emph{nicht deckungsgleich} sind (Vaterschaftssicherheit, Zahl der Partner), entstand männliche Motivation, weibliche Sexualität zu \emph{kontrollieren} --- belegt durch sexuelle Nötigung und weiblichen Widerstand bei anderen Primaten; die Konflikte, die dem Patriarchat zugrunde liegen, seien älter als der Mensch. Der Mensch aber zeige \emph{mehr} männliche Kontrolle als die meisten Primaten --- Smuts erklärt das über sechs Hypothesen, darunter den Verlust weiblicher Bündnisse und die Erfindung von Waffen und Eigentum. \chipbelegt{belegt} (als einflussreiche Theorie) Hier liegt die Wurzel exakt jener Institutionen, die die Bände~1--3 dokumentierten: die einseitige Ehebruchstrafe, der Jungfräulichkeitskult, das Sotah-Ordal, die Verschleierung, der \emph{mahr}/Muntschatz --- allesamt Mechanismen der \textbf{Vaterschaftssicherung}. Vaterschaft ist, anders als Mutterschaft, nie unmittelbar gewiss; ein erheblicher Teil der weltweit dokumentierten Kontrolle weiblicher Sexualität lässt sich als Antwort auf diese \emph{paternity uncertainty} lesen. \chipplausibel{plausibel}
+
+\textbf{Der neueste Stand relativiert beide Extreme.} Eine große vergleichende Studie über 121 Primatenarten (Smith et al., PNAS 2025) fand, dass eindeutige Männchendominanz \emph{seltener} ist als lange geglaubt: Weibchen gewinnen an Macht, wo sie die \textbf{Kontrolle über die Reproduktion} halten (bei Monogamie, ausgeglichenem Geschlechterverhältnis, wenn Paarung \emph{ausgehandelt} statt erzwungen werden muss); Männchendominanz herrscht dort, wo Körpergröße-Dimorphismus und Polygynie den Zwang ermöglichen. \chipbelegt{belegt} Übersetzt heißt das: Nicht das Geschlecht entscheidet über Dominanz, sondern \emph{wer die knappe reproduktive Ressource kontrolliert} --- und das bestätigt die Leitformel der ganzen Reihe aus der biologischen Tiefe: Macht folgt der Kontrolle über die relevante Ressource.
+
+\section{Der eigentliche Sprung: von der Arbeitsteilung zur Hierarchie}
+\noindent\textit{Hier sitzt die Lücke in der Kooperationshypothese. Arbeitsteilung erklärt \emph{Verschiedenheit}. Sie erklärt nicht \emph{Rangordnung}.}
+\medskip
+
+Angenommen, die Nutzerhypothese stimmt und das \enquote{Innen/Außen} begann als kooperative Spezialisierung --- dann bleibt die entscheidende Frage: \textbf{Warum wurde aus der Verschiedenheit eine Über- und Unterordnung?} Komplementäre Aufgaben sind nicht per se hierarchisch; dass der eine kocht und der andere jagt, macht keinen zum Herrn. Der Sprung bedarf einer eigenen Erklärung, und sie ist der Angelpunkt dieses Bandes.
+
+Die überzeugendste Antwort: Das \enquote{Äußere} wurde zur Sphäre der \textbf{übertragbaren, akkumulierbaren Macht}, das \enquote{Innere} nicht. Die Tätigkeiten des Mannes --- Kampf, Politik, Fernhandel, Vertrag --- produzierten \emph{Herrschaftsmittel}: Waffen, Bündnisse, Eigentumstitel, Ämter, die sich anhäufen, vererben und in weitere Macht umsetzen lassen. Die Tätigkeit der Frau --- Gebären, Nähren, Aufziehen --- produzierte \emph{Leben}, das unverzichtbar, aber nicht \emph{kapitalisierbar} ist: Man kann Kinder nicht anhäufen wie Rinder, nicht verleihen wie Silber, nicht als Titel weitergeben. So unverzichtbar das Innere war --- es akkumulierte keine übertragbare Macht. \chipplausibel{plausibel}
+
+Damit verbindet sich die \textbf{Öffentlich/Privat-These} (Sherry Ortner \emph{Is Female to Male as Nature Is to Culture?}, 1974; Michelle Rosaldo 1974): Das der Frau zugeordnete Häusliche gilt als \enquote{privat} und damit als machtfern, das dem Mann zugeordnete Öffentliche als Ort der Autorität. Beide Autorinnen haben ihre frühe, zu universalistische Fassung später selbst relativiert --- die Trennung ist kulturell variabler, als sie zunächst annahmen. \chipumstritten{umstritten} Doch der Kern trägt und schließt exakt an die Reihe an: Die \textbf{Umkehrproben} beweisen, dass nicht das Geschlecht, sondern die Ressourcenkontrolle entscheidet. Das Schtetl-Paradox (Band~3: Der Mann lernt, die Frau ernährt --- und gewinnt reale Wirtschaftsmacht) und die matrilinearen Fenster (Band~4: Wo Frauen Haus und Speicher kontrollierten, verschob sich Macht) zeigen dasselbe von der anderen Seite: Sobald das \enquote{Innere} die machtrelevante Ressource \emph{wird}, wandert Macht dorthin. \chipplausibel{plausibel}
+
+\section{Die Grenze der Biologie}
+\noindent\textit{Zwingende Gegenposition: Prädisposition ist nicht Determination. Die Beweise stehen in der Varianz.}
+\medskip
+
+Selbst wenn alle bisherigen Mechanismen zutreffen, folgt daraus \textbf{keine} Naturnotwendigkeit der Hierarchie --- und schon gar kein Sollen (der naturalistische Fehlschluss aus Band~4). Der Beweis liegt in der schieren \textbf{Variabilität}:
+
+Die egalitären Wildbeuter (Richard Lee zu den Ju/'hoansi; Dyble 2015) zeigen, dass menschliche Gesellschaften \emph{ohne} ausgeprägte Geschlechterhierarchie lebensfähig sind --- vermutlich der Normalfall über den längsten Teil der Menschheitsgeschichte. \chipplausibel{plausibel} Unsere nächsten Verwandten liefern den schärfsten Kontrast: Schimpansen sind männchendominant und gewaltförmig, \textbf{Bonobos} --- gleich nah mit uns verwandt --- weibchenzentriert und über weibliche Koalitionen organisiert (Frans de Waal). Zwei fast identische Genome, zwei entgegengesetzte Geschlechterregime: Biologie \emph{erlaubt} beides, sie \emph{erzwingt} keines. \chipbelegt{belegt}
+
+Die feministische Wissenschaftskritik hat zudem gezeigt, wie oft \enquote{Natur} nur die Projektion der jeweiligen Ordnung war: Sarah Blaffer Hrdy (\emph{Mother Nature}, 1999) zerlegte das Bild der passiven, allein sorgenden Mutter und rückte \emph{Allomothering} (geteilte Aufzucht durch viele) ins Zentrum --- die menschliche Mutter war nie die isolierte Nur-Innen-Gestalt des bürgerlichen Ideals. Angela Saini (\emph{Inferior}, 2017) und Cordelia Fine (\emph{Testosterone Rex}, 2017) dokumentierten die männliche Schlagseite der Wissenschaftsgeschichte selbst. \chipbelegt{belegt} Und Mathilde Vaerting (Band~4) hatte schon 1921 vorweggenommen, dass die \enquote{Geschlechtscharaktere} sich mit der Macht drehen, nicht mit der Natur.
+
+\section{Synthese: Eine ehrliche, mehrschichtige Antwort}
+\noindent\textit{Was also ist die Antwort auf die Frage des Nutzers?}
+\medskip
+
+Die Hypothese des Nutzers --- gemeinsames Fortpflanzungsinteresse, daraus eine Arbeitsteilung Innen/Außen --- ist in ihrem \textbf{kooperativen Kern teilweise richtig und gut belegt}, aber als Gesamterklärung \textbf{unvollständig}. Genauer:
+
+\textbf{Erstens}, die Antwort auf \enquote{warum das Innere die Frau}: Der plausibelste ultimate Grund ist der \textbf{Laktations- und Gestations-Constraint} (Brown 1970) --- die einzigen nicht delegierbaren Reproduktionsaufgaben banden die Frau an das mit Aufzucht Vereinbare. Nicht Schwäche, nicht Minderwertigkeit, nicht Herrschaftswille: Stillbarkeit. Das ist die sachliche Antwort auf das \enquote{weswegen eigentlich}. \chipplausibel{plausibel}
+
+\textbf{Zweitens}, war es Kooperation? Ja, im Ursprung wesentlich --- komplementäre Spezialisierung mit geteiltem Interesse am Nachwuchs, evolutionär vorteilhaft für beide (Lovejoy; Dyble). \chipplausibel{plausibel} \textbf{Aber} neben der Kooperation wirkte nachweislich auch \textbf{Konflikt}: die Kontrolle weiblicher Sexualität zur Vaterschaftssicherung (Smuts) --- die Institutionen der Bände~1--3 sind ihr steinerner Niederschlag. Es war \emph{weder} reine Unterdrückung \emph{noch} reine Harmonie, sondern beides zugleich: eine reproduktive Arbeitsteilung mit gemeinsamem Kerninteresse, durchzogen von einem Interessenkonflikt an ihren Rändern.
+
+\textbf{Drittens}, und entscheidend: Aus der Arbeitsteilung wurde \textbf{Hierarchie} nicht durch Biologie, sondern durch \textbf{materielle Bedingungen} --- weil das \enquote{Äußere} die akkumulierbaren, übertragbaren Machtmittel kontrollierte und weil akkumulierbarer Reichtum (Vieh, Pflugland, Kapital) die Vaterschaftssicherung ökonomisch aufwertete. Wo diese Bedingungen fehlten, blieb es bei Verschiedenheit ohne Rang (egalitäre Wildbeuter, Bonobo-Kontrast, die Fenster aus Band~4). \chipplausibel{plausibel}
+
+\begin{callout}{gold}{Die erweiterte Schlussformel der Reihe}
+Die Frau übernahm das Innere, weil Gestation und Laktation die einzigen nicht delegierbaren Aufgaben der Fortpflanzung sind --- ein Constraint, kein Rang. Aus dieser Arbeitsteilung, die als beidseitig vorteilhafte Kooperation begann, wurde Herrschaft erst dort, wo das Äußere die akkumulierbaren Machtmittel an sich zog und Reichtum die Kontrolle weiblicher Reproduktion belohnte. Das \enquote{Patriarchat} ist also die Nebenfolge dreier Randbedingungen --- Stillbarkeit, Gewaltmonopol, akkumulierbarer Reichtum ---, die über Jahrtausende zusammenfielen und von Ideologien zur Natur verklärt wurden. Es war nie Natur und nie bloß Willkür, sondern verfestigter Umstand. Und weil alle drei Randbedingungen technisch aufhebbar sind --- die Flasche delegiert die Laktation, die Maschine entwertet die Muskelkraft, der entkoppelte Reichtum löst die Erblogik ---, ist die Ordnung, die aus ihnen folgte, kein Schicksal. Sie war eine Antwort auf Bedingungen. Ändern sich die Bedingungen, steht die Antwort zur Neuverhandlung. Das ist keine Prophezeiung eines Fortschritts --- nur die Feststellung, dass nichts ihn verbietet.
+\end{callout}
+
+\section{Quellen und Literatur (Auswahl)}
+\litentry{Theorie}{\textbf{Bateman, A.\,J.:} Intra-sexual selection in Drosophila, in: Heredity 2 (1948); \textbf{Trivers, Robert:} Parental Investment and Sexual Selection, 1972.}
+\litentry{Kritik}{\textbf{Gowaty, Patricia / Hubbell, Stephen} (2012/2013, Reanalyse Bateman); \textbf{Tang-Martínez, Zuleyma:} Rethinking Bateman's Principles, in: Journal of Sex Research 53 (2016).}
+\litentry{Anthropologie}{\textbf{Brown, Judith K.:} A Note on the Division of Labor by Sex, in: American Anthropologist 72 (1970) --- der Kompatibilitäts-mit-Kinderbetreuung-Befund.}
+\litentry{Anthropologie}{\textbf{Slocum, Sally:} Woman the Gatherer, 1975; \textbf{Zihlman, Adrienne} (div.); \textbf{Anderson, A. u.\,a.:} The Myth of Man the Hunter, PLOS ONE 2023 --- samt Kritik (\textbf{Venkataraman u.\,a.}, 2024).}
+\litentry{Verhaltensökologie}{\textbf{Smuts, Barbara:} The Evolutionary Origins of Patriarchy, in: Human Nature 6 (1995); dies./\textbf{R.\,W. Smuts}: Male Aggression and Sexual Coercion, 1993.}
+\litentry{Verhaltensökologie}{\textbf{Smith, J. u.\,a.:} The evolution of male--female dominance relations in primate societies, PNAS 2025 (121 Arten; Dominanz folgt Reproduktionskontrolle).}
+\litentry{Evolution}{\textbf{Lovejoy, C. Owen:} The Origin of Man, Science 1981; Reappraisal 2009 (provisioning/pair-bonding).}
+\litentry{Evolution}{\textbf{Dyble, M. u.\,a.:} Sex equality can explain the unique social structure of hunter-gatherer bands, Science 348 (2015).}
+\litentry{Theorie}{\textbf{Ortner, Sherry:} Is Female to Male as Nature Is to Culture?, 1974 (samt späterer Selbstrevision); \textbf{Rosaldo, Michelle:} Woman, Culture, and Society, 1974.}
+\litentry{Materialismus}{\textbf{Engels, Friedrich:} Der Ursprung der Familie, 1884; \textbf{Lerner, Gerda:} The Creation of Patriarchy, 1986 (Kommodifizierung weiblicher Reproduktionskraft).}
+\litentry{Kritik}{\textbf{Hrdy, Sarah Blaffer:} Mother Nature, 1999; Mothers and Others, 2009; \textbf{de Waal, Frans} (Bonobo/Schimpanse); \textbf{Saini, Angela:} Inferior, 2017; \textbf{Fine, Cordelia:} Testosterone Rex, 2017.}
+
+\medskip
+\noindent{\footnotesize\emph{Hinweis: Koda zur Reihe \enquote{Die Frau vor dem Recht}. Die Verhaltensbiologie ist ein forschungsdynamisches Feld; mehrere hier zentrale Befunde (Bateman-Reanalyse, Man-the-Hunter-Debatte, Primaten-Dominanz 2025) sind aktiv umstritten und entsprechend markiert. Proximate und ultimate Erklärungen bezeichnen verschiedene Ebenen und schließen einander nicht aus.}}
+
+\end{document}

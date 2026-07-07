@@ -9,6 +9,8 @@
 
 ---
 
+<!-- start -->
+
 ## 0 · KALTER START & INTRO
 
 `[Leises Sirren, das immer höher wird — wie ein Reinzoomen. Dann sanfter Musikbett.]`
@@ -292,6 +294,8 @@
 `[Musik hoch, langsam ausblenden.]`
 
 ---
+
+<!-- end -->
 
 ### Kurz-Ablauf zum Aufnehmen (Cue-Sheet)
 

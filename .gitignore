@@ -1,2 +1,8 @@
-/out/**
+# secrets — never commit the ElevenLabs API key
+.env
+
+# regenerable / transient audio artifacts (kept out of git)
+/out/**/voices/**
+/out/**/music/**
+/out/**/work/**
 __pycache__

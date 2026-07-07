@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """el — a small ElevenLabs API CLI + library for the audiobook pipeline.
 
 Reads the API key from $ELEVENLABS_API_KEY (source ./.env with `set -a` first).
@@ -83,12 +83,16 @@ def _write(path, data):
         f.write(data)
 
 def tts(voice, text, out, *, model=DEFAULT_MODEL, stability=0.5, similarity=0.8,
-        speaker_boost=True, skip_existing=False):
+        speaker_boost=True, style=None, speed=None, skip_existing=False):
     if skip_existing and _exists(out):
         return out
-    body = {"text": text, "model_id": model,
-            "voice_settings": {"stability": stability, "similarity_boost": similarity,
-                               "use_speaker_boost": speaker_boost}}
+    vs = {"stability": stability, "similarity_boost": similarity,
+          "use_speaker_boost": speaker_boost}
+    if style is not None:
+        vs["style"] = style
+    if speed is not None:
+        vs["speed"] = speed
+    body = {"text": text, "model_id": model, "voice_settings": vs}
     _write(out, _req("POST", f"/text-to-speech/{resolve_voice(voice)}",
                      json_body=body, accept="audio/mpeg", raw=True))
     return out
@@ -127,6 +131,9 @@ def main(argv=None):
     pt.add_argument("--out", required=True)
     pt.add_argument("--model", default=DEFAULT_MODEL)
     pt.add_argument("--stability", type=float, default=0.5)
+    pt.add_argument("--similarity", type=float, default=0.8)
+    pt.add_argument("--style", type=float, default=None)
+    pt.add_argument("--speed", type=float, default=None)
     pt.add_argument("--skip-existing", action="store_true")
 
     ps = sub.add_parser("sfx", help="sound effect")
@@ -153,7 +160,8 @@ def main(argv=None):
         if a.skip_existing and _exists(a.out):
             print("skip", a.out); return
         text = a.text if a.text else open(a.text_file, encoding="utf-8").read()
-        tts(a.voice, text, a.out, model=a.model, stability=a.stability)
+        tts(a.voice, text, a.out, model=a.model, stability=a.stability,
+            similarity=a.similarity, style=a.style, speed=a.speed)
         print("wrote", a.out)
     elif a.cmd == "sfx":
         if a.skip_existing and _exists(a.out):

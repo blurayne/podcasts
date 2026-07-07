@@ -1,0 +1,68 @@
+slug:  die-frau-vor-dem-recht/S01-01/podcast
+kind:  podcast
+title: "Die Frau vor dem Recht — Von der Seherin im Turm zur Person vor dem Gesetz"
+model: eleven_v3
+
+transcript: series/die-frau-vor-dem-recht/S01-01-germanen-europa/podcast.md
+
+stem_slug_len: 28
+
+speakers:
+  STIMME 1:
+    voice_id:    dCnu06FiOZma2KVNUoPZ   # Mila Winter – expressive narration
+    speaker_key: s1
+    stability:   0.50
+  STIMME 2:
+    voice_id:    2OcnG4mH3jIMtWz3vKus   # male voice – source quotes + Einordnung
+    speaker_key: s2
+    stability:   0.60
+
+sfx:
+  atmo_tower:
+    prompt: "Ambient bed: gentle wind over an open landscape, a wide slow river flowing, very distant a single faint human call, no music, seamless loop"
+    dur: 12
+  atmo_thing:
+    prompt: "Ambient bed: a crackling open fire, a distant blacksmith hammering iron, a low murmur of a gathered crowd of people, no music, seamless loop"
+    dur: 12
+  atmo_sea:
+    prompt: "Ambient bed: sea waves, crying seagulls, creaking ship rigging, then a farmyard with cattle and slow footsteps on wooden planks, no music, seamless loop"
+    dur: 12
+
+music:
+  title_motif:
+    prompt: "Sparse solemn documentary title motif: a single sustained dark instrument over a low ominous pad, slow, contemplative, cinematic, no drums, no vocals"
+    ms: 24000
+  transition:
+    prompt: "Short neutral documentary transition: a soft rising sustained tone, gently brightening, contemplative, unobtrusive, no vocals"
+    ms: 8000
+
+cue_rules:
+  # ATMO beds — placed inline as sfx clips
+  - { keywords: ["atmo", "wind", "fluss"],       sfx: atmo_tower }
+  - { keywords: ["atmo", "feuer"],               sfx: atmo_thing }
+  - { keywords: ["atmo", "meer"],                sfx: atmo_sea }
+  - { keywords: ["atmo", "möwen"],               sfx: atmo_sea }
+  - { keywords: ["atmo", "tauwerk"],             sfx: atmo_sea }
+  - { keywords: ["atmo", "schmiede"],            sfx: atmo_thing }
+  - { keywords: ["atmo", "versammlung"],         sfx: atmo_thing }
+  # MUSIK cues
+  - { keywords: ["musik", "titelmotiv"],         music: title_motif, action: intro }
+  - { keywords: ["musik", "titelmotif"],         music: title_motif, action: intro }
+  - { keywords: ["musik", "ausblenden"],         action: outro }
+  - { keywords: ["musik", "aus."],               action: outro }
+  - { keywords: ["musik", "trenner"],            music: transition, action: stinger }
+  - { keywords: ["musik", "übergang"],           music: transition, action: stinger }
+  - { keywords: ["musik", "uebergang"],          music: transition, action: stinger }
+
+speech_tempo: 0.90
+
+gaps:
+  base:     0.70
+  switch:   0.95
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    1.00
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

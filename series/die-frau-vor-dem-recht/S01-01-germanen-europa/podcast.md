@@ -16,7 +16,8 @@
 
 ## COLD OPEN
 
-[ATMO: Wind, ein Fluss, sehr fern ein Ruf. Kein Musikbett.]
+<!-- start -->
+`[ATMO: Wind, ein Fluss, sehr fern ein Ruf. Kein Musikbett.]`
 
 **STIMME 1:**
 Ein Turm an der Lippe, im Land der Brukterer. Das Jahr 70 nach Christus. Oben im Turm lebt eine Frau, die niemand einfach so besuchen darf. Wenn die Stadt Köln mit dem Stamm der Tenkterer einen Streit beilegen will, schickt man Gesandte. Die Gesandten sprechen nicht mit ihr. Sie sprechen mit ihren Verwandten, und die Verwandten steigen die Leiter hinauf und tragen die Fragen nach oben — und die Antworten wieder herunter. Wie Orakelsprüche.
@@ -24,19 +25,19 @@ Ein Turm an der Lippe, im Land der Brukterer. Das Jahr 70 nach Christus. Oben im
 **STIMME 2:**
 Die Römer kennen ihren Namen: Veleda. Der Historiker Tacitus schreibt über die Germanen: „Sie glauben sogar, dass den Frauen etwas Heiliges und Seherisches innewohnt; weder verschmähen sie ihren Rat, noch missachten sie ihre Aussprüche."
 
-[PAUSE]
+`[PAUSE]`
 
 **STIMME 1:**
 Etwas Heiliges. Man könnte das für den Anfang einer schönen Geschichte halten: Es war einmal eine Zeit, da wurden die Frauen verehrt — und dann kam jemand und hat es ihnen genommen. Diese Geschichte wird oft erzählt. Sie ist einfach. Sie hat Schuldige.
 
 Sie ist auch falsch. Jedenfalls: so falsch wie einfach.
 
-[MUSIK: Titelmotiv, sparsam. Dunkle Fläche, ein einzelnes Instrument.]
+`[MUSIK: Titelmotiv, sparsam. Dunkle Fläche, ein einzelnes Instrument.]`
 
 **STIMME 1:**
 Die Frau vor dem Recht. Eine Spurensuche über neunzehn Jahrhunderte — von der Seherin im Turm bis zum Paragrafen im Bürgerlichen Gesetzbuch. Es geht um Blutrache und Wergeld, um Erbland und Lehen, um Kirche, Kloster und Kanzel. Und am Ende um eine Frage, die sich leicht stellt und schwer beantwortet: Wer — oder was — ist eigentlich schuld?
 
-[MUSIK: ausblenden]
+`[MUSIK: ausblenden]`
 
 ---
 
@@ -57,7 +58,7 @@ Einordnung: Dass es Seherinnen wie Veleda wirklich gab, ist gesichert — andere
 **STIMME 1:**
 Denn dieselben Quellen zeigen die andere Seite. Die freie germanische Frau stand ihr Leben lang unter der sogenannten Munt — der Schutz- und Verfügungsgewalt eines Mannes. Erst der Vater. Dann der Ehemann. Nach dessen Tod der nächste männliche Verwandte, notfalls der eigene Sohn. Die Munt ist ein Doppelwort: Sie bedeutet Schutz — wer eine Frau verletzt, bekommt es mit ihrem Muntwalt zu tun. Und sie bedeutet Verfügung: Er vertritt sie vor Gericht. Er verwaltet ihr Gut. Er gibt sie in die Ehe. Die Ehe selbst? Ein Vertrag. Zwischen zwei Sippen. Die Braut ist Gegenstand des Vertrags, nicht Partei.
 
-[PAUSE]
+`[PAUSE]`
 
 **STIMME 1:**
 Halten wir den Ausgangsbefund fest, denn auf ihm steht alles Weitere: hohe Achtung — geringe Rechte. Die germanische Frau war geachtet wie etwas Kostbares. Und bevormundet wie etwas, das einem gehört. Wer also erzählt, die Rechte der Frauen seien später eingeschränkt worden — der muss erklären, welche Rechte eigentlich. Es gab keinen Sturz aus der Gleichberechtigung. Es gab eine Verschiebung innerhalb eines Systems, das den Männern gehörte. Von Anfang an.
@@ -66,7 +67,7 @@ Halten wir den Ausgangsbefund fest, denn auf ihm steht alles Weitere: hohe Achtu
 
 ## AKT II — DER PREIS EINER FRAU
 
-[ATMO: Feuer, entfernte Schmiede, Versammlungsgemurmel.]
+`[ATMO: Feuer, entfernte Schmiede, Versammlungsgemurmel.]`
 
 **STIMME 1:**
 Um zu verstehen, was eine Gesellschaft von ihren Frauen hält, gibt es einen kalten, aber ehrlichen Weg: Man schaut nach, was sie kosten.
@@ -76,7 +77,7 @@ Wenn in der Welt der Sippen ein Mensch getötet wurde, war das keine Sache des S
 **STIMME 2:**
 Der Tarif der Lex Salica, des salfränkischen Rechts: Ein freier Mann — zweihundert Goldschillinge. Eine freie Frau — ebenfalls zweihundert. Solange sie ein Kind ist. Oder alt.
 
-[PAUSE]
+`[PAUSE]`
 
 **STIMME 2:**
 Eine Frau in den Jahren, in denen sie Kinder bekommen kann: sechshundert.
@@ -127,13 +128,13 @@ Auf der Sollseite: Die vorchristliche Welt kannte weibliche Kultautorität — d
 **STIMME 1:**
 Und es kam etwas Neues in die Welt. Das alte Sippenrecht hatte die Frau funktional bevormundet — so wie man eben über wertvollen Besitz verfügt. Es hatte das nie *begründet*. Die Theologie lieferte die Begründung nach: Eva, die Verführte. Die Frau als „Einfallstor des Teufels", wie der Kirchenvater Tertullian schrieb. Aus „die Sippe verfügt über dich" wurde: „Gott hat dich nachgeordnet." Das ist ein qualitativer Sprung. Denn gegen eine Sitte kann man sich auflehnen. Gegen den Schöpfer nicht.
 
-[MUSIK: kurzer Trenner]
+`[MUSIK: kurzer Trenner]`
 
 ---
 
 ## AKT IV — DER NORDEN: DIE HERRIN INNERHALB DER SCHWELLE
 
-[ATMO: Meer, Möwen, Tauwerk. Dann: ein Hof, Vieh, Schritte auf Holz.]
+`[ATMO: Meer, Möwen, Tauwerk. Dann: ein Hof, Vieh, Schritte auf Holz.]`
 
 **STIMME 1:**
 Ortswechsel. Zeitsprung. Skandinavien, neuntes Jahrhundert. Während auf dem Kontinent die Enkel Karls des Großen regieren, ist der Norden noch heidnisch — und liefert uns damit etwas Kostbares: einen Blick auf die letzte unchristianisierte germanische Geschlechterordnung.
@@ -146,7 +147,7 @@ Und eine Rechtsfigur, die alles auf den Punkt bringt: die baugrýgr, die „Ring
 **STIMME 1:**
 Bis sie heiratet. Das ist der Schlüsselsatz. Das System hielt Frauen nicht für unfähig — es hätte sie sonst nicht einwechseln können. Es hielt sie in Reserve. Weibliche Rechtsmacht war eine Platzhalterschaft für fehlende Männer. Dieselbe Logik übrigens, an der fünfhundert Jahre früher die gebildetste Frau der Gotenzeit scheiterte: Amalasuntha, Tochter Theoderichs des Großen, regierte das Ostgotenreich — geduldet, solange sie für ihren minderjährigen Sohn stand. Als sie allein herrschen wollte, wurde sie ermordet.
 
-[PAUSE]
+`[PAUSE]`
 
 **STIMME 1:**
 Und bevor jemand den Norden verklärt: Es gibt eine Quelle, die das verbietet. Im Jahr 921 reist der arabische Gesandte Ibn Fadlan an die Wolga und wird Zeuge, wie die Rus — nordische Händler — einen Anführer bestatten. Zum Begräbnis gehört eine junge Frau. Eine Unfreie. Sie wird getötet und mit ihrem Herrn verbrannt. Die Regie führt, das notiert Ibn Fadlan genau, eine alte Frau, die sie den Todesengel nennen.
@@ -179,7 +180,7 @@ Das Podest ist die freundliche Form des Ausschlusses. Und am Ausgang des Mittela
 
 ## AKT VI — DER LANGE WEG ZUR PERSON
 
-[MUSIK: Übergang, heller werdend, aber zurückhaltend.]
+`[MUSIK: Übergang, heller werdend, aber zurückhaltend.]`
 
 **STIMME 1:**
 Man erwartet jetzt eine Aufstiegsgeschichte. Die Neuzeit, die Aufklärung, das Licht. Die Quellen erzählen es widerspenstiger.
@@ -204,7 +205,7 @@ Nicht ein neues Frauenbild. Sondern das Ende der Bilderproduktion. Weder Heilige
 
 ## FINALE — WER IST SCHULD?
 
-[MUSIK: aus. Nur Raum.]
+`[MUSIK: aus. Nur Raum.]`
 
 **STIMME 1:**
 Bleibt die Frage vom Anfang. Neunzehn Jahrhunderte Bevormundung — ist „das Patriarchat" schuld?
@@ -219,7 +220,7 @@ Aber warum blieb dann, über völlig verschiedene Wirtschaftsformen hinweg, die 
 **STIMME 1:**
 Und diese Zähigkeit ist die eigentliche Leistung der Glaubenssysteme. Sie haben die Strukturen nicht erschaffen — die Munt ist älter als jede Missionierung, und die Drei-Stände-Lehre der Kirche, „die einen beten, andere kämpfen, andere arbeiten", entstand *nachdem* die Ordnung, die sie rechtfertigte, längst da war. Aber sie haben etwas Wirksameres getan: Sie haben die Strukturen in Natur verwandelt. Aus Sitte wurde Schöpfungsordnung, aus Interesse wurde Wesen. Und was Natur ist, kann man nicht verhandeln — nur noch sündhaft verletzen.
 
-[PAUSE]
+`[PAUSE]`
 
 **STIMME 1:**
 Also: Die Ursachen waren materiell. Die Haltbarkeit war ideologisch. Und die Verantwortung? Die hat immer Namen und Gesichter. Denn die Alternativen lagen jedes Mal auf dem Tisch — König Chilperichs Töchtererbrecht, die Ring-Frau des Nordens, der römische Jurist, der die eigene Doktrin „mehr blendend als wahr" nannte, Christine de Pizans Stadt der Frauen. Es waren erkennbare Auswege. Und es waren konkrete Menschen — Konzilsväter, Gesetzgeber, Lehnsherren, durchweg Männer —, die an jeder Weggabelung anders entschieden.
@@ -232,10 +233,12 @@ Vielleicht ist das die genaueste Formel, die diese neunzehn Jahrhunderte hergebe
 **STIMME 1:**
 Es ist ihr Tatbestand.
 
-[MUSIK: Titelmotiv, ausklingen lassen.]
+`[MUSIK: Titelmotiv, ausklingen lassen.]`
 
 **STIMME 2:**
 Die Frau vor dem Recht. Ein Feature nach der Analyse „Munt, Wergeld, Allod". Quellen dieser Folge: Tacitus, Germania und Historien. Die Lex Salica und die Volksrechte der Merowinger- und Karolingerzeit. Jordanes' Gotengeschichte. Prokops Gotenkriege. Der Reisebericht des Ibn Fadlan. Das norwegische Gulathing-Recht und die isländische Grágás. Sowie die Forschung von Edith Ennen, Suzanne Wemple, Hans-Werner Goetz, Judith Bennett und anderen. Alle Übersetzungen aus dem Lateinischen, Altnordischen und Französischen ins Deutsche folgen den gängigen Editionen.
+
+<!-- end -->
 
 [ENDE — Gesamtlänge Sprechtext: ca. 35 Minuten bei ruhigem Tempo]
 

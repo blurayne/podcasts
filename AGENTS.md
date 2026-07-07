@@ -46,14 +46,17 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   use `scripts/el.py` (CLI + importable library). It is documented in
   [`docs/API-CLI.md`](docs/API-CLI.md). Always pass `--skip-existing` / `skip_existing=True`
   so re-runs never re-spend credits.
-- **Declare every tool in `mise.toml`.** Tools used: `python`, `ffmpeg`
-  (+`ffprobe`), `jq`, `curl`.
+- **Generic engine + YAML specs.** Produce every episode with `scripts/produce.py <spec.yaml> gen|mix|all` driven by a per-episode YAML spec (production config) plus a markdown transcript (dialogue). The schema, engine CLI, and credit-safe migration rules are the authoritative contract in [`SPEC.md`](SPEC.md) — read it before creating or changing any episode. The reusable skill is `.claude/skills/produce-podcast-episode/`.
+- **uv shebang on every script.** Every file in `scripts/` starts with `#!/usr/bin/env -S uv run --script` (never `#!/usr/bin/env python3`). Declare any third-party deps via PEP 723 inline metadata (`# /// script … dependencies = [...] # ///`); uv provisions a cached ephemeral env automatically. `produce.py` uses this to load `pyyaml`.
+- **Declare every tool in `mise.toml`.** Tools used: `uv`, `python`, `ffmpeg` (+`ffprobe`), `jq`, `curl`.
 - **ffmpeg:** the mise-managed `ffmpeg` symlink may be broken (missing `libav*`
   shared libs). A working system ffmpeg is at `/usr/bin/ffmpeg` (v4.4.2). The
   orchestrators auto-pick the first working `ffmpeg`/`ffprobe`
   (env `FFMPEG_BIN` > `PATH` > `/usr/bin`), so builds run regardless.
 - **Watch the credit pool.** TTS, SFX and Music all draw from one shared balance
-  (`python3 scripts/el.py balance`). Flag the user if credits run low.
+  (`python3 scripts/el.py balance`). Flag the user if credits run low. When reporting any spend or estimate, **also give the approximate cost in USD** (Creator plan ≈ $22 per 100,000 credits ≈ $0.00022/credit; label it an estimate).
+- **Respect caches; be efficient; compress assets, keep quality high.** Never regenerate cached stems (`skip_existing` everywhere; `mix` reuses whatever `gen` produced). Keep generated assets and finals as high-quality MP3 (`libmp3lame -q:a 2`); use FLAC (lossless *and* ~50% smaller) for ffmpeg intermediates in `work/` — never bulky WAV — and stay uncompressed PCM only where a filter genuinely requires it.
+- **Don't tight-loop short atmosphere sounds.** A short sound (< ~3 s) used as an ambient/atmosphere bed must not repeat back-to-back a few times — it reads as an obvious loop. Prefer a longer generated bed, or scatter the short sound across the span with **randomized silence gaps** between plays so the repeats feel natural rather than mechanical.
 - **Voices: studio-quality only, preferably v3.** Only cast **studio-quality**
   voices — ElevenLabs `category: professional` (professionally recorded) — and
   render with the **`eleven_v3`** model. Do **not** use `premade` / low-fidelity
@@ -76,6 +79,7 @@ Folge 2 = `S01-02` („Der Parallelbogen"). Per episode there are Hörspiel-Szen
 
 ## Scripts
 
+- `scripts/produce.py` — the generic YAML-driven engine (`gen`/`mix`/`all`/`book`/`parse`) that renders any `kind: podcast` or `kind: hoerspiel` episode from a YAML spec + markdown transcript. See [`SPEC.md`](SPEC.md). It supersedes the per-episode scripts: each episode now has a `*.yaml` spec beside its source, and the legacy `s01e0*` / `quarks_*` entry-point scripts are being retired (parity-verified via `parse`/`mix`, then deleted).
 - `scripts/el.py` — ElevenLabs API CLI/library (see `docs/API-CLI.md`).
 - `scripts/hoerspiel.py` — reusable Hörspiel engine (`gen`/`mix`/`book`/`all`) driven by a
   `Scene` spec. Model `eleven_v3`; inline v3 audio tags (`[shouting]`,`[whispers]`,`[calm]`,
