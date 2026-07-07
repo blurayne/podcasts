@@ -69,7 +69,7 @@ The engine parses **only** the markdown between these two HTML-comment markers:
 ```markdown
 <!-- start -->
 ## 0 · INTRO
-**WOOZLE:** …
+**SPRECHER:** …
 …
 <!-- end -->
 ```
@@ -90,13 +90,13 @@ fields are an error (typo protection). All paths are repo-root-relative.
 ### 4.1 Common
 
 ```yaml
-slug:  quarks-for-kids/woozle       # REQUIRED. output dir = out/<slug>/
+slug:  quarks-for-kids/wusl-gusl    # REQUIRED. output dir = out/<slug>/
 kind:  podcast                      # REQUIRED. "podcast" | "hoerspiel"
-title: "Woozle Goozle — Schrumpfomat 3000"   # REQUIRED. human label
+title: "Wusl Gusl — Schrumpfomat 3000"       # REQUIRED. human label
 model: eleven_multilingual_v2       # OPTIONAL. default: eleven_v3
 
 speakers:                           # REQUIRED. role name (as in transcript) → voice
-  WOOZLE:
+  WUSL:
     voice_id:   xOrwxaQJaTlyIgWk33GY   # REQUIRED
     speaker_key: woozle                # REQUIRED. used in stem filename — see §6
     stability:  0.05                   # OPTIONAL (default 0.5)
@@ -167,19 +167,19 @@ Supported `action` values: `intro` (start title motif + ambient bed), `outro` (m
 speech_tempo: 0.90        # OPTIONAL. ffmpeg atempo on the speech bus (1.0 = none)
 strip_latex:  true        # OPTIONAL. strip \emph{…} etc. from spoken text before TTS
 replace:                  # OPTIONAL. spoken-text substitutions applied before slug+TTS.
-  "W[Oo]+ZLE": "WUSL"     #   ordered, case-sensitive regex → replacement. Use for
-  "[Ww]o+zle": "Wusl"     #   pronunciation fixes (Woozle→Wusl) and in-dialogue renames
-  "Moderator": "Beni"     #   (Moderator→Beni). Slug is computed from the REPLACED text,
+  "Moderator": "Beni"     #   ordered, case-sensitive regex → replacement. Use for
+                          #   pronunciation fixes and in-dialogue renames
+                          #   (Moderator→Beni). Slug is computed from the REPLACED text,
                           #   so changing a rule invalidates only the affected cached stems.
 einlagen:                 # OPTIONAL. embed rendered Hörspiel plays into the feature
   1: out/die-frau-vor-dem-recht/S01-02/scene1/scene1_play.mp3
   2: out/die-frau-vor-dem-recht/S01-02/scene2/scene2_play.mp3
   # transcript marker `>>> HÖRSPIEL-EINLAGE N` splices in einlagen[N] at that point
 
-intro_audio:  series/quarks-for-kids/woozle-intro.mp3   # OPTIONAL. ROOT-relative path.
+intro_audio:  series/quarks-for-kids/wusl-gusl-intro.mp3 # OPTIONAL. ROOT-relative path.
               # If set, this audio file is inserted as the very first piece on the speech
               # bus, followed by a GAP_SWITCH gap, before any speech.
-bridge_audio: series/quarks-for-kids/woozle-intro.mp3   # OPTIONAL. ROOT-relative path.
+bridge_audio: series/quarks-for-kids/wusl-gusl-intro.mp3 # OPTIONAL. ROOT-relative path.
               # If set, inserted (preceded and followed by a gap) at every `##`-level
               # section boundary EXCEPT the first section (no bridge before the opener).
               # The parser emits a {"t":"bridge"} event at each such boundary; the mixer
@@ -290,8 +290,8 @@ Every existing episode is already produced; its stems are cached under `out/`.
   `strip_latex`, cue keyword sets, `speaker_key` abbreviations, and (hoerspiel)
   the full `drama` list with original `id`s. A single changed character in the
   spoken text changes the slug and orphans the cached stem.
-- The only episode that legitimately spends credits during this work is the new
-  **woozle** episode (no stems exist yet), and its `gen` is **gated on explicit
+- The only episode that legitimately spends credits during this work is a new
+  episode (no stems exist yet), and its `gen` is **gated on explicit
   user confirmation** (watch `scripts/el.py balance`).
 - Delete a legacy script **only after** its spec is parity-verified.
 

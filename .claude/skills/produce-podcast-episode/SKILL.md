@@ -25,11 +25,11 @@ description: Operator guide for producing a podcast or Hörspiel episode from a 
 
 ```bash
 # New episode — full run (requires user confirmation before this step):
-scripts/produce.py series/quarks-for-kids/woozle.yaml gen
-scripts/produce.py series/quarks-for-kids/woozle.yaml mix
+scripts/produce.py series/quarks-for-kids/wusl-gusl.yaml gen
+scripts/produce.py series/quarks-for-kids/wusl-gusl.yaml mix
 
 # Or in one shot:
-scripts/produce.py series/quarks-for-kids/woozle.yaml all
+scripts/produce.py series/quarks-for-kids/wusl-gusl.yaml all
 ```
 
 ---
@@ -47,16 +47,16 @@ scripts/produce.py series/quarks-for-kids/woozle.yaml all
 ## Minimal `kind: podcast` YAML example
 
 ```yaml
-slug:  quarks-for-kids/woozle          # output dir = out/<slug>/
+slug:  quarks-for-kids/wusl-gusl       # output dir = out/<slug>/
 kind:  podcast
-title: "Woozle Goozle — Schrumpfomat 3000"
+title: "Wusl Gusl — Schrumpfomat 3000"
 
 # Default model is eleven_v3. Use eleven_multilingual_v2 only when a voice
-# is specifically tuned for it (e.g. Woozle Goozle character voice).
+# is specifically tuned for it (e.g. Wusl Gusl character voice).
 model: eleven_v3
 
 speakers:
-  WOOZLE:
+  WUSL:
     voice_id:    xOrwxaQJaTlyIgWk33GY
     speaker_key: woozle                # used in stem filename — copy verbatim from legacy if migrating
     stability:   0.05
@@ -159,7 +159,7 @@ hoerspiel:
 
 **Default: `eleven_v3`.** This is the required model for all new productions. It supports inline audio-tag acting, which is the primary expressiveness tool. Do not omit the model field — set it explicitly in every spec.
 
-**`eleven_multilingual_v2`:** use only when a specific voice is tuned for this model (e.g. the Woozle Goozle character voice `xOrwxaQJaTlyIgWk33GY`, which is trained on v2). When this model is active, all inline `[...]` cues are automatically stripped; expressiveness must come from voice `stability`/`style`/`speed` settings alone.
+**`eleven_multilingual_v2`:** use only when a specific voice is tuned for this model (e.g. the Wusl Gusl character voice `xOrwxaQJaTlyIgWk33GY`, which is trained on v2). When this model is active, all inline `[...]` cues are automatically stripped; expressiveness must come from voice `stability`/`style`/`speed` settings alone.
 
 **Studio-quality voices only.** Cast only voices with `category: professional` (ElevenLabs "professionally recorded"). Never cast `premade` or low-fidelity voices. Check category with `python3 scripts/el.py voices` and inspect the voice detail if unsure. See `VOICES.md` for saved voice IDs and their known settings.
 

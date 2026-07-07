@@ -2,6 +2,8 @@
 
 AI-driven production pipeline for German podcast and radio-play (Hörspiel) series. A single YAML-driven engine turns human-readable Markdown scripts into fully mixed episodes using ElevenLabs (TTS, SFX, music) and ffmpeg, and the companion study PDFs are typeset with XeTeX/tectonic.
 
+🌐 **Live site:** <https://blurayne.github.io/podcasts/>
+
 ## How it works
 
 Every episode is produced by one generic engine, `scripts/produce.py`, driven by a per-episode **YAML spec** (production config: voices, model, SFX/music prompts, cue rules, gaps, output) plus a **Markdown transcript** (the dialogue). The full schema, engine CLI, and credit-safe rules are the authoritative contract in [`SPEC.md`](SPEC.md); the reusable operator guide is the skill at `.claude/skills/produce-podcast-episode/`.
@@ -38,7 +40,7 @@ Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 
 ### Quarks for Kids
 
-Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Woozle Goozle — Schrumpfomat 3000* — a manic character-driven version of the same physics (v3 spec ready in `series/quarks-for-kids/woozle.yaml`).
+Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/quarks-for-kids/wusl-gusl.yaml`).
 
 ## Study PDFs
 

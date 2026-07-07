@@ -178,7 +178,7 @@ def apply_replace(text, replace_map):
 
     replace_map: ordered {regex_pattern: replacement}, applied case-sensitively
     in order. Used for pronunciation fixes and in-dialogue renames
-    (e.g. Woozle->Wusl, Moderator->Beni). Computing the slug from the replaced
+    (e.g. Moderator->Beni). Computing the slug from the replaced
     text means changing a rule invalidates only the affected cached stems.
     """
     for pat, repl in replace_map.items():

@@ -1,18 +1,20 @@
-slug: quarks-for-kids/woozle
+slug: quarks-for-kids/wusl-gusl
 kind: podcast
-title: "Woozle Goozle — Schrumpfomat 3000"
+title: "Wusl Gusl — Schrumpfomat 3000"
 model: eleven_v3
-transcript: series/quarks-for-kids/woozle.md
+transcript: series/quarks-for-kids/wusl-gusl.md
 
-intro_audio:  series/quarks-for-kids/woozle-intro.mp3
-bridge_audio: series/quarks-for-kids/woozle-intro.mp3
+intro_audio:  series/quarks-for-kids/wusl-gusl-intro.mp3
+bridge_audio: series/quarks-for-kids/wusl-gusl-intro.mp3
 
 speakers:
-  WOOZLE:
+  WUSL:
     voice_id: xOrwxaQJaTlyIgWk33GY
     speaker_key: woozle
-    stability: 0.35
+    stability: 0.15
     similarity: 0.30
+    style: 0.70
+    speed: 0.95
     speaker_boost: true
   MODERATOR:
     voice_id: rDBaN5ZF8ukjsiAjsmmU
@@ -20,14 +22,30 @@ speakers:
     stability: 0.50
     similarity: 0.75
     speaker_boost: true
+  ERZÄHLER:
+    voice_id: FTNCalFNG5bRnkkaP5Ug
+    speaker_key: erzaehler
+    stability: 0.50
+    similarity: 0.75
+    speaker_boost: true
+  WUSL_MAUS:
+    voice_id: TU66eqOHxLbh8iieomGh
+    speaker_key: wusl_maus
+    stability: 0.15
+    similarity: 0.30
+    style: 0.70
+    speed: 0.95
+    speaker_boost: true
+  BENI_MAUS:
+    voice_id: Uh8xleV5p5p5VeBjbG6O
+    speaker_key: beni_maus
+    stability: 0.50
+    similarity: 0.75
+    speaker_boost: true
 
 # spoken-text substitutions applied before TTS (pronunciation + in-dialogue rename).
-# Case-sensitive regex, in order. Caps variants first to preserve the shouted catchphrase.
+# Source transcript already says Wusl/Gusl; only the Moderator→Beni rule remains.
 replace:
-  "GO+ZLE": "GUSL"
-  "WO+ZLE": "WUSL"
-  "[Ww]o+zle": "Wusl"
-  "[Gg]o+zle": "Gusl"
   "Moderator": "Beni"
 
 audio_tags:
@@ -137,4 +155,4 @@ gaps:
   sfx_tail: 0.35
 
 output:
-  final: woozle.mp3
+  final: wusl-gusl.mp3

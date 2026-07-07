@@ -47,6 +47,9 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   (e.g. `https://drive.google.com/file/d/<ID>/preview`) at `height:80px` inside
   an `.audio-wrap` block, and add a "Drive ↗" link button alongside it. Never
   use a bare link in place of an embed.
+- **README links to the live site.** `README.md` must always link the published GitHub Pages page (<https://blurayne.github.io/podcasts/>) near the top.
+- **index.html links back to the repo.** The Pages site (`index.html`) must keep a visible link back to the GitHub repository (<https://github.com/blurayne/podcasts>) — currently in the footer.
+- **Brand is Wusl Gusl (original name).** The kids' show was renamed from „Woozle Goozle" to **Wusl Gusl** to avoid the „Woozle Goozle" trademark. The produced `wusl-gusl.mp3` lives in the git-ignored `out/` dir and is never committed (same as all produced audio).
 - **Use the `el` CLI for all ElevenLabs requests.** Never hand-roll HTTP calls;
   use `scripts/el.py` (CLI + importable library). It is documented in
   [`docs/API-CLI.md`](docs/API-CLI.md). Always pass `--skip-existing` / `skip_existing=True`
