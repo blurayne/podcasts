@@ -43,8 +43,9 @@ Recht 2026. Fünf Hörspiel-Einlagen eingebettet.
 
 | Dokument | Beschreibung |
 |---|---|
-| [Folge 1 — Die Reise ins Allerkleinste](series/quarks-for-kids/podcast-kleiner-gehts-nicht.md) | Kinderpodcast: Atome, Quarks, Planck-Länge (10–12 min) |
-| [HTML-Version](series/quarks-for-kids/reise-ins-allerkleinste.html) | Gerenderte HTML-Fassung |
+| [Folge 1 — Die Reise ins Allerkleinste](series/quarks-for-kids/podcast-kleiner-gehts-nicht.md) | Kinderpodcast: Atome, Quarks, vier Kräfte, Quantenphysik (10–12 min) · LINA + DR. FUNKE |
+| [Woozle Goozle Edition](series/quarks-for-kids/podcast-kleiner-gehts-nicht-woozle-goozle.md) | Gleiche Inhalte, Woozle-Goozle-Stil: Woozle + Simón, Quark-O-Skop-3001, Explosionen |
+| [HTML-Version](series/quarks-for-kids/reise-ins-allerkleinste.html) | Gerenderte HTML-Fassung (Original) |
 
 ---
 
