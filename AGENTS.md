@@ -48,7 +48,8 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   so re-runs never re-spend credits.
 - **Generic engine + YAML specs.** Produce every episode with `scripts/produce.py <spec.yaml> gen|mix|all` driven by a per-episode YAML spec (production config) plus a markdown transcript (dialogue). The schema, engine CLI, and credit-safe migration rules are the authoritative contract in [`SPEC.md`](SPEC.md) — read it before creating or changing any episode. The reusable skill is `.claude/skills/produce-podcast-episode/`.
 - **uv shebang on every script.** Every file in `scripts/` starts with `#!/usr/bin/env -S uv run --script` (never `#!/usr/bin/env python3`). Declare any third-party deps via PEP 723 inline metadata (`# /// script … dependencies = [...] # ///`); uv provisions a cached ephemeral env automatically. `produce.py` uses this to load `pyyaml`.
-- **Declare every tool in `mise.toml`.** Tools used: `uv`, `python`, `ffmpeg` (+`ffprobe`), `jq`, `curl`.
+- **Declare every tool in `mise.toml`.** Tools used: `uv`, `python`, `ffmpeg` (+`ffprobe`), `jq`, `curl`; plus `tectonic` (+ system `pdfinfo`) for the study PDFs.
+- **Study PDFs — LaTeX „Observatory" layout.** The series' companion study PDFs (the „Bände") are compiled with the XeTeX/`tectonic` pipeline and the shared Observatory layout (fonts, colours, confidence chips, box types) documented in [`LAYOUT-STUDIES.md`](LAYOUT-STUDIES.md). Read it before compiling, restyling, or adding a Band.
 - **ffmpeg:** the mise-managed `ffmpeg` symlink may be broken (missing `libav*`
   shared libs). A working system ffmpeg is at `/usr/bin/ffmpeg` (v4.4.2). The
   orchestrators auto-pick the first working `ffmpeg`/`ffprobe`

@@ -10,7 +10,12 @@
 # Study-PDF build toolchain (the LaTeX "Observatory" studies, see LAYOUT-STUDIES.md):
 #   tectonic — self-contained XeTeX engine; compiles the Bände (fontspec + local OTF
 #              fonts). Reproducible replacement for system `xelatex`/TeX Live; run it
-#              twice per doc to resolve the .toc (as LAYOUT-STUDIES.md §1 describes).
+#              twice per doc to resolve the .toc (LAYOUT-STUDIES.md §1). Install the
+#              *musl* static build (gh release `tectonic@X.Y.Z`, asset
+#              `…-x86_64-unknown-linux-musl.tar.gz`) — the gnu build needs glibc >=2.36
+#              (too new for this box) and mise's github backend prefers it, so tectonic
+#              is documented here but NOT auto-installed via [tools]. Alternative: system
+#              TeX Live `texlive-xetex`.
 #   pdfinfo  — poppler; page-count / sanity check on the compiled PDF (present at /usr/bin).
 #
 # NOTE: a system ffmpeg lives at /usr/bin/ffmpeg (v4.4.2). The orchestrators
@@ -22,4 +27,3 @@ python = "3.12"
 "conda:ffmpeg" = "latest"          # self-contained build with bundled av* libs
 "aqua:jqlang/jq" = "1.8.2"
 "aqua:stunnel/static-curl" = "8.21.0"
-"ubi:tectonic-typesetting/tectonic" = "latest"   # XeTeX engine for study PDFs (LAYOUT-STUDIES.md); pdfinfo is system (/usr/bin)
