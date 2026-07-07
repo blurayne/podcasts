@@ -42,6 +42,11 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
 
 - **Record instructions here.** Whenever the user gives a standing instruction,
   write it down in this file (`AGENTS.md`). `CLAUDE.md` is a symlink to it.
+- **Always embed Google Drive audio as an iframe.** When a Google Drive link is
+  provided for audio, embed it using an `<iframe>` with the `/preview` URL
+  (e.g. `https://drive.google.com/file/d/<ID>/preview`) at `height:80px` inside
+  an `.audio-wrap` block, and add a "Drive ↗" link button alongside it. Never
+  use a bare link in place of an embed.
 - **Use the `el` CLI for all ElevenLabs requests.** Never hand-roll HTTP calls;
   use `scripts/el.py` (CLI + importable library). It is documented in
   [`docs/API-CLI.md`](docs/API-CLI.md). Always pass `--skip-existing` / `skip_existing=True`
