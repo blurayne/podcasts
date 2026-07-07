@@ -1,0 +1,91 @@
+slug:  die-frau-vor-dem-recht/S01-01/scene1
+kind:  hoerspiel
+title: "Die Frau vor dem Recht — Szene 1 — Das Thing und das umstrittene Feld"
+model: eleven_v3
+
+speakers:
+  SPRECHER:  { voice_id: wcGcDDfRHvH6LR9p07u4 }  # Apollo – Documentary & TV
+  SEGIMER:   { voice_id: fehqjfT0R2fGKeUX2YeE }  # Gerry – Composed & Strong
+  PRIESTER:  { voice_id: ZgTblco1F8U3zN77c5Rj }  # Andreas – Pleasant German
+  FOLKWIN:   { voice_id: FTNCalFNG5bRnkkaP5Ug }  # Otto
+  WALUBURG:  { voice_id: BIvP0GN1cAtSRTxNHnWS }  # Ellen – Serious, Direct
+  SWANHILD:  { voice_id: uvysWDLbKpA4XvpD3GI6 }  # Leonie
+
+output:
+  final: scene1.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"
+  audiobook_loudnorm: "I=-19:TP=-3:LRA=11"
+
+hoerspiel:
+  name: scene1
+  narr_out_id: "16_narr_out"
+  source_md: series/die-frau-vor-dem-recht/S01-01-germanen-europa/hoerspiele.md
+  scene_index: 1
+  reverb_roles: [WALUBURG]
+  narr_heraus: "Ein Speerklirren als Ja. Eine Frau als lebende Friedensbrücke. Aber wie viel davon ist historisch — und wie viel ist Wunsch?"
+
+  display:
+    SPRECHER: "ERZÄHLER"
+    SEGIMER:  "SEGIMER"
+    PRIESTER: "DER PRIESTER"
+    FOLKWIN:  "FOLKWIN"
+    WALUBURG: "WALUBURG"
+    SWANHILD: "SWANHILD"
+
+  sfx:
+    atmo_base:
+      prompt: "Ancient Germanic tribal assembly on an open windswept field: steady wind, distant cowbells, low murmur of a large crowd of men, occasional birdsong, no music"
+      auto: true
+    spear_shield_3:
+      prompt: "A spear shaft striking a wooden shield three times, three sharp hard wooden knocks"
+      dur: 3
+    grollen:
+      prompt: "A crowd of warriors growling in approval, a few spear shafts clashing"
+      dur: 3
+    hush_gust:
+      prompt: "A murmuring crowd growing reverently silent, slow footsteps on earth, a gust of wind"
+      dur: 4
+    raunen:
+      prompt: "An impressed crowd of people murmuring quietly in awe"
+      dur: 3
+    steps_surprise:
+      prompt: "A few footsteps approaching on earth, a crowd murmuring in surprise"
+      dur: 3
+    spears_vote:
+      prompt: "Many spear shafts rhythmically beating against wooden shields, growing louder, a tribal war assembly voting yes in unison"
+      dur: 6
+
+  music:
+    intro:
+      prompt: "Dark solemn ancient Germanic ritual atmosphere: low sustained drone, a distant war horn, slow frame drum, ominous and sacred, cinematic, no vocals"
+      ms: 26000
+    bed:
+      prompt: "Very soft neutral documentary underscore: sustained low strings, contemplative, minimal, unobtrusive, slow, no melody, no vocals"
+      ms: 45000
+    outro:
+      prompt: "Reflective solemn outro: soft strings and a low slow drum, contemplative, gradually fading, cinematic, no vocals"
+      ms: 22000
+
+  drama:
+    - { id: "00_narr_in",  who: SPRECHER, gap: 0.0,  text: "Um das Jahr 90 nach Christus, östlich des Rheins. Ein Stamm versammelt sich zum Thing — der Versammlung der freien, waffenfähigen Männer. Frauen haben hier kein Rederecht. Und doch stehen an diesem Tag zwei Frauen im Zentrum: eine Seherin, deren Wort als göttlich gilt — und eine Frau, die aus dem Nachbarstamm hierher verheiratet wurde. Hören wir hinein." }
+    - { cue: spear_shield_3, gain: 0.9 }
+    - { id: "01_priester", who: PRIESTER, gap: 0.8,  text: "[shouting] Schweigt! [calm] Das Thing ist eröffnet. Wer das Wort führt, führt es geordnet — oder er schweigt. So wollen es die Götter." }
+    - { id: "02_segimer",  who: SEGIMER,  gap: 0.6,  text: "Ihr kennt den Grund. Das Feld am Erlenbach — dreimal in drei Sommern haben ihre Leute die Ernte eingeholt. Unser Korn. Unser Boden." }
+    - { id: "03_folkwin",  who: FOLKWIN,  gap: 0.35, tag: "[shouting]", text: "Dann ziehen wir hinüber und holen es uns zurück! Mit dem Speer, nicht mit Worten!" }
+    - { cue: grollen, gain: 0.7 }
+    - { id: "04_segimer",  who: SEGIMER,  gap: 0.7,  text: "Und dann? Fehde. Tote auf beiden Seiten. Ihre Sippe gegen unsere, Sommer um Sommer. Folkwin, du zählst die Klingen. Zähl auch die Gräber." }
+    - { id: "05_priester", who: PRIESTER, gap: 0.5,  text: "Der Stamm am Fluss ist uns durch Eid und Heirat verbunden. Wer bricht, bricht auch den Frieden der Götter." }
+    - { id: "06_segimer",  who: SEGIMER,  gap: 0.5,  text: "Darum frage ich, bevor ein Speer fliegt: Was sagt die, die weiter sieht als wir? Man rufe die Seherin." }
+    - { cue: hush_gust, gain: 0.8 }
+    - { id: "07_waluburg", who: WALUBURG, gap: 0.9,  tag: "[calm]",     text: "Ich stehe nicht in eurem Ring, Männer — das Recht des Rings ist nicht mein Recht. Aber ich lese das Los, und ich lese den Fluss. Ich sehe Rauch über dem Erlenbach, wenn ihr die Speere nehmt. Ich sehe eure Höfe leer." }
+    - { id: "08_folkwin",  who: FOLKWIN,  gap: 0.6,  tag: "[whispers]", text: "…und wenn wir warten?" }
+    - { id: "09_waluburg", who: WALUBURG, gap: 0.4,  tag: "[calm]",     text: "Dann lebt, wer jetzt lebt. Die Götter geben kein Recht auf Blut vor dem neuen Mond." }
+    - { cue: raunen, gain: 0.6 }
+    - { id: "10_segimer",  who: SEGIMER,  gap: 0.7,  text: "Ihr hört sie. — Aber es ist noch eine hier, die beide Ufer kennt. Swanhild, du kamst von ihnen zu uns. Tritt heran. Nicht um zu richten — um zu sagen, was du weißt." }
+    - { cue: steps_surprise, gain: 0.6 }
+    - { id: "11_swanhild", who: SWANHILD, gap: 0.7,  tag: "[calm]",     text: "Ich bin Herd und Hand in Segimers Haus. Aber meine Mutter wohnt am Erlenbach. — Ihr nennt es Diebstahl. Sie nennen es ihr altes Recht: Ihr Großvater habe das Feld gerodet, ehe euer Zaun stand." }
+    - { id: "12_folkwin",  who: FOLKWIN,  gap: 0.3,  tag: "[angry]",    text: "Also lügen sie!" }
+    - { id: "13_swanhild", who: SWANHILD, gap: 0.4,  text: "Nein. Sie erinnern anders. Und darum: Schickt keine Speere. Schickt mich. Ich bin die Brücke — solange die Brücke hält. Mein Sohn trägt euer Blut und ihres. Wollt ihr, dass er einen Onkel erschlägt?" }
+    - { id: "14_segimer",  who: SEGIMER,  gap: 0.8,  text: "… Ein Bote statt einer Klinge. Geiseln zum Pfand, bis das Feld geteilt ist. Wer ist dafür?" }
+    - { cue: spears_vote, gain: 0.85 }
+    - { id: "15_priester", who: PRIESTER, gap: 1.2,  text: "[shouting] Die Waffen sprechen! [calm] Der Stamm hat entschieden: erst das Wort, dann — wenn es sein muss — der Speer." }

@@ -1,0 +1,273 @@
+\documentclass[11pt,a4paper,ngerman]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{a4paper, top=30mm, bottom=32mm, left=28mm, right=28mm}
+\usepackage{xcolor}
+\definecolor{chipgreen}{HTML}{3E6B34}
+\definecolor{chipamber}{HTML}{8A6114}
+\definecolor{chipred}{HTML}{9A4A2E}
+\definecolor{chipblue}{HTML}{2F5378}
+\definecolor{gold}{HTML}{8A6114}
+\definecolor{oxblood}{HTML}{7A3222}
+\usepackage{booktabs, longtable, tabularx, array}
+\usepackage{enumitem}
+\setlist[description]{style=nextline, leftmargin=2.2em, labelsep=0.6em, font=\normalfont\scshape\color{gold}}
+\usepackage{framed}
+\usepackage[colorlinks=true, linkcolor=chipblue, urlcolor=chipblue, pdftitle={Fenster im Patriarchat}, pdfauthor={Observatory -- Historische Studie}]{hyperref}
+
+% Konfidenzmarker
+\newcommand{\chipbase}[2]{\hspace{0pt}{\footnotesize\textcolor{#1}{[\textsc{#2}]}}}
+\newcommand{\chipbelegt}[1]{\chipbase{chipgreen}{#1}}
+\newcommand{\chipplausibel}[1]{\chipbase{chipamber}{#1}}
+\newcommand{\chipumstritten}[1]{\chipbase{chipred}{#1}}
+\newcommand{\chipthese}[1]{\chipbase{chipblue}{#1}}
+
+% Callout-Umgebung
+\newenvironment{callout}[2]{%
+  \def\FrameCommand{{\color{#1}\vrule width 2pt}\hspace{8pt}}%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent{\small\scshape\color{#1}#2}\par\smallskip\small
+}{\endMakeFramed\medskip}
+
+% Literatureintrag mit haengendem Einzug
+\newcommand{\litentry}[2]{\par\noindent\hangindent=1.6em\hangafter=1
+  {\footnotesize\scshape\textcolor{gold}{#1}}\quad #2\par\smallskip}
+
+\setkomafont{disposition}{\rmfamily\bfseries}
+\setkomafont{caption}{\small\scshape}
+\setcapindent{0pt}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{\footnotesize\scshape Fenster im Patriarchat}
+\ohead{\footnotesize\scshape Gegentest · Band IV}
+\cfoot{\pagemark}
+
+\emergencystretch=1.6em
+\begin{document}
+\shorthandoff{"}
+\begin{titlepage}
+\centering
+{\footnotesize\scshape Observatory \quad·\quad Rechts- und Sozialgeschichte \quad·\quad Vergleichsstudie · Band IV\par}
+\vspace{2.5cm}
+{\Huge\bfseries Fenster im Patriarchat:\\Das Matriarchat, das es (nicht) gab\par}
+\vspace{1.2cm}
+{\large\itshape Der Gegentest der Reihe. Über Matrilinearität, dokumentierte Frauenherrschaft, Amazonen und Walküren --- und die Schlussfrage: Wenn es kein Matriarchat gab, ist das Patriarchat dann der Naturzustand? Oder trägt es nur den falschen Namen?\par}
+\vfill
+{\small Konfidenzmarker: \chipbelegt{belegt} quellennah/archäologisch gesichert \quad \chipplausibel{plausibel} begründete Deutung \quad \chipumstritten{umstritten} aktive Kontroverse \quad \chipthese{widerlegt} von der Forschung verworfen\par}
+\vspace{1cm}
+{\large 5. Juli 2026\par}
+\end{titlepage}
+\tableofcontents
+\clearpage
+
+\section{Die Frage dieses Bandes}
+\noindent\textit{Drei Bände lang beschrieb diese Reihe Ordnungen, in denen Männer verfügten --- germanisch, islamisch, jüdisch. Dieser Band prüft das Gegenteil: Gab es je das Umgekehrte?}
+\medskip
+
+Die bisherigen Bände endeten bei einer unbequemen Regelmäßigkeit: Über Kulturräume und Jahrtausende hinweg fanden sich Frauen rechtlich nachgeordnet --- mal krasser, mal milder, aber nie an der Spitze der formalen Ordnung. Daraus erwächst zwangsläufig die Frage dieses Bandes, und sie ist zugleich die schärfste Waffe gegen die ganze Reihe: \textbf{Wenn Männerherrschaft überall auftritt --- ist sie dann nicht einfach der Naturzustand?} Und wenn ja: Wozu dann die aufwendigen Erklärungen aus Ökonomie, Recht und Religion? Man bräuchte nur eine: die Natur.
+
+Die ehrlichste Weise, diese Frage zu beantworten, ist der Gegentest. Wir suchen den Kronzeugen der Gegenseite --- das Matriarchat, die dokumentierte Frauenherrschaft, die kriegerische Frau. Wir prüfen, was von ihnen archäologisch und ethnographisch übrig bleibt. Und erst wenn wir wissen, was es an weiblicher Macht wirklich gab und was nicht, lässt sich die Naturzustands-These beantworten. Vorweggenommen sei nur die Struktur der Antwort: Sie lautet weder \enquote{es gab das Matriarchat} noch \enquote{also ist Patriarchat Natur}, sondern zielt auf einen dritten Begriff --- das \emph{Fenster}. Der Schlussabschnitt (§\,10) macht daraus die Antwort auf Ihre Frage.
+
+\section{Begriffsarbeit: Vier Wörter, die ständig verwechselt werden}
+\noindent\textit{Wie das Tacitus-Problem in Band 1 ist hier die Begriffsverwirrung selbst der erste Untersuchungsgegenstand --- und sie beginnt bei den Wörtern \enquote{Matriarchat} und \enquote{Patriarchat} selbst.}
+\medskip
+
+Vier Begriffe werden in der populären Debatte verschmolzen, die die Forschung streng trennt: \chipbelegt{belegt}
+
+\begin{description}
+\item[Matriarchat] Herrschaft von Frauen über Männer --- das formale Spiegelbild des Patriarchats. Dies ist die starke Behauptung, die zu prüfen ist.
+\item[Matrilinearität] Abstammung, Name und Erbe laufen über die Mutterlinie. Sagt nichts über Herrschaft --- die Autorität kann durchaus bei Männern (dem Mutterbruder) liegen.
+\item[Matrilokalität] Das Paar wohnt bei der Familie der Frau. Eine Residenzregel, keine Machtaussage.
+\item[Matrifokalität] Die Mutter ist das organisatorische Zentrum des Haushalts --- oft bei Abwesenheit der Männer (Arbeitsmigration, Seefahrt, Krieg).
+\end{description}
+
+Der entscheidende Befund vorweg: Matrilinearität, -lokalität und -fokalität sind vielfach belegt. \emph{Matriarchat} im starken Sinn --- eine Gesellschaft, in der Frauen als Gruppe über Männer herrschten --- ist es nicht. \chipbelegt{belegt} Die anthropologische Mehrheitsposition seit Joan Bamberger (\emph{The Myth of Matriarchy}, 1974) lautet: kein einziger gesicherter Fall. Die Gegenposition (Heide Göttner-Abendroth, \enquote{moderne Matriarchatsforschung}, seit den 1980ern) definiert \enquote{Matriarchat} um --- nicht als Frauenherrschaft, sondern als mutterzentrierte, egalitäre Ordnung ohne Herrschaft überhaupt --- und wird von der akademischen Ethnologie überwiegend abgelehnt, weil die Umdefinition den Streit per Wortwahl entscheidet, statt ihn zu führen. \chipumstritten{umstritten}
+
+\subsection*{Die Wörter als Waffen}
+Ein Fund, der die ganze Reihe rahmt: Schon die Begriffe sind Legitimationsinstrumente --- und zwar bevor irgendein Befund vorliegt (Beate Wagner-Hasel; darauf aufmerksam macht auch das Wissenschaftsblog \emph{Anarchaeologie}, 2025). \textbf{Vor} \enquote{Matriarchat} sprach das 19.~Jahrhundert von \emph{Gynaikokratie} --- Frauen\emph{herrschaft}. Der jüngere Kunstbegriff \enquote{Matriarchat} (\emph{Mutter-Herrschaft}) enthält bereits eine Abschwächung: Aus Herrschaft schlechthin wird Herrschaft im Rahmen der \emph{Familie} (\emph{arché} changiert zwischen \enquote{Herrschaft} und \enquote{Ursprung}) --- die Frau wird sprachlich ins Haus zurückgeholt, noch ehe die Debatte beginnt. Spiegelbildlich stammt \enquote{Patriarchat} aus dem Kirchenrecht und diente in der frühneuzeitlichen Staatstheorie (Robert Filmer, \emph{Patriarcha}, 1680) der Begründung \emph{absoluter} Königsgewalt: Der König herrscht als \enquote{Vater} seines Volkes, zurückgeführt auf die von Gott verliehene Vatergewalt Adams. \chipbelegt{belegt} Das ist Formel 2 der Reihe auf der Wortebene: Beide Begriffe transportieren schon als Vokabeln eine Ordnung, die sie zu beschreiben vorgeben. Wer mit ihnen fragt, hat die Antwort teils schon eingekauft.
+
+\section{Theoriegeschichte: Die Erfindung des Urmatriarchats}
+\noindent\textit{Das Quellenkritik-Kapitel dieses Bandes. Die Matriarchatstheorie ist ein Kind des 19.~Jahrhunderts --- und ihre Entstehungsgeschichte erklärt fast alle bis heute kursierenden Irrtümer.}
+\medskip
+
+\textbf{Johann Jakob Bachofen} (\emph{Das Mutterrecht}, 1861) begründete die Idee eines universellen Urmatriarchats. Seine Methode: Mythen als \enquote{Erinnerungsspuren} verlorener Sozialzustände. Sein Stufenmodell: vom regellosen \enquote{Hetärismus} über das \enquote{Mutterrecht} zum siegreichen \enquote{Vaterrecht}. Entscheidend --- und meist übersehen: Bachofen war \emph{konservativer} Absicht. Das Mutterrecht war für ihn eine \emph{überwundene}, niedere Stufe; der Sieg des Vaterrechts markierte den Fortschritt zu Geist und Zivilisation. Die Matriarchatsidee wurde also nicht als feministisches Programm erfunden, sondern als dessen Gegenteil: als Begründung, \emph{warum} die Männerherrschaft die höhere Ordnung sei. \chipbelegt{belegt} Das ist der Bamberger-Befund \emph{avant la lettre} --- und er zieht sich durch die gesamte Rezeption.
+
+\textbf{Lewis Henry Morgan} (\emph{Ancient Society}, 1877) lieferte mit seiner Irokesen-Feldforschung scheinbar den ethnographischen Beleg; \textbf{Friedrich Engels} (\emph{Der Ursprung der Familie}, 1884) kanonisierte beides für die marxistische Tradition und prägte die Formel von der Einführung des Privateigentums als \enquote{weltgeschichtlicher Niederlage des weiblichen Geschlechts}. \chipbelegt{belegt} Die ethnologische Widerlegung folgte im 20.~Jahrhundert: Bronis\l{}aw Malinowski zeigte an den matrilinearen Trobriandern, dass Mutterfolge und Frauen\emph{herrschaft} zweierlei sind --- die Autorität lag beim Mutterbruder (\emph{Avunkulat}). \chipbelegt{belegt}
+
+\subsection*{Die völkische Kaperung}
+Ein Kapitel, das die Reihe mit ihren NS-Bezügen (Band 1: Moorleichen; Band 3: die Schoa) verbindet: In den 1920er Jahren erlebte Bachofen eine Renaissance --- gelesen von der Lebensphilosophie (Ludwig Klages) bis zur völkischen Rechten. Sir Galahad (Bertha Eckstein-Diener) populariserte 1932 mit \emph{Mütter und Amazonen} das Sujet. Die nationalsozialistische Ideologie baute das Stufenmodell dann charakteristisch um: Das \enquote{Matriarchat} habe es zwar gegeben --- aber bei den \emph{anderen}; die \enquote{Indogermanen} bzw. \enquote{Arier} seien \enquote{von Natur} stets vaterrechtlich gewesen. Aus einer \emph{Geschlechter}stufe wurde ein \emph{Rasse}ncharakter; der Mutterkult kehrte als staatlich verordnete Gebärideologie zurück (Mutterkreuz), während reale Frauen aus Ämtern und Universitäten verdrängt wurden. \chipplausibel{plausibel} (Forschungsdeutung; die Instrumentalisierung im Detail ist gut belegt, ihre Systematik bleibt interpretativ) Der Matriarchats\emph{mythos} war damit vollständig als Herrschaftswaffe verfügbar --- das schärfste Beispiel für die vierte Formel dieses Bandes (§\,9).
+
+\subsection*{Eine vergessene Gegenstimme}
+Gegen den Strom stand \textbf{Mathilde Vaerting} (\emph{Die weibliche Eigenart im Männerstaat und die männliche Eigenart im Frauenstaat}, 1921): Sie deutete Geschlechtscharaktere nicht als Natur, sondern als \emph{Herrschaftsfolge} --- was immer die \emph{herrschende} Gruppe sei, ihr würden \enquote{männliche} Eigenschaften zugeschrieben, der beherrschten \enquote{weibliche}; drehe sich die Macht, drehe sich die Zuschreibung mit. Damit nahm sie Simone de Beauvoir und Joan Scott (Band 1) um Jahrzehnte vorweg --- und wurde als eine der ersten Soziologieprofessorinnen Deutschlands 1933 von den Nationalsozialisten vertrieben und weitgehend vergessen. \chipbelegt{belegt}
+
+\subsection*{Die zweite Welle: Gimbutas und die Göttin}
+Die feministische Wiederbelebung der 1970er machte aus Bachofens \emph{überwundener} Stufe ein \emph{verlorenes Paradies}. \textbf{Marija Gimbutas} (\emph{The Goddesses and Gods of Old Europe}, 1974; \emph{The Civilization of the Goddess}, 1991) postulierte ein friedliches, gynozentrisches, göttinnenverehrendes \enquote{Alteuropa} des Neolithikums, zerstört durch patriarchale \enquote{Kurgan}-Reiterkrieger aus der Steppe. Riane Eisler (\emph{Kelch und Schwert}, 1987) und Merlin Stone (\emph{When God Was a Woman}, 1976) verbreiteten die Erzählung. \chipthese{widerlegt} (in der Göttinnen-Deutung) Die archäologische Kritik war vernichtend: Lynn Meskell (1995), Colin Renfrew, Ruth Tringham und vor allem Cynthia Eller (\emph{The Myth of Matriarchal Prehistory}, 2000) zeigten, dass die Figurinen-Deutung zirkulär ist (jede weibliche Figurine wird zur \enquote{Göttin} erklärt, die dann die Göttinnenreligion beweist) und die friedlich-egalitäre Projektion unbelegt.
+
+\textbf{Die entscheidende Differenzierung} --- und ein Musterfall wissenschaftlicher Redlichkeit: Gimbutas' \emph{Migrations}kern wurde später glänzend bestätigt. Die aDNA-Revolution (Haak et al. 2015; David Reich) wies die massive Einwanderung der \emph{Yamnaya}-Steppenhirten ins neolithische Europa um 3000 v.\,Chr. nach --- Gimbutas' \enquote{Kurgan}-These lag im archäogenetischen Kern richtig, während ihre \emph{Göttinnen}-Deutung falsch bleibt. Man kann im Migrationsbild recht und im Gesellschaftsbild unrecht haben. \chipbelegt{belegt} (Yamnaya-Migration) / \chipthese{widerlegt} (friedliches Göttinnen-Alteuropa)
+
+Für den deutschsprachigen Forschungsstand sind maßgeblich Brigitte Röder, Juliane Hummel und Brigitta Kunz (\emph{Göttinnendämmerung}, 2001) sowie Beate Wagner-Hasel; das Wissenschaftsblog \emph{Anarchaeologie} (2025) hat die Theoriegeschichte einschließlich der Begriffs- und NS-Stränge jüngst prägnant aufgearbeitet. \chipbelegt{belegt}
+\section{Was es wirklich gibt: matrilineare Gesellschaften}
+\noindent\textit{Der Stämmevergleich dieses Bandes. Kein Matriarchat --- aber ein breites Spektrum realer weiblicher Macht, das genau dort auftritt, wo die Leitformel es vorhersagt.}
+\medskip
+
+\begin{small}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.26\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}}
+\caption{Matrilineare und matrifokale Gesellschaften im Vergleich}\\
+\toprule
+\textbf{Gesellschaft} & \textbf{Linie, Haus, Eigentum} & \textbf{Wer herrscht formal?} & \textbf{Befund}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Gesellschaft} & \textbf{Linie, Haus, Eigentum} & \textbf{Wer herrscht formal?} & \textbf{Befund}\\
+\midrule
+\endhead
+\textbf{Minangkabau} (Sumatra, größte matrilin. Gesellschaft der Welt) & Erbgut, Langhaus, Land über die Mutterlinie & Clan-Titel und Ämter bei Männern --- \emph{über} die Mutterlinie vergeben & Koexistenz mit dem Islam (\enquote{adat} + Scharia); kein Matriarchat, aber starke ökonomische Frauenmacht \\
+\addlinespace[2pt]
+\textbf{Mosuo/Na} (Yunnan) & Haushalt der \emph{dabu} (Frau); \enquote{Besuchsehe}, keine Ehe-Institution & Haushaltsführung weiblich; Dorf-/Außenpolitik oft männlich & \enquote{Gesellschaft ohne Väter und Ehemänner} (Cai Hua 2001) --- matrifokal, nicht matriarchal \\
+\addlinespace[2pt]
+\textbf{Haudenosaunee} (Irokesen) & Langhaus und Felder den Frauen; Klanzugehörigkeit mütterlich & \emph{Sachems} (m.) --- aber die \emph{clan mothers} ernennen und entsetzen sie, Vetorecht über Krieg & stärkster Fall institutioneller Frauenmacht; Vorbild der US-Suffragetten (M.\,J.\,Gage) \\
+\addlinespace[2pt]
+\textbf{Khasi/Garo} (Meghalaya) & jüngste Tochter erbt (\emph{khadduh}) & politische Ämter männlich & männliche \enquote{Emanzipations}-Bewegung als Kuriosum und Beleg der Asymmetrie \\
+\addlinespace[2pt]
+\textbf{Nayar} (Kerala) & \emph{taravad}-Matrilinien; \enquote{Sambandham}-Besuchsehe & Männer als Krieger abwesend & durch Kolonialrecht im 19./20.\,Jh. aufgelöst --- Musterfall der Transformationsmechanik \\
+\addlinespace[2pt]
+\textbf{Akan/Aschanti} (Ghana) & Abstammung mütterlich & König (m.); \emph{ohemaa} (Königinmutter) mit Thronsetzungsrecht & Yaa Asantewaa führt 1900 den Krieg gegen die Briten \\
+\addlinespace[2pt]
+\textbf{Tuareg} (Sahara) & matrilineare Züge; Zelt-Eigentum der Frau & Männer verschleiert, Frauen nicht & Frauenmacht \emph{im} islamischen Kontext (Band-2-Brücke) \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+Das Muster ist so konstant, dass es zum Gesetz wird: \textbf{Linie, Haus und Speicher können den Frauen gehören --- die formale politische Spitze bleibt fast überall bei Männern (Bruder, Onkel, Sohn), doch oft mit weiblicher Einsetzungs- und Absetzungsmacht.} Das ist kein Matriarchat, aber auch kein simples Patriarchat: Es ist eine dritte Konfiguration, in der weibliche und männliche Zuständigkeiten \emph{verschränkt} sind. \chipbelegt{belegt}
+
+\subsection*{Warum hier und nicht dort? Die Ökonomie der Matrilinearität}
+Die Verteilung matrilinearer Gesellschaften ist nicht zufällig --- und bestätigt Leitformel~1 aus der Gegenrichtung. Matrilinearität häuft sich, wo \textbf{Hack- und Gartenbau} dominiert (Frauenarbeit trägt die Subsistenz) und wo \textbf{Männer regelmäßig abwesend} sind (Fernhandel, Seefahrt, Krieg, Jagd). Die Pflug-These aus Band~1 (Alesina/Giuliano/Nunn) erklärt hier die \emph{Verteilung}: Wo der kraftintensive Pflug die Feldarbeit übernimmt, verschwindet die matrilineare Option; der \enquote{matrilineal belt} Zentralafrikas etwa endet ungefähr dort, wo Viehhaltung und Pflug beginnen. \chipplausibel{plausibel}
+
+Und das \enquote{matrilineale Rätsel} der Ethnologie (Mary Douglas) liefert die Transformationsmechanik: Matrilineare Systeme zerfallen regelmäßig, sobald \textbf{akkumulierbarer Reichtum} ins Spiel kommt --- Rinder, Pflugland, Kapital. Denn dann kollidiert das Interesse eines Mannes, für die Kinder \emph{seiner Schwester} zu sorgen (matrilineare Pflicht), mit dem Interesse, an die \emph{eigenen} Kinder zu vererben. Kolonialrecht, Weltreligionen und Marktwirtschaft haben diesen Zerfall überall beschleunigt. \chipbelegt{belegt} Das ist exakt die Mechanik aus Band~1 --- nur mit umgekehrtem Vorzeichen: Dort erzeugte die Kopplung von Land und Krieg den Frauen\emph{ausschluss}; hier löst die Kopplung von Reichtum und Erbe die Frauen\emph{macht} auf. Dieselbe Formel, beide Richtungen.
+
+\section{Dokumentierte Frauenherrschaft: eine Typologie}
+\noindent\textit{Einzelne Frauen herrschten sehr wohl --- die Frage ist nur, unter welchen Bedingungen. Vier Typen lassen sich unterscheiden.}
+\medskip
+
+\textbf{Typ A --- Platzhalterschaft.} Die aus Band 1--3 bekannte Regentin für einen minderjährigen oder abwesenden Mann: Amalasuntha bei den Ostgoten, unzählige Königsmütter. Macht auf Zeit, geliehen von einem männlichen Titel. Der häufigste Typ. \chipbelegt{belegt}
+
+\textbf{Typ B --- Herrscherin aus eigenem Recht.} Selten, aber real und über alle Kontinente verstreut: Hatschepsut als Pharao (deren Bilder posthum getilgt wurden --- die Tilgung ist selbst ein Zeugnis der Anomalie); die \emph{Kandaken} von Kusch/Meroë (Amanirenas führte um 25~v.\,Chr. Krieg gegen Rom --- \enquote{Kandake} war ein regulärer Herrscherinnentitel); Zenobia von Palmyra; \textbf{Wu Zetian}, einzige Kaiserin Chinas aus eigenem Recht (690--705) --- und bis heute von der konfuzianischen Historiographie dämonisiert (Quellenkritik nötig); Razia Sultana von Delhi (1236--40, muslimische Herrscherin); Njinga von Ndongo-Matamba im Angola des 17.~Jahrhunderts; die \emph{Rain Queens} der Lovedu (Modjadji) als reale sakrale Königinnendynastie. \chipbelegt{belegt}
+
+\textbf{Typ C --- sakrales Amt mit Macht.} Pythia, Vestalinnen, die japanische Priesterin-Königin \emph{Himiko} (3.~Jh., aus chinesischen Quellen). Autorität aus dem Heiligen, nicht aus dem Schwert --- die Linie von Veleda (Band~1) über die \emph{muhaddithat} (Band~2) bis zu den Prophetinnen (Band~3). \chipbelegt{belegt}
+
+\textbf{Das Krone-schlägt-Geschlecht-Paradox.} Der aufschlussreichste Befund: Ausgerechnet \emph{Europa} mit seiner \emph{Lex-Salica}-Tradition (Band~1!) produzierte über dynastischen Zufall und Primogenitur eine Dichte mächtiger Alleinherrscherinnen --- Melisende, Urraca, Margarete~I., Isabella, Elizabeth~I., Maria Theresia, Katharina~II. --- wie sie \emph{wahl}basierte, formal \enquote{offenere} Systeme kaum hervorbrachten. Der Grund: Sobald das \emph{Prinzip Erbfolge} über dem \emph{Prinzip Geschlecht} steht, kann eine Frau an die Spitze gespült werden. Stand schlägt Geschlecht --- die Stand-mal-Geschlecht-Matrix der ganzen Reihe, hier in ihrer paradoxesten Form. \chipplausibel{plausibel} Dass jede reale Herrscherin sofort Gegenliteratur erzeugte (John Knox, \emph{The First Blast of the Trumpet against the Monstrous Regiment of Women}, 1558), belegt, wie sehr sie als Regelverletzung empfunden wurde. \chipbelegt{belegt}
+
+\section{Amazonen: Mythos trifft Steppengrab}
+\noindent\textit{Woher kommt die kriegerische Frau? Aus der griechischen Angst --- und aus einem realen Kern in der eurasischen Steppe.}
+\medskip
+
+Der \textbf{Mythos} zuerst: Die griechischen Amazonen (Herodot 4,110--117 verband sie mit den realen Sauromaten/Sarmaten) waren das \enquote{besiegte Andere} der Polis --- die Amazonomachie an der Akropolis stellt die geordnete männliche Bürgerwelt gegen das weiblich-barbarische Chaos. William Blake Tyrrell (\emph{Amazons: A Study in Athenian Mythmaking}, 1984) und Joan Bamberger deuten den Mythos als \textbf{Herrschaftsrechtfertigung}: Die Erzählung von der \emph{besiegten} Frauenherrschaft begründet die bestehende Männerordnung als naturnotwendigen Sieg. \chipplausibel{plausibel} Die Volksetymologie \emph{a-mazos} (\enquote{brustlos}, angeblich zum besseren Bogenschießen amputiert) ist sprachlich haltlos und selbst Teil der Mythenbildung. \chipbelegt{belegt}
+
+Dann die \textbf{archäologische Wende}: In den Kurgan-Gräbern der skythisch-sarmatischen Steppe fanden sich Frauenskelette mit Waffen --- je nach Region und Zählung ein erheblicher Anteil der \enquote{Krieger}-Gräber (Schätzungen bis rund ein Drittel; Vorsicht bei der Quote). Der aufsehenerregendste jüngere Fund: das Grab von \textbf{Devitsa} (2019/2020) mit mehreren bewaffneten Frauen, darunter eine in Reiterhaltung bestattete Ältere mit goldenem Zeremonialkopfschmuck. Adrienne Mayor (\emph{The Amazons}, 2014) hat den Forschungsstand gebündelt: Ein \textbf{realer Kern} --- berittene Bogenschützinnen der Steppennomaden --- verband sich mit griechischer Projektion zum Mythos. \chipbelegt{belegt}
+
+Der theoretisch entscheidende Punkt ist die \textbf{Technologie}: \emph{Pferd plus Bogen} neutralisiert den männlichen Körperkraftvorteil. Wer reitet und aus dem Sattel schießt, braucht nicht die Muskelmasse des Nahkämpfers --- Präzision und Übung zählen. Genau dort, wo diese Technik die Kriegsführung bestimmte, wurde die Kriegerin praktisch möglich. \chipplausibel{plausibel} Das ist Leitformel~1 in Reinform und zugleich der Vorgriff auf die Schlussfrage (§\,10): Wo die Ökonomie der Gewalt den Kraftvorteil einebnet, erscheint die bewaffnete Frau. Die nötige Vorsicht bleibt (Band~1, Birka Bj\,581): Waffen im Grab bezeugen \emph{Status und Inszenierung}, nicht zwingend gelebte Schlachtpraxis --- die frühe Deutungsfreude einzelner Ausgräber (Davis-Kimball) ist zu bremsen. \chipumstritten{umstritten}
+
+\section{Walküren und Schildmaiden}
+\noindent\textit{Die nordische Variante --- und die Anschlussfrage an Band 1.}
+\medskip
+
+Die \textbf{Walküre} (altnord. \emph{valkyrja}, \enquote{Wählerin der Gefallenen}) ist zunächst eine mythische Gestalt: Odins Schlachtenlenkerin, die entscheidet, wer fällt. Die Forschung deutet ihren Ursprung unterschiedlich --- als Personifikation des Schlachtentods, als Totendämonin, oder als Nachhall realer Seherinnen mit kriegsorakelnder Funktion, womit sich der Bogen zu Veleda, Ganna und Waluburg aus Band~1 schlösse (Neil Price, \emph{The Viking Way}; Else Mundal). \chipumstritten{umstritten}
+
+Von der mythischen Walküre zu trennen ist die \textbf{Schildmaid} als möglicherweise reale Erscheinung. Leszek Garde\l{}a (\emph{Women and Weapons in the Viking World}, 2021) zieht die aktuelle Bilanz: Eine \emph{kleine, reale Minderheit} bewaffneter Frauen ist plausibel --- eine Kriegerinnen\emph{kaste} war es nicht. Der Fund Birka Bj\,581 (Band~1), durch aDNA 2017 als biologisch weiblich bestätigt, bleibt der prominenteste Einzelfall und der prominenteste Streitfall zugleich. \chipumstritten{umstritten}
+
+Amazonen wie Walküren teilen eine \textbf{Funktion als Grenzwächter der Geschlechterordnung}: Die mythische Kriegerin ist erlaubt, \emph{weil} sie jenseitig, fremd oder tragisch endend ist. Brünhild wird durch die Ehe entmachtet, Penthesilea von Achill getötet, Atalante überlistet --- die Erzählung führt vor, dass weibliche Kriegsmacht ins Unglück oder in die Unterwerfung mündet. Der Mythos \emph{verhandelt}, was die Gesellschaft \emph{verbietet}, und bestätigt im Ausgang die Regel. \chipplausibel{plausibel} Damit sind beide Mythenkreise nicht Erinnerung an ein Matriarchat, sondern Bearbeitung seiner Unmöglichkeit --- der direkte Übergang zur vierten Formel.
+\section{Archäologie weiblicher Macht: Wie erkennt man sie im Grab?}
+\noindent\textit{Der Nutzer wünschte ausdrücklich das archäologische Vorgehen. Es beginnt mit einem Methodenproblem --- und endet bei der aDNA-Revolution, die erstmals harte Aussagen erlaubt.}
+\medskip
+
+Das \textbf{Grundproblem}: Wie liest man Macht aus einem Grab? Reichtum, Lage, Monumentalität gelten als Indizien --- doch die Deutung ist notorisch voreingenommen. Der klassische Fehlschluss: Ein reiches Frauengrab wird zur \enquote{Gattin von} erklärt, ein reiches Männergrab zum \enquote{Herrscher}. Die Gender-Archäologie (Margaret Conkey und Janet Spector, \emph{Archaeology and the Study of Gender}, 1984) hat diesen Zirkel offengelegt: Die Interpretation bestätigt die Erwartung, mit der sie begann. \chipbelegt{belegt}
+
+Der Lehrfall ist die \textbf{Fürstin von Vix} (Burgund, um 500~v.\,Chr.): reich bestattet mit dem größten bekannten bronzezeitlichen Mischkrater. Weil eine so herausgehobene Bestattung nicht weiblich sein \enquote{durfte}, deuteten frühe Forscher das Skelett als Mann oder als \enquote{transvestitischen Priester} --- bis die anthropologische Bestimmung die Frau bestätigte. Heute gilt sie als reale Trägerin politisch-religiöser Autorität. Vix ist weniger ein Fund über die Eisenzeit als ein Fund über die \emph{Forschung}. \chipbelegt{belegt}
+
+Weitere Fälle mit gestufter Sicherheit: die \textbf{Señora de Cao} (Moche, Peru, um 450~n.\,Chr.) --- tätowierte Herrscherin, bestattet mit Keulen und Speerschleudern, also Herrschafts- \emph{und} Kriegsinsignien; die \textbf{Priesterinnen von San José de Moro}; die \textbf{Herrin von La Almoloya} (El~Argar, Iberien, um 1700~v.\,Chr.) --- Silberdiadem-Bestattung, gedeutet als Hinweis auf weibliche politische Autorität in einer frühen Staatsgesellschaft; \textbf{Oseberg} (Band~1). Und als methodische Warnung am anderen Ende: die \textbf{\enquote{Venus}-Figurinen} (Willendorf, Dolní~Věstonice) --- ihre Deutung schwankt zwischen Muttergöttin, Fruchtbarkeitssymbol, weiblichem Selbstporträt (McDermott) und Statusobjekt; ehrlich bleibt nur: offen. \chipumstritten{umstritten}
+
+\subsection*{Çatalhöyük: der Test des Neolithikums}
+Die anatolische Großsiedlung Çatalhöyük (7.~Jt.~v.\,Chr.) galt der Göttinnen-Bewegung als Kronzeuge des \enquote{Ur-Matriarchats}. Die langjährigen Grabungen unter Ian Hodder ergaben das Gegenteil einer Frauenherrschaft --- aber auch keine Männerherrschaft: Ernährung, Wohnraum, Grabausstattung und Arbeitsspuren verteilen sich weitgehend \emph{geschlechtsegalitär}. Hodders Fazit von einer Gesellschaft ohne ausgeprägte Geschlechterhierarchie widerlegt sowohl das Matriarchat als auch die Naturzustands-These vom Ur-Patriarchat. \chipbelegt{belegt} Ein Drittes war möglich: relative Gleichheit.
+
+\subsection*{Die aDNA-Revolution: harte Aussagen über Residenz}
+Erst die Archäogenetik erlaubt seit rund zehn Jahren, Abstammungs- und Residenzregeln der Vorgeschichte \emph{direkt} zu messen --- über Verwandtschaft im Genom und Herkunft über Strontium-Isotope. Die Befunde sind gemischt und deshalb glaubwürdig:
+
+Vielfach zeigt sich \textbf{Patrilokalität} (Frauen ziehen zu, Männer bleiben) --- etwa in der neolithisch-bronzezeitlichen mitteleuropäischen Überlieferung (Eulau; Lechtal-Studien, Mittnik/Knipper 2019, mit dem interessanten Zusatzbefund hoher weiblicher Mobilität als Trägerin von Wissenstransfer). \chipbelegt{belegt} Andernorts das Gegenteil: In \textbf{Chaco Canyon} (Pueblo Bonito, New Mexico) belegte mitochondriale DNA eine über neun Generationen (rund 330 Jahre) \emph{matrilineare} Elitedynastie (Kennett et al.\ 2017). \chipbelegt{belegt} Und ganz jung: Eine Studie zur eisenzeitlichen \textbf{Durotriges} im britischen Dorset (Cassidy et al., \emph{Nature} 2025) fand ausgeprägte \emph{Matrilokalität} --- die Männer zogen zu den Frauen, das Land blieb in der weiblichen Linie; die Deutung \enquote{Frauen hielten das Land} ist die sparsamste Erklärung des genetischen Musters. \chipplausibel{plausibel} (Befund belegt; die Reichweite der \enquote{Frauenmacht}-Deutung diskutiert)
+
+Das Gesamtbild der Archäogenetik ist der wichtigste Einzelbefund dieses Bandes: \textbf{Es gab kein einheitliches Urregime --- weder ein Ur-Matriarchat noch ein Ur-Patriarchat.} Residenz- und Abstammungsregeln \emph{variierten} nach Ort, Zeit und Ökonomie. Damit ist der Naturzustands-These der empirische Boden entzogen, noch bevor wir sie theoretisch behandeln. \chipbelegt{belegt}
+
+\section{Der Gegentest: Was sagen die Feminismen?}
+\noindent\textit{Der Nutzer wünschte die Prüfung gegen verschiedene feministische Theorien. Sie zerfallen in der Matriarchatsfrage in Lager --- und der Streit ist selbst erhellend.}
+\medskip
+
+\textbf{Differenz- und Spiritualitätsfeminismus} (Mary Daly; Starhawk; Carol P. Christ) baute auf dem Göttinnen-Matriarchat eine Empowerment-Erzählung: eine friedliche, weibliche Vorzeit als Beweis, dass es anders geht. \textbf{Gegendarstellung} von Cynthia Eller (\emph{The Myth of Matriarchal Prehistory}, 2000): Eine politische Bewegung, die auf einem historisch widerlegten Mythos ruht, ist angreifbar --- und reproduziert obendrein den \emph{Gender-Essentialismus} (\enquote{Frauen sind von Natur nährend, friedlich}), gegen den der Feminismus sonst kämpft. Wer die Frau über ihre \enquote{Natur} aufwertet, sitzt derselben Operation auf wie die, die sie über ihre \enquote{Natur} abwertet. \chipbelegt{belegt}
+
+\textbf{Materialistischer und Gleichheitsfeminismus} (de Beauvoir lehnte Bachofen ab; Eleanor Leacock, \emph{Myths of Male Dominance}, 1981) verlegt den Akzent von der Herrschaft auf die \emph{Egalität}: Leacock argumentierte an den Montagnais-Naskapi, dass vorkoloniale Wildbeuter-Gesellschaften real geschlechteregalitär waren und erst Kolonialismus und Mission die Hierarchie einführten. \chipplausibel{plausibel} (empirisch gestützt, in der Reichweite umstritten) Das deckt sich mit Çatalhöyük und der aDNA-Varianz: Nicht Matriarchat, aber \emph{Gleichheit} als reale, verbreitete dritte Möglichkeit.
+
+\textbf{Dekonstruktive Linie} (Joan Scott, Band~1; Bamberger): \enquote{Matriarchat vs. Patriarchat} ist eine \emph{binäre Falle}, die die eigentliche Frage verstellt. Bambergers Feldbefund aus Amazonien und Feuerland: Dort erzählen \emph{Männer} Mythen von einer einstigen Frauenherrschaft, die zu Recht gestürzt worden sei --- der Matriarchatsmythos als \emph{Männer}erzählung zur Legitimation der Gegenwart. \chipbelegt{belegt}
+
+\textbf{Dekoloniale Perspektive} (Oyèrónké Oyěwùmí, \emph{The Invention of Women}, 1997): Die Yoruba hätten vor der Kolonisierung Geschlecht gar nicht als \emph{leitende} Sozialkategorie gekannt --- geordnet habe die \emph{Seniorität}, nicht das Geschlecht; \enquote{Frau} als nachgeordnete Kategorie sei koloniale Einfuhr. \chipumstritten{umstritten} (einflussreich und bestritten) Paula Gunn Allen (\emph{The Sacred Hoop}, 1986) betont die reale \enquote{Gynokratie} der Irokesen als indigenes Gegenmodell.
+
+\textbf{Verhaltensökologische Kontrollinstanz} (Sarah Blaffer Hrdy; Frans de Waal): Weder ist Männerdominanz biologisch zwangsläufig (die Bonobos, unsere gleich nahen Verwandten, zeigen weibliche Koalitionsmacht), noch beweist das ein Matriarchat --- es beweist \emph{Varianz} als Grundzustand. \chipplausibel{plausibel}
+
+\subsection*{Braucht der Feminismus ein Matriarchat?}
+Die Streitfrage, auf die alles zuläuft. \textbf{Ellers Antwort: nein.} Gerechtigkeit braucht keine goldene Vergangenheit als Beleg --- die Forderung nach Gleichheit steht für sich, unabhängig davon, ob es je Frauenherrschaft gab. Die \textbf{Gegenstimme}: Ohne \emph{Möglichkeitsbeweis} erscheint Patriarchat als naturnotwendig --- und genau hier liegt die Brücke zur Schlussfrage. Die Auflösung, die dieser Band vorschlägt: Der Möglichkeitsbeweis existiert --- aber er heißt nicht \enquote{Matriarchat}, sondern \emph{matrilineare Gesellschaften}, \emph{egalitäre Wildbeuter}, \emph{Herrscherinnen aus eigenem Recht} und \emph{die aDNA-Varianz der Vorgeschichte}. Man braucht den widerlegten Mythos nicht, weil die belegte Vielfalt genügt. \chipplausibel{plausibel}
+\section{Die Schlussfrage: Ist das Patriarchat der Naturzustand?}
+\noindent\textit{Wenn es kein Matriarchat gab --- ist Männerherrschaft dann einfach Natur? Dies ist die Frage, auf die die ganze Reihe zuläuft. Hier die Antwort.}
+\medskip
+
+Die Frage hat eine verführerische Logik: Kein Matriarchat gefunden, Männerherrschaft fast überall --- \emph{ergo} Naturzustand. Der Schluss ist falsch, und zwar aus vier unabhängigen Gründen.
+
+\subsection*{Erstens: Der Befund widerlegt die Prämisse}
+Die Naturzustands-These setzt voraus, dass Männerherrschaft \emph{ausnahmslos} und \emph{gleichförmig} auftritt. Beides ist empirisch falsch. Çatalhöyük und die egalitären Wildbeuter zeigen \emph{Gleichheit}; die Irokesen zeigen weibliche Einsetzungsmacht; Chaco und die Durotriges zeigen matrilineare bzw. matrilokale Ordnungen; die aDNA-Varianz zeigt, dass Residenzregeln \emph{nach Ort und Zeit wechselten}. Es gibt kein einheitliches Urregime. Was universell auftritt, ist nicht \emph{die Männerherrschaft}, sondern etwas Schwächeres: eine \textbf{Asymmetrie zuungunsten der formalen weiblichen Spitzenmacht}. Und Asymmetrie ist keine Herrschaftsform, sondern ein zu erklärendes Muster. \chipbelegt{belegt}
+
+\subsection*{Zweitens: \enquote{Natürlich} und \enquote{universell} sind nicht dasselbe}
+Selbst wenn ein Muster überall aufträte, folgte daraus nicht \enquote{Natur}. Krieg, Sklaverei und Kindersterblichkeit waren nahezu universell --- niemand nennt sie deshalb naturnotwendig oder wünschenswert. Universalität kann auch bedeuten, dass \emph{überall dieselben Randbedingungen} wirkten. Der Schluss von \enquote{überall} auf \enquote{muss so sein} ist der klassische naturalistische Fehlschluss. \chipbelegt{belegt}
+
+\subsection*{Drittens --- der Kern: Es ist gar kein \enquote{Patriarchat}, das da wirkt}
+Hier zahlt sich die Begriffsarbeit (§\,2) aus. \enquote{Patriarchat} unterstellt ein \emph{Herrschaftsprinzip} --- einen gerichteten Willen von Männern, Frauen zu beherrschen. Die gesamte Reihe hat gezeigt, dass die beobachtete Ordnung besser durch \emph{andere Faktoren} erklärt wird, aus denen die männliche Dominanz als \textbf{Nebenfolge} hervorgeht, nicht als Zweck:
+
+\begin{description}
+\item[Körperkraft und Gewaltmonopol] Die durchschnittliche männliche Überlegenheit in Kampfkraft entscheidet, \emph{wer im Zweifel die Waffe führt} --- und damit über Thing, Lehen, Kriegsdienst (Band~1). Nicht weil Männer herrschen \emph{wollen}, sondern weil die Kontrolle organisierter Gewalt an Kraft gekoppelt war. Der Gegenbeweis ist die Amazone: Wo \emph{Pferd und Bogen} den Kraftvorteil einebneten, erschien die Kriegerin (§\,7). Die Technik, nicht der Wille, verschob die Grenze.
+\item[Reproduktion] Schwangerschaft, Geburt, Stillzeit banden Frauen in jeder vormodernen Gesellschaft an planbare, ortsnahe Tätigkeiten --- nicht aus Zwang, sondern aus der Logik des Überlebens ohne Verhütung und Säuglingsnahrung. Erst deren technische Aufhebung im 20.~Jahrhundert (Band~1--3, Neuzeit-Kapitel) verschob die Rechtsstellung fundamental. Funktion, nicht Wesen.
+\item[Ökonomie] Pflug versus Hacke, Land versus Handel, akkumulierbarer versus verbrauchbarer Reichtum --- diese Parameter sagten die Frauenstellung präziser voraus als jede Ideologie (§\,5, Alesina/Giuliano/Nunn, Douglas). Wo Frauenarbeit die Subsistenz trug, entstanden matrilineare Fenster; wo Reichtum akkumulierbar wurde, schlossen sie sich.
+\end{description}
+
+Damit lautet die Antwort auf Ihre Frage: \textbf{Nein, es gibt kein \enquote{echtes Patriarchat} als eigenständige Urkraft.} Was wie Patriarchat aussieht, ist die \emph{Nebenfolge} dreier voneinander unabhängiger Randbedingungen --- Kraft/Gewalt, Reproduktion, Ökonomie ---, die über weite Strecken der Geschichte alle in dieselbe Richtung zeigten. \enquote{Patriarchat} ist der \emph{Name} dieses Ergebnisses, nicht seine \emph{Ursache}. Das ist exakt die Formel aus Band~1, nun bis zum Ende gedacht: nicht der Täter, sondern der Tatbestand. \chipplausibel{plausibel}
+
+\subsection*{Viertens: Warum es dann trotzdem so beständig ist --- die vierte Formel}
+Wenn die Ursachen bloß Randbedingungen sind, warum hielt das Ergebnis dann so hartnäckig? Zwei Verstärker. Der erste ist bekannt: \textbf{Religion und Ideologie} naturalisierten das kontingente Ergebnis (Formel~2) --- sie erklärten die Nebenfolge zur Schöpfungsordnung und nahmen ihr die Verhandelbarkeit. Der zweite ist der eigentliche Ertrag dieses Bandes, die \textbf{vierte Formel: der Mythos als Tatwaffe.} Erzählungen über eine \emph{einstige} oder \emph{ferne} Frauenherrschaft --- das gestürzte Urmatriarchat (Bachofen, Bamberger), die besiegten Amazonen, die durch Ehe entmachtete Brünhild, die \enquote{monströse} Herrscherin (Knox) --- dienten historisch überwiegend nicht der Erinnerung, sondern dem \emph{Argument}: \enquote{So endet es, wenn Frauen herrschen.} Der Matriarchatsmythos war selten Gedächtnis und meist Beweisführung --- eine Waffe zur Begründung der bestehenden Ordnung als naturnotwendigen Sieg. Und in seiner völkischen Kaperung (§\,3) wurde er buchstäblich zur Staatswaffe. \chipbelegt{belegt}
+
+\subsection*{Die Schlussformel der Reihe}
+Damit lässt sich die Formel, die vier Bände getragen hat, abschließen. Sie lautete: \emph{Rechtsstellung folgt Funktionsstellung; Religion nimmt der Ordnung die Verhandelbarkeit; das Patriarchat ist nicht der Täter, sondern der Tatbestand.} Der Gegentest fügt den letzten Satz hinzu:
+
+\begin{callout}{gold}{Schlussformel}
+Es gab nie \emph{das} Matriarchat --- aber es gab immer \emph{Fenster}: Zeiten und Orte, an denen Frauen erbten, herrschten, handelten, ritten. Dass diese Fenster Fenster blieben und die Asymmetrie die Regel, liegt nicht an einem männlichen Herrschaftswillen und nicht an weiblicher Natur, sondern an drei Randbedingungen --- Kraft, Reproduktion, Ökonomie ---, die über Jahrtausende in dieselbe Richtung zeigten, verstärkt durch Ideologien, die das Zufällige zum Ewigen erklärten. Die eigentlich zu erklärende Geschichte ist nicht, warum Männer herrschten, sondern warum die Fenster sich immer wieder schlossen. Und die gute Nachricht dieses Bandes ist zugleich die härteste: Wenn keine Naturkraft sie schloss, sondern nur Umstände, dann können Umstände sie offen halten. Das 20.~Jahrhundert --- Verhütung, Maschinen statt Muskeln, entkoppelter Reichtum --- hat zum ersten Mal alle drei Randbedingungen zugleich verschoben. Was daraus folgt, ist nicht determiniert. Es wird verhandelt.
+\end{callout}
+
+\section{Quellen und Literatur (Auswahl)}
+\litentry{Theorie}{\textbf{Bachofen, Johann Jakob:} Das Mutterrecht, Stuttgart 1861; \textbf{Morgan, Lewis Henry:} Ancient Society, 1877; \textbf{Engels, Friedrich:} Der Ursprung der Familie, des Privateigentums und des Staats, 1884 (MEW 21).}
+\litentry{Theorie}{\textbf{Vaerting, Mathilde:} Die weibliche Eigenart im Männerstaat und die männliche Eigenart im Frauenstaat, Karlsruhe 1921 --- Pendel-/Sozialisationsthese.}
+\litentry{Theorie}{\textbf{Bamberger, Joan:} The Myth of Matriarchy, in: Rosaldo/Lamphere (Hg.), Woman, Culture, and Society, 1974; \textbf{Sanday, Peggy Reeves:} Female Power and Male Dominance, 1981; dies.: Women at the Center, 2002 (Minangkabau).}
+\litentry{Theorie}{\textbf{Göttner-Abendroth, Heide:} Das Matriarchat, 3 Bde., 1988--2000 --- samt Fachkritik (Susanne Schröter u.\,a.).}
+\litentry{Theorie}{\textbf{Gimbutas, Marija:} The Goddesses and Gods of Old Europe, 1974; The Civilization of the Goddess, 1991 --- samt Kritik: \textbf{Meskell, Lynn} (1995), \textbf{Eller, Cynthia:} The Myth of Matriarchal Prehistory, 2000.}
+\litentry{Theorie}{\textbf{Leacock, Eleanor:} Myths of Male Dominance, 1981; \textbf{Oyěwùmí, Oyèrónké:} The Invention of Women, 1997; \textbf{Gunn Allen, Paula:} The Sacred Hoop, 1986.}
+\litentry{Literatur}{\textbf{Röder, Brigitte / Hummel, Juliane / Kunz, Brigitta:} Göttinnendämmerung. Das Matriarchat aus archäologischer Sicht, 2001 --- dt. Standardwerk; \textbf{Wagner-Hasel, Beate:} Matriarchatstheorien der Altertumswissenschaft, 1992/2019.}
+\litentry{Literatur}{\textbf{Anarchaeologie} (Wissenschaftsblog), Serie \enquote{Die Geschichte der Matriarchatstheorie}, 2025 --- Begriffsgeschichte (Gynaikokratie/Matriarchat/Patriarchat) und NS-Rezeption.}
+\litentry{Literatur}{\textbf{Mayor, Adrienne:} The Amazons, Princeton 2014; \textbf{Davis-Kimball, Jeannine:} Warrior Women, 2002 (mit gebotener Deutungsvorsicht); Devitsa-Grabung 2019/2020.}
+\litentry{Literatur}{\textbf{Garde\l{}a, Leszek:} Women and Weapons in the Viking World, 2021; \textbf{Price, Neil:} The Viking Way, 2002/2019; \textbf{Hedenstierna-Jonson u.\,a.} (2017) und \textbf{Price u.\,a.} (2019) zu Birka Bj\,581.}
+\litentry{Literatur}{\textbf{Hodder, Ian:} zu Çatalhöyük (div.\ Grabungsberichte, 2000er); \textbf{Conkey, Margaret / Spector, Janet:} Archaeology and the Study of Gender, 1984.}
+\litentry{Literatur}{\textbf{aDNA-Studien:} Haak et al. (2015, Yamnaya); Kennett et al. (2017, Chaco/Pueblo Bonito, matrilineare Dynastie); Mittnik/Knipper et al. (2019, Lechtal); Cassidy et al. (2025, \emph{Nature}, Durotriges/Matrilokalität) --- Angaben per Recherche zu verifizieren.}
+\litentry{Literatur}{\textbf{Malinowski, Bronis\l{}aw:} The Sexual Life of Savages, 1929 (Trobriander/Avunkulat); \textbf{Cai Hua:} A Society without Fathers or Husbands, 2001 (Mosuo); \textbf{Gough, Kathleen:} zur Nayar-Matrilinearität.}
+\litentry{Literatur}{\textbf{Heywood, Linda:} Njinga of Angola, 2017; \textbf{Mernissi, Fatima:} The Forgotten Queens of Islam, 1990 (Band-2-Brücke); \textbf{Hrdy, Sarah Blaffer:} Mothers and Others, 2009.}
+
+\medskip
+\noindent{\footnotesize\emph{Hinweis: Dieser Band ist der Gegentest-Abschluss der Reihe \enquote{Die Frau vor dem Recht}. Datierungen und aDNA-Befunde sind forschungsdynamisch; die jüngsten Studien (bes.\ Cassidy et al.\ 2025) sind vor Zitation im Original zu prüfen. Konfidenzmarker bezeichnen den Sicherungsgrad, nicht die Bedeutung eines Befundes.}}
+
+\end{document}

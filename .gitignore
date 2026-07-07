@@ -1,2 +1,8 @@
-/out/**
+# secrets — never commit the ElevenLabs API key
+.env
+
+# regenerable audio build artifacts — never committed (1+ GB; stems/finals are
+# reproducible from the specs). The Pages site tracks its own `audio/` dir instead.
+/out/
 __pycache__
+

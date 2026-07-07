@@ -1,0 +1,158 @@
+slug: quarks-for-kids/wusl-gusl
+kind: podcast
+title: "Wusl Gusl — Schrumpfomat 3000"
+model: eleven_v3
+transcript: series/quarks-for-kids/wusl-gusl.md
+
+intro_audio:  series/quarks-for-kids/wusl-gusl-intro.mp3
+bridge_audio: series/quarks-for-kids/wusl-gusl-intro.mp3
+
+speakers:
+  WUSL:
+    voice_id: xOrwxaQJaTlyIgWk33GY
+    speaker_key: woozle
+    stability: 0.15
+    similarity: 0.30
+    style: 0.70
+    speed: 0.95
+    speaker_boost: true
+  MODERATOR:
+    voice_id: rDBaN5ZF8ukjsiAjsmmU
+    speaker_key: moderator
+    stability: 0.50
+    similarity: 0.75
+    speaker_boost: true
+  ERZÄHLER:
+    voice_id: FTNCalFNG5bRnkkaP5Ug
+    speaker_key: erzaehler
+    stability: 0.50
+    similarity: 0.75
+    speaker_boost: true
+  WUSL_MAUS:
+    voice_id: TU66eqOHxLbh8iieomGh
+    speaker_key: wusl_maus
+    stability: 0.15
+    similarity: 0.30
+    style: 0.70
+    speed: 0.95
+    speaker_boost: true
+  BENI_MAUS:
+    voice_id: Uh8xleV5p5p5VeBjbG6O
+    speaker_key: beni_maus
+    stability: 0.50
+    similarity: 0.75
+    speaker_boost: true
+
+# spoken-text substitutions applied before TTS (pronunciation + in-dialogue rename).
+# Source transcript already says Wusl/Gusl; only the Moderator→Beni rule remains.
+replace:
+  "Moderator": "Beni"
+
+audio_tags:
+  lacht: "[laughs]"
+  kichert: "[giggles]"
+  glucks: "[giggles]"
+  flüstert: "[whispers]"
+  stolz: "[proud]"
+  ruhig: "[calm]"
+  hektisch: "[nervous]"
+  zufrieden: "[content]"
+  schmunzelt: "[chuckles]"
+  "piepsig, jubelnd": "[excited]"
+  quietscht: "[excited]"
+  "schnappt nach luft": "[gasps]"
+  "verschluckt sich": "[coughs]"
+  überlegt: "[thoughtful]"
+  "wieder normale stimme, erleichtert": "[relieved]"
+
+sfx:
+  schwupp:
+    prompt: "cartoon shrink grow whoosh pop, comedic, short, no reverb tail"
+    dur: 3
+  device_beep:
+    prompt: "short workshop electronic beep, single piep, clean, dry"
+    dur: 2
+  pling:
+    prompt: "bright short metallic ping, clean, resonant, no reverb tail, very short"
+    dur: 2
+  krack:
+    prompt: "comedic electrical zap crack, cartoon style, short, punchy"
+    dur: 2
+  boing:
+    prompt: "cartoon spring boing, playful, short"
+    dur: 1
+  plopp:
+    prompt: "single cartoon toaster pop, short, dry"
+    dur: 1
+  krawumms:
+    prompt: "comedic cartoon thunder/zap KRAWUMMS, short, punchy"
+    dur: 2
+  trommelwirbel:
+    prompt: "short comedic drumroll building to a tiny cymbal, dramatic reveal, dry"
+    dur: 2
+
+music:
+  mystery_bed:
+    prompt: "sparse mysterious ambient underscore, slow, subtle, cosmic, loopable, no melody, no vocals"
+    ms: 30000
+  workshop_atmo:
+    prompt: "very soft inventor's-workshop atmosphere bed: gentle electronic hums, faint bubbling and distant soft beeps, warm and playful, loopable, no melody, no vocals"
+    ms: 30000
+  title_motif:
+    prompt: "playful wacky kids-science fanfare, upbeat, quirky, sense of invention and wonder, no vocals, short"
+    ms: 8000
+  transition:
+    prompt: "short playful stinger, curious wacky kids-science transition, 2-3 notes, light, no vocals"
+    ms: 3000
+
+cue_rules:
+  # music / action cues FIRST (specific) so the greedy sfx keyword "piep" does not
+  # steal cues like "…geheimnisvoller… piepen" (§12) or "Warme Musik… piepen" (§14).
+  - keywords: ["ausblenden"]
+    action: outro
+  - keywords: ["musik hoch"]
+    action: outro
+  - keywords: ["warme musik"]
+    music: workshop_atmo
+    action: bed_on
+  - keywords: ["geheimnisvoll"]
+    music: mystery_bed
+    action: bed_on
+  - keywords: ["ruhiger"]
+    music: mystery_bed
+    action: bed_on
+  # sfx cues
+  - keywords: ["schwupp"]
+    sfx: schwupp
+  - keywords: ["fiepen"]
+    sfx: schwupp
+  - keywords: ["pling"]
+    sfx: pling
+  - keywords: ["toaster"]
+    sfx: plopp
+  - keywords: ["ploppen"]
+    sfx: plopp
+  - keywords: ["krack"]
+    sfx: krack
+  - keywords: ["zisch"]
+    sfx: krack
+  - keywords: ["krawumms"]
+    sfx: krawumms
+  - keywords: ["trommelwirbel"]
+    sfx: trommelwirbel
+  - keywords: ["boing"]
+    sfx: boing
+  - keywords: ["feder"]
+    sfx: boing
+  - keywords: ["wubwub"]
+    sfx: device_beep
+  - keywords: ["piep"]
+    sfx: device_beep
+
+gaps:
+  base: 0.55
+  switch: 0.90
+  sfx_tail: 0.35
+
+output:
+  final: wusl-gusl.mp3

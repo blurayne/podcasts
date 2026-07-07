@@ -1,0 +1,74 @@
+slug: die-frau-vor-dem-recht/S01-02/scene5
+kind: hoerspiel
+title: "Die Frau vor dem Recht — Der Parallelbogen — Szene 5 — Die Verheiratung der Tochter, 2026"
+model: eleven_v3
+
+sfx:
+  atmo_base:
+    prompt: "an intimate living room in the evening, faint clink of tea glasses, a muffled street behind the window"
+    auto: true
+  atmo_room:
+    prompt: "an intimate living room in the evening, faint clink of tea glasses, a muffled street behind the window"
+    dur: 4
+
+music:
+  intro:
+    prompt: "Warm restrained contemporary underscore, subtle oud and piano, intimate and quietly modern, not sentimental, no vocals"
+    ms: 20000
+  bed:
+    prompt: "Very soft neutral documentary underscore: sustained low strings, contemplative, minimal, unobtrusive, no melody, no vocals"
+    ms: 45000
+  outro:
+    prompt: "Reflective, quietly hopeful outro: warm restrained oud and piano, gently fading, no vocals"
+    ms: 20000
+
+output:
+  final: scene5.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"
+  audiobook_loudnorm: "I=-19:TP=-3:LRA=11"
+
+hoerspiel:
+  name: scene5
+  narr_heraus: "Wie realistisch ist diese Szene? Eine kurze Einordnung."
+  bed_sfx: atmo_base
+  reverb_roles: []
+
+  voices:
+    SPRECHER:   "dCnu06FiOZma2KVNUoPZ"
+    VATER:      "g1jpii0iyvtRs8fqXsd1"
+    MUTTER:     "7eVMgwCnXydb3CikjV7a"
+    AMIRA:      "BIvP0GN1cAtSRTxNHnWS"
+    ABU_KHALED: "nZpMT2RjIpaat0IaA7Sd"
+
+  display:
+    SPRECHER:   "ERZÄHLER"
+    VATER:      "VATER"
+    MUTTER:     "MUTTER"
+    AMIRA:      "AMIRA"
+    ABU_KHALED: "ABU KHALED"
+
+  analysis_list:
+    - >-
+      Die Konstellation — transnationale Verlobungsabsprache, hinzugezogener Vermittler, ambivalente Mutter,
+      bildungsorientierte Tochter und ein versöhnlicher „Aufschub" — ist aus der Beratungspraxis vielfach dokumentiert:
+      BMFSFJ-Studie von 2011, Fallberichte von Papatya und Terre des Femmes. Die Häufigkeit sollte man nicht überzeichnen;
+      die Konstellation korreliert mit patrilinearen Ehr- und Clanstrukturen bestimmter Herkunftsmilieus, nicht mit
+      Religiosität als solcher.
+    - >-
+      Die Strukturparallele zur Karolingerszene trägt: der Vater als faktischer wali, der Konsens normativ vorgesehen
+      und faktisch unter Druck. Der entscheidende Unterschied ist institutionell — 2026 hat die Tochter Exit-Optionen
+      und damit Verhandlungsmacht: Paragraf 237 des Strafgesetzbuchs, Schulsozialarbeit, Jugendamt, anonyme
+      Zufluchtseinrichtungen. Nicht die Gesinnung am Tisch hat sich zuerst geändert, sondern die
+      Opportunitätsstruktur um den Tisch herum.
+
+  drama:
+    - { cue: atmo_room, gain: 0.7 }
+    - { id: "00_narr_in", who: SPRECHER, gap: 0.0, text: "Eine Wohnung in einer deutschen Großstadt, ein Donnerstagabend. Die Familie hat Besuch. Es geht — wie vor zwölfhundert Jahren am Herdfeuer des fränkischen Hofes — um die Zukunft einer Tochter. Nur dass diese Tochter in drei Monaten Abitur schreibt." }
+    - { id: "01_abu_khaled", who: ABU_KHALED, gap: 0.6, tag: "[calm]", text: "Bruder, ich bin nicht gekommen, um zu richten. Ich bin gekommen, damit zwei Familien Freunde bleiben. Dein Cousin sagt, es gab ein Wort zwischen euch. Ein Wort ist ein Wort." }
+    - { id: "02_vater", who: VATER, gap: 0.5, text: "Es gab ein Wort, Abu Khaled. Vor zwei Jahren schon. Sein Sohn ist ein guter Junge, er hat Arbeit, das Haus im Dorf ist fertig. Ich habe nichts versprochen, was ich nicht halten kann. Nur sie — sie macht mir Schande vor ihm." }
+    - { id: "03_amira", who: AMIRA, gap: 0.4, text: "Ich mache niemandem Schande. Ich habe niemandem etwas versprochen. Ich war fünfzehn, als ihr das „Wort“ gegeben habt. Mich hat keiner gefragt." }
+    - { id: "04_abu_khaled", who: ABU_KHALED, gap: 0.5, tag: "[calm]", text: "Kind, niemand verheiratet dich morgen. Aber eine Verlobung ist kein Gefängnis, sie ist ein Schutz. Dein Vater trägt Verantwortung für dich. Wenn das Wort platzt, verliert er das Gesicht — und du verlierst mit." }
+    - { id: "05_amira", who: AMIRA, gap: 0.4, tag: "[calm]", text: "Nach welchem Recht? Nach dem Gesetz hier bin ich mit achtzehn frei. Meine Lehrerin sagt — und die Beratungsstelle sagt es auch: Niemand darf mich verloben, verheiraten, niemand darf mir drohen. Das ist Paragraf 237. Ich habe die Nummer der Beratungsstelle im Handy, Baba. Ich will das nicht benutzen müssen. Ich will, dass wir reden." }
+    - { id: "06_mutter", who: MUTTER, gap: 0.5, tag: "[whispers]", text: "Hör ihr zu. Sie ist die Erste von uns, die das Abitur macht. Meine Mutter wurde mit sechzehn gegeben, ich mit neunzehn. Vielleicht — vielleicht ist das Wort, das wir halten müssen, das an unsere Tochter." }
+    - { id: "07_abu_khaled", who: ABU_KHALED, gap: 0.7, tag: "[calm]", text: "Bruder — ich sage dir, was ich deinem Cousin sagen werde: Eine Braut, die Nein sagt, ist kein Gewinn, sie ist eine offene Rechnung. Auch der Prophet hat den Konsens der Frau verlangt. Lass mich einen Weg finden, bei dem keiner das Gesicht verliert: kein Bruch — ein Aufschub. Nach dem Studium sieht man weiter. Und du, Kind: Ehre deinen Vater. Er trägt schwerer an alledem, als du siehst." }
+    - { id: "08_narr_out", who: SPRECHER, gap: 0.6, text: "Kein Urteil, kein Vertrag — ein Aufschub, der wie Frieden aussieht und ein Waffenstillstand ist. Die karolingische Tochter hatte in dieser Szene keinen Text. Amira hat einen: eine Schule, ein Gesetz, eine Telefonnummer. Das ist der ganze Unterschied von zwölfhundert Jahren — und er ist gewaltig. Aber der Tisch, an dem über sie verhandelt wird, steht noch." }

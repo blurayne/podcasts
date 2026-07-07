@@ -1,0 +1,70 @@
+slug: die-frau-vor-dem-recht/S01-02/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Der Parallelbogen"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-02-islam-der-parallelbogen/podcast.md
+stem_slug_len: 28   # legacy s01e02_podcast.py used 28-char slugs; match them exactly (no symlinks)
+
+speakers:
+  STIMME 1:
+    voice_id:     "dCnu06FiOZma2KVNUoPZ"
+    speaker_key:  s1
+    stability:    0.50
+  STIMME 2:
+    voice_id:     "2OcnG4mH3jIMtWz3vKus"
+    speaker_key:  s2
+    stability:    0.60
+
+strip_latex: true
+
+sfx:
+  atmo_thing:
+    prompt: "Ambient bed: a crackling open fire, a distant blacksmith hammering, a low murmur of a gathered crowd, no music, seamless loop"
+    dur: 12
+  atmo_tower:
+    prompt: "Ambient bed: gentle wind over an open landscape, a wide slow river, very distant a single faint human call, no music, seamless loop"
+    dur: 12
+  atmo_sea:
+    prompt: "Ambient bed: sea waves, gulls, creaking ship rigging, no music, seamless loop"
+    dur: 12
+
+music:
+  title_motif:
+    prompt: "Solemn documentary title motif with a Middle-Eastern color: a low sustained dark pad with an oud or ney figure over it, slow, contemplative, cinematic, no drums, no vocals"
+    ms: 24000
+  transition:
+    prompt: "Short neutral documentary transition with a faint oud note over a soft rising sustained tone, unobtrusive, no vocals"
+    ms: 8000
+
+cue_rules:
+  - { keywords: ["musik", "titelmotiv"],   music: title_motif, action: intro }
+  - { keywords: ["musik", "titelmotif"],   music: title_motif, action: intro }
+  - { keywords: ["musik", "trenner"],      music: transition,  action: stinger }
+  - { keywords: ["musik", "übergang"],     music: transition,  action: stinger }
+  - { keywords: ["musik", "ausblenden"],   music: title_motif, action: outro }
+  - { keywords: ["musik", "aus."],         music: title_motif, action: outro }
+  - { keywords: ["musik", "aus"],          music: title_motif, action: outro }
+  - { keywords: ["atmo", "feuer"],         sfx: atmo_thing }
+  - { keywords: ["atmo", "thing"],         sfx: atmo_thing }
+  - { keywords: ["atmo", "schmiede"],      sfx: atmo_thing }
+  - { keywords: ["atmo", "meer"],          sfx: atmo_sea }
+  - { keywords: ["atmo", "möwen"],         sfx: atmo_sea }
+  - { keywords: ["atmo"],                  sfx: atmo_tower }
+
+gaps:
+  base:     0.70
+  switch:   0.95
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    1.00
+
+einlagen:
+  1: out/die-frau-vor-dem-recht/S01-02/scene1/scene1_play.mp3
+  2: out/die-frau-vor-dem-recht/S01-02/scene2/scene2_play.mp3
+  3: out/die-frau-vor-dem-recht/S01-02/scene3/scene3_play.mp3
+  4: out/die-frau-vor-dem-recht/S01-02/scene4/scene4_play.mp3
+  5: out/die-frau-vor-dem-recht/S01-02/scene5/scene5_play.mp3
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

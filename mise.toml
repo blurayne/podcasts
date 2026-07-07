@@ -1,15 +1,28 @@
 # Toolchain for the audiobook / Hörspiel production pipeline.
 #
 # Tools used by the pipeline:
+#   uv      — runs every script via the `#!/usr/bin/env -S uv run --script` shebang (PEP 723 inline deps)
 #   python  — scripts/el.py (ElevenLabs API CLI) and the scene/podcast orchestrators
 #   ffmpeg  — audio assembly (mixing, ducking, reverb, loudnorm) + ffprobe for durations
 #   jq      — inspecting ElevenLabs API JSON responses
 #   curl    — ad-hoc API smoke tests
 #
+# Study-PDF build toolchain (the LaTeX "Observatory" studies, see LAYOUT-STUDIES.md):
+#   tectonic — self-contained XeTeX engine; compiles the Bände (fontspec + local OTF
+#              fonts). Reproducible replacement for system `xelatex`/TeX Live; run it
+#              twice per doc to resolve the .toc (LAYOUT-STUDIES.md §1). Install the
+#              *musl* static build (gh release `tectonic@X.Y.Z`, asset
+#              `…-x86_64-unknown-linux-musl.tar.gz`) — the gnu build needs glibc >=2.36
+#              (too new for this box) and mise's github backend prefers it, so tectonic
+#              is documented here but NOT auto-installed via [tools]. Alternative: system
+#              TeX Live `texlive-xetex`.
+#   pdfinfo  — poppler; page-count / sanity check on the compiled PDF (present at /usr/bin).
+#
 # NOTE: a system ffmpeg lives at /usr/bin/ffmpeg (v4.4.2). The orchestrators
 # auto-pick the first *working* ffmpeg/ffprobe (env FFMPEG_BIN > PATH > /usr/bin),
 # so the pipeline runs even if a mise-provided ffmpeg is unavailable.
 [tools]
+uv = "latest"                      # runs the scripts (uv shebang + PEP 723 inline deps)
 python = "3.12"
 "conda:ffmpeg" = "latest"          # self-contained build with bundled av* libs
 "aqua:jqlang/jq" = "1.8.2"

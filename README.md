@@ -1,68 +1,75 @@
-# Die Frau vor dem Recht — Podcast Studio
+# Audio Production Pipeline
 
-> Doku-Feature-Podcast und Hörspiel-Produktion · 1.900 Jahre Rechtsgeschichte der Frau
+AI-driven production pipeline for German podcast and radio-play (Hörspiel) series. A single YAML-driven engine turns human-readable Markdown scripts into fully mixed episodes using ElevenLabs (TTS, SFX, music) and ffmpeg, and the companion study PDFs are typeset with XeTeX/tectonic.
 
-**[→ Zur Website (GitHub Pages)](https://blurayne.github.io/podcasts/)**
+🌐 **Live site:** <https://blurayne.github.io/podcasts/>
 
----
+## How it works
 
-## Staffel 1 · Die Frau vor dem Recht (S01)
+Every episode is produced by one generic engine, `scripts/produce.py`, driven by a per-episode **YAML spec** (production config: voices, model, SFX/music prompts, cue rules, gaps, output) plus a **Markdown transcript** (the dialogue). The full schema, engine CLI, and credit-safe rules are the authoritative contract in [`SPEC.md`](SPEC.md); the reusable operator guide is the skill at `.claude/skills/produce-podcast-episode/`.
 
-### Folge 01 — Von der Seherin im Turm (Germanen & Europa)
+```bash
+scripts/produce.py <spec.yaml> parse   # print the parsed event list (no API calls, free)
+scripts/produce.py <spec.yaml> gen     # generate TTS + SFX + music stems (spends credits, idempotent)
+scripts/produce.py <spec.yaml> mix     # ffmpeg assembly → final MP3 (free, re-runnable)
+scripts/produce.py <spec.yaml> all     # gen + mix (+ book for Hörspiele)
+```
 
-Zweistimmiges Doku-Feature (35–40 min): Von Veleda, der Seherin der Brukterer (70 n. Chr.),
-über fränkisches Mündelrecht und mittelhochdeutsches Stadtrecht bis zur rechtlichen
-Gleichstellung in der BRD 1977.
+Scripts run via a uv shebang (`#!/usr/bin/env -S uv run --script`) with PEP 723 inline dependencies — no virtualenv setup needed.
 
-| Dokument | Beschreibung |
-|---|---|
-| [Podcast-Skript](series/die-frau-vor-dem-recht/S01-01/podcast.md) | Vollständiges Doku-Feature-Skript |
-| [Hörspiel-Szenen 1–3](series/die-frau-vor-dem-recht/S01-01/hoerspiele.md) | Drei dramatisierte Einlagen: Thing (90 n. Chr.), Verheiratung (Franken 9. Jh.), Island (~980) |
-| [Wissenschaftliche Studie](series/die-frau-vor-dem-recht/S01-01/studie/studie.pdf) | Begleitstudie: Rechtsstellung der Frau, Germanen bis Frühmittelalter |
-| [Analyse (HTML)](series/die-frau-vor-dem-recht/S01-01/studie/analyse.html) | HTML-Analysedokument zur Studie |
+## Series
 
-### Folge 02 — Der Parallelbogen (Von Mekka nach Neukölln)
+### Die Frau vor dem Recht (S01)
 
-Zweistimmiges Doku-Feature (55–60 min): Die Rechtsstellung der Frau im Islam, gespiegelt an
-1.900 Jahren Europa — von Khadidscha in Mekka bis zur Mahsa-Amini-Generation und deutschem
-Recht 2026. Fünf Hörspiel-Einlagen eingebettet.
+Historical documentary podcast + Hörspiel series on the legal status of women across cultures and centuries, each episode paired with a peer-reviewed-style study PDF (the „Bände", Observatory layout).
 
-| Dokument | Beschreibung |
-|---|---|
-| [Podcast-Skript](series/die-frau-vor-dem-recht/S01-02/podcast.md) | Vollständiges Doku-Feature-Skript |
-| [Szene 1 — Die Kauffrau von Mekka](series/die-frau-vor-dem-recht/S01-02/szene-1-khadidscha-mekka.md) | Khadidscha bint Khuwailid, Mekka ~595 |
-| [Szene 2 — Die Lehrerin der Männer](series/die-frau-vor-dem-recht/S01-02/szene-2-karima-mekka.md) | Karima al-Marwaziyya, Mekka ~1055 |
-| [Szene 3 — Vor dem Kadi](series/die-frau-vor-dem-recht/S01-02/szene-3-aintab-kadi.md) | Osmanisches Recht, Aintab 1541 |
-| [Szene 4 — Der Schleier, dreimal](series/die-frau-vor-dem-recht/S01-02/szene-4-teheran-schleier.md) | Teheran 1936 · 1979 · 2022 |
-| [Szene 5 — Die Verheiratung der Tochter, 2026](series/die-frau-vor-dem-recht/S01-02/szene-5-deutschland-2026.md) | Deutschland, Gegenwart |
-| [Vergleichsstudie](series/die-frau-vor-dem-recht/S01-02/studie/vergleichsstudie.pdf) | Akademische Begleitstudie Islam & Europa |
+| # | Folder slug | Topic |
+|---|---|---|
+| S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced |
+| S01-02 | `islam-der-parallelbogen` | Der Parallelbogen / Islam (5 Hörspiele + podcast) — produced |
+| S01-03 | `judentum-gesetz-ohne-land` | Judentum — Gesetz ohne Land |
+| S01-04 | `matriarchat-gegentest` | Matriarchat-Gegentest |
+| S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion |
+| S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat |
+| S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) |
+| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) |
+| S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) |
+| S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) |
 
----
+Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 
-## Kleiner geht's nicht · Quarks for Kids
+### Quarks for Kids
 
-| Dokument | Beschreibung |
-|---|---|
-| [Folge 1 — Die Reise ins Allerkleinste](series/quarks-for-kids/podcast-kleiner-gehts-nicht.md) | Kinderpodcast: Atome, Quarks, vier Kräfte, Quantenphysik (10–12 min) · LINA + DR. FUNKE |
-| [Woozle Goozle Edition](series/quarks-for-kids/podcast-kleiner-gehts-nicht-woozle-goozle.md) | Gleiche Inhalte, Woozle-Goozle-Stil: Woozle + Simón, Quark-O-Skop-3001, Explosionen |
-| [HTML-Version](series/quarks-for-kids/reise-ins-allerkleinste.html) | Gerenderte HTML-Fassung (Original) |
+Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/quarks-for-kids/wusl-gusl.yaml`).
 
----
+## Study PDFs
 
-## Analyse & Forschung
+Each Band is a LaTeX study compiled with the shared "Observatory" layout (fonts, colours, confidence chips, box types). Toolchain and template are documented in [`LAYOUT-STUDIES.md`](LAYOUT-STUDIES.md); compile with `tectonic` (or system `xelatex`).
 
-| Dokument | Beschreibung |
-|---|---|
-| [Hatten es Frauen bei den Germanen leichter?](NEXT.md) | Essay: formale Rechtslage, Sichtbarkeit, ökonomische Grundlogik — Germanen vs. Islam |
-| [Intersektional-feministische Lektüre](docs/INTFEM-ANALYSIS.md) | Vier feministische Lesarten zu Folge 1 & 2, Patriarchat- und Feminismus-Definition |
-| [Woke, Struktur und Identität](docs/NO-WOKE.md) | Analytische Abhandlung: Referenten von „woke", Steelman beider Seiten |
+## Repository layout
 
----
+```
+series/<show>/<episode>/   — sources: transcript .md, *.yaml specs, studie/ (LaTeX + PDF)
+out/<show>/<slug>/         — generated stems + final mixes (git-ignored; reproducible from specs)
+audio/                     — MP3s published by the GitHub Pages site
+scripts/                   — produce.py (engine), el.py (ElevenLabs CLI/lib), hoerspiel.py (Hörspiel lib)
+docs/                      — API-CLI, research, templates
+index.html + .github/workflows/pages.yml — the GitHub Pages site (pandoc build)
+SPEC.md, LAYOUT-STUDIES.md, AGENTS.md      — engine spec, study-build spec, standing conventions
+```
 
-## Technik
+Per-episode output: `podcast.mp3` (feature), and for Hörspiele `sceneN.mp3` (full play), `sceneN_play.mp3` (drama-only stem embedded in the podcast), `sceneN_audiobook.mp3` (clean read).
 
-Produziert mit [ElevenLabs](https://elevenlabs.io) TTS/SFX/Music · Python (`scripts/`) ·
-ffmpeg für Assembly · Modell: `eleven_v3` · Nur studio-quality Stimmen (Professional-Kategorie).
+## Setup
 
-Toolchain: `mise.toml` (Python 3.12, ffmpeg, jq, curl).
-Orchestrierung: `scripts/hoerspiel.py` (Engine) + episodenspezifische Skripte.
+```bash
+mise install                       # uv, ffmpeg, jq, curl, tectonic (studies)
+set -a; source ./.env; set +a      # load ELEVENLABS_API_KEY (never commit .env)
+python3 scripts/el.py balance      # check the shared credit pool
+```
+
+ffmpeg: the mise-managed binary may be broken; the engine auto-picks a working `ffmpeg`/`ffprobe` (`$FFMPEG_BIN` → PATH → `/usr/bin/ffmpeg`).
+
+## Conventions
+
+Standing project conventions (voice policy, caching/credit discipline, uv shebangs, etc.) live in [`AGENTS.md`](AGENTS.md) (`CLAUDE.md` is a symlink to it). Key rules: cast only studio-quality voices, always pass `skip_existing` so re-runs never re-spend credits, and confirm the estimated cost (credits + USD) before any `gen`.
