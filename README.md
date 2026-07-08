@@ -42,9 +42,9 @@ Historical documentary podcast + Hörspiel series on the legal status of persons
 
 Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 
-### Quarks for Kids
+### Science for Kids
 
-Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/quarks-for-kids/wusl-gusl.yaml`).
+Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/science-for-kids/wusl-gusl.yaml`).
 
 ## Study PDFs
 

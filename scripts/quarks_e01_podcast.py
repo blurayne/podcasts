@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce Quarks for Kids — Episode 1: „Kleiner geht's nicht".
+"""Produce Science for Kids — Episode 1: „Kleiner geht's nicht".
 
 Two-voice kids' science podcast.
   LINA      = Hope      (tnSpp4vdxKPjI9w0GnoV) — upbeat and clear

@@ -66,8 +66,8 @@ Caveats that CC BY-SA cannot waive, because they come from elsewhere:
 - **Deliberately excluded from the repository** (git-ignored, never
   distributed): downloaded voice-actor demo reels (`sprachproben/`), the
   reference transcript of the original „Woozle Goozle" show
-  (`series/quarks-for-kids/woozle-orig.txt`), and the intro jingle
-  (`series/quarks-for-kids/wusl-gusl-intro.mp3`). These are
+  (`series/science-for-kids/woozle-orig.txt`), and the intro jingle
+  (`series/science-for-kids/wusl-gusl-intro.mp3`). These are
   copyright-sensitive reference materials and are **not** covered by any
   license in this file.
 - **Trademarks** — „Woozle Goozle" is a third-party trademark; the kids' show
