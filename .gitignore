@@ -12,3 +12,6 @@ __pycache__
 
 # reference transcript of the real show (copyright) — never commit
 series/quarks-for-kids/woozle-orig.txt
+
+# intro jingle (copyright-sensitive) — keep local, never commit
+series/quarks-for-kids/wusl-gusl-intro.mp3
