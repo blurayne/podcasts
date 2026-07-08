@@ -77,3 +77,7 @@ ffmpeg: the mise-managed binary may be broken; the engine auto-picks a working `
 ## Conventions
 
 Standing project conventions (voice policy, caching/credit discipline, uv shebangs, etc.) live in [`AGENTS.md`](AGENTS.md) (`CLAUDE.md` is a symlink to it). Key rules: cast only studio-quality voices, always pass `skip_existing` so re-runs never re-spend credits, and confirm the estimated cost (credits + USD) before any `gen`.
+
+## License
+
+Code (pipeline, site) is **GPL-3.0-or-later**; creative works (transcripts, studies, produced audio) are **CC BY-SA 4.0**. The full outline — including the ElevenLabs commercial-use terms the audio is produced under and what that means for publishing (e.g. on YouTube) — is in [`LICENSE.md`](LICENSE.md).
