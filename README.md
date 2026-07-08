@@ -36,7 +36,7 @@ Historical documentary podcast + Hörspiel series on the legal status of persons
 | S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion | [▶ Drive](https://drive.google.com/file/d/1j6WdHgbkrjuEvASiQ0hdN0x9LrRv20Xh/view) |
 | S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat | [▶ Drive](https://drive.google.com/file/d/1ZmlXKOFlvuBdipUBp-DUtEXD1bz8WJCt/view) |
 | S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) | [▶ Drive](https://drive.google.com/file/d/1RV4Q97f1Qs4ne03Pb6Rpy1h33f9B9YnO/view) |
-| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) | |
+| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) — produced | [▶ Drive](https://drive.google.com/file/d/1sfBrmA9ck_Y2r4DyloBZbtb0M-6Jp5ah/view) |
 | S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) | |
 | S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) | |
 
