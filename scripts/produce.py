@@ -37,7 +37,7 @@ KNOWN_TOPLEVEL = {
     "slug", "kind", "title", "model", "speakers", "audio_tags", "sfx",
     "music", "gaps", "output", "cue_rules", "speech_tempo", "strip_latex",
     "einlagen", "transcript", "hoerspiel", "stem_slug_len", "replace",
-    "intro_audio", "bridge_audio",
+    "intro_audio", "bridge_audio", "music_gain",
 }
 
 
@@ -505,6 +505,9 @@ def phase_mix_podcast(spec):
     einlagen = spec.get("einlagen", {})
     intro_audio  = spec.get("intro_audio")
     bridge_audio = spec.get("bridge_audio")
+    # Global multiplier on every music layer (bed, underscore, motif, stinger).
+    # 1.0 = unchanged; 0.8 = music 20% quieter. Speech is untouched.
+    music_gain   = float(spec.get("music_gain", 1.0))
 
     # Build speech bus
     pieces = []; t = 0.0; prev_role = None
@@ -644,7 +647,7 @@ def phase_mix_podcast(spec):
             print(f"  warn: bed music not found: {src}, skipping bed segment")
             continue
         seg = os.path.join(work_dir, f"bed_seg_{i}.flac")
-        loop_bed(src, length, 0.10, seg)
+        loop_bed(src, length, 0.10 * music_gain, seg)
         layers += ["-i", seg]; delay_ms_list.append(int(s_t * 1000))
 
     # Motif / stinger overlays
@@ -655,7 +658,9 @@ def phase_mix_podcast(spec):
             continue
         w = os.path.join(work_dir, f"ov_{kind}_{len(delay_ms_list)}.flac")
         if kind == "underscore":
-            underscore(src, 0.12, w)
+            underscore(src, 0.12 * music_gain, w)
+        elif music_gain != 1.0:
+            norm(src, w, extra=f"volume={music_gain:.4f}")
         else:
             norm(src, w)
         layers += ["-i", w]; delay_ms_list.append(int(ts * 1000))

@@ -8,9 +8,10 @@
 
 ---
 
+<!-- start -->
 ## PROLOG — Die Formel, umgedreht (ca. 4 Min.)
 
-*[ATMO: Der Vierschicht-Akkord aus Folge 9, vollständig. Er steht unangenehm lange.]*
+`[MUSIK: Vierklang-Titelmotiv, Intro]`
 
 **ERZÄHLERIN:** So haben wir Band neun beendet: vier Töne, vier Schichten. Das Begehren koppelt Wert an Status. Die Maschine an Zahlungsfähigkeit. Der Staat an Geschlecht. Der Feed an Darstellbarkeit.
 
@@ -22,7 +23,7 @@
 
 **ERZÄHLER:** Angenommen. Band zehn. Die Entkopplung.
 
-*[Titelsignatur — darunter bleibt der Vierklang stehen.]*
+`[MUSIK: Vierklang ausklingen]`
 
 ---
 
@@ -42,7 +43,7 @@
 
 ### SZENE 1 · „Das Vorstellungsgespräch"
 
-*[ATMO: Kita-Büro. Gedämpfter Kinderlärm hinter einer Tür.]*
+`[ATMO: Kita-Buero]`
 
 **LEITERIN:** Ihr Lebenslauf ist ungewöhnlich, Herr Brandt. Zwölf Jahre Anlagenmechaniker, dann die Umschulung. Warum?
 
@@ -58,11 +59,11 @@
 
 **LEITERIN:** Reden wir in einem Jahr drüber. Wenn die Eltern Sie kennen.
 
-*[Tür, Kinderlärm schwillt kurz an. Blende.]*
+`[SFX: Tuer-Kinder]`
 
 **ERZÄHLER:** Das ist Zeiger neun und Zeiger vier in einer Szene: Der Mann, der die Sorgefunktion wählt, zahlt dreifach — im Gehalt, im Generalverdacht, im Status. Entkopplung heißt: Dieser Preis fällt. Nicht die Wahl wird vorgeschrieben — der Preis fällt.
 
-*[Der erste Ton verstummt: der Feed-Wisch. Drei Töne bleiben.]*
+`[MUSIK: Ton verstummt drei]`
 
 ---
 
@@ -76,7 +77,7 @@
 
 ### SZENE 2 · „Die Steuerklasse"
 
-*[ATMO: Küche, Abend. Laptop-Tippen, Papier.]*
+`[ATMO: Kueche-Abend]`
 
 **SIE:** Also. Wenn ich auf dreißig Stunden gehe und du auf zweiunddreißig — dann holt Ben uns beide je zweimal die Woche ab. Rechnet sich das?
 
@@ -90,7 +91,7 @@
 
 **ER:** Die Tabelle **ist** eine Meinung. Mit Paragrafen.
 
-*[Laptop klappt zu. Blende.]*
+`[SFX: Laptop-zu]`
 
 **ERZÄHLERIN:** Das Ehegattensplitting prämiert die maximale Einkommensdifferenz im Paar — eine Jahresprämie auf das Ernährer-Zuverdienerin-Modell; die Steuerklassen drei und fünf übersetzen sie in den Monat und machen ihren Zweitverdienst optisch zum Verlustgeschäft. Die beschlossene Umstellung auf vier-vier mit Faktor — geplant zum Ende des Jahrzehnts — entschärft die Sichtbarkeit. `[plausibel]` Das Splitting bleibt. Entkopplungslogisch hieße der Weg: Individualbesteuerung mit übertragbarem Grundfreibetrag — oder ein Kindersplitting, das reale Sorge prämiert statt der Eheform. Wer die Kopplung im Steuerrecht lässt, braucht sich über den Bertrand-Knick nicht zu wundern: Der Staat bezahlt den Knick, den er beklagt.
 
@@ -100,7 +101,7 @@
 
 ### SZENE 3 · „Die Morgengabe"
 
-*[ATMO: Anwaltskanzlei, nüchtern. Aktendeckel, ein Kugelschreiber.]*
+`[ATMO: Kanzlei]`
 
 **MANDANTIN:** In unserem Ehevertrag steht eine Mahr. Fünfzehntausend Euro, fällig bei Scheidung. Meine Familie sagt, das ist eine religiöse Sache — dafür sei kein deutsches Gericht zuständig.
 
@@ -110,7 +111,7 @@
 
 **ANWÄLTIN (Kanzlei):** Der Imam hat Sie getraut. Er hat Ihnen keinen Anspruch weggenommen und kann es nicht. Das Geld war immer Ihres. Wir holen es jetzt — vor einem staatlichen Gericht, nach staatlichem Recht.
 
-*[Aktendeckel schließt. Blende.]*
+`[SFX: Aktendeckel]`
 
 **ERZÄHLERIN:** Das ist die Grundsatzfrage des Rechtsstaats, am schärfsten gestellt — und die Entkopplung gibt eine klare Antwort. Wo religiöses Normrecht und staatliches Recht kollidieren, hat das staatliche Recht Vorrang. Ausnahmslos. Das ist keine kulturelle Parteinahme, sondern die Funktionslogik zu Ende gedacht: Munt und Mahr waren beide Funktionsinstrumente — die eine germanisch-weltlich, die andere islamisch-religiös. Der Geltungsgrund ändert die Kopplung nicht.
 
@@ -138,7 +139,7 @@
 
 **ERZÄHLER:** Und zweitens, direkt an Sie: Die Reihenfolge der Schritte ist verhandelbar — Care-Löhne vor Splitting-Reform, unten vor oben. Das Ziel ist es nicht.
 
-*[Der zweite Ton verstummt: der Amtsstempel. Zwei Töne bleiben.]*
+`[MUSIK: Ton verstummt zwei]`
 
 ---
 
@@ -152,7 +153,7 @@
 
 **ERZÄHLER:** Bleiben zwei Ebenen im Schnelldurchgang. Die Technik: Companions regulieren, nicht verdammen — Bindungs-Transparenz statt Engagement-Optimierung auf Abhängigkeit; **Exportrechte**, damit die Beziehung dem Menschen gehört und nicht dem Anbieter — der ERP-Entzug von 2023 darf sich nicht als Marktmechanik wiederholen; auditierte Krisenprotokolle; ein Kinderschutzregime, das die zweiundsiebzig Prozent ernst nimmt. `[belegt]` Und die Kultur: eine deutsche Entkopplungskommission nach norwegischem Vorbild — das Mannsutvalget hat gezeigt, dass ein Staat Männerlasten erfassen kann, ohne die Anwaltschaft für Frauen zu demontieren. `[belegt]` Jungen-Förderung in Care mit demselben Ernst wie MINT für Mädchen. Und die zweite Statuswährung: Präsenz, Sorge, Verlässlichkeit als öffentlich sichtbarer Männerstatus — nicht Abstieg vom Ernährer. Erweiterung.
 
-*[Der dritte Ton verstummt: das Maschinensummen. Nur der Swipe-Klick bleibt — einzeln, nackt.]*
+`[MUSIK: Ton verstummt eins]`
 
 ---
 
@@ -170,7 +171,7 @@
 
 ## AKT V — Der Einwand der Natur (ca. 9 Min.)
 
-*[ATMO: Der Swipe-Klick steht weiter allein im Raum — der letzte Ton. Er bleibt diesen ganzen Akt über hörbar, unaufgelöst.]*
+`[ATMO: Swipe allein]`
 
 **ERZÄHLER:** Der härteste Einwand gegen alles, was wir heute vorgeschlagen haben, lautet: Was, wenn die Kopplung gar nicht nur Struktur ist — sondern zum Teil Natur? Dann wäre Entkopplung kein Abbau einer Konstruktion, sondern ein Kampf gegen die eigene Ausstattung. Teuer. Vielleicht vergeblich.
 
@@ -206,7 +207,7 @@
 
 **ANWÄLTIN:** *(Pause)* Dann sind wir fertig miteinander. Ein Messgerät, kein Manifest. Damit kann ich leben. *(Pause)* Weiterprüfen.
 
-*[Der Swipe-Klick steht noch einen Moment. Dann Schnitt ins Finale — er läuft hinüber.]*
+`[ATMO: Swipe allein]`
 
 ---
 
@@ -214,17 +215,17 @@
 
 ### SZENE 4 · „Feierabend um vier"
 
-*[ATMO: Kita-Garderobe, halb vier nachmittags. Reißverschluss, Kinderstimme.]*
+`[ATMO: Kita-Garderobe]`
 
 **KIND:** Papa! Wir haben Schnecken gefunden, **echte**!
 
 **VATER:** Zeig — oh. Die wohnt jetzt aber nicht bei uns.
 
-**ERZIEHERIN (im Vorbeigehen):** Bis morgen, ihr zwei.
+**ERZIEHERIN:** Bis morgen, ihr zwei.
 
 **VATER:** Bis morgen.
 
-*[Tür. Straße. Schritte, klein und groß.]*
+`[SFX: Tuer-Strasse]`
 
 **KIND:** Papa? Warum holst du mich eigentlich immer ab?
 
@@ -232,7 +233,7 @@
 
 **KIND:** *(zufrieden)* Ach so. *(Pause)* Trägst du die Schnecke?
 
-*[Schritte. Blende.]*
+`[SFX: Schritte]`
 
 **ERZÄHLER:** Das war die Szene. Mehr passiert nicht. Kein Konflikt, keine Pointe, niemand fragt, warum ein Mann um halb vier an der Garderobe steht — nicht die Erzieherin, nicht das Kind, nicht die Tabelle. **So klingt gelungene Entkopplung: nach nichts.** Sie ist keine Heldengeschichte. Sie ist die Abwesenheit eines Preises.
 
@@ -240,7 +241,7 @@
 
 ### SZENE 5 · „Der zweite Fragebogen"
 
-*[ATMO: Küche, morgens — dieselbe Küche wie in Folge 9, Jahre später. Zwei Umschläge werden aufgerissen, fast gleichzeitig.]*
+`[ATMO: Kueche-Morgen]`
 
 **SCHWESTER:** „...bitten wir Sie, die folgenden Fragen zu beantworten."
 
@@ -250,11 +251,11 @@
 
 **BRUDER:** Er hat ihn aufgehoben. Er sagt immer: Damit ihr merkt, dass sich Grammatik ändern kann.
 
-*[Papier. Stille.]*
+`[SFX: Papier]`
 
 **ERZÄHLERIN:** Ob diese Küche je so klingt — ob Tür a, Tür b oder Tür c —, entscheidet keine Studie. Aber der Zeiger, der es messen würde, ist gestellt. Er ist binär. Er steht auf null.
 
-*[Der letzte Ton — der Swipe-Klick — verklingt. Stille.]*
+`[MUSIK: Swipe verklingt]`
 
 **ERZÄHLER:** Bilanz der Reihe. Zwölfhundert Jahre lang galt: Rechtsstellung folgt Funktionsstellung. Das Recht hat die Kopplung freigegeben; Begehren, Maschine, Staat und Feed haben sie geschichtet. Die Auflösung ist kein Paradies, sondern ein messbarer Zustand: **Wert folgt keiner Funktion.** Und dieser Band hat dafür ein Messgerät geliefert — zehn Zeiger, drei Preisschilder, ein liberaler Vorbehalt, eine Bedingung der Anwältin, ein offener Einwand der Natur.
 
@@ -280,11 +281,17 @@
 
 **ERZÄHLERIN:** — entscheidet keine Studie. Es entscheidet in zehn Jahren die Messung. Und bis dahin die vielen kleinen, unspektakulären Fälle, in denen schon heute niemand mehr fragt, warum ein Mann um halb vier sein Kind abholt.
 
-*[Zwei Sekunden vollständige Stille. Dann, ganz leise, aus der Ferne: dieselbe Kita-Garderobe wie in Szene 3 — ein Reißverschluss, eine Kinderstimme, undeutlich. Darüber die Observatory-Signatur.]*
+`[STILLE lang]`
+
+`[SFX: Kita-Callback]`
+
+`[MUSIK: Observatory-Signatur]`
 
 **ERZÄHLERIN:** Die Messung läuft. Und das Leben auch.
 
-*[Ende der Reihe.]*
+`[MUSIK: Abspann ausblenden]`
+
+<!-- end -->
 
 ---
 

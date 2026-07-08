@@ -1,0 +1,161 @@
+slug: die-frau-vor-dem-recht/S01-09/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Die Wanderung der Funktion (Doppelfolge 9)"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-09-die-wanderung-der-funktion/podcast.md
+strip_latex: true
+
+speakers:
+  # --- Haupttrio (Kontinuität aus Folge 7/8 — voice_ids verbatim) ---
+  ERZÄHLERIN:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"   # Mila Winter (professional, de) — S01-07/08
+    speaker_key: s1
+    stability:   0.50
+  ERZÄHLER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"   # Wolf Spencer (professional, de) — S01-07/08
+    speaker_key: s2
+    stability:   0.55
+  ANWÄLTIN:
+    voice_id:    "BIvP0GN1cAtSRTxNHnWS"   # Ellen (professional) — S01-08 verbatim
+    speaker_key: anwaeltin
+    stability:   0.45
+
+  # --- Szenenstimmen (professional-category German roster, deterministisch je Rolle) ---
+  MANN:                                     # SZENE 1 — intim, müde
+    voice_id:    "wloRHjPaKZv3ucH7TQOT"    # Jorin — Captivating and Soft (professional, m/de)
+    speaker_key: mann
+    stability:   0.40
+  KI:                                       # SZENE 1 — warm, minimal prozessiert
+    voice_id:    "uvysWDLbKpA4XvpD3GI6"    # Leonie (professional, f/de)
+    speaker_key: ki
+    stability:   0.65
+    style:       0.30
+  JUNGER MANN:                              # SZENE 2 — 18-jährig
+    voice_id:    "wcGcDDfRHvH6LR9p07u4"    # Apollo — Documentary & TV Voice (professional, m/de young)
+    speaker_key: jungermann
+    stability:   0.42
+  MUTTER:                                   # SZENE 2 — aus dem Hintergrund
+    voice_id:    "FOfJ2PMgU6HOGbNYnzto"    # Amira — Emotional Storyteller (professional, f/de)
+    speaker_key: mutter
+    stability:   0.50
+  RICHTERIN:                                # SZENE 3 — Autorität (wiederkehrend, S01-10-align)
+    voice_id:    "7eVMgwCnXydb3CikjV7a"    # Lea (professional, f/de)
+    speaker_key: richterin
+    stability:   0.55
+  ANWALT:                                   # SZENE 3 — Beklagtenseite
+    voice_id:    "ZgTblco1F8U3zN77c5Rj"    # Andreas — Pleasant German Voice (professional, m/de)
+    speaker_key: anwalt
+    stability:   0.50
+  FRAU:                                     # SZENE 4 — Tradwife/Content
+    voice_id:    "rAmra0SCIYOxYmRNDSm3"    # Lana Weiss (professional, f/de)
+    speaker_key: frau
+    stability:   0.45
+  REGIEASSISTENT:                           # SZENE 4 — nüchtern
+    voice_id:    "fehqjfT0R2fGKeUX2YeE"    # Gerry — Composed and Strong (professional, m/de)
+    speaker_key: regie
+    stability:   0.55
+
+# Inline-Regie-Marker (v3). Konfidenzmarker [belegt]/[plausibel]/[umstritten]/
+# [spekulativ] sind bewusst NICHT gemappt -> apply_audio_tags strippt sie
+# (Konvention wie S01-07/S01-08: Marker werden nicht gesprochen). Acting-Cues
+# ebenfalls gestrippt: der natürliche Satzrhythmus trägt die Pause.
+audio_tags:
+  pause:    ""
+  liest:    ""
+  blättert: ""
+  trocken:  ""
+
+# ---------------- Vierschicht-Akkord: vier Einzeltöne (SFX, punktuell) ----------------
+# Die Schichten werden je Akt EINGEFÜHRT und stehen im Finale gemeinsam.
+sfx:
+  swipe:
+    prompt: "very short dry swipe click, like swiping a phone screen, single crisp tick, no reverb tail"
+    dur: 1
+  summen:
+    prompt: "single sustained low machine hum tone, a steady electric server-room drone note, clean, no rhythm, holds"
+    dur: 3
+  stempel:
+    prompt: "single official rubber stamp thud on paper, bureaucratic, dry, one firm impact, no reverb"
+    dur: 1
+  feed:
+    prompt: "short social-media feed swipe whoosh followed immediately by a soft camera shutter click, crisp, no reverb"
+    dur: 1
+  tippen:
+    prompt: "quiet smartphone screen typing, soft finger taps on glass, intimate, close, no room tone"
+    dur: 2
+  brief:
+    prompt: "a paper envelope being torn open and a letter unfolded, single clean gesture, dry"
+    dur: 2
+  kamera:
+    prompt: "single soft camera record beep followed by a birdsong audio file cutting off abruptly, crisp"
+    dur: 2
+  akte:
+    prompt: "court file pages being turned, single page rustle, brief, clean"
+    dur: 1
+  # ---- Atmosphäre-Betten (länger, geloopt/gestreut — kein Tight-Loop) ----
+  atmo_nacht:
+    prompt: "quiet dark night bedroom room tone, very sparse, faint distant city hum, intimate late-night stillness, seamless loop, no music"
+    dur: 20
+  atmo_kueche:
+    prompt: "quiet domestic morning kitchen ambience, faint fridge hum, a distant clink, calm, seamless loop, no music"
+    dur: 16
+  atmo_flur:
+    prompt: "muffled courthouse corridor ambience, faint reverberant hall, occasional distant footsteps on stone, institutional, seamless loop, no music"
+    dur: 16
+  atmo_saal:
+    prompt: "large echoey courtroom tone, faint reverberant space, occasional distant paper rustle, sober, seamless loop, no music"
+    dur: 16
+  atmo_landhaus:
+    prompt: "warm country farmhouse kitchen ambience, gentle morning birdsong, cozy analog, seamless loop, no music"
+    dur: 18
+
+# ---------------- Chord stings (music, vor-geschichtet, wachsende Dichte) ----------------
+music:
+  title_motif:
+    prompt: "Observatory series title signature: a solemn four-note sustained chord layered from a low swipe-tick pulse, a steady machine hum, a bureaucratic stamp resonance and a bright feed-whoosh overtone, cinematic, dark, slow, no drums, no vocals"
+    ms: 18000
+  akkord_zwei:
+    prompt: "Short two-layer transition sting: a low swipe-tick pulse plus a sustained machine hum tone, two stacked notes, cold and rising, unobtrusive, no drums, no vocals"
+    ms: 7000
+  akkord_drei:
+    prompt: "Short three-layer transition sting: swipe-tick pulse plus machine hum plus a bureaucratic stamp resonance, three stacked notes, denser and darker than before, no drums, no vocals"
+    ms: 8000
+  vierklang:
+    prompt: "Full four-layer chord landing: swipe-tick pulse, machine hum, bureaucratic stamp resonance and a bright feed-whoosh overtone all sounding together, a stacked cinematic chord that holds and resolves, dark and grand, no drums, no vocals"
+    ms: 12000
+
+cue_rules:
+  # --- Leitmotiv / Titelsignatur ---
+  - { keywords: ["musik", "titelmotiv", "intro"],       music: title_motif, action: stinger }
+  - { keywords: ["musik", "titelmotiv", "signatur"],    music: title_motif, action: stinger }
+  - { keywords: ["musik", "akkord", "zwei"],            music: akkord_zwei, action: stinger }
+  - { keywords: ["musik", "akkord", "drei"],            music: akkord_drei, action: stinger }
+  - { keywords: ["musik", "vierklang", "halten"],       music: vierklang,   action: bed_on }
+  - { keywords: ["musik", "vierklang"],                 music: vierklang,   action: stinger }
+  - { keywords: ["musik", "ausblenden"],                music: title_motif, action: outro }
+  # --- Vierschicht-Einzeltöne (SFX) ---
+  - { keywords: ["sfx", "swipe"],                       sfx: swipe }
+  - { keywords: ["sfx", "summen"],                      sfx: summen }
+  - { keywords: ["sfx", "stempel"],                     sfx: stempel }
+  - { keywords: ["sfx", "feed"],                        sfx: feed }
+  - { keywords: ["sfx", "tippen"],                      sfx: tippen }
+  - { keywords: ["sfx", "brief"],                       sfx: brief }
+  - { keywords: ["sfx", "kamera"],                      sfx: kamera }
+  - { keywords: ["sfx", "akte"],                        sfx: akte }
+  # --- Atmosphäre-Betten ---
+  - { keywords: ["atmo", "nacht"],                      sfx: atmo_nacht }
+  - { keywords: ["atmo", "küche"],                      sfx: atmo_kueche }
+  - { keywords: ["atmo", "flur"],                       sfx: atmo_flur }
+  - { keywords: ["atmo", "saal"],                       sfx: atmo_saal }
+  - { keywords: ["atmo", "landhaus"],                   sfx: atmo_landhaus }
+
+gaps:
+  base:     0.55
+  switch:   0.90
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    0.80
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

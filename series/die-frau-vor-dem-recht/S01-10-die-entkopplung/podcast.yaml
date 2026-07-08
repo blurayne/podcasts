@@ -1,0 +1,215 @@
+slug: die-frau-vor-dem-recht/S01-10/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Die Entkopplung (Reihenfinale)"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-10-die-entkopplung/podcast.md
+strip_latex: true
+
+# ---------------------------------------------------------------- SPEAKERS
+# Main trio (voice_ids verbatim from S01-08 — continuity is mandatory).
+# Scene characters cast from the professional scene-voice roster (S01-02 Hörspiele).
+speakers:
+  ERZÄHLERIN:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"   # Mila Winter (professional)
+    speaker_key: s1
+    stability:   0.50
+  ERZÄHLER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"   # Wolf Spencer (professional)
+    speaker_key: s2
+    stability:   0.55
+  ANWÄLTIN:
+    voice_id:    "BIvP0GN1cAtSRTxNHnWS"   # Ellen (professional) — continuity from S01-08
+    speaker_key: anwaeltin
+    stability:   0.45
+
+  # SZENE 1 — Das Vorstellungsgespräch
+  LEITERIN:
+    voice_id:    "7eVMgwCnXydb3CikjV7a"   # Lea (professional, f)
+    speaker_key: leiterin
+    stability:   0.45
+  BRANDT:
+    voice_id:    "FTNCalFNG5bRnkkaP5Ug"   # Otto (professional, m)
+    speaker_key: brandt
+    stability:   0.45
+
+  # SZENE 2 — Die Steuerklasse
+  SIE:
+    voice_id:    "uvysWDLbKpA4XvpD3GI6"   # Leonie (professional, f)
+    speaker_key: sie
+    stability:   0.45
+  ER:
+    voice_id:    "fehqjfT0R2fGKeUX2YeE"   # Gerry (professional, m)
+    speaker_key: er
+    stability:   0.45
+
+  # SZENE 3 — Die Morgengabe
+  MANDANTIN:
+    voice_id:    "rAmra0SCIYOxYmRNDSm3"   # Lana Weiss (professional, f)
+    speaker_key: mandantin
+    stability:   0.45
+  "ANWÄLTIN (Kanzlei)":
+    voice_id:    "FOfJ2PMgU6HOGbNYnzto"   # Amira (professional, f)
+    speaker_key: kanzlei
+    stability:   0.48
+
+  # SZENE 4 — Feierabend um vier
+  KIND:
+    voice_id:    "a0euEDMIIr9cUObJf0DX"   # Brittney – Female Child (professional) — NEW
+    speaker_key: kind
+    stability:   0.35
+  VATER:
+    voice_id:    "FTNCalFNG5bRnkkaP5Ug"   # Otto (professional, m)
+    speaker_key: vater
+    stability:   0.45
+  ERZIEHERIN:
+    voice_id:    "uvysWDLbKpA4XvpD3GI6"   # Leonie (professional, f)
+    speaker_key: erzieherin
+    stability:   0.50
+
+  # SZENE 5 — Der zweite Fragebogen
+  SCHWESTER:
+    voice_id:    "7eVMgwCnXydb3CikjV7a"   # Lea (professional, f)
+    speaker_key: schwester
+    stability:   0.45
+  BRUDER:
+    voice_id:    "fehqjfT0R2fGKeUX2YeE"   # Gerry (professional, m)
+    speaker_key: bruder
+    stability:   0.45
+
+# ---------------------------------------------------------------- AUDIO TAGS
+# Confidence markers stay UNSPOKEN (series convention S01-07/S01-08: made audible
+# through the speakers, not read aloud). Mapping to "" strips them explicitly.
+audio_tags:
+  belegt:     ""
+  plausibel:  ""
+  umstritten: ""
+  spekulativ: ""
+
+# ---------------------------------------------------------------- SPOKEN-TEXT CLEANUP
+# strip_md turns *(Pause)* etc. into "(Pause)" — these are inline stage directions,
+# not dialogue. Remove any residual parenthetical so no character speaks "Pause"/"tippt".
+replace:
+  "\\s*\\([^)]*\\)\\s*": " "
+
+# ---------------------------------------------------------------- SFX (atmosphere + one-shots)
+# Scene ATMO beds are single one-shots at scene opens (scenes are short) — NOT tight-looped.
+sfx:
+  # SZENE atmospheres
+  kita_buero:
+    prompt: "quiet daycare back-office room tone, muffled children playing behind a closed door, faint, warm, unobtrusive, no music"
+    dur: 7
+  tuer_kinder:
+    prompt: "a door opening, a swell of happy children's noise rising briefly then a soft cut, indoor"
+    dur: 3
+  kueche_abend:
+    prompt: "quiet home kitchen in the evening, faint laptop keyboard typing and a sheet of paper being moved, intimate room tone, no music"
+    dur: 8
+  laptop_zu:
+    prompt: "a laptop lid being closed with a soft clap, single clean sound, no reverb"
+    dur: 2
+  kanzlei:
+    prompt: "sober quiet law-office room tone, a file folder placed on a desk, a ballpoint pen click, minimal, no music"
+    dur: 8
+  aktendeckel:
+    prompt: "a cardboard file folder being closed, single soft paper-and-cardboard sound, clean"
+    dur: 2
+  # SZENE 4 — Kita-Garderobe (its zipper + child ambience is recalled at the very end)
+  kita_garderobe:
+    prompt: "daycare cloakroom in the early afternoon, a child's jacket zipper being pulled up, small footsteps, faint distant children, warm and gentle, no music"
+    dur: 8
+  tuer_strasse:
+    prompt: "a door opens onto a calm residential street, faint outdoor ambience, footsteps of one adult and one child on pavement"
+    dur: 4
+  schritte:
+    prompt: "footsteps of an adult and a small child walking together on a quiet pavement, unhurried, fading gently"
+    dur: 4
+  kueche_morgen:
+    prompt: "quiet morning kitchen room tone, two paper envelopes being torn open almost at the same time, intimate, no music"
+    dur: 6
+  papier:
+    prompt: "a single sheet of paper being set down, then quiet room tone settling into silence"
+    dur: 3
+  # FINALE — the Kita-garderobe callback: faint, distant, undeutlich
+  kita_callback:
+    prompt: "from far away and very faint: a child's jacket zipper pulled up once, and an indistinct small child's voice babbling softly, distant, gentle, nostalgic, almost inaudible"
+    dur: 5
+  # The lone Swipe-Klick held naked/unresolved at the top of Akt V and on the
+  # carry into the Finale — a single dry swipe-click sitting in an empty room.
+  swipe_allein:
+    prompt: "a single dry swipe-click sound sitting alone in a quiet empty room, sparse, cold, unresolved, a faint tail of room tone after it, no music, no melody"
+    dur: 4
+  # Guaranteed >=2s of true silence — pre-baked locally so gen never spends credits on it
+  stille:
+    prompt: "pure silence, no sound"
+    dur: 3
+
+# ---------------------------------------------------------------- MUSIC (leitmotif stack)
+# The Vierschicht-Akkord is realised as a layered title chord in the Prolog and then
+# dismantled ton-by-ton via distinct, progressively sparser/quieter transition stings.
+music:
+  # 4 layers complete — Prolog title signature (Swipe-Klick · Maschinensummen · Amtsstempel · Feed-Wisch)
+  motif_vier:
+    prompt: "Solemn Observatory documentary title signature built from four interlocking sustained layers standing together as one uneasy chord: a dry rhythmic swipe-click pulse, a low machine hum, a heavy administrative stamp thud, and a thin swishing feed-scroll shimmer, dark cinematic, no drums, no melody, no vocals, held long"
+    ms: 20000
+  # 3 layers — the Feed-Wisch shimmer removed (after Akt I)
+  sting_drei:
+    prompt: "Short dark documentary transition sting: three sustained layers together — a dry swipe-click pulse, a low machine hum, a heavy stamp thud — the thin feed-shimmer now gone, slightly sparser and quieter, fading into silence, no melody, no vocals"
+    ms: 6000
+  # 2 layers — the Amtsstempel thud removed (after Akt II)
+  sting_zwei:
+    prompt: "Short dark documentary transition sting: two sustained layers together — a dry swipe-click pulse and a low machine hum — sparser and quieter than before, the stamp thud gone, fading into silence, no melody, no vocals"
+    ms: 6000
+  # 1 layer — only the lone Swipe-Klick remains, naked and unresolved (after Akt III, held through Akt V)
+  sting_eins:
+    prompt: "A single dry swipe-click pulse standing entirely alone in empty space, naked, unresolved, sparse and cold, no other layers, no melody, no vocals, quiet"
+    ms: 6000
+  # the lone swipe finally verklingt (after Szene 5)
+  sting_verklingt:
+    prompt: "The last lone dry swipe-click pulse slowing and fading out completely into full silence, a final unresolved tone dissolving to nothing, no melody, no vocals"
+    ms: 7000
+  # Observatory signature under the faint Kita-callback — warm, unpathetisch
+  observatory_sig:
+    prompt: "Very soft, warm and unpretentious Observatory series signature: a gentle sustained low pad rising quietly and settling, understated, human, not triumphant, slowly fading, no drums, no melody line, no vocals"
+    ms: 12000
+
+# ---------------------------------------------------------------- CUE RULES
+# First-match, all keywords must appear (lowercased substring).
+cue_rules:
+  # Leitmotif chord + dismantling stings
+  - { keywords: ["musik", "vierklang-titelmotiv"],   music: motif_vier,       action: intro }
+  - { keywords: ["musik", "vierklang", "ausklingen"], music: motif_vier,      action: outro }
+  - { keywords: ["musik", "ton verstummt drei"],     music: sting_drei,       action: stinger }
+  - { keywords: ["musik", "ton verstummt zwei"],     music: sting_zwei,       action: stinger }
+  - { keywords: ["musik", "ton verstummt eins"],     music: sting_eins,       action: stinger }
+  - { keywords: ["musik", "swipe verklingt"],        music: sting_verklingt,  action: stinger }
+  - { keywords: ["musik", "observatory-signatur"],   music: observatory_sig,  action: stinger }
+  - { keywords: ["musik", "abspann", "ausblenden"],  music: observatory_sig,  action: outro }
+  # Scene ATMO beds (one-shot at scene open)
+  - { keywords: ["atmo", "kita-buero"],              sfx: kita_buero }
+  - { keywords: ["atmo", "kueche-abend"],            sfx: kueche_abend }
+  - { keywords: ["atmo", "kanzlei"],                 sfx: kanzlei }
+  - { keywords: ["atmo", "swipe allein"],            sfx: swipe_allein }
+  - { keywords: ["atmo", "kita-garderobe"],          sfx: kita_garderobe }
+  - { keywords: ["atmo", "kueche-morgen"],           sfx: kueche_morgen }
+  # Scene one-shot SFX
+  - { keywords: ["sfx", "tuer-kinder"],              sfx: tuer_kinder }
+  - { keywords: ["sfx", "laptop-zu"],                sfx: laptop_zu }
+  - { keywords: ["sfx", "aktendeckel"],              sfx: aktendeckel }
+  - { keywords: ["sfx", "tuer-strasse"],             sfx: tuer_strasse }
+  - { keywords: ["sfx", "schritte"],                 sfx: schritte }
+  - { keywords: ["sfx", "papier"],                   sfx: papier }
+  - { keywords: ["sfx", "kita-callback"],            sfx: kita_callback }
+  # Guaranteed long silence before the Kita callback (>=2 s)
+  - { keywords: ["stille lang"],                     sfx: stille }
+
+# ---------------------------------------------------------------- GAPS
+gaps:
+  base:     0.55
+  switch:   0.90
+  sfx_tail: 0.45
+  act:      1.60
+  pause:    0.80
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

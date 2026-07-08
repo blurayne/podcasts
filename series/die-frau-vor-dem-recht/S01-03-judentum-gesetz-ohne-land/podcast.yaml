@@ -16,6 +16,9 @@ speakers:
 
 strip_latex: true
 
+# Music (title motif + transitions) mixed 20% quieter than the engine default.
+music_gain: 0.8
+
 sfx:
   atmo_synagoge:
     prompt: "Ambient bed: quiet interior of an old stone building, distant murmur of voices in prayer, a very faint reverb of footsteps on stone floors, no music, seamless loop"

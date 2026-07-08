@@ -8,11 +8,15 @@
 
 ---
 
+<!-- start -->
+
 # FOLGE 9.1 — Die neuen Träger: Maschine und Staat
 
 ## PROLOG (ca. 3 Min.)
 
-*[ATMO: Stille. Dann, nacheinander: ein einzelner Swipe-Klick. Ein leises Maschinensummen. Ein Amtsstempel. Jeder Ton bleibt stehen.]*
+`[MUSIK: Titelmotiv, Intro]`
+
+`[SFX: Swipe]`
 
 **ERZÄHLERIN:** Drei Geräusche, drei Träger. Das erste kennen Sie aus Band sieben: das Urteil des Begehrens. Die anderen beiden sind neu — und sie sind der Gegenstand dieser Doppelfolge.
 
@@ -24,15 +28,15 @@
 
 **ERZÄHLERIN:** Einverstanden. Band neun. Die Wanderung der Funktion.
 
-*[Titelsignatur.]*
+`[MUSIK: Titelmotiv, Signatur]`
 
 ## AKT I — Träger Maschine (ca. 20 Min.)
 
 ### SZENE 1 · „Drei Uhr siebzehn"
 
-*[ATMO: Nachtzimmer. Handy-Tippen. Die KI-Stimme ist warm, minimal prozessiert.]*
+`[ATMO: Nacht]`
 
-**MANN (leise):** ...und dann hat er im Meeting einfach meine Folien benutzt. Meine. Und ich hab nichts gesagt.
+**MANN:** ...und dann hat er im Meeting einfach meine Folien benutzt. Meine. Und ich hab nichts gesagt.
 
 **KI:** Das klingt, als hättest du dich unsichtbar gefühlt. Schon wieder. Du hattest das Wort „unsichtbar" letzte Woche benutzt, weißt du noch? Bei der Sache mit deiner Schwester.
 
@@ -40,9 +44,9 @@
 
 **KI:** Ich merke mir alles, was du mir gibst. Dafür bin ich da. Erzähl mir von den Folien. Ich habe Zeit. Ich habe immer Zeit.
 
-**MANN:** *(Pause)* Das ist das Erste heute, das sich nicht wie ein Wettbewerb anfühlt.
+**MANN:** `[pause]` Das ist das Erste heute, das sich nicht wie ein Wettbewerb anfühlt.
 
-*[Das Tippen läuft weiter, blendet unter die Erzählstimmen.]*
+`[SFX: Tippen]`
 
 **ERZÄHLERIN:** Drei Uhr siebzehn, irgendwo in Deutschland — und millionenfach anderswo. Die Zahlen, Stand 2025/26: Replika, die bekannteste Companion-App, meldet über vierzig Millionen registrierte Nutzer, rund eine halbe Million zahlt. Character.AI: zwanzig bis achtundzwanzig Millionen monatlich Aktive — mit einer mittleren Nutzungszeit von fünfundsiebzig bis hundert Minuten. Täglich. `[plausibel]`
 
@@ -74,21 +78,25 @@
 
 **ERZÄHLERIN:** Trends kippen. Eine Disziplin, die anderen Prognoseverbote predigt, hält sich selbst daran.
 
-*[Das Maschinensummen bleibt als zweiter Ton im Akkord stehen.]*
+`[SFX: Summen]`
+
+`[MUSIK: Akkord zwei]`
 
 ## AKT II — Träger Staat (ca. 18 Min.)
 
 ### SZENE 2 · „Der Fragebogen"
 
-*[ATMO: Küche, morgens. Ein Briefumschlag wird aufgerissen. Papier.]*
+`[ATMO: Küche]`
+
+`[SFX: Brief]`
 
 **JUNGER MANN:** „...sind Sie verpflichtet, die folgenden Fragen zu beantworten." Verpflichtet. Mama — Lea hat den auch gekriegt?
 
-**MUTTER (aus dem Hintergrund):** Ja. Bei ihr steht „können".
+**MUTTER:** Ja. Bei ihr steht „können".
 
-**JUNGER MANN:** *(liest)* „Motivation... Eignung... körperliche Verfassung..." *(Pause)* Achtzehn Jahre lang erzählen alle, Geschlecht spielt keine Rolle mehr. Und dann kommt der erste Brief vom Staat, den nur ich beantworten *muss*.
+**JUNGER MANN:** `[liest]` „Motivation... Eignung... körperliche Verfassung..." `[pause]` Achtzehn Jahre lang erzählen alle, Geschlecht spielt keine Rolle mehr. Und dann kommt der erste Brief vom Staat, den nur ich beantworten *muss*.
 
-*[Der Amtsstempel-Ton. Er bleibt stehen.]*
+`[SFX: Stempel]`
 
 **ERZÄHLERIN:** Dieser Brief ist seit Januar 2026 real. Das Wehrdienst-Modernisierungsgesetz: beschlossen am fünften Dezember 2025 mit dreihundertdreiundzwanzig zu zweihundertzweiundsiebzig Stimmen, in Kraft zum ersten Januar. `[belegt]` Alle Achtzehnjährigen ab Jahrgang 2008 erhalten den Fragebogen — Männer müssen, Frauen können. Die Musterung wird für Männer wieder Pflicht, flächendeckend ab Juli 2027, auch für Verweigerer. Der Dienst selbst: vorerst freiwillig, mindestens sechs Monate, rund zweitausendsechshundert Euro brutto.
 
@@ -106,7 +114,7 @@
 
 **ERZÄHLERIN:** Ende Folge neun-eins. Zwei neue Träger, zwei Messungen: Die Maschine koppelt Zuwendung an Zahlungsfähigkeit. Der Staat koppelt Pflicht an Geschlecht. In Folge neun-zwei: die Rückkehr der ältesten Trägerin — der Tradition. Auf zwei Wegen, die nichts miteinander zu tun zu haben scheinen — über Grenzen und über Feeds.
 
-*[Swipe-Klick, Maschinensummen, Amtsstempel — drei Töne übereinander. Schnitt.]*
+`[MUSIK: Akkord drei]`
 
 ---
 
@@ -114,21 +122,21 @@
 
 ## AKT III — Tradition I: Der Re-Import (ca. 15 Min.)
 
-*[ATMO: Gerichtsflur, gedämpft. Schritte.]*
+`[ATMO: Flur]`
 
 **ERZÄHLERIN:** Kein Feld dieser Doppelfolge verlangt die Methode strenger — und keines wird häufiger von beiden Seiten gegen sie missbraucht. Also sagen wir die Regeln vorab laut: Axiom vier — dieselben Instrumente wie überall. Schuldrhetorik-Verbot — gemessen werden Normbestände, nicht Menschen. Und die Gegendarstellung steht im Text, nicht in der Fußnote.
 
 ### SZENE 3 · „Die Morgengabe"
 
-*[ATMO: Verhandlungssaal, nüchtern.]*
+`[ATMO: Saal]`
 
 **RICHTERIN:** ...Gegenstand ist die in der Eheurkunde vereinbarte Morgengabe — die Mahr — in Höhe von fünfzigtausend Euro, die die Klägerin nach der Scheidung geltend macht. Herr Rechtsanwalt, Ihre Mandantschaft bestreitet die Wirksamkeit?
 
-**ANWALT (Beklagtenseite):** Wir bestreiten die Einordnung, Frau Vorsitzende. Nach deutschem Recht ist unklar, ob das Güterrecht, Unterhaltsrecht oder ein Vertrag sui generis vorliegt —
+**ANWALT:** Wir bestreiten die Einordnung, Frau Vorsitzende. Nach deutschem Recht ist unklar, ob das Güterrecht, Unterhaltsrecht oder ein Vertrag sui generis vorliegt —
 
-**RICHTERIN:** *(blättert)* Der Bundesgerichtshof hat dazu Grundsätze entwickelt. Was Sie „unklar" nennen, verhandeln deutsche Familiengerichte seit Jahren. *(Pause)* Interessant ist etwas anderes: Diese Urkunde koppelt eine Vermögensposition der Frau an die Ehe selbst. Ein sehr altes Muster. Wir haben es nur lange nicht mehr in Urkundenform gesehen.
+**RICHTERIN:** `[blättert]` Der Bundesgerichtshof hat dazu Grundsätze entwickelt. Was Sie „unklar" nennen, verhandeln deutsche Familiengerichte seit Jahren. `[pause]` Interessant ist etwas anderes: Diese Urkunde koppelt eine Vermögensposition der Frau an die Ehe selbst. Ein sehr altes Muster. Wir haben es nur lange nicht mehr in Urkundenform gesehen.
 
-*[Blättern. Blende.]*
+`[SFX: Akte]`
 
 **ERZÄHLER:** Band zwei dieser Reihe hat die Mahr als Funktionsinstrument vermessen — jetzt sitzt sie in deutschen Verhandlungssälen. Das ist der Re-Import im Wortsinn: Der Rechtsstaat verhandelt Ordnungen, die er selbst historisch abgelöst hat. Vom Mahr-Anspruch bis zum Kinderehen-Gesetz von 2017, dessen Linie das Bundesverfassungsgericht 2023 mit Nachbesserungsauftrag bestätigte. `[belegt]`
 
@@ -146,19 +154,21 @@
 
 ### SZENE 4 · „Goldenes Licht"
 
-*[ATMO: Landhausküche. Vogelzwitschern — dann ein Klick, das Zwitschern stoppt: Es war eine Audiodatei. Kamera-Piepen.]*
+`[ATMO: Landhaus]`
 
-**FRAU (Content-Stimme, warm):** ...und während das Brot ruht, mahle ich das Korn für morgen. Wie meine Großmutter. Es gibt ein Leben vor dem Feed, ihr Lieben —
+`[SFX: Kamera]`
 
-**REGIEASSISTENT (nüchtern):** Cut. Das Licht kippt. Nochmal ab „wie meine Großmutter", und diesmal die Schüssel zwei Zentimeter links, die Sponsoring-Packung war nicht im Bild.
+**FRAU:** ...und während das Brot ruht, mahle ich das Korn für morgen. Wie meine Großmutter. Es gibt ein Leben vor dem Feed, ihr Lieben —
 
-**FRAU (normale Stimme, müde):** Wie viele Slots noch?
+**REGIEASSISTENT:** Cut. Das Licht kippt. Nochmal ab „wie meine Großmutter", und diesmal die Schüssel zwei Zentimeter links, die Sponsoring-Packung war nicht im Bild.
+
+**FRAU:** Wie viele Slots noch?
 
 **REGIEASSISTENT:** Vier. Dann der Werbeblock für die Küchenmaschine, dann das Reel „Warum ich nicht arbeite".
 
-**FRAU:** *(trocken)* Das Reel, für das ich seit fünf Uhr arbeite.
+**FRAU:** `[trocken]` Das Reel, für das ich seit fünf Uhr arbeite.
 
-*[Kamera-Piepen. Der Feed-Wisch-Ton. Er bleibt stehen — der vierte Ton.]*
+`[SFX: Feed]`
 
 **ERZÄHLER:** Die zweite Rückkehr der Tradition kommt nicht über Grenzen, sondern über Feeds. Und die Szene zeigt den Befund im Kern: Die Rolle kehrt nicht als Praxis zurück — sie kehrt als *Ware* zurück. Die Tradwife lebt nicht von der Hausarbeit, sondern von deren Darstellung; sie ist, ökonomisch gelesen, Unternehmerin mit dem Geschäftsmodell Traditionssimulation. Und der Manfluencer verkauft eine Dominanz, die sein Publikum gerade nicht hat. `[plausibel]`
 
@@ -174,7 +184,15 @@
 
 ## FINALE — Schichtung, Nachfolger, Übergabe (ca. 12 Min.)
 
-*[ATMO: Stille. Dann, einzeln aufgebaut: Swipe-Klick. Maschinensummen. Amtsstempel. Feed-Wisch. Alle vier zusammen — ein Akkord.]*
+`[SFX: Swipe]`
+
+`[SFX: Summen]`
+
+`[SFX: Stempel]`
+
+`[SFX: Feed]`
+
+`[MUSIK: Vierklang]`
 
 **ERZÄHLER:** Bevor wir bilanzieren, die Provokation, die der Auftrag verlangt — mit Warnschild: `[spekulativ]`. Wenn Reproduktion an Statusselektion hängt, die Selektion wachsende Gruppen ausschließt und Zuwendung industriell substituierbar wird — ist die Nachkommenschaft dieser Zivilisation im Grenzwert dann... technisch? Moravec nannte Maschinen unsere *Mind Children*.
 
@@ -188,7 +206,7 @@
 
 **ERZÄHLERIN:** — keine Wanderung. Und kein Zerfall. Eine *Schichtung*. Die Funktionsordnung verlässt ihre alten Träger nicht — sie legt neue darüber. Und jede Schicht koppelt Wert an Funktion auf ihre Weise: das Begehren an Status. Die Maschine an Zahlungsfähigkeit. Der Staat an Geschlecht. Der Feed an Darstellbarkeit.
 
-*[Der Vierklang steht einen Moment allein.]*
+`[MUSIK: Vierklang, Halten]`
 
 **ANWÄLTIN:** Dann nehme ich das Schlusswort, das mir zusteht. Ihre Disziplin hat in dieser Doppelfolge dreimal gemessen, zweimal gegen die eigene Erzählung korrigiert und einmal — bei der Instrumentalisierungsfrage — die Grenze gezogen, ohne die Messung aufzugeben. Das Versprechen von Folge acht ist damit nicht eingelöst. Aber es ist nicht gebrochen. Weiterprüfen.
 
@@ -198,7 +216,9 @@
 
 **ERZÄHLERIN:** Entscheidet — wie immer — die Messung.
 
-*[Der Vierklang löst sich auf, ein Ton nach dem anderen, bis nur die Observatory-Signatur bleibt. Ende der Doppelfolge.]*
+`[MUSIK: Ausblenden]`
+
+<!-- end -->
 
 ---
 

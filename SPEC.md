@@ -118,6 +118,12 @@ sfx:                                # OPTIONAL. key → generation spec
 music:                              # OPTIONAL. key → generation spec
   title_motif: { prompt: "playful kids-science theme, no vocals", ms: 8000 }
 
+music_gain: 1.0                     # OPTIONAL, default 1.0. Mix-time multiplier applied to
+                                    # EVERY music layer (ambient bed, underscore, title motif,
+                                    # stinger) uniformly; speech is untouched. 0.8 = music 20%
+                                    # quieter, 0.5 = half, 1.2 = 20% louder. Free to change +
+                                    # re-mix (no re-gen). Absent = engine defaults unchanged.
+
 gaps:                               # OPTIONAL. seconds. defaults shown
   base:     0.55                    # same speaker, consecutive lines
   switch:   0.90                    # speaker change
