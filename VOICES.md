@@ -18,6 +18,9 @@
 ## Wusl Gusl Erzählerstimme (für Einspieler)
 
 - Voice ID: FTNCalFNG5bRnkkaP5Ug
+- Igor Hartmann
+- Sprecher, Werbesprecher, Moderator
+- URL: https://www.sprecherdatei.de/sprecher/igor_hartmann.php
 
 ## Wusl Gusl (Mäusestimme)
 
@@ -28,3 +31,4 @@
 ## Wusl Gusl Beni (Mäusestimme)
 
 - Voice ID: Uh8xleV5p5p5VeBjbG6O
+

@@ -1,0 +1,57 @@
+slug: die-frau-vor-dem-recht/S01-05/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Koda: Warum eigentlich?"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-05-koda-woher-die-funktion/podcast.md
+
+speakers:
+  STIMME 1:
+    voice_id:     "dCnu06FiOZma2KVNUoPZ"
+    speaker_key:  s1
+    stability:    0.50
+  STIMME 2:
+    voice_id:     "2OcnG4mH3jIMtWz3vKus"
+    speaker_key:  s2
+    stability:    0.60
+
+strip_latex: true
+
+sfx:
+  atmo_pulse:
+    prompt: "Ambient bed: a very slow deep heartbeat pulse, isolated, low and resonant, minimal, no music, seamless loop"
+    dur: 12
+  atmo_stille:
+    prompt: "Ambient bed: near-total silence with barely audible low room tone, no music, seamless loop"
+    dur: 12
+
+music:
+  title_motif:
+    prompt: "Solemn documentary title motif, slow and contemplative, a single sustained dark string line with a faint distant piano note, no drums, no vocals, cinematic"
+    ms: 24000
+  transition:
+    prompt: "Short neutral documentary transition, a brief soft sustained tone rising slightly then fading, unobtrusive, no vocals"
+    ms: 8000
+
+cue_rules:
+  - { keywords: ["musik", "ausklingen"],  music: title_motif, action: outro }
+  - { keywords: ["musik", "ausblenden"],  music: title_motif, action: outro }
+  - { keywords: ["musik", "aus."],        music: title_motif, action: outro }
+  - { keywords: ["musik", "aus"],         music: title_motif, action: outro }
+  - { keywords: ["musik", "titelmotiv"],  music: title_motif, action: intro }
+  - { keywords: ["musik", "titelmotif"],  music: title_motif, action: intro }
+  - { keywords: ["musik", "trenner"],     music: transition,  action: stinger }
+  - { keywords: ["musik", "übergang"],    music: transition,  action: stinger }
+  - { keywords: ["atmo", "herzschlag"],   sfx: atmo_pulse }
+  - { keywords: ["atmo", "puls"],         sfx: atmo_pulse }
+  - { keywords: ["atmo"],                 sfx: atmo_stille }
+
+gaps:
+  base:     0.70
+  switch:   0.95
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    1.00
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

@@ -1,0 +1,73 @@
+slug: die-frau-vor-dem-recht/S01-07/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Der Markt der Begehrten"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-07-der-markt-der-begehrten/podcast.md
+
+speakers:
+  ERZÄHLERIN:
+    voice_id:     "dCnu06FiOZma2KVNUoPZ"
+    speaker_key:  s1
+    stability:    0.50
+  ERZÄHLER:
+    voice_id:     "2OcnG4mH3jIMtWz3vKus"
+    speaker_key:  s2
+    stability:    0.60
+
+strip_latex: true
+
+sfx:
+  wisch:
+    prompt: "very short dry swipe click, like swiping a phone screen, crisp, no reverb, 0.3 seconds"
+    dur: 1
+  atmo_deep:
+    prompt: "deep low rumble ambient bed, sub-bass drone, very dark and sparse, seamless loop, no melody, no rhythm, documentary atmosphere"
+    dur: 30
+  atmo_pad:
+    prompt: "sparse synth pad ambient bed, slow evolving tones, cold and minimal, observatory documentary atmosphere, seamless loop, no melody"
+    dur: 30
+  atmo_heartbeat:
+    prompt: "single quiet heartbeat pulse, slow, very subtle, low frequency thud, barely perceptible, intimate"
+    dur: 4
+  atmo_cash:
+    prompt: "very quiet cash register ping and subtle payment notification sound, minimal, dezent, no music"
+    dur: 3
+  atmo_room:
+    prompt: "warm ambient pub room noise, distant voices murmuring, glasses clinking, someone laughing faintly, cozy and analog, seamless loop"
+    dur: 20
+
+music:
+  title_motif:
+    prompt: "Solemn documentary title motif: deep sustained dark pad with a sparse minimal electronic figure, slow, contemplative, cinematic, no drums, no vocals, Observatory series signature"
+    ms: 20000
+  transition:
+    prompt: "Short neutral documentary transition, a faint rising sustained tone fading into silence, unobtrusive, no vocals, no melody"
+    ms: 6000
+  untermalung:
+    prompt: "Very sparse and dezent underscore music bed, slow evolving dark synth tones, barely perceptible, loopable, no melody, no rhythm, emotional documentary underlay"
+    ms: 25000
+
+cue_rules:
+  - { keywords: ["musik", "titelmotiv"],            music: title_motif, action: intro }
+  - { keywords: ["musik", "ausblenden"],             music: title_motif, action: outro }
+  - { keywords: ["musik", "übergang"],               music: transition,  action: stinger }
+  - { keywords: ["musik", "untermalung"],            music: untermalung, action: bed_on }
+  - { keywords: ["sfx", "wisch"],                    sfx: wisch }
+  - { keywords: ["atmo", "tief"],                    sfx: atmo_deep }
+  - { keywords: ["atmo", "herz"],                    sfx: atmo_heartbeat }
+  - { keywords: ["atmo", "pause"],                   sfx: atmo_pad }
+  - { keywords: ["atmo", "kasse"],                   sfx: atmo_cash }
+  - { keywords: ["atmo", "vereinsheim-ende"],        action: outro }
+  - { keywords: ["atmo", "vereinsheim"],             sfx: atmo_room }
+  - { keywords: ["atmo", "stille"],                  action: outro }
+
+gaps:
+  base:     0.70
+  switch:   0.95
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    1.00
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

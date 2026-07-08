@@ -1,0 +1,61 @@
+slug: die-frau-vor-dem-recht/S01-08/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Die Funktionskritik"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-08-die-funktionskritik/podcast.md
+strip_latex: true
+
+speakers:
+  ERZÄHLERIN:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"
+    speaker_key: s1
+    stability:   0.50
+  ERZÄHLER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"
+    speaker_key: s2
+    stability:   0.55
+  ANWÄLTIN:
+    voice_id:    "BIvP0GN1cAtSRTxNHnWS"
+    speaker_key: anwaeltin
+    stability:   0.45
+
+sfx:
+  saal:
+    prompt: "large echoey courtroom/archive room tone, faint reverberant space, occasional distant paper/file rustle, no music, seamless loop"
+    dur: 12
+  akte:
+    prompt: "paper file pages being turned, single page rustle, brief, clean"
+    dur: 1
+
+music:
+  title_motif:
+    prompt: "Solemn analytical documentary title motif: a low sustained string pad with a measured piano figure over it, slow, contemplative, institutional, no drums, no vocals"
+    ms: 24000
+  transition:
+    prompt: "Short neutral documentary transition, a soft rising sustained tone, brief and unobtrusive, no vocals"
+    ms: 8000
+  untermalung:
+    prompt: "Sparse, dezent, loopable ambient underscore for a serious analytical documentary, soft low strings, no melody, no drums, barely audible, institutional mood"
+    ms: 32000
+
+cue_rules:
+  - { keywords: ["musik", "titelmotiv", "intro"],   music: title_motif, action: intro }
+  - { keywords: ["musik", "ausblenden"],             music: title_motif, action: outro }
+  - { keywords: ["musik", "aus"],                    music: title_motif, action: outro }
+  - { keywords: ["musik", "trenner"],                music: transition,  action: stinger }
+  - { keywords: ["musik", "übergang"],               music: transition,  action: stinger }
+  - { keywords: ["musik", "untermalung"],            music: untermalung, action: bed_on }
+  - { keywords: ["atmo", "saal"],                    sfx: saal }
+  - { keywords: ["atmo", "akte"],                    sfx: akte }
+  - { keywords: ["atmo"],                            sfx: saal }
+
+gaps:
+  base:     0.55
+  switch:   0.90
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    0.80
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

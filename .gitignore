@@ -6,3 +6,6 @@
 /out/
 __pycache__
 
+
+# downloaded voice-actor demos (copyright-sensitive) — reference only, never commit
+/sprachproben/

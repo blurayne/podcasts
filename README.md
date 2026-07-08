@@ -19,22 +19,26 @@ Scripts run via a uv shebang (`#!/usr/bin/env -S uv run --script`) with PEP 723 
 
 ## Series
 
-### Die Frau vor dem Recht (S01)
+### Homo ante legem — Der Mensch vor dem Recht (S01)
 
-Historical documentary podcast + Hörspiel series on the legal status of women across cultures and centuries, each episode paired with a peer-reviewed-style study PDF (the „Bände", Observatory layout).
+> **Homo ante legem**
+> *Der Mensch vor dem Recht*
+> Leitformel: **Status sequitur functionem** — Rechtsstellung folgt Funktionsstellung.
 
-| # | Folder slug | Topic |
-|---|---|---|
-| S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced |
-| S01-02 | `islam-der-parallelbogen` | Der Parallelbogen / Islam (5 Hörspiele + podcast) — produced |
-| S01-03 | `judentum-gesetz-ohne-land` | Judentum — Gesetz ohne Land |
-| S01-04 | `matriarchat-gegentest` | Matriarchat-Gegentest |
-| S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion |
-| S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat |
-| S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) |
-| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) |
-| S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) |
-| S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) |
+Historical documentary podcast + Hörspiel series on the legal status of persons — women *and* men — across cultures and centuries, each episode paired with a peer-reviewed-style study PDF (the „Bände", Observatory layout). *(Formerly „Die Frau vor dem Recht"; renamed as the series broadened from the woman to the person before the law.)*
+
+| # | Folder slug | Topic | Anhören |
+|---|---|---|---|
+| S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced | [▶ Drive](https://drive.google.com/file/d/1rYvdheXtUlleIMsMta8CpAT0NwFDKE5b/view) |
+| S01-02 | `islam-der-parallelbogen` | Der Parallelbogen / Islam (5 Hörspiele + podcast) — produced | [▶ Drive](https://drive.google.com/file/d/1DK7IcAhanl94FHPUS0fu-nH5Hyb4qG4J/view) |
+| S01-03 | `judentum-gesetz-ohne-land` | Judentum — Gesetz ohne Land | [▶ Drive](https://drive.google.com/file/d/1wXblGpjTTYo1cSoUCNwt-T1pPoK5TW5u/view) |
+| S01-04 | `matriarchat-gegentest` | Matriarchat-Gegentest | [▶ Drive](https://drive.google.com/file/d/1_tDH7gjKYU4T6AGbfe2HuRbR6W_kNXCp/view) |
+| S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion | [▶ Drive](https://drive.google.com/file/d/1j6WdHgbkrjuEvASiQ0hdN0x9LrRv20Xh/view) |
+| S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat | [▶ Drive](https://drive.google.com/file/d/1ZmlXKOFlvuBdipUBp-DUtEXD1bz8WJCt/view) |
+| S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) | [▶ Drive](https://drive.google.com/file/d/1RV4Q97f1Qs4ne03Pb6Rpy1h33f9B9YnO/view) |
+| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) | |
+| S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) | |
+| S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) | |
 
 Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 

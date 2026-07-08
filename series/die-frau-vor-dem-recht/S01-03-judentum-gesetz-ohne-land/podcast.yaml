@@ -1,0 +1,57 @@
+slug: die-frau-vor-dem-recht/S01-03/podcast
+kind: podcast
+title: "Die Frau vor dem Recht — Das Gesetz ohne Land"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-03-judentum-gesetz-ohne-land/podcast.md
+
+speakers:
+  STIMME 1:
+    voice_id:     "dCnu06FiOZma2KVNUoPZ"
+    speaker_key:  s1
+    stability:    0.50
+  STIMME 2:
+    voice_id:     "2OcnG4mH3jIMtWz3vKus"
+    speaker_key:  s2
+    stability:    0.60
+
+strip_latex: true
+
+sfx:
+  atmo_synagoge:
+    prompt: "Ambient bed: quiet interior of an old stone building, distant murmur of voices in prayer, a very faint reverb of footsteps on stone floors, no music, seamless loop"
+    dur: 12
+  atmo_kontor:
+    prompt: "Ambient bed: quill scratching on parchment, a distant harbour with seagulls and creaking ropes, low fireplace crackle, no music, seamless loop"
+    dur: 12
+
+music:
+  title_motif:
+    prompt: "Solemn documentary title motif: a solo cello line over a sparse, restrained klezmer-influenced harmonic bed, slow and contemplative, no drums, no vocals, cinematic but intimate"
+    ms: 24000
+  transition:
+    prompt: "Short neutral documentary transition: a brief solo cello phrase over a soft sustained string chord, unobtrusive, no vocals, 8 seconds"
+    ms: 8000
+
+cue_rules:
+  - { keywords: ["musik", "titelmotiv"],  music: title_motif, action: intro }
+  - { keywords: ["musik", "titelmotif"],  music: title_motif, action: intro }
+  - { keywords: ["musik", "trenner"],     music: transition,  action: stinger }
+  - { keywords: ["musik", "übergang"],    music: transition,  action: stinger }
+  - { keywords: ["musik", "ausblenden"],  music: title_motif, action: outro }
+  - { keywords: ["musik", "aus."],        music: title_motif, action: outro }
+  - { keywords: ["musik", "aus"],         music: title_motif, action: outro }
+  - { keywords: ["atmo", "synagoge"],     sfx: atmo_synagoge }
+  - { keywords: ["atmo", "gebet"],        sfx: atmo_synagoge }
+  - { keywords: ["atmo", "kontor"],       sfx: atmo_kontor }
+  - { keywords: ["atmo", "hafen"],        sfx: atmo_kontor }
+
+gaps:
+  base:     0.70
+  switch:   0.95
+  sfx_tail: 0.35
+  act:      1.60
+  pause:    1.00
+
+output:
+  final: podcast.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

@@ -71,6 +71,7 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   render with the **`eleven_v3`** model. Do **not** use `premade` / low-fidelity
   voices. Check a voice's category with `python3 scripts/el.py voices` +
   `GET /v1/voices/{id}` before casting.
+- **Einspieler → produce analog + splice, with light music.** When an episode's source includes Einspieler / Hörspielszenen, produce them the same way (embedded scenes) and splice them into the podcast at their docking points (`>>> HÖRSPIEL-EINLAGE N` markers via the `einlagen:` mechanism). Also add short, dezent music underlay (Untermalung) at fitting transitions/moments.
 
 ## Repository layout
 
