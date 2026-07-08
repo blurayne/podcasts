@@ -2,6 +2,10 @@
 
 Eine Referenz für das Bauprinzip dieser Folge, das auf dem Originalformat der Wusel-Gudel-Sendung basiert.
 
+## Produktion (gemessen, eleven_v3)
+
+Vollständiger Render dieser Folge (138 Segmente / 18.479 Zeichen / ~26 min Audio): **~4,8 min** end-to-end (gen + mix), Kosten **~10.200 Credits (~$2,24)** → **~0,55 Credits/Zeichen**, Durchsatz **~64 Zeichen/Sek** (~5× Echtzeit; Mix +30–60 s). Faustregel für künftige Folgen: Kosten ≈ Zeichen × 0,55 Cr; Renderzeit ≈ Zeichen ÷ 64 s + ~1 min.
+
 ## Die drei Stimmen
 
 **WUSL** (das lila Fellknäuel) ist der komödiantische Motor: manisch, stolz, laut, übermütig. Seine Gadgets piepen, explodieren und tun das Falsche. Witze, Soundgags, Ausrufe, Selbstüberschätzung — alles landet bei WUSL. Inline-Kues (`[stolz]`, `[quietscht]`, `[KRAWUMMS-Imitation]`) gehören zu seinen Zeilen.

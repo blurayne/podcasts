@@ -9,3 +9,6 @@ __pycache__
 
 # downloaded voice-actor demos (copyright-sensitive) — reference only, never commit
 /sprachproben/
+
+# reference transcript of the real show (copyright) — never commit
+series/quarks-for-kids/woozle-orig.txt
