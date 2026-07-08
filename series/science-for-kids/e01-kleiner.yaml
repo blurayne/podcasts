@@ -1,8 +1,8 @@
-slug: quarks-for-kids/e01
+slug: quarks-for-kids/e01   # unchanged out/-cache key — renaming would orphan the generated stems
 kind: podcast
 title: "Kleiner geht's nicht — Die Reise ins Allerkleinste"
 model: eleven_v3
-transcript: series/quarks-for-kids/podcast-kleiner-gehts-nicht.md
+transcript: series/science-for-kids/podcast-kleiner-gehts-nicht.md
 
 speakers:
   LINA:

@@ -1,16 +1,16 @@
-slug: quarks-for-kids/wusl-gusl
+slug: quarks-for-kids/wusl-gusl   # unchanged out/-cache key — renaming would orphan the generated stems
 kind: podcast
 title: "Wusl Gusl — Schrumpfomat 3000"
 model: eleven_v3
-transcript: series/quarks-for-kids/wusl-gusl.md
+transcript: series/science-for-kids/wusl-gusl.md
 
-intro_audio:  series/quarks-for-kids/wusl-gusl-intro.mp3
-bridge_audio: series/quarks-for-kids/wusl-gusl-intro.mp3
+intro_audio:  series/science-for-kids/wusl-gusl-intro.mp3
+bridge_audio: series/science-for-kids/wusl-gusl-intro.mp3
 
 speakers:
   WUSL:
     voice_id: xOrwxaQJaTlyIgWk33GY
-    speaker_key: woozle
+    speaker_key: woozle   # unchanged stem-cache key — renaming would orphan the generated voice stems
     stability: 0.15
     similarity: 0.30
     style: 0.70
