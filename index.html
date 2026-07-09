@@ -159,6 +159,21 @@
   .header-github:hover { background: rgba(255,255,255,.22); border-color: rgba(255,255,255,.4); }
   .header-github svg { width: 1.15rem; height: 1.15rem; fill: currentColor; }
 
+  /* ── REPO LINK BAR ── */
+  .repo-bar {
+    text-align: center;
+    padding: .6rem 1.5rem;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    font-size: .85rem;
+  }
+  .repo-bar a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .repo-bar a:hover { text-decoration: underline; }
+
   /* ── LAYOUT ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
 
@@ -468,6 +483,10 @@
     </a>
   </div>
 </header>
+
+<div class="repo-bar">
+  📦 Quellcode, Skripte &amp; Studien: <a href="https://github.com/blurayne/podcasts">github.com/blurayne/podcasts ↗</a>
+</div>
 
 <main id="main">
 <div class="container">
