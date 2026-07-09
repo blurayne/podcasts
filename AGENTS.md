@@ -96,6 +96,15 @@ Folge 2 = `S01-02` („Der Parallelbogen"). Per episode there are Hörspiel-Szen
 
 - `scripts/produce.py` — the generic YAML-driven engine (`gen`/`mix`/`all`/`book`/`parse`) that renders any `kind: podcast` or `kind: hoerspiel` episode from a YAML spec + markdown transcript. See [`SPEC.md`](SPEC.md). It supersedes the per-episode scripts: each episode now has a `*.yaml` spec beside its source, and the legacy `s01e0*` / `quarks_*` entry-point scripts are being retired (parity-verified via `parse`/`mix`, then deleted).
 - `scripts/el.py` — ElevenLabs API CLI/library (see `docs/API-CLI.md`).
+- `scripts/rpp_export.py` — export a `kind: podcast` spec to an editable **REAPER**
+  project (`.rpp`): reuses `produce.py`'s exact parse/slug/offset walk and places the
+  already-generated `out/<slug>/` stems on separate lanes (VOICE · SFX · EINLAGE ·
+  MUSIC · BED · MUSIC · UNDERSCORE · MUSIC · CUES) at the same offsets as the ffmpeg
+  mix. Run **after** `gen`. `--fake-durations N` gives a structural dry-run without
+  ffmpeg/stems. Writes `MIX-NOTES.md` with the recommended per-voice ReaPlugs chain
+  (ReaEQ→ReaFIR→ReaComp→ReaLimit; not embedded — valid FX state must come from a real
+  REAPER). Render: `reaper -renderproject <rpp>` (headless Linux: wrap in `xvfb-run`);
+  the deterministic final mix stays with `produce.py … mix`.
 - `scripts/hoerspiel.py` — reusable Hörspiel engine (`gen`/`mix`/`book`/`all`) driven by a
   `Scene` spec. Model `eleven_v3`; inline v3 audio tags (`[shouting]`,`[whispers]`,`[calm]`,
   `[sarcastic]`,`[angry]`,`[sighs]`). `Scene(slug=…, name=…, source_md=…, analysis=[…])`:
