@@ -56,14 +56,13 @@ Caveats that CC BY-SA cannot waive, because they come from elsewhere:
 
 ## Third-party material
 
-- **Research paper (CC BY 4.0)** — `series/die-frau-vor-dem-recht/S01-11-der-gegenanwalt/studie/Cook_Meyer_Asbrock_2026_The_whole_picture_LWA_dark_traits.pdf`
-  is Cook, A. (Sasha), Meyer, B. & Asbrock, F. (2026), „The whole picture:
-  looking, again, at left-wing authoritarianism and its associations with dark
-  personality traits", *Current Psychology* 45:1193,
-  [doi:10.1007/s12144-026-09655-9](https://doi.org/10.1007/s12144-026-09655-9),
-  © the authors, redistributed unmodified under
-  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It is reference
-  material for the episode plan, not part of this project's CC BY-SA works.
+- **Research paper (reference only, not distributed)** — the Werkstattstudie II
+  episode references Cook, A. (Sasha), Meyer, B. & Asbrock, F. (2026), „The
+  whole picture: looking, again, at left-wing authoritarianism and its
+  associations with dark personality traits", *Current Psychology* 45:1193,
+  [doi:10.1007/s12144-026-09655-9](https://doi.org/10.1007/s12144-026-09655-9)
+  (Open Access, CC BY 4.0). The PDF is kept as a local, git-ignored working
+  copy and is **not** part of this repository; obtain it via the DOI.
 - **Fonts** — the study PDFs embed subsets of
   [Space Grotesk](https://github.com/floriankarsten/space-grotesk) and
   [IBM Plex Mono](https://github.com/IBM/plex), both under the
