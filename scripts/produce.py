@@ -17,7 +17,9 @@ import yaml
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import el
-import hoerspiel
+# NB: `import hoerspiel` is deferred into run_hoerspiel() — that module resolves
+# ffmpeg eagerly at import, and the podcast path (parse/gen/mix, RPP export) must
+# stay importable on hosts without ffmpeg.
 
 # ---------------------------------------------------------------- ffmpeg auto-pick
 def _pick(cands):
@@ -28,8 +30,17 @@ def _pick(cands):
             pass
     raise SystemExit("no working ffmpeg/ffprobe found")
 
-FF      = _pick([os.environ.get("FFMPEG_BIN"), "ffmpeg", "/usr/bin/ffmpeg"])
-FFPROBE = _pick([os.environ.get("FFPROBE_BIN"), "ffprobe", "/usr/bin/ffprobe"])
+# Resolved lazily: only the mix phase (and dur_of) actually shell out to ffmpeg,
+# so `parse` / project export can import this module on a host without ffmpeg.
+FF      = None
+FFPROBE = None
+
+def _ensure_ffmpeg():
+    global FF, FFPROBE
+    if FF is None:
+        FF = _pick([os.environ.get("FFMPEG_BIN"), "ffmpeg", "/usr/bin/ffmpeg"])
+    if FFPROBE is None:
+        FFPROBE = _pick([os.environ.get("FFPROBE_BIN"), "ffprobe", "/usr/bin/ffprobe"])
 
 
 # ---------------------------------------------------------------- KNOWN KEYS
@@ -445,6 +456,7 @@ def run(cmd):
     return r
 
 def dur_of(path):
+    _ensure_ffmpeg()
     r = subprocess.run(
         [FFPROBE, "-v", "error", "-show_entries", "format=duration",
          "-of", "default=noprint_wrappers=1:nokey=1", path],
@@ -489,6 +501,7 @@ def underscore(src, vol, outp):
 
 # ---------------------------------------------------------------- MIX PHASE (PODCAST)
 def phase_mix_podcast(spec):
+    _ensure_ffmpeg()
     events = parse_podcast(spec)
     out_dir = os.path.join(ROOT, "out", spec["slug"])
     sfx_dir  = os.path.join(out_dir, "sfx")
@@ -692,6 +705,7 @@ def phase_mix_podcast(spec):
 
 # ---------------------------------------------------------------- HOERSPIEL PATH
 def run_hoerspiel(spec, cmd):
+    import hoerspiel
     hs = spec.get("hoerspiel")
     if not hs:
         sys.exit("spec missing 'hoerspiel' section for kind: hoerspiel")
