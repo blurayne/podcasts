@@ -62,7 +62,7 @@ Anwältin und Gegenanwalt gemeinsam gegen den Richter.
 
 **ERZÄHLER:** Bleibt Krispenz und Bertrams. Ihr Kronzeuge.
 
-**ERZÄHLERIN:** Zwei Jahre später, selbes Journal: Cook, Meyer und Asbrock rechnen die Originaldaten neu. Dieselben dreihundertfünfundsiebzig Datensätze, ein Modell, das die drei dunklen Züge simultan schätzt. Das Vorzeichen dreht sich um: Narzissmus und Linksautoritarismus — negativ. Die Restkorrelation trägt allein die Psychopathie, auf schmaler Basis, mit Items, die bei Aktivisten Protest messen könnten statt Pathologie. Und das Gerechtigkeitsengagement der Untersuchten erweist sich in denselben Daten als echt. [belegt]
+**ERZÄHLERIN:** Zwei Jahre später, selbes Journal: Cook, Meyer und Asbrock erheben keine neuen Daten — sie nehmen den Datensatz der zweiten Studie, dieselben dreihundertfünfundsiebzig Personen, und rechnen ihn mit einem anderen Modell neu, das die drei dunklen Züge gleichzeitig schätzt. Das Vorzeichen dreht sich um: Narzissmus und Linksautoritarismus — negativ. Die Restkorrelation trägt allein die Psychopathie, auf schmaler Basis, mit Items, die bei Aktivisten Protest messen könnten statt Pathologie. Und das Gerechtigkeitsengagement der Untersuchten erweist sich in denselben Daten als echt. [belegt]
 
 **GEGENANWALT:** *(Pause)* Eine Reanalyse ist keine Wahrheit. Es ist eine zweite Rechnung.
 

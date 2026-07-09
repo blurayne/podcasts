@@ -63,7 +63,7 @@ um Cook. Teil III (~12 Min.) — beide Anwälte gegen den Richter.
 
 **ERZÄHLER:** Bleibt der Kronzeuge. Krispenz und Bertrams.
 
-**ERZÄHLERIN:** Zwei Jahre später, selbes Journal: Cook, Meyer und Asbrock rechnen die Originaldaten neu — dieselben dreihundertfünfundsiebzig Datensätze, ein Modell, das die drei dunklen Züge simultan schätzt statt nacheinander. Das Vorzeichen dreht sich um: Narzissmus und Linksautoritarismus — negativ. Die Restkorrelation trägt allein die Psychopathie, auf schmaler Basis, mit Items, die bei Aktivisten Protest messen könnten statt Pathologie. Und das Gerechtigkeitsengagement erweist sich in denselben Daten als echt. [belegt]
+**ERZÄHLERIN:** Zwei Jahre später, selbes Journal: Cook, Meyer und Asbrock erheben keine neuen Daten — sie nehmen den Datensatz der zweiten Studie, dieselben dreihundertfünfundsiebzig Personen, und rechnen ihn mit einem anderen Modell neu: einem, das die drei dunklen Züge gleichzeitig schätzt statt nacheinander. Das Vorzeichen dreht sich um: Narzissmus und Linksautoritarismus — negativ. Die Restkorrelation trägt allein die Psychopathie, auf schmaler Basis, mit Items, die bei Aktivisten Protest messen könnten statt Pathologie. Und das Gerechtigkeitsengagement erweist sich in denselben Daten als echt. [belegt]
 
 **GEGENANWALT:** *(Pause)* Eine Reanalyse ist keine Wahrheit. Es ist eine zweite Rechnung.
 

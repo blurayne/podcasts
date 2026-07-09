@@ -84,7 +84,7 @@ kein Musik-Leitmotiv, nur Trenner. **Konfidenzmarker** hörbar: [belegt] [plausi
 
 **GEGENANWALT:** Und Krispenz und Bertrams?
 
-**ERZÄHLERIN:** Krispenz und Bertrams, 2024: Linksautoritarismus korreliert mit Narzissmus. So stand es im Journal, so lief es durch die Presse. Zwei Jahre später erschien im selben Journal eine Reanalyse. Cook, Meyer, Asbrock, 2026. Dieselben Daten. Wörtlich: dieselben dreihundertfünfundsiebzig Datensätze. Anderes Modell — eines, das die drei dunklen Züge gleichzeitig rechnet statt nacheinander.
+**ERZÄHLERIN:** Krispenz und Bertrams, 2024: Linksautoritarismus korreliert mit Narzissmus. So stand es im Journal, so lief es durch die Presse. Zwei Jahre später erschien im selben Journal eine Reanalyse. Cook, Meyer, Asbrock, 2026. Keine neuen Daten — sie nehmen den Datensatz der zweiten Studie, dieselben dreihundertfünfundsiebzig Personen, und rechnen ihn mit einem anderen Modell: einem, das die drei dunklen Züge gleichzeitig rechnet statt nacheinander.
 
 **ERZÄHLER:** Ergebnis: Das Vorzeichen dreht sich um. Narzissmus und Linksautoritarismus — negativ assoziiert. Die kleine Restkorrelation der dunklen Triade trägt allein die Psychopathie, auf schmaler Datenbasis, mit Items, die bei Aktivisten womöglich Protest messen statt Pathologie. Und: Das Engagement für soziale Gerechtigkeit erweist sich in denselben Daten als echt. [belegt]
 
