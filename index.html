@@ -141,6 +141,23 @@
     margin: 0 auto;
     line-height: 1.65;
   }
+  .header-github {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.25rem;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #e0e7ff;
+    text-decoration: none;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 99px;
+    padding: .45rem 1rem;
+    transition: background .15s, border-color .15s;
+  }
+  .header-github:hover { background: rgba(255,255,255,.22); border-color: rgba(255,255,255,.4); }
+  .header-github svg { width: 1.15rem; height: 1.15rem; fill: currentColor; }
 
   /* ── LAYOUT ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
@@ -172,6 +189,38 @@
   .series-label-1 { background: var(--series1-bg); color: var(--series1); }
   .series-label-2 { background: var(--series2-bg); color: var(--series2); }
   .series-label-3 { background: var(--series3-bg); color: var(--series3); }
+
+  /* ── SERIES INTRO ── */
+  .series-intro {
+    font-size: .95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 820px;
+    margin: -.5rem 0 2.25rem;
+  }
+  .series-intro em { font-style: italic; color: var(--text); }
+  .series-intro .rename-note {
+    display: block;
+    margin-top: .5rem;
+    font-size: .85rem;
+    font-style: italic;
+    opacity: .85;
+  }
+
+  /* ── SITE INTRO / PRODUCTION NOTE ── */
+  .site-intro {
+    max-width: 820px;
+    margin: 0 auto 2.5rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    font-size: .9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .site-intro strong { color: var(--text); }
 
   /* ── EPISODE BLOCK ── */
   .episode-block { margin-bottom: 2rem; }
@@ -331,6 +380,13 @@
     color: var(--text-secondary);
     margin-bottom: .4rem;
   }
+  .audio-note {
+    font-size: .72rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.45;
+    margin-top: .5rem;
+  }
 
   /* ── DIVIDER ── */
   .section-divider {
@@ -406,20 +462,33 @@
       Doku-Feature-Podcasts, Hörspiele und wissenschaftliche Begleitstudien —
       mehrere Serien und Produktionen auf einer Seite.
     </p>
+    <a class="header-github" href="https://github.com/blurayne/podcasts" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      Auf GitHub ansehen
+    </a>
   </div>
 </header>
 
 <main id="main">
 <div class="container">
 
+  <p class="site-intro">
+    Die meisten Folgen wurden von <strong>Fable</strong> (einem Claude-Modell) recherchiert und verfasst; wo die Arbeit sensible Bereiche berührte, griff es gelegentlich auf das <strong>Opus</strong>-Modell zurück — etwa bei der physikalischen Recherche zu Atomen oder beim Kontext des Zweiten Weltkriegs.
+  </p>
+
   <!-- ══════════════════════════════════════════════════
-       SERIES 1: DIE FRAU VOR DEM RECHT
+       SERIES 1: DER MENSCH VOR DEM RECHT
        ══════════════════════════════════════════════════ -->
   <section class="series-section" aria-label="Staffel 1">
     <div class="series-header">
-      <h2>Die Frau vor dem Recht</h2>
+      <h2>Der Mensch vor dem Recht</h2>
       <span class="series-label series-label-1">Staffel 1 · S01</span>
     </div>
+
+    <p class="series-intro">
+      Historische Doku-Feature- und Hörspiel-Reihe über die Rechtsstellung des Menschen — Frauen <em>und</em> Männer — quer durch Kulturen und Jahrhunderte, jede Folge gepaart mit einer wissenschaftlichen Begleitstudie als PDF (den „Bänden" im Observatory-Layout).
+      <span class="rename-note">Vormals „Die Frau vor dem Recht"; umbenannt, als sich die Reihe von der Frau zum Menschen vor dem Recht weitete.</span>
+    </p>
 
     <!-- EPISODE 1 -->
     <div class="episode-block">
@@ -437,7 +506,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">35–40 min</span>
+              <span class="badge badge-audio">25:20</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -562,7 +631,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">55–60 min</span>
+              <span class="badge badge-audio">33:42</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -773,6 +842,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
+              <span class="badge badge-audio">36:16</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -831,6 +901,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
+              <span class="badge badge-audio">32:27</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -878,6 +949,7 @@
     <!-- KODA (nach Folge 4) -->
     <div class="episode-block">
       <div class="episode-header">
+        <span class="episode-number">Folge 05</span>
         <span class="episode-number">Koda</span>
         <div>
           <h3>Woher die Funktion? <span class="ep-subtitle">· Biologie, Kooperation, Konflikt</span></h3>
@@ -889,7 +961,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">12–14 min</span>
+              <span class="badge badge-audio">11:18</span>
             </div>
           </div>
           <div class="card-title">Koda — Doku-Segment</div>
@@ -947,6 +1019,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
+              <span class="badge badge-audio">23:53</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -1005,7 +1078,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">65–75 min</span>
+              <span class="badge badge-audio">41:11</span>
             </div>
           </div>
           <div class="card-title">Doku-Feature-Skript</div>
@@ -1065,7 +1138,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">40–45 min</span>
+              <span class="badge badge-audio">19:56</span>
             </div>
           </div>
           <div class="card-title">Werkstatt-Feature-Skript</div>
@@ -1125,7 +1198,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">2 × 45–50 min</span>
+              <span class="badge badge-audio">25:32</span>
             </div>
           </div>
           <div class="card-title">Doppelfolge-Skript</div>
@@ -1183,7 +1256,7 @@
             <div class="card-icon">🎙️</div>
             <div class="card-badges">
               <span class="badge badge-script">Skript</span>
-              <span class="badge badge-audio">ca. 70 min</span>
+              <span class="badge badge-audio">32:18</span>
             </div>
           </div>
           <div class="card-title">Finale — Doku-Feature-Skript</div>
@@ -1228,76 +1301,12 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════
-       SERIES 2: SCIENCE FOR KIDS
-       ══════════════════════════════════════════════════ -->
-  <section class="series-section" aria-label="Science for Kids">
-    <div class="series-header">
-      <h2>Kleiner geht's nicht</h2>
-      <span class="series-label series-label-2">Science for Kids</span>
-    </div>
-
-    <div class="card-grid">
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">⚛️</div>
-          <div class="card-badges">
-            <span class="badge badge-script">Skript</span>
-            <span class="badge badge-audio">10–12 min</span>
-          </div>
-        </div>
-        <div class="card-title">Folge 1 — Die Reise ins Allerkleinste</div>
-        <div class="card-description">
-          Kinderpodcast über Atome, Elektronen, Quarks und die Planck-Länge. Zwei Stimmen:
-          LINA (neugierige Co-Moderatorin) und DR. FUNKE (erklärt ruhig und bildhaft, nie
-          belehrend). Die kleinste mögliche Länge als Reise-Metapher.
-        </div>
-        <div class="audio-wrap">
-          <div class="audio-label">▶ Podcast anhören (Google Drive)</div>
-          <iframe src="https://drive.google.com/file/d/1Xs1pSqyPnBe_t0-w6B2zVGQdBcEB3EdC/preview"
-                  style="width:100%;height:80px;border:none;border-radius:6px;"
-                  allow="autoplay" loading="lazy"></iframe>
-        </div>
-        <div class="card-links">
-          <a class="link-btn primary" href="series/science-for-kids/podcast-kleiner-gehts-nicht.html">Skript lesen</a>
-          <a class="link-btn" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.html">🐾 Wusl-Version</a>
-          <a class="link-btn" href="audio/kleiner-gehts-nicht/s01e01-die-reise-ins-allerkleinste.mp3" download>MP3 ↓</a>
-          <a class="link-btn" href="https://drive.google.com/file/d/1Xs1pSqyPnBe_t0-w6B2zVGQdBcEB3EdC/view" target="_blank" rel="noopener">Drive ↗</a>
-          <a class="link-btn" href="series/science-for-kids/reise-ins-allerkleinste.html">HTML</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">🐾</div>
-          <div class="card-badges">
-            <span class="badge badge-script">Skript</span>
-            <span class="badge badge-scene">Wusl-Gusl-Version</span>
-          </div>
-        </div>
-        <div class="card-title">Folge 1 — Wusl Gusl Edition</div>
-        <div class="card-description">
-          Dieselben Physik-Inhalte (Atome, Quarks, vier Kräfte), neu erzählt im Wusl-Gusl-Stil:
-          Wusl (blaues Beuteltier, Erfinder, liebt Explosionen) und Simón
-          (geduldiger Gegenpol). Mit Quark-O-Skop-3001, Graviton-Finder-3001 und
-          Kühlschrankquark an der Wand.
-        </div>
-        <div class="card-meta"><span>·</span> Wusl · Simón · für Kinder ab 5</div>
-        <div class="card-links">
-          <a class="link-btn primary" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.html">Skript lesen</a>
-          <a class="link-btn" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.md">MD ↓</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════════
        ANALYSE & FORSCHUNG
        ══════════════════════════════════════════════════ -->
   <section class="series-section" aria-label="Analyse &amp; Forschung">
     <div class="series-header">
       <h2>Analyse &amp; Forschung</h2>
+      <span class="series-label series-label-3">Research</span>
       <span class="series-label series-label-3">Begleitdokumente</span>
     </div>
 
@@ -1360,6 +1369,83 @@
         <div class="card-links">
           <a class="link-btn primary" href="docs/NO-WOKE.html">Abhandlung lesen</a>
           <a class="link-btn" href="docs/NO-WOKE.md">Markdown ↓</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       SERIES 2: SCIENCE FOR KIDS
+       ══════════════════════════════════════════════════ -->
+  <section class="series-section" aria-label="Science for Kids">
+    <div class="series-header">
+      <h2>Kleiner geht's nicht</h2>
+      <span class="series-label series-label-2">Science for Kids</span>
+    </div>
+
+    <p class="series-intro">
+      Wissens-Podcast für Kinder: große Wissenschaft, kindgerecht und bildhaft erzählt. Die erste Folge „Kleiner geht's nicht" reist von den Zellen bis hinunter zu Quarks und der Planck-Länge — ruhig moderiert von Lina und Dr. Funke. Daneben die verspielte Wusl-Gusl-Edition: dieselbe Physik, nur turbulent und figurengetrieben für die Kleinsten.
+    </p>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">⚛️</div>
+          <div class="card-badges">
+            <span class="badge badge-script">Skript</span>
+            <span class="badge badge-audio">15:41</span>
+          </div>
+        </div>
+        <div class="card-title">Folge 1 — Die Reise ins Allerkleinste</div>
+        <div class="card-description">
+          Kinderpodcast über Atome, Elektronen, Quarks und die Planck-Länge. Zwei Stimmen:
+          LINA (neugierige Co-Moderatorin) und DR. FUNKE (erklärt ruhig und bildhaft, nie
+          belehrend). Die kleinste mögliche Länge als Reise-Metapher.
+        </div>
+        <div class="audio-wrap">
+          <div class="audio-label">▶ Podcast anhören (Google Drive)</div>
+          <iframe src="https://drive.google.com/file/d/1Xs1pSqyPnBe_t0-w6B2zVGQdBcEB3EdC/preview"
+                  style="width:100%;height:80px;border:none;border-radius:6px;"
+                  allow="autoplay" loading="lazy"></iframe>
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="series/science-for-kids/podcast-kleiner-gehts-nicht.html">Skript lesen</a>
+          <a class="link-btn" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.html">🐾 Wusl-Version</a>
+          <a class="link-btn" href="audio/kleiner-gehts-nicht/s01e01-die-reise-ins-allerkleinste.mp3" download>MP3 ↓</a>
+          <a class="link-btn" href="https://drive.google.com/file/d/1Xs1pSqyPnBe_t0-w6B2zVGQdBcEB3EdC/view" target="_blank" rel="noopener">Drive ↗</a>
+          <a class="link-btn" href="series/science-for-kids/reise-ins-allerkleinste.html">HTML</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">🐾</div>
+          <div class="card-badges">
+            <span class="badge badge-script">Skript</span>
+            <span class="badge badge-scene">Wusl-Gusl-Version</span>
+          </div>
+        </div>
+        <div class="card-title">Folge 1 — Wusl Gusl Edition</div>
+        <div class="card-description">
+          Dieselben Physik-Inhalte (Atome, Quarks, vier Kräfte), neu erzählt im Wusl-Gusl-Stil:
+          Wusl (blaues Beuteltier, Erfinder, liebt Explosionen) und Simón
+          (geduldiger Gegenpol). Mit Quark-O-Skop-3001, Graviton-Finder-3001 und
+          Kühlschrankquark an der Wand.
+        </div>
+        <div class="card-meta"><span>·</span> Wusl · Simón · für Kinder ab 5</div>
+        <div class="audio-wrap">
+          <div class="audio-label">▶ Podcast anhören (Google Drive)</div>
+          <iframe src="https://drive.google.com/file/d/1BQpkJJqdM1kaLwVEAlpzdLfNnHRWT3d5/preview"
+                  style="width:100%;height:80px;border:none;border-radius:6px;"
+                  allow="autoplay" loading="lazy"></iframe>
+          <div class="audio-note">⚠️ Hinweis: Diese Datei muss vom Autor erst öffentlich in Google Drive freigegeben werden, bevor die Wiedergabe hier funktioniert.</div>
+        </div>
+        <div class="card-links">
+          <a class="link-btn primary" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.html">Skript lesen</a>
+          <a class="link-btn" href="https://drive.google.com/file/d/1BQpkJJqdM1kaLwVEAlpzdLfNnHRWT3d5/view" target="_blank" rel="noopener">Drive ↗</a>
+          <a class="link-btn" href="series/science-for-kids/podcast-kleiner-gehts-nicht-wusl-gusl.md">MD ↓</a>
         </div>
       </div>
 

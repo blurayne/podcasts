@@ -2,6 +2,8 @@
 
 AI-driven production pipeline for German podcast and radio-play (Hörspiel) series. A single YAML-driven engine turns human-readable Markdown scripts into fully mixed episodes using ElevenLabs (TTS, SFX, music) and ffmpeg, and the companion study PDFs are typeset with XeTeX/tectonic.
 
+Most episodes were researched and written by **Fable** (a Claude model); it occasionally reverted to the **Opus** model where the work touched sensitive areas — for example the physics research on atoms, or the World War II context in Episode 3 of Homo ante legem.
+
 🌐 **Live site:** <https://blurayne.github.io/podcasts/>
 
 ## How it works
@@ -27,24 +29,24 @@ Scripts run via a uv shebang (`#!/usr/bin/env -S uv run --script`) with PEP 723 
 
 Historical documentary podcast + Hörspiel series on the legal status of persons — women *and* men — across cultures and centuries, each episode paired with a peer-reviewed-style study PDF (the „Bände", Observatory layout). *(Formerly „Die Frau vor dem Recht"; renamed as the series broadened from the woman to the person before the law.)*
 
-| # | Folder slug | Topic | Anhören |
-|---|---|---|---|
-| S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced | [▶ Drive](https://drive.google.com/file/d/1rYvdheXtUlleIMsMta8CpAT0NwFDKE5b/view) |
-| S01-02 | `islam-der-parallelbogen` | Der Parallelbogen / Islam (5 Hörspiele + podcast) — produced | [▶ Drive](https://drive.google.com/file/d/1DK7IcAhanl94FHPUS0fu-nH5Hyb4qG4J/view) |
-| S01-03 | `judentum-gesetz-ohne-land` | Judentum — Gesetz ohne Land | [▶ Drive](https://drive.google.com/file/d/1_5xDFSyINZBLzH3zmct2iDujp-yh7yLA/view) |
-| S01-04 | `matriarchat-gegentest` | Matriarchat-Gegentest | [▶ Drive](https://drive.google.com/file/d/1_tDH7gjKYU4T6AGbfe2HuRbR6W_kNXCp/view) |
-| S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion | [▶ Drive](https://drive.google.com/file/d/1j6WdHgbkrjuEvASiQ0hdN0x9LrRv20Xh/view) |
-| S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat | [▶ Drive](https://drive.google.com/file/d/1ZmlXKOFlvuBdipUBp-DUtEXD1bz8WJCt/view) |
-| S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) | [▶ Drive](https://drive.google.com/file/d/1RV4Q97f1Qs4ne03Pb6Rpy1h33f9B9YnO/view) |
-| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) — produced | [▶ Drive](https://drive.google.com/file/d/1sfBrmA9ck_Y2r4DyloBZbtb0M-6Jp5ah/view) |
-| S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) | [▶ Drive](https://drive.google.com/file/d/1swFqQ_5ON3zkryfpyGGnD9l7tusHFEtg/view) |
-| S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) — produced | [▶ Drive](https://drive.google.com/file/d/12xt_dVdxCGbG80GAGlrKIB4kQxSf0rP7/view) |
+| # | Folder slug | Topic | Spielzeit | Anhören |
+|---|---|---|---|---|
+| S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced | 25:20 | [▶ Drive](https://drive.google.com/file/d/1rYvdheXtUlleIMsMta8CpAT0NwFDKE5b/view) |
+| S01-02 | `islam-der-parallelbogen` | Der Parallelbogen / Islam (5 Hörspiele + podcast) — produced | 33:42 | [▶ Drive](https://drive.google.com/file/d/1DK7IcAhanl94FHPUS0fu-nH5Hyb4qG4J/view) |
+| S01-03 | `judentum-gesetz-ohne-land` | Judentum — Gesetz ohne Land | 36:16 | [▶ Drive](https://drive.google.com/file/d/1_5xDFSyINZBLzH3zmct2iDujp-yh7yLA/view) |
+| S01-04 | `matriarchat-gegentest` | Matriarchat-Gegentest | 32:27 | [▶ Drive](https://drive.google.com/file/d/1_tDH7gjKYU4T6AGbfe2HuRbR6W_kNXCp/view) |
+| S01-05 | `koda-woher-die-funktion` | Koda — Woher die Funktion | 11:18 | [▶ Drive](https://drive.google.com/file/d/1j6WdHgbkrjuEvASiQ0hdN0x9LrRv20Xh/view) |
+| S01-06 | `der-mann-unter-dem-patriarchat` | Der Mann unter dem Patriarchat | 23:53 | [▶ Drive](https://drive.google.com/file/d/1ZmlXKOFlvuBdipUBp-DUtEXD1bz8WJCt/view) |
+| S01-07 | `der-markt-der-begehrten` | Der Markt der Begehrten (Band VII) | 41:11 | [▶ Drive](https://drive.google.com/file/d/1RV4Q97f1Qs4ne03Pb6Rpy1h33f9B9YnO/view) |
+| S01-08 | `die-funktionskritik` | Die Funktionskritik (Band VIII) — produced | 19:56 | [▶ Drive](https://drive.google.com/file/d/1sfBrmA9ck_Y2r4DyloBZbtb0M-6Jp5ah/view) |
+| S01-09 | `die-wanderung-der-funktion` | Die Wanderung der Funktion (Doppelfolge, Band IX) | 25:32 | [▶ Drive](https://drive.google.com/file/d/1swFqQ_5ON3zkryfpyGGnD9l7tusHFEtg/view) |
+| S01-10 | `die-entkopplung` | Die Entkopplung (Finale, Band X) — produced | 32:18 | [▶ Drive](https://drive.google.com/file/d/12xt_dVdxCGbG80GAGlrKIB4kQxSf0rP7/view) |
 
 Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 
 ### Science for Kids
 
-Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/science-for-kids/wusl-gusl.yaml`).
+Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/science-for-kids/wusl-gusl.yaml`). The Wusl Gusl audio is produced; its [Drive link](https://drive.google.com/file/d/1BQpkJJqdM1kaLwVEAlpzdLfNnHRWT3d5/view) still needs to be shared publicly by the author before it plays.
 
 ## Study PDFs
 
