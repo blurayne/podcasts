@@ -2,10 +2,13 @@
 
 **Reihe:** Die Frau vor dem Recht · **Position:** nach dem Finale (S01-10), zweite Werkstattfolge
 (Schwester von S01-08 „Die Funktionskritik").
-**Format:** Werkstatt-/Methodenfolge, ca. 40–45 Min., Gerichtssaal-Format wie Folge 8.
-**Stimmen:** ERZÄHLERIN (analytisch), ERZÄHLER (Zweifler), **GEGENANWALT** (neue dritte
-Stimme — vertritt die anti-woke Symmetrie-Position in ihrer stärksten Form, kein Strohmann);
-optional Kurzauftritt der **ANWÄLTIN** aus Folge 8 (das Dreieck schließt sich).
+**Format:** Werkstatt-/Methodenfolge in **zwei Teilen**, ca. 50–55 Min., Gerichtssaal-Format
+wie Folge 8. Teil I: Der Gegenanwalt wird geprüft. Teil II: **Anwältin und Gegenanwalt
+verbünden sich und kreuzverhören den Richter** — die Kritik der Funktionskritik.
+**Stimmen:** ERZÄHLERIN (analytisch — sitzt in Teil II selbst im Zeugenstand),
+ERZÄHLER (Zweifler), **GEGENANWALT** (neue dritte Stimme — vertritt die anti-woke
+Symmetrie-Position in ihrer stärksten Form, kein Strohmann), **ANWÄLTIN** aus Folge 8
+(volle Rolle, nicht Cameo — in Teil II Verbündete des Gegenanwalts gegen die Gutachterbank).
 **Konfidenzmarker:** `[belegt]` `[plausibel]` `[umstritten]` `[spekulativ]`, hörbar gemacht.
 
 **Leitsatz der Folge (und der Reihe): Unser Ziel ist nach wie vor die Entkopplung von Wert
@@ -92,13 +95,90 @@ dafür, dass es im politisierten Feld keine Gutachterbank gratis gibt:
   Gutachterbank als Methode (Konfidenzmarker, Gegendarstellungspflicht, Falsifikationsangebot) —
   nicht als Personal. Neutralität ist kein Personenmerkmal, sondern ein Verfahren.
 
-## 4. Dramaturgie (Skizze)
+## 4. Teil II — Die Kritik der Funktionskritik: Anwältin und Gegenanwalt verhören den Richter
+
+Der strukturelle Clou der Folge: Nachdem beide Anwaltschaften vom Richter geprüft wurden,
+**verbünden sie sich** — das einzige, worin sie übereinstimmen, ist ihr Einspruch gegen die
+Gutachterbank. Der Richter verlässt die Bank und nimmt im Zeugenstand Platz. Die Einwände
+werden in ihrer stärksten Form vorgetragen; mindestens zwei müssen **stehen bleiben**
+(Regieprinzip aus Folge 8: die Gegenseite behält zweimal recht).
+
+### Einwände der ANWÄLTIN (von links)
+
+1. **Der Blick von nirgendwo existiert nicht.** Die Gutachterbank behauptet eine Meta-Position —
+   das ist der älteste Machtzug der Wissenschaftsgeschichte. Wer „neutral" misst, hat schon
+   entschieden, was messbar zählt (Standpunktepistemologie; vgl. Folge 8, Methodenstreit).
+   Verfahren können Ideologie sein: Prozeduralismus privilegiert die, die Zeit haben.
+2. **Verfrühte Symmetrie, zweite Runde.** Symmetrie der *Methode* erzeugt faktisch Symmetrie
+   der *Aufmerksamkeit* — und die ist ein knappes Gut. Jede Sendeminute für den Death Gap
+   fehlt der Femizid-Statistik. Die Waage selbst ist eine Verteilungsentscheidung.
+3. **Dringlichkeitseinwand.** Konfidenzmarker und Falsifikationsangebote sind Friedenspraxis.
+   „Während Sie messen, stirbt jemand." Anwaltschaft ist keine Deformation der Wissenschaft,
+   sondern die angemessene Form unter Zeitdruck — Triage statt Studiendesign.
+4. **False-Balance-Maschine.** Ein Verfahren, das strukturell beiden Seiten Redezeit gibt,
+   adelt die schwächere Evidenz (Klimadebatten-Analogie). Die Gutachterbank kann zum
+   Both-sides-Generator werden, der Asymmetrien der Beleglage einebnet.
+
+### Einwände des GEGENANWALTS (von rechts)
+
+5. **Verdeckte Anwaltschaft.** Die Reihe heißt „Die Frau vor dem Recht", nicht „Der Mensch
+   vor der Funktion" — ihre Genese ist eine feministische Fragestellung, ihre politischen
+   Prüfsteine (Partnermonate, Care-Berufe öffnen) sind ein Programm. Die Gutachterbank sei
+   nur eine höflichere Anwaltschaft mit besserer Zitierpraxis.
+6. **Der Medieneinwand — der schärfste.** „Sie werfen mir YouTube vor, Euer Ehren — was ist
+   Ihr Medium?" Die Reihe publiziert per Podcast und selbstgesetzten PDFs, ohne Peer-Review,
+   ohne Institution — **exakt der Kanal-Vorwurf, den Teil I gegen Varnan führt.** Nach dem
+   eigenen Maßstab der Gegendarstellungspflicht ist die Reihe „unfertig".
+7. **Funktionalismus-Zirkel.** „Wert folgt Funktion" droht zirkulär zu werden („es besteht,
+   weil es funktioniert") — die Rigorositätsforderung aus These C (INTFEM-Analyse) trifft
+   die eigene Leitformel. Was würde die Funktionskritik *als Disziplin* falsifizieren —
+   nicht nur einzelne Axiome?
+8. **Selektionsmacht.** Wer wählt die Prüffragen? Die zehn Prüffragen von Folge 8 hat der
+   Richter allein gestellt. Agenda-Setting ist die unsichtbarste Form der Anwaltschaft.
+
+### Die Antwort des Richters — und was stehen bleibt
+
+- **Angenommen (bleibt stehen): der Medieneinwand (6).** Keine Ausrede, sondern Offenlegung:
+  gleiche Transparenzpflicht wie bei Cook et al. — offene Quellen, offene Transkripte, die
+  Einwände im selben Text. Das ersetzt Peer-Review nicht; die Reihe erklärt sich nach eigenem
+  Maßstab für vorläufig. (Konsequenz im Abspann: ausdrückliche Einladung zur Widerlegung,
+  Verweis aufs offene Repo.)
+- **Angenommen (bleibt stehen): die Selektionsmacht (8).** Konsequenz ist ein Mechanismus,
+  kein Bekenntnis: das **adversariale Register** — beide Anwaltschaften reichen künftig
+  eigene Prüffragen ein, die die Reihe unverändert und mit Priorität abarbeitet (die Folge
+  nimmt je eine von Anwältin und Gegenanwalt live ins Register auf).
+- **Teilweise angenommen: Blick von nirgendwo (1) + verdeckte Anwaltschaft (5).** Zugeständnis:
+  Es gibt keinen Standpunkt ohne Standort — die Gutachterbank ist eine *Rolle*, kein Wesen.
+  Antwort: Deshalb koppelt die Funktionskritik Urteile an nachvollziehbare Verfahren statt an
+  Personen (Konfidenzmarker, Falsifikationsangebot, offene Daten). Neutralität wird nicht
+  behauptet, sondern **prüfbar simuliert** — und die Genese der Reihe (feministische
+  Ausgangsfrage) wird als Herkunft markiert, nicht geleugnet: Herkunft ist kein Urteil.
+- **Zurückgewiesen mit Begründung: Dringlichkeit (3) und False Balance (4).** Die Waage gibt
+  nicht Redezeit nach Parität, sondern nach Beleglage — Konfidenzmarker sind genau das
+  Gegenteil von Both-sides (schwache Evidenz wird hörbar als schwach markiert). Und Triage
+  ohne Diagnose amputiert das falsche Bein: Dringlichkeit ist ein Argument für schnellere
+  Gutachten, nicht für keine.
+- **Zurückgewiesen mit Prüfauftrag: Funktionalismus-Zirkel (7).** Die Leitformel ist
+  falsifizierbar formuliert (Axiom 1: widerlegt, wenn Funktionswandel nie Rechtswandel nach
+  sich zieht — der Bogen der Bände I–III ist der Beleg, Iran 1979 der Gegenlauf-Test). Der
+  Prüfauftrag wandert trotzdem ins Register: eine Vorhersage benennen, die die Formel
+  scheitern lassen könnte, *bevor* die Daten da sind.
+
+**Pointe von Teil II:** Der Richter gewinnt nicht. Er überlebt — als Verfahren, das sich
+selbst verhandeln lässt. „Die Gutachterbank ist kein Ort. Sie ist die Bereitschaft, den
+Platz zu tauschen." Anwältin und Gegenanwalt bleiben Anwälte; aber beide haben jetzt ein
+Register, in das sie schreiben dürfen — und genau das unterscheidet das Verfahren von
+beiden Anwaltschaften.
+
+## 5. Dramaturgie (Skizze)
+
+**TEIL I — Der Gegenanwalt wird geprüft (ca. 28–30 Min.)**
 
 - **Prolog:** Der Gegenanwalt betritt den Saal. Rückblende Folge 8: die Anwältin warnte —
   „Vereinnahmung von rechts: Ihre Diagnosen werden zitiert werden, ohne Ihre Boxen." Jetzt
   steht einer da, der genau das tut — und zwar gut.
 - **Akt I — Die stärkste Form:** Varnans Position im Steelman; Schaerer 2023 korrekt
-  vorgetragen; die Anwältin (oder Erzähler als ihr Echo) muss zugestehen, was `[belegt]` ist.
+  vorgetragen; die Anwältin muss zugestehen, was `[belegt]` ist.
 - **Akt II — Die Gegendarstellung:** Galos & Coppock (Aggregationsartefakt), Lahtinen-Grenzen,
   der Ebenenwechsel Callback→Patriarchat. Der Gegenanwalt verliert nicht durch Widerlegung,
   sondern durch Auslassung — er kannte die Gegenbefunde nicht oder nannte sie nicht.
@@ -112,14 +192,27 @@ dafür, dass es im politisierten Feld keine Gutachterbank gratis gibt:
   Ok/Grubbs/Armaly + Virtue-Signaling-Restbefund → neue Prüffrage: **Wird Opferstatus selbst
   zur Funktion, an die Wert gekoppelt wird?** (Anschluss an Band IX: vierter Träger der
   Wanderung neben Maschine, Staat, Tradition.) Varnans „Ich lag tatsächlich falsch" als
-  Kontrast-Finale: gelebtes Falsifikationsangebot — die einzige Währung, die die Gutachterbank
-  akzeptiert.
-- **Finale:** Das Ego-Vehikel fährt nicht links — es fährt dorthin, wo Status zu holen ist.
-  Beide Anwaltschaften bewirtschaften Kopplungen von Wert an Position. Ziel der Reihe bleibt
-  die **Entkopplung — aber fundiert:** kein Befund ohne Konfidenzmarker, keine These ohne
-  ihren stärksten Einwand, keine Widerlegung ohne Prüfung der Widerleger.
+  Scharnier zu Teil II: gelebtes Falsifikationsangebot — die einzige Währung, die die
+  Gutachterbank akzeptiert. Der Gegenanwalt nimmt es auf: „Gut. Dann zahlen Sie jetzt in
+  derselben Währung."
 
-## 5. Leitplanken (Sprachregelung)
+**TEIL II — Wer richtet den Richter? (ca. 20–22 Min.)**
+
+- **Akt V — Der Rollentausch:** Anwältin und Gegenanwalt verbünden sich (ihr einziger
+  Konsens). Der Richter verlässt die Bank, nimmt im Zeugenstand Platz. Kreuzverhör entlang
+  § 4: die Anwältin führt Einwände 1–4, der Gegenanwalt 5–8; Höhepunkt ist der
+  Medieneinwand (6): „Sie werfen mir YouTube vor, Euer Ehren — was ist Ihr Medium?"
+- **Akt VI — Das Urteil über das Verfahren:** Antworten und Zugeständnisse nach § 4. Zwei
+  Einwände bleiben ausdrücklich stehen (Medium, Selektionsmacht); das **adversariale
+  Register** wird eröffnet — beide Anwälte diktieren live je eine Prüffrage hinein.
+- **Finale:** Das Ego-Vehikel fährt nicht links — es fährt dorthin, wo Status zu holen ist;
+  das gilt für Anwaltschaften wie für Richterstühle. Der Richter gewinnt nicht, er überlebt —
+  als Verfahren, das sich selbst verhandeln lässt: „Die Gutachterbank ist kein Ort. Sie ist
+  die Bereitschaft, den Platz zu tauschen." Ziel der Reihe bleibt die **Entkopplung — aber
+  fundiert:** kein Befund ohne Konfidenzmarker, keine These ohne ihren stärksten Einwand,
+  keine Widerlegung ohne Prüfung der Widerleger — und kein Richter ohne Zeugenstand.
+
+## 6. Leitplanken (Sprachregelung)
 
 - Der GEGENANWALT ist kein Strohmann: Er bekommt die besten Argumente und behält mindestens
   einmal recht (Schaerer-Kernbefund; das Eingeständnis seiner Fehlprognose adelt ihn).
@@ -128,8 +221,11 @@ dafür, dass es im politisierten Feld keine Gutachterbank gratis gibt:
 - Jede zitierte Studie trägt hörbar ihren Konfidenzmarker; jede Widerlegung wird selbst auf
   Herkunft und Anreiz geprüft (§ 3-Twist ist Pflicht, nicht Option).
 - Die Folge endet nicht mit einem Sieger, sondern mit dem Verfahren.
+- In Teil II gilt das Steelman-Prinzip auch gegen die eigene Reihe: Die Einwände der beiden
+  Anwälte gegen den Richter werden so stark formuliert, dass Anwältin *und* Gegenanwalt sie
+  unterschreiben würden — und mindestens zwei bleiben unbeantwortet stehen.
 
-## 6. Offene Produktionsfragen
+## 7. Offene Produktionsfragen
 
 - Besetzung GEGENANWALT (studio-quality, `eleven_v3`; ruhig, präzise, keine Karikatur).
 - Kurzauftritt ANWÄLTIN: gleiche Stimme wie Folge 8 (Kontinuität) — prüfen, ob Stimme verfügbar.
