@@ -2,7 +2,7 @@
 ### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3000"
 
 **Mitmach-Wesen**
-- **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel.
+- **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel. Hängt an jeden seiner Gerätenamen die Versionsnummer „3002" (nur der Moderator sagt die Namen ohne Nummer).
 - **MODERATOR** — Wusls menschlicher Kumpel und heute unfreiwilliges Versuchskaninchen. Geduldig, erklärt bildhaft, wird zwischendurch aus Versehen mitgeschrumpft.
 - **ERZÄHLER** — eine ruhige, warme Stimme. Liefert die sachlichen Erkläreinspieler, ernst und informationsdicht, keine Witze.
 
@@ -50,15 +50,15 @@
 
 **MODERATOR:** `[schmunzelt]` Naja — genauer gesagt aus winzigen Bausteinen. Und diese Bausteine haben selbst wieder Bausteine. Immer kleiner, immer weiter — von riesig bis ganz nach unten.
 
-**WUSL:** Und deshalb hab ich für JEDE Ebene ein eigenes Gerät gebaut! `[rasselt mit Werkzeug]` Zell-Zoomer, Atom-Anpeiler, Kern-Knacker, Quark-Gucker — alles selbst gelötet!
+**WUSL:** Und deshalb hab ich für JEDE Ebene ein eigenes Gerät gebaut! `[rasselt mit Werkzeug]` Zell-Zoomer 3002, Atom-Anpeiler 3002, Kern-Knacker 3002, Quark-Gucker 3002 — alles selbst gelötet!
 
-**MODERATOR:** Alles selbst gelötet …?
+**MODERATOR:** Alles selbst gelötet …? Und wieso heißen die alle 3002?
 
-**WUSL:** `[stolz]` Und nur DREI kleine Brände! Los — erste Etappe: Zell-Zoomer, anwerfen!
+**WUSL:** `[stolz]` Nur DREI kleine Brände! Und frag lieber nicht, was mit Version 3001 passiert ist. Los — erste Etappe: Zell-Zoomer 3002, anwerfen!
 
 `[Ein Gerät macht „wubwubwub".]`
 
-**WUSL:** Und dazu gleich den ATOM-ANPEILER! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
+**WUSL:** Und dazu gleich den ATOM-ANPEILER 3002! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
 
 **MODERATOR:** Aus einem …?
 
@@ -82,7 +82,7 @@
 
 **MODERATOR:** `[lacht]` Und wenn wir jetzt die winzige Murmel in der Mitte aufmachen wollen — den Kern — dann brauchen wir …
 
-**WUSL:** … den KERN-KNACKER! Mein gefährlichstes Gerät! `[dramatisch]` Schutzbrille auf, Moderator!
+**WUSL:** … den KERN-KNACKER 3002! Mein gefährlichstes Gerät! `[dramatisch]` Schutzbrille auf, Moderator!
 
 **MODERATOR:** Ich hab keine Schutzbrille.
 
@@ -100,7 +100,7 @@
 
 **MODERATOR:** Ganz ruhig, Wusl. Für das, was jetzt kommt, brauchst du dein feinstes Gerät.
 
-**WUSL:** Der **QUARK-GUCKER**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` Ich seh was! Winzige Kügelchen! Überall Kügelchen!
+**WUSL:** Der **QUARK-GUCKER 3002**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` Ich seh was! Winzige Kügelchen! Überall Kügelchen!
 
 `[Der Quark-Gucker piept feierlich.]`
 
@@ -130,7 +130,7 @@
 
 **MODERATOR:** `[lacht]` Perfekt gerechnet, Wusl.
 
-**WUSL:** Und dieses Klötzchen-Tauschen — ein Quark raus, ein anderes rein, und schon ist's was Neues?! `[hektisch]` Ich BAU sofort ein Gerät dafür — den QUARK-WECHSLER! SCHWUPP, was Neues! Das ist ja wutzelwitzig!
+**WUSL:** Und dieses Klötzchen-Tauschen — ein Quark raus, ein anderes rein, und schon ist's was Neues?! `[hektisch]` Ich BAU sofort ein Gerät dafür — den QUARK-WECHSLER 3002! SCHWUPP, was Neues! Das ist ja wutzelwitzig!
 
 **MODERATOR:** Vielleicht erst das nächste Gerät fertig löten, bevor du ein neues anfängst?
 
@@ -178,7 +178,7 @@
 
 **MODERATOR:** Jetzt wird's seltsam, Wusl. In der Welt der kleinsten Dinge gibt es nämlich keine halben Sachen — und noch etwas viel Spukhafteres.
 
-**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse! Und … SPUKHAFT?! `[schnappt nach Luft]` Muss ich ein Gespenster-Gerät bauen?!
+**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse! Und … SPUKHAFT?! `[schnappt nach Luft]` Muss ich ein Gespenster-Gerät 3002 bauen?!
 
 **MODERATOR:** Erst mal nur Ohren auf, Wusl.
 
@@ -208,7 +208,7 @@
 
 >>> HÖRSPIEL-EINLAGE 5
 
-**WUSL:** `[macht Wurfgeräusche]` Hepp! Fang! Hepp! Fang! Die kleinen Teilchen spielen die ganze Zeit Ball und keiner hat MICH eingeladen! Ich bau ein Ball-Werf-Gerät—
+**WUSL:** `[macht Wurfgeräusche]` Hepp! Fang! Hepp! Fang! Die kleinen Teilchen spielen die ganze Zeit Ball und keiner hat MICH eingeladen! Ich bau ein Ball-Werf-Gerät 3002—
 
 **MODERATOR:** `[lacht]` Später, Wusl.
 
@@ -228,7 +228,7 @@
 
 >>> HÖRSPIEL-EINLAGE 6
 
-**WUSL:** `[fassungslos]` Ein WINZIGER Magnet ist stärker als die GANZE ERDE?! Ich hab so einen Magneten an meinem Kern-Knacker! Der ist STÄRKER ALS DIE ERDE und ich hab ihn nur für Zettel benutzt!
+**WUSL:** `[fassungslos]` Ein WINZIGER Magnet ist stärker als die GANZE ERDE?! Ich hab so einen Magneten an meinem Kern-Knacker 3002! Der ist STÄRKER ALS DIE ERDE und ich hab ihn nur für Zettel benutzt!
 
 **MODERATOR:** `[lacht]` Bei dieser einen Büroklammer: ja.
 
