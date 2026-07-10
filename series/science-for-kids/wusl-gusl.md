@@ -72,6 +72,8 @@
 
 **WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[hält sich ans Fell und lauscht]` Komisch. Ich hör gar nichts piepen. MEINE Fabriken piepen IMMER.
 
+**MODERATOR:** `[lacht]` Weil deine Zellen einfach funktionieren, Wusl. Ohne Piepen, ohne Qualm — und ganz ohne Brände.
+
 **WUSL:** Und hast du gehört, was der Anpeiler die ganze Zeit anpeilt? ATOME! Sogar mein FELL ist aus Atomen! MEIN Fell!
 
 **MODERATOR:** Auch dein Fell. Und das Allerverrückteste, Wusl: Innen drin ist so ein Atom fast komplett …
