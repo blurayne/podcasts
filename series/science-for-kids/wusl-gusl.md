@@ -78,7 +78,7 @@
 
 **MODERATOR:** Auch dein Fell. Und das Allerverrückteste, Wusl: Innen drin ist so ein Atom fast komplett …
 
-**WUSL:** … LEER! Leerer als meine Keksdose am Freitag! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum. `[laut]` DAS baue ich mir aufs Erfinder-Namensschild!
+**WUSL:** … LEER! Leerer als meine Keksdose am Freitag! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum.
 
 **MODERATOR:** `[lacht]` Und wenn wir jetzt die winzige Murmel in der Mitte aufmachen wollen — den Kern — dann brauchen wir …
 
@@ -143,6 +143,10 @@
 **WUSL:** Also bin ich am Ende nur … Quark-mit-s? Aus lauter Quarks?
 
 **MODERATOR:** Aus zwei großen Familien von Grundteilchen, Wusl. Und die halten nicht von allein zusammen — dafür braucht's noch etwas.
+
+**WUSL:** MARMELADE?!
+
+**MODERATOR:** `[lacht]` Nein, Wusl. Etwas viel Stärkeres.
 
 **WUSL:** `[quietscht]` Dann GANZ große Frage: Wenn ein Atom fast leer ist und alles nur aus Krümeln besteht — warum fällt das nicht auseinander? Warum falle ICH nicht auseinander?! Braucht's dafür ein Gerät?!
 
