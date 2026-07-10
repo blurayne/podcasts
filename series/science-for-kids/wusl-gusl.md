@@ -1,5 +1,5 @@
 # WUSL GUSL
-### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3000"
+### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3002"
 
 **Mitmach-Wesen**
 - **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel. Hängt an jeden seiner Gerätenamen die Versionsnummer „3002" (nur der Moderator sagt die Namen ohne Nummer).
@@ -16,11 +16,11 @@
 
 `[Fanfare. Dann ein wildes Durcheinander: Schrauben klimpern, etwas zischt, eine Feder boingt.]`
 
-**WUSL:** WUSL GUSL! Hallohallo! Moderator — KOMM SCHNELL — ich hab was ERFUNDEN! Das Größte, das Beste, das WUTZELIGSTE aller Zeiten!
+**WUSL:** Hallohallo! Moderator — KOMM SCHNELL — ich hab was ERFUNDEN! Das Größte, das Beste, das WUTZELIGSTE aller Zeiten!
 
 **MODERATOR:** `[betritt hörbar die Werkstatt]` Meine Güte, Wusl, was ist das denn alles? Es blinkt ja an allen Ecken.
 
-**WUSL:** `[stolz]` Das, mein Freund, ist meine ERFINDER-WERKSTATT! Und DAS hier — `[klopft auf Blech]` — ist mein Meisterwerk: der **SCHRUMPFOMAT 3000**! Damit machen wir uns heute klein. Ganz klein. NOCH kleiner. Und dann finden wir raus, wie klein „klein" überhaupt geht!
+**WUSL:** `[stolz]` Das, mein Freund, ist meine ERFINDER-WERKSTATT! Und DAS hier — `[klopft auf Blech]` — ist mein Meisterwerk: der **SCHRUMPFOMAT 3002**! Damit machen wir uns heute klein. Ganz klein. NOCH kleiner. Und dann finden wir raus, wie klein „klein" überhaupt geht!
 
 **MODERATOR:** `[überlegt]` Wie klein „klein" geht? Das weiß tatsächlich niemand ganz genau, Wusl. Aber ich weiß: Ganz unten, am Ende dieser Reise, wartet das größte ungelöste Rätsel der ganzen Physik.
 
@@ -240,7 +240,7 @@
 
 **MODERATOR:** `[lacht]` Bei dieser einen Büroklammer: ja.
 
-**WUSL:** Und die Mathematik blinkt einfach nur noch „Error"?! `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat, wenn ich zu viele Knöpfe drücke!
+**WUSL:** Und die Mathematik blinkt einfach nur noch „Error"?! `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat 3002, wenn ich zu viele Knöpfe drücke!
 
 **MODERATOR:** Vielleicht löst es ja mal jemand, der uns gerade zuhört. Vielleicht sogar mit einem selbstgebauten Gerät.
 
@@ -284,7 +284,7 @@
 
 **MODERATOR:** `[ruhig]` Die Quarks und die Elektronen, aus denen du bestehst, Wusl — und aus denen sogar deine ganzen Geräte bestehen — die wurden vor Milliarden Jahren tief im Inneren riesiger Sterne gemacht. Du bist buchstäblich aus Sternenstaub.
 
-**WUSL:** `[ganz leise]` Ich … und mein Schrumpfomat … sind aus dem gleichen Zeug wie die Sterne?
+**WUSL:** `[ganz leise]` Ich … und mein Schrumpfomat 3002 … sind aus dem gleichen Zeug wie die Sterne?
 
 **MODERATOR:** Du bist ein kleines lila Stück Universum, das sich selbst anschauen kann. Und das darüber staunt. Und das Geräte baut.
 
@@ -316,7 +316,7 @@
 
 | # | Segment | Kernbegriffe | Wusls Gerät / Gag | Einspieler |
 |---|---------|--------------|---------------------|------------|
-| 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3000** – falscher Knopf, Piepsstimmen | — |
+| 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3002** – falscher Knopf, Piepsstimmen | — |
 | 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub) + **Atom-Anpeiler** = alter Toaster (beide VOR dem Einspieler), „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
 | 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „jedes verlorene Haar zu GOLD!", „Quark?! Frühstück?!" + Toaster-Plopp, Neutron-Rechnung = NULL, „Quark im Hirn — äh, Quarks-Genie!", Quark-Wechsler | Einspieler 2 |
 | 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", „Ich kleb meine Geräte mit MARMELADE!", Hüpfen & Scheppern | Einspieler 3 |
