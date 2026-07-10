@@ -96,7 +96,11 @@
 
 ## 2 · WAS IM ATOM STECKT
 
-**WUSL:** Der Kern-Knacker hat GEKNACKT! Was ist da drin, was ist da drin?!
+**WUSL:** Der Kern-Knacker 3002 hat FUNKTIONIERT! Er hat das Auto geknackt!
+
+**MODERATOR:** `[schmunzelt]` Das *Atom*, Wusl. Und so, wie deine Werkbank aussieht, hat er vor allem Toastkrümel geknackt.
+
+**WUSL:** Ähm. Ja. `[kaut, schluckt]` Mhm — lecker. JAJA, aber was ist da nun DRIN, in diesen Atomen?!
 
 **MODERATOR:** Ganz ruhig, Wusl. Für das, was jetzt kommt, brauchst du dein feinstes Gerät.
 
@@ -187,6 +191,10 @@
 **WUSL:** Eine Wolke aus Vielleicht! Also so wie meine Geräte — „vielleicht funktioniert's, vielleicht auch nicht"!
 
 **MODERATOR:** `[lacht]` Ziemlich genau.
+
+**WUSL:** Und ich bin gar kein Haufen harter Kügelchen — ich bin zusammengepackte ENERGIE?! `[stolz]` Das erklärt SO vieles. Ich hab nämlich SEHR viel Energie!
+
+**MODERATOR:** `[lacht]` Das kann ich bestätigen.
 
 **WUSL:** Aber der zweite Teil — das ergibt doch überhaupt keinen Sinn! Zwei Teilchen, weit weg, und trotzdem wissen sie voneinander?!
 
@@ -312,7 +320,7 @@
 | 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub) + **Atom-Anpeiler** = alter Toaster (beide VOR dem Einspieler), „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
 | 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „jedes verlorene Haar zu GOLD!", „Quark?! Frühstück?!" + Toaster-Plopp, Neutron-Rechnung = NULL, „Quark im Hirn — äh, Quarks-Genie!", Quark-Wechsler | Einspieler 2 |
 | 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", „Ich kleb meine Geräte mit MARMELADE!", Hüpfen & Scheppern | Einspieler 3 |
-| 4 | Die Quantenwelt | Photon, Elektron-Wolke, „spukhafte Fernwirkung" | „vielleicht funktioniert's", Wusl fragt: „Oma, schick Kekse!" | Einspieler 4 |
+| 4 | Die Quantenwelt | Photon, Elektron-Wolke, Teilchen = Energiepäckchen (keine harten Kügelchen), „spukhafte Fernwirkung" | „vielleicht funktioniert's", „Ich bin zusammengepackte ENERGIE!", Wusl fragt: „Oma, schick Kekse!" | Einspieler 4 |
 | 5 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 5 |
 | 6 | Das größte Rätsel | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde, kaputter Rechner „PLONK" | Einspieler 6 |
 | 7 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
