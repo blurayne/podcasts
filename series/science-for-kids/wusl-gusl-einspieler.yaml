@@ -1,0 +1,22 @@
+slug: quarks-for-kids/wusl-gusl-einspieler
+kind: einspieler
+transcript: series/science-for-kids/wusl-gusl-einspieler.md
+model: eleven_v3
+speaker:
+  name: ERZÄHLER
+  voice_id: K5arewo38ONWm2uEeek2
+  stability: 0.50
+  similarity: 0.75
+  speaker_boost: true
+bookend: series/science-for-kids/einspieler.mp3
+music_vol: 0.40
+music_tracks:
+  a: series/science-for-kids/tanz-der-teilchen.mp3
+  b: series/science-for-kids/molecule-drift.mp3
+assign: [a, b, a, b, a, b]   # per Einspieler 1..6 (merged 1–2 min blocks); alternate the two beds
+gaps:
+  bookend: 0.20          # silence between bookend and voice
+  music_fade_in: 2.0
+  music_fade_out: 2.5
+output:
+  loudnorm: "I=-16:TP=-1.5:LRA=11"
