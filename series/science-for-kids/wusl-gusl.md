@@ -88,6 +88,10 @@
 
 **WUSL:** Dann Augen zu und an was Schönes denken. `[KRACK-ZISCH]`
 
+`[KRACK-ZISCH! Der Kern-Knacker legt los.]`
+
+`[Und mittendrin: leises Toaster-Ploppen — der Anpeiler macht schon wieder Toast.]`
+
 ---
 
 ## 2 · WAS IM ATOM STECKT
@@ -98,11 +102,13 @@
 
 **WUSL:** Der **QUARK-GUCKER**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` Ich seh was! Winzige Kügelchen! Überall Kügelchen!
 
+`[Der Quark-Gucker piept feierlich.]`
+
 **MODERATOR:** Dann hör genau zu, was das alles ist — vom Kern bis zu deinen allerkleinsten Kügelchen.
 
 >>> HÖRSPIEL-EINLAGE 2
 
-**WUSL:** GOLD?! `[hektisch]` Moderator, kann mein Kern-Knacker aus meinem Fell neunundsiebzig Protonen machen?! Dann bin ich REICH und muss nie wieder Geräte aus Toastern bauen!
+**WUSL:** GOLD?! `[hektisch]` Moderator, kann mein Kern-Knacker in ein Haar einfach neunundsiebzig Protonen reinstopfen?! Ich verliere JEDEN Tag Fell — dann mach ich jedes verlorene Haar von meinem Pelz zu GOLD! Ich bin REICH und muss nie wieder Geräte aus Toastern bauen!
 
 **MODERATOR:** `[lacht]` So einfach ist Goldmachen leider nicht.
 
@@ -116,9 +122,11 @@
 
 **WUSL:** `[erleichtert, dann enttäuscht]` Ohh. … Kein Marmeladenbrot da unten? Schade. `[schnüffelt am Gerät]` Riecht aber ein bisschen nach Toast. Das ist der Anpeiler.
 
+`[Wie aufs Stichwort: leises Toaster-Ploppen.]`
+
 **MODERATOR:** Und jetzt du, Herr Erfinder: Die schönste Rechnung der Welt geht auch fürs Neutron — up, down, down. Was kommt raus?
 
-**WUSL:** `[rechnet ganz laut, jubelnd]` Plus zwei Drittel … minus ein Drittel … und nochmal minus ein Drittel … NULL! Genau NULL — neutral, wie's sein muss! `[jubelt]` ICH BIN DER QUARK-PROFESSOR! Mein Kopf ist auch ein Gerät! Ein Fell-Gerät!
+**WUSL:** `[rechnet ganz laut, jubelnd]` Plus zwei Drittel … minus ein Drittel … und nochmal minus ein Drittel … NULL! Genau NULL — neutral, wie's sein muss! `[jubelt]` ICH BIN DER QUARK-PROFESSOR! Ich hab Quark im Hirn! `[Pause]` … Äh — QUARKS! Quarks-Genie, meinte ich! Mein Kopf ist auch ein Gerät! Ein Fell-Gerät!
 
 **MODERATOR:** `[lacht]` Perfekt gerechnet, Wusl.
 
@@ -149,6 +157,10 @@
 **WUSL:** `[baut hektisch, gibt auf, winkt in die Luft]` Netz wieder eingepackt. Tschüüüss, Geisterteilchen! Grüßt die andere Seite der Erde!
 
 **MODERATOR:** Und auseinandergefallen bist du auch nicht — die vier Kräfte halten dich fest zusammen.
+
+**WUSL:** Und die starke Kraft ist der stärkste KLEBER im Universum?! `[kichert]` Dabei kleb ich meine Geräte immer noch mit MARMELADE zusammen! Kein Wunder, dass dauernd was auseinanderfällt!
+
+**MODERATOR:** `[lacht]` Vielleicht rüstest du um. Marmelade hält jedenfalls keinen Atomkern zusammen.
 
 **WUSL:** Aber die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Baustelle!
 
@@ -278,7 +290,9 @@
 
 **MODERATOR:** Und Fragen sind immer erlaubt.
 
-**WUSL:** IMMER! Tschüssikowski! WUSL GUSL!
+`[„Pling!" — der Atom-Anpeiler wirft eine allerletzte Scheibe Toast aus.]`
+
+**WUSL:** IMMER! `[schnüffelt]` Ooh — TOAST! Moderator, hab ich eigentlich noch irgendwo ein Glas Marmelade stehen? … Egal, find ich später! Tschüssikowski! WUSL GUSL!
 
 `[Fanfare. Ein letztes „Pling", eine Feder boingt, irgendwas fällt um. Musik hoch, ausblenden.]`
 
@@ -292,10 +306,10 @@
 |---|---------|--------------|---------------------|------------|
 | 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3000** – falscher Knopf, Piepsstimmen | — |
 | 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub) + **Atom-Anpeiler** = alter Toaster (beide VOR dem Einspieler), „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
-| 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „reich!", „Quark?! Frühstück?!", Neutron-Rechnung = NULL, Quark-Wechsler | Einspieler 2 |
-| 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", Hüpfen & Scheppern | Einspieler 3 |
+| 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „jedes verlorene Haar zu GOLD!", „Quark?! Frühstück?!" + Toaster-Plopp, Neutron-Rechnung = NULL, „Quark im Hirn — äh, Quarks-Genie!", Quark-Wechsler | Einspieler 2 |
+| 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", „Ich kleb meine Geräte mit MARMELADE!", Hüpfen & Scheppern | Einspieler 3 |
 | 4 | Die Quantenwelt | Photon, Elektron-Wolke, „spukhafte Fernwirkung" | „vielleicht funktioniert's", Wusl fragt: „Oma, schick Kekse!" | Einspieler 4 |
 | 5 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 5 |
 | 6 | Das größte Rätsel | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde, kaputter Rechner „PLONK" | Einspieler 6 |
 | 7 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
-| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf | — |
+| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf; Anpeiler wirft letzte Scheibe Toast aus, Wusl sucht die Marmelade | — |
