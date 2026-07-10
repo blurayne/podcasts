@@ -42,41 +42,33 @@
 
 ---
 
-## 1 · DIE GRUNDIDEE
+## 1 · VON RIESIG BIS ZUM ATOM
 
 **MODERATOR:** Bevor wir tiefer schrumpfen, Wusl — eine Frage für alle: Weißt du, woraus du eigentlich bestehst?
 
 **WUSL:** `[stolz]` Na, aus Fell und Genie natürlich! Und ein bisschen Hunger.
 
-**MODERATOR:** `[schmunzelt]` Naja — genauer gesagt aus winzigen Bausteinen. Und diese Bausteine haben selbst wieder Bausteine. Immer kleiner, immer weiter.
+**MODERATOR:** `[schmunzelt]` Naja — genauer gesagt aus winzigen Bausteinen. Und diese Bausteine haben selbst wieder Bausteine. Immer kleiner, immer weiter — von riesig bis ganz nach unten.
 
 **WUSL:** Und deshalb hab ich für JEDE Ebene ein eigenes Gerät gebaut! `[rasselt mit Werkzeug]` Zell-Zoomer, Atom-Anpeiler, Kern-Knacker, Quark-Gucker — alles selbst gelötet!
 
 **MODERATOR:** Alles selbst gelötet …?
 
-**WUSL:** `[stolz]` Und nur DREI kleine Brände! Los — Zell-Zoomer, anwerfen!
+**WUSL:** `[stolz]` Und nur DREI kleine Brände! Los — für die erste Stufe: Zell-Zoomer, anwerfen!
 
 `[Ein Gerät macht „wubwubwub".]`
 
+**WUSL:** Und was ist die erste Stufe, Moderator? Das kleinste lebendige Ding?
+
+**MODERATOR:** Genau. Der Zell-Zoomer bringt uns zur Zelle — und von dort noch tiefer, ins Molekül und bis ins Atom. Hör mal ganz genau zu, Wusl.
+
 >>> HÖRSPIEL-EINLAGE 1
-
----
-
-## 2 · DIE ZELLE
-
-**WUSL:** Und erster Halt: Die kleinste lebendige Sache! Was ist das, Moderator?
-
-**MODERATOR:** Der Zell-Zoomer bringt uns zur **Zelle**. Hör mal genau zu, Wusl.
-
->>> HÖRSPIEL-EINLAGE 2
 
 **WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[klopft auf sein Fell]` Und keine hat mich je gefragt, ob sie mal Pause machen darf! Frechheit!
 
-**WUSL:** Und welches Gerät zoomt da noch tiefer rein, zu diesen Molekülen?
+**MODERATOR:** `[lacht]` Und dein Zell-Zoomer hat sie alle gefunden.
 
-**MODERATOR:** Dein Atom-Anpeiler.
-
-**WUSL:** … den ATOM-ANPEILER! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
+**WUSL:** Und dann sind wir immer weiter runter — zu den Molekülen! DAFÜR hab ich den ATOM-ANPEILER angeworfen! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
 
 **MODERATOR:** Aus einem …?
 
@@ -84,25 +76,13 @@
 
 `[„Pling!" — und leises Toaster-Ploppen im Hintergrund.]`
 
----
+**WUSL:** Und der Anpeiler hat mir gesagt: Auch mein FELL ist aus Atomen! MEIN Fell!
 
-## 3 · MOLEKÜLE & ATOME
+**MODERATOR:** Auch dein Fell. Und weißt du, was die Erzähler-Stimme über das Innere von so einem Atom gesagt hat, Wusl?
 
-**MODERATOR:** Also Wusl — weiter in die Tiefe. Was ist ein Molekül?
+**WUSL:** LEER! Fast komplett LEER! Leerer als meine Keksdose am Freitag! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum. `[laut]` DAS baue ich mir aufs Erfinder-Namensschild!
 
-**WUSL:** Noch kleiner als eine Zelle. Irgendwas mit Chemie und so, oder?
-
->>> HÖRSPIEL-EINLAGE 3
-
-**WUSL:** Auch von meinem FELL?! Auch mein FELL ist aus Atomen?!
-
-**MODERATOR:** Auch dein Fell. Und jetzt kommt das Verrückteste, Wusl — pass auf, was in so einem Atom drinsteckt.
-
->>> HÖRSPIEL-EINLAGE 4
-
-**WUSL:** LEER?! Leerer als meine Keksdose am Freitag?! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum. `[laut]` DAS baue ich mir aufs Erfinder-Namensschild!
-
-**MODERATOR:** Und wenn wir dieses fast leere Atom aufmachen wollen, brauchen wir …
+**MODERATOR:** Eine Murmel in einem Fußballstadion — der Kern in der Mitte, die Elektronen ganz weit außen. Und wenn wir jetzt diesen winzigen Kern aufmachen wollen, brauchen wir …
 
 **WUSL:** … den KERN-KNACKER! Mein gefährlichstes Gerät! `[dramatisch]` Schutzbrille auf, Moderator!
 
@@ -112,55 +92,29 @@
 
 ---
 
-## 4 · IM ATOMKERN — PROTON & NEUTRON
+## 2 · WAS IM ATOM STECKT
 
 **WUSL:** Der Kern-Knacker hat GEKNACKT! Was ist da drin, was ist da drin?!
 
-**MODERATOR:** Was steckt denn in so einem Kern, nach dem Knacken? Hör zu.
+**MODERATOR:** Ganz ruhig, Wusl. Da steckt eine ganze Welt drin — vom Kern bis zu den allerkleinsten Kügelchen. Hör genau zu.
 
->>> HÖRSPIEL-EINLAGE 5
+>>> HÖRSPIEL-EINLAGE 2
 
 **WUSL:** GOLD?! `[hektisch]` Moderator, kann mein Kern-Knacker aus meinem Fell neunundsiebzig Protonen machen?! Dann bin ich REICH und muss nie wieder Geräte aus Toastern bauen!
 
 **MODERATOR:** `[lacht]` So einfach ist Goldmachen leider nicht.
 
-**WUSL:** Und die kleinen Flitzedinger — die Elektronen — die machen BLITZE?! `[KRAWUMMS-Imitation]` Deshalb piept mein ganzer Werkstatt-Kram die ganze Zeit — das sind die Flitzedinger! Ich wusste es!
+**WUSL:** Und die kleinen Flitzedinger außen — die Elektronen — die machen BLITZE?! `[KRAWUMMS-Imitation]` Deshalb piept mein ganzer Werkstatt-Kram die ganze Zeit — das sind die Flitzedinger! Ich wusste es!
 
----
+**MODERATOR:** `[lacht]` Und dann kam dein feinstes Gerät, Wusl — der Quark-Gucker.
 
-## 5 · DER SCHNITT: ES GEHT NOCH KLEINER
-
-**WUSL:** Und? Fertig? Proton, Neutron, Flitzeding? Kann ich meine Geräte wieder wegräumen?
-
-**MODERATOR:** Bei manchen Teilchen schon. Aber bei anderen …
-
-**WUSL:** `[gespannt]` … ich höre ein „AAAABER" …
-
-**MODERATOR:** Und DAFÜR brauchst du dein FEINSTES Gerät. Wirf mal den Quark-Gucker an, Wusl.
-
-**WUSL:** Der **QUARK-GUCKER**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie!
-
->>> HÖRSPIEL-EINLAGE 6
-
-**WUSL:** `[guckt durch den Gucker]` … Ich seh drei kleine Kügelchen. Wie heißen die, Moderator?!
-
-**MODERATOR:** **Quarks.**
-
-**WUSL:** QUARK?! `[fällt fast um]` Wie der aus dem Kühlschrank?! Mit Beeren?! Moderator, mein Quark-Gucker zeigt FRÜHSTÜCK, ich hab was falsch gelötet—
+**WUSL:** Der **QUARK-GUCKER**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` … Ich hab drei kleine Kügelchen gesehen! Die heißen QUARK?! `[fällt fast um]` Wie der aus dem Kühlschrank?! Mit Beeren?! Ich hab was falsch gelötet—
 
 **MODERATOR:** `[lacht]` Nein, nein — *Quarks*, mit s am Ende. Kein Frühstück.
 
 **WUSL:** `[erleichtert, dann enttäuscht]` Ohh. … Kein Marmeladenbrot da unten? Schade. `[schnüffelt am Gerät]` Riecht aber ein bisschen nach Toast. Das ist der Anpeiler.
 
----
-
-## 6 · QUARKS & DAS BAU-REZEPT
-
-**MODERATOR:** Also Wusl — wie sind diese Quarks gebaut? Wie viele Sorten gibt es? Aufgepasst, jetzt kommt die schönste Rechnung der Welt.
-
-**WUSL:** Rechnung?! Ihh, das riecht nach Mathe-Hausaufgabe! Hat mein Gucker auch einen Rechen-Knopf?
-
->>> HÖRSPIEL-EINLAGE 7
+**MODERATOR:** Und hast du die schönste Rechnung der Welt gehört? Up, up, down macht das Proton — und heraus kommt genau plus eins.
 
 **WUSL:** `[rechnet ganz laut, jubelnd]` Zwei Drittel und nochmal zwei Drittel und minus ein Drittel … und heraus kommt EINS! Hab ich's?! `[jubelt]` ICH BIN DER QUARK-PROFESSOR! Mein Kopf ist auch ein Gerät! Ein Fell-Gerät!
 
@@ -174,13 +128,13 @@
 
 ---
 
-## 7 · DIE ZWEI FAMILIEN
+## 3 · ZWEI FAMILIEN, VIER KRÄFTE
 
 **WUSL:** Also bin ich am Ende nur … Quark-mit-s? Aus lauter Quarks?
 
-**MODERATOR:** Aus zwei großen Familien von Grundteilchen, Wusl. Hör mal.
+**MODERATOR:** Aus zwei großen Familien von Grundteilchen, Wusl. Und die halten nicht von allein zusammen — dafür braucht's noch etwas. Hör mal.
 
->>> HÖRSPIEL-EINLAGE 8
+>>> HÖRSPIEL-EINLAGE 3
 
 **WUSL:** `[quietscht, tastet sich ab]` DURCH MICH DURCH?! Diese Geisterteilchen fliegen einfach DURCH MICH DURCH?! Und mein Geräte-Piepsen hat sie nicht mal aufgehalten?!
 
@@ -188,53 +142,33 @@
 
 **WUSL:** `[baut hektisch, gibt auf, winkt in die Luft]` Netz wieder eingepackt. Tschüüüss, Geisterteilchen! Grüßt die andere Seite der Erde!
 
----
+**WUSL:** Aber Moderator — GANZ große Frage: Wenn ein Atom fast leer ist und alles aus Krümeln besteht — warum fällt das nicht auseinander? Warum falle ICH nicht auseinander?
 
-## 8 · DIE VIER KRÄFTE
-
-**WUSL:** Moderator — GANZ große Frage: Wenn ein Atom fast leer ist und alles aus Krümeln besteht — warum fällt das nicht auseinander? Warum falle ICH nicht auseinander? Braucht's dafür ein Gerät?!
-
-**MODERATOR:** Kein Gerät nötig. Dafür sorgen die vier Grundkräfte. Zähl mal mit.
-
->>> HÖRSPIEL-EINLAGE 9
+**MODERATOR:** Dafür sorgen die vier Kräfte, von denen die Erzähler-Stimme erzählt hat. Hast du gehört, welche die Sonne anmacht?
 
 **WUSL:** Die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Baustelle!
 
-**MODERATOR:** `[lacht]` Guter Punkt. Und die Gravitation kennst du ganz genau, Wusl.
+**MODERATOR:** `[lacht]` Guter Punkt. Und die vierte Kraft, die Gravitation, kennst du ganz genau, Wusl.
 
-**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld!
-
-**WUSL:** Autsch. Aber: Cliffhänger! Erst noch mehr Wunder!
+**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld! Autsch. Aber: Cliffhänger! Erst noch mehr Wunder!
 
 ---
 
-## 9 · QUANTEN — ALLES IN PORTIONEN
+## 4 · DIE QUANTENWELT
 
-**MODERATOR:** Jetzt wird's seltsam, Wusl. In der Welt der kleinsten Dinge gibt es nämlich keine halben Sachen. Hör gut zu.
+**MODERATOR:** Jetzt wird's seltsam, Wusl. In der Welt der kleinsten Dinge gibt es nämlich keine halben Sachen — und noch etwas viel Spukhafteres. Hör gut zu.
 
-**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse!
+**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse! Und … SPUKHAFT?! `[schnappt nach Luft]` Muss ich ein Gespenster-Gerät bauen?!
 
->>> HÖRSPIEL-EINLAGE 10
+>>> HÖRSPIEL-EINLAGE 4
 
 **WUSL:** Eine Wolke aus Vielleicht! Also so wie meine Geräte — „vielleicht funktioniert's, vielleicht auch nicht"!
 
-**MODERATOR:** `[lacht]` Ziemlich genau. Und gleich wird's noch spukhafter.
+**MODERATOR:** `[lacht]` Ziemlich genau.
 
-**WUSL:** `[schnappt nach Luft]` SPUKHAFT?!
+**WUSL:** Aber der zweite Teil — das ergibt doch überhaupt keinen Sinn! Zwei Teilchen, weit weg, und trotzdem wissen sie voneinander?!
 
----
-
-## 10 · VERSCHRÄNKUNG
-
-**WUSL:** Spukhaft — jetzt bin ich HELLWACH! Muss ich ein Gespenster-Gerät bauen?!
-
-**MODERATOR:** Fast so gut. Hörst du, was Verschränkung ist?
-
->>> HÖRSPIEL-EINLAGE 11
-
-**WUSL:** Das … das ergibt doch überhaupt keinen Sinn!
-
-**MODERATOR:** `[lacht]` Fand Einstein auch. Aber es stimmt.
+**MODERATOR:** `[lacht]` Fand Einstein auch. „Spukhafte Fernwirkung", hat er gesagt. Aber es stimmt.
 
 **WUSL:** `[flüstert]` Spukhafte Fern-Wirkung. Das kritzel ich mir auf ein Gerät. Das klingt gefährlich klug.
 
@@ -248,13 +182,13 @@
 
 ---
 
-## 11 · ZWEI REGELBÜCHER
+## 5 · ZWEI REGELBÜCHER
 
 **WUSL:** Okay Moderator, ich fass zusammen: winzige Bausteine — check. Vier Kräfte — check. Gibt's dafür EIN großes Zauberbuch mit allen Regeln? So eine Erfinder-Anleitung fürs Universum?
 
-**MODERATOR:** Jetzt kommt der spannendste Punkt der ganzen Folge, Wusl.
+**MODERATOR:** Jetzt kommt der spannendste Punkt der ganzen Folge, Wusl. Ein Buch reicht nämlich nicht.
 
->>> HÖRSPIEL-EINLAGE 12
+>>> HÖRSPIEL-EINLAGE 5
 
 **WUSL:** `[macht Wurfgeräusche]` Hepp! Fang! Hepp! Fang! Die kleinen Teilchen spielen die ganze Zeit Ball und keiner hat MICH eingeladen! Ich bau ein Ball-Werf-Gerät—
 
@@ -262,25 +196,25 @@
 
 **WUSL:** Und die vierte Kraft macht einfach eine Delle ins Trampolin?! Das sind ja zwei völlig verschiedene Spiele!
 
-**MODERATOR:** Und genau da, Wusl, beginnt das Problem.
+**MODERATOR:** Genau zwei, Wusl. Und genau da beginnt das Problem.
 
 ---
 
-## 12 · WARUM DIE GRAVITATION EIN PROBLEM IST
+## 6 · DAS GRÖSSTE RÄTSEL
 
 `[Sogar die Geräte hören auf zu piepen.]`
 
 **WUSL:** `[leise, gespannt]` Sogar meine Geräte sind still. Erklär's mir, Moderator.
 
-**MODERATOR:** Dann hör ganz genau zu, Wusl — jetzt kommt das größte Rätsel.
+**MODERATOR:** Dann hör ganz genau zu, Wusl — jetzt kommt das größte Rätsel der ganzen Physik.
 
->>> HÖRSPIEL-EINLAGE 13
+>>> HÖRSPIEL-EINLAGE 6
 
 **WUSL:** `[fassungslos]` Ein WINZIGER Magnet ist stärker als die GANZE ERDE?! Ich hab so einen Magneten an meinem Kern-Knacker! Der ist STÄRKER ALS DIE ERDE und ich hab ihn nur für Zettel benutzt!
 
 **MODERATOR:** `[lacht]` Bei dieser einen Büroklammer: ja.
 
-**WUSL:** `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat, wenn ich zu viele Knöpfe drücke!
+**WUSL:** Und die Mathematik blinkt einfach nur noch „Error"?! `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat, wenn ich zu viele Knöpfe drücke!
 
 **MODERATOR:** Vielleicht löst es ja mal jemand, der uns gerade zuhört. Vielleicht sogar mit einem selbstgebauten Gerät.
 
@@ -288,7 +222,7 @@
 
 ---
 
-## 13 · ÜBERBLICK — DIE GANZE REISE
+## 7 · ÜBERBLICK — DIE GANZE REISE
 
 **WUSL:** Moderator, bevor mir das Fell qualmt und die Werkstatt Feuer fängt — machen wir die ganze Reise nochmal von riesig nach winzig? Und welches Gerät war wo?
 
@@ -314,7 +248,7 @@
 
 ---
 
-## 14 · OUTRO
+## 8 · OUTRO
 
 `[Warme Musik. Die Geräte piepen wieder leise, freundlich.]`
 
@@ -355,17 +289,11 @@
 | # | Segment | Kernbegriffe | Wusls Gerät / Gag | Einspieler |
 |---|---------|--------------|---------------------|------------|
 | 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3000** – falscher Knopf, Piepsstimmen | — |
-| 1 | Grundidee | Alles aus Kleinerem | „nur drei kleine Brände" | Einspieler 1 |
-| 2 | Zelle | 30 Billionen, 13 Nullen | **Zell-Zoomer** (wubwubwub) | Einspieler 2 |
-| 3 | Molekül & Atom | H₂O, Kern+Hülle, fast leer | **Atom-Anpeiler** = alter Toaster | Einspieler 3 (Molekül) + 4 (Atom, Leere) |
-| 4 | Kern | Proton(+), Neutron(0), Elektron(−) | **Kern-Knacker**, Gold=79, „reich!" | Einspieler 5 |
-| 5 | Der Schnitt | Elektron elementar, Quarks | **Quark-Gucker** mit Glitzer | Einspieler 6 |
-| 6 | Quarks | up +⅔, down −⅓; Proton +1, Neutron 0 | „Quark?! Frühstück?!" / Quark-Wechsler | Einspieler 7 |
-| 7 | Zwei Familien | Quarks & Leptonen, Neutrino | Neutrino-Fangnetz scheitert | Einspieler 8 |
-| 8 | Vier Kräfte | stark, em, schwach, Gravitation | Hüpfen, Gerät scheppert | Einspieler 9 |
-| 9 | Quanten | Photon, Elektron-Wolke | „vielleicht funktioniert's" | Einspieler 10 |
-| 10 | Verschränkung | „spukhafte Fernwirkung" | „Oma, schick Kekse!" | Einspieler 11 |
-| 11 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 12 |
-| 12 | Gravitationsproblem | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde | Einspieler 13 |
-| 13 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
-| 14 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf | — |
+| 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub), **Atom-Anpeiler** = alter Toaster, „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
+| 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, „reich!", **Quark-Gucker** mit Glitzer, „Quark?! Frühstück?!", Quark-Wechsler | Einspieler 2 |
+| 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", Hüpfen & Scheppern | Einspieler 3 |
+| 4 | Die Quantenwelt | Photon, Elektron-Wolke, „spukhafte Fernwirkung" | „vielleicht funktioniert's", „Oma, schick Kekse!" | Einspieler 4 |
+| 5 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 5 |
+| 6 | Das größte Rätsel | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde, kaputter Rechner „PLONK" | Einspieler 6 |
+| 7 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
+| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf | — |
