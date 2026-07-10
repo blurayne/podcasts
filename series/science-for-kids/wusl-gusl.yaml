@@ -22,12 +22,6 @@ speakers:
     stability: 0.50
     similarity: 0.75
     speaker_boost: true
-  ERZÄHLER:
-    voice_id: FTNCalFNG5bRnkkaP5Ug
-    speaker_key: erzaehler
-    stability: 0.50
-    similarity: 0.75
-    speaker_boost: true
   WUSL_MAUS:
     voice_id: TU66eqOHxLbh8iieomGh
     speaker_key: wusl_maus
@@ -107,19 +101,16 @@ music:
 
 cue_rules:
   # music / action cues FIRST (specific) so the greedy sfx keyword "piep" does not
-  # steal cues like "…geheimnisvoller… piepen" (§12) or "Warme Musik… piepen" (§14).
+  # steal cues like "Warme Musik… piepen" (§14).
+  # NOTE: the §12 "geheimnisvoller/ruhiger" mystery_bed cue was removed — §12 now
+  # plays Einspieler 13, which carries its OWN mysterious music bed; a second bed
+  # here would double the music over the insert. The §14 outro bed stays.
   - keywords: ["ausblenden"]
     action: outro
   - keywords: ["musik hoch"]
     action: outro
   - keywords: ["warme musik"]
     music: workshop_atmo
-    action: bed_on
-  - keywords: ["geheimnisvoll"]
-    music: mystery_bed
-    action: bed_on
-  - keywords: ["ruhiger"]
-    music: mystery_bed
     action: bed_on
   # sfx cues
   - keywords: ["schwupp"]
@@ -149,10 +140,28 @@ cue_rules:
   - keywords: ["piep"]
     sfx: device_beep
 
+# Erklär-Einspieler: the 13 ERZÄHLER blocks now live as standalone musical inserts,
+# spliced in at the `>>> HÖRSPIEL-EINLAGE N` markers in the transcript.
+# Source text: series/science-for-kids/wusl-gusl-einspieler.md
+einlagen:
+  1:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_01.mp3
+  2:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_02.mp3
+  3:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_03.mp3
+  4:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_04.mp3
+  5:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_05.mp3
+  6:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_06.mp3
+  7:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_07.mp3
+  8:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_08.mp3
+  9:  out/quarks-for-kids/wusl-gusl-einspieler/einspieler_09.mp3
+  10: out/quarks-for-kids/wusl-gusl-einspieler/einspieler_10.mp3
+  11: out/quarks-for-kids/wusl-gusl-einspieler/einspieler_11.mp3
+  12: out/quarks-for-kids/wusl-gusl-einspieler/einspieler_12.mp3
+  13: out/quarks-for-kids/wusl-gusl-einspieler/einspieler_13.mp3
+
 gaps:
-  base: 0.55
-  switch: 0.90
-  sfx_tail: 0.35
+  base: 0.30
+  switch: 0.50
+  sfx_tail: 0.20
 
 output:
   final: wusl-gusl.mp3

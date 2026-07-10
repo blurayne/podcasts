@@ -50,6 +50,7 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
 - **README links to the live site.** `README.md` must always link the published GitHub Pages page (<https://blurayne.github.io/podcasts/>) near the top.
 - **index.html links back to the repo.** The Pages site (`index.html`) must keep a visible link back to the GitHub repository (<https://github.com/blurayne/podcasts>) — currently in the footer.
 - **Brand is Wusl Gusl (original name).** The kids' show was renamed from „Woozle Goozle" to **Wusl Gusl** to avoid the „Woozle Goozle" trademark. The produced `wusl-gusl.mp3` lives in the git-ignored `out/` dir and is never committed (same as all produced audio).
+- **Kids' action podcast gaps (Wusl Gusl and similar).** For fast-paced children's podcasts use tighter `gaps` than the engine defaults: `base: 0.30`, `switch: 0.50`, `sfx_tail: 0.20`. Apply these in the YAML spec so both `produce.py mix` and `rpp_export.py` use the same timing. The standard (adult) defaults are `base: 0.55`, `switch: 0.90`, `sfx_tail: 0.35`.
 - **Use the `el` CLI for all ElevenLabs requests.** Never hand-roll HTTP calls;
   use `scripts/el.py` (CLI + importable library). It is documented in
   [`docs/API-CLI.md`](docs/API-CLI.md). Always pass `--skip-existing` / `skip_existing=True`
@@ -77,6 +78,7 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   (full texts in `LICENSES/`). Keep `LICENSE.md` in sync when adding new kinds
   of assets or third-party material.
 - **Einspieler → produce analog + splice, with light music.** When an episode's source includes Einspieler / Hörspielszenen, produce them the same way (embedded scenes) and splice them into the podcast at their docking points (`>>> HÖRSPIEL-EINLAGE N` markers via the `einlagen:` mechanism). Also add short, dezent music underlay (Untermalung) at fitting transitions/moments.
+- **Kids' narrator blocks → musical Einspieler (Wusl Gusl pattern).** In the kids' shows a long **ERZÄHLER** block (spoken narration **> 5 s**) does not run as a plain voice line inside the mix — it becomes a standalone, music-bedded **Einspieler** produced by `scripts/einspieler.py` and spliced into the podcast at a `>>> HÖRSPIEL-EINLAGE N` marker. If a narrator bit is only **very short (< 5 s)**, fold it into **Beni** (the Moderator) instead of making an Einspieler, and trim the dialogue so a fact is never said twice (once in the insert, once in the banter): facts live in the Einspieler, setup questions + comedic reactions live in the dialogue. Each Einspieler = `einspieler.mp3` bookend → background music at **40 %** (`series/science-for-kids/tanz-der-teilchen.mp3` / `molecule-drift.mp3`, alternating; the longer track for the longest inserts) → narrator voice over the bed → `einspieler.mp3` bookend. **Caveat when removing ERZÄHLER lines from a transcript:** doing so shifts every speech index, so the podcast's dialogue stems must be re-generated — reuse the cache by copying old stems onto the new index-named paths matched on their `{speaker}_{textslug}` suffix, then `gen` only fills the genuinely changed lines (saves credits vs. a full re-voice).
 
 ## Repository layout
 
@@ -105,6 +107,14 @@ Folge 2 = `S01-02` („Der Parallelbogen"). Per episode there are Hörspiel-Szen
   (ReaEQ→ReaFIR→ReaComp→ReaLimit; not embedded — valid FX state must come from a real
   REAPER). Render: `reaper -renderproject <rpp>` (headless Linux: wrap in `xvfb-run`);
   the deterministic final mix stays with `produce.py … mix`.
+- `scripts/einspieler.py` — build music-bedded narrator **Einspieler** from a spec
+  (`parse`/`gen`/`build`/`all`; `import produce` for slug/dur/ffmpeg reuse, like
+  `rpp_export.py`). Spec `series/science-for-kids/wusl-gusl-einspieler.yaml`: `speaker`
+  (ERZÄHLER voice, `eleven_v3`), `bookend`, `music_tracks {a,b}` + `music_vol: 0.40` +
+  per-insert `assign:` list, transcript of `## N` blocks (`wusl-gusl-einspieler.md`).
+  `gen` TTS's each block to `out/quarks-for-kids/wusl-gusl-einspieler/voices/`; `build`
+  mixes `bookend + voice-over-bed(40 %) + bookend` → `einspieler_NN.mp3`; the podcast's
+  `einlagen:` map points at those files. Both phases are cache-safe (`skip_existing`).
 - `scripts/hoerspiel.py` — reusable Hörspiel engine (`gen`/`mix`/`book`/`all`) driven by a
   `Scene` spec. Model `eleven_v3`; inline v3 audio tags (`[shouting]`,`[whispers]`,`[calm]`,
   `[sarcastic]`,`[angry]`,`[sighs]`). `Scene(slug=…, name=…, source_md=…, analysis=[…])`:

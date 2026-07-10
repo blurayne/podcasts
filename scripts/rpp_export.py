@@ -218,7 +218,7 @@ LANE_ORDER = ["VOICE", "SFX", "EINLAGE",
               "MUSIC · BED", "MUSIC · UNDERSCORE", "MUSIC · CUES"]
 
 
-def emit_rpp(spec, placements, project_title):
+def emit_rpp(spec, placements, project_title, render_dir=None, render_stem=None):
     music_gain = float(spec.get("music_gain", 1.0))
     by_lane = {}
     for p in placements:
@@ -233,10 +233,17 @@ def emit_rpp(spec, placements, project_title):
     A("  TEMPO 120 4 4")
     A("  SAMPLERATE 44100 0 0")
     A("  LOOP 0")
-    A(f"  RENDER_PATTERN {_q(project_title)}")
-    A("  RENDER_BOUNDSFLAG 1")   # 1 = entire project
-    A("  RENDER_CHANNELS 2")
-    A("  RENDER_SRATE 44100")
+    safe_title = "".join(c if c.isalnum() or c in "-_." else "_" for c in project_title)
+    # RENDER_FILE = output directory; RENDER_PATTERN = bare filename stem (no ext).
+    # REAPER appends RENDER_PATTERN + codec extension to RENDER_FILE.
+    A(f"  RENDER_PATTERN {_q(render_stem or safe_title)}")
+    if render_dir:
+        A(f"  RENDER_FILE {_q(render_dir + '/')}")
+        A("  RENDER_1X 0")
+        A("  RENDER_RANGE 1 0 0 18 1000")   # 1 = entire project
+        A("  RENDER_RESAMPLE 3 0 1")
+        A("  RENDER_ADDTOPROJ 0")
+        A("  RENDER_DITHER 0")
     for lane in lanes:
         vol = LANE_BASEVOL.get(lane, 1.0)
         if lane in MUSIC_LANES:
@@ -304,11 +311,25 @@ def main():
     ap.add_argument("-o", "--out", help="output .rpp path (default: out/<slug>/<title>.rpp)")
     ap.add_argument("--fake-durations", type=float, metavar="SECS", default=None,
                     help="structural dry-run: nominal item lengths, no ffmpeg/stems needed")
+    ap.add_argument("--gap-scale", type=float, metavar="FACTOR", default=None,
+                    help="multiply all gap values (base/switch/sfx_tail) by FACTOR "
+                         "(e.g. 0.5 for snappier kids pacing). Overrides the spec's gaps section.")
+    ap.add_argument("--render", action="store_true",
+                    help="embed render settings in the RPP and immediately invoke "
+                         "`reaper -renderproject` to produce the final MP3.")
     args = ap.parse_args()
 
     spec = produce.load_spec(args.spec)
     if spec.get("kind", "podcast") != "podcast":
         sys.exit("rpp_export currently supports kind: podcast only")
+
+    if args.gap_scale is not None:
+        base = spec.get("gaps", {})
+        spec["gaps"] = {
+            "base":     (base.get("base",     0.55)) * args.gap_scale,
+            "switch":   (base.get("switch",   0.90)) * args.gap_scale,
+            "sfx_tail": (base.get("sfx_tail", 0.35)) * args.gap_scale,
+        }
 
     title = spec.get("title") or spec["slug"].replace("/", "_")
     placements = build_placements(spec, fake=args.fake_durations)
@@ -320,8 +341,21 @@ def main():
     safe = "".join(c if c.isalnum() or c in "-_." else "_" for c in title)
     rpp_path = args.out or os.path.join(out_dir, safe + ".rpp")
 
+    render_mp3 = None
+    if args.render:
+        final = spec.get("output", {}).get("final", "out.mp3")
+        final_base = os.path.basename(final)
+        safe_base = "".join(c if c.isalnum() or c in "-_." else "_" for c in final_base)
+        # REAPER treats RENDER_FILE as a directory and appends RENDER_PATTERN+ext —
+        # so point it at the output dir; the pattern becomes the bare stem name.
+        render_mp3 = os.path.join(ROOT, "out", spec["slug"])
+
+    render_stem = None
+    if args.render:
+        render_stem = os.path.splitext(safe_base)[0]
+
     with open(rpp_path, "w", encoding="utf-8") as f:
-        f.write(emit_rpp(spec, placements, title))
+        f.write(emit_rpp(spec, placements, title, render_dir=render_mp3, render_stem=render_stem))
 
     notes_path = os.path.join(os.path.dirname(rpp_path), "MIX-NOTES.md")
     with open(notes_path, "w", encoding="utf-8") as f:
@@ -339,6 +373,18 @@ def main():
     print(f"   notes → {notes_path}")
     if args.fake_durations is not None:
         print("   (fake durations — offsets illustrative; re-run after `gen` for real timing)")
+
+    if args.render:
+        import subprocess
+        print(f"\nRendering via REAPER → {render_mp3}")
+        result = subprocess.run(["reaper", "-renderproject", rpp_path],
+                                capture_output=True, text=True)
+        if result.returncode == 0:
+            print("REAPER render complete.")
+        else:
+            print(f"REAPER exited {result.returncode}")
+            if result.stderr:
+                print(result.stderr[:500])
 
 
 if __name__ == "__main__":
