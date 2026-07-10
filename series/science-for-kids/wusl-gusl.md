@@ -70,9 +70,7 @@
 
 >>> HÖRSPIEL-EINLAGE 1
 
-**WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[klopft auf sein Fell]` Und keine hat mich je gefragt, ob sie mal Pause machen darf! Frechheit!
-
-**MODERATOR:** `[lacht]` Und jede einzelne davon hat dein Zell-Zoomer gefunden.
+**WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[hält sich ans Fell und lauscht]` Komisch. Ich hör gar nichts piepen. MEINE Fabriken piepen IMMER.
 
 **WUSL:** Und hast du gehört, was der Anpeiler die ganze Zeit anpeilt? ATOME! Sogar mein FELL ist aus Atomen! MEIN Fell!
 
