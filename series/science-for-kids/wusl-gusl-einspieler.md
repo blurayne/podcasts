@@ -1,4 +1,4 @@
-# WUSL GUSL — Einspieler „Schrumpfomat 3000"
+# WUSL GUSL — Einspieler „Schrumpfomat 3002"
 
 Die 6 Erklär-Einspieler. Jeder Abschnitt ist die sachliche, ruhige Dokumentar-Fassung eines Themas — reiner Fließtext, keine Rollen, keine Regie. Jeder Einspieler führt mehrere zusammengehörige Ebenen zu einer durchgehenden Erzählung zusammen. Die Nummern entsprechen den `>>> HÖRSPIEL-EINLAGE N`-Markern im Podcast-Transkript.
 
