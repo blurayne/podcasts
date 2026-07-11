@@ -304,9 +304,23 @@
 
 `[„Pling!" — der Atom-Anpeiler wirft eine allerletzte Scheibe Toast aus.]`
 
-**WUSL:** IMMER! `[schnüffelt]` Ooh — TOAST! Moderator, hab ich eigentlich noch irgendwo ein Glas Marmelade stehen? … Egal, find ich später! Tschüssikowski! WUSL GUSL!
+**WUSL:** IMMER! `[schnüffelt]` Ooh — TOAST! Moderator, hab ich eigentlich noch irgendwo ein Glas Marmelade stehen? … Egal, find ich später!
 
-`[Fanfare. Ein letztes „Pling", eine Feder boingt, irgendwas fällt um. Musik hoch, ausblenden.]`
+**WUSL:** Und, Moderator — hast du eigentlich gemerkt, wie GLATT wir heute alle geredet haben? Fast wie *ausgerechnet!*
+
+**MODERATOR:** `[schmunzelt]` Kleines Geheimnis zum Schluss: Der echte Beni und der echte Wusl hatten heute Urlaub. Gesprochen — und das Drehbuch geschrieben — haben künstliche Intelligenzen.
+
+**WUSL:** Tjaaaa … eine Zuhörerin wollte eben ALLES ganz genau wissen und war ganz schön ungeduldig — also mussten meine Anthropic Fable 3002 und die ElevenLabs-Stimmen ran! Aber das Allerbeste: Ich konnte in der Zwischenzeit neue Kekse machen! `[lacht]`
+
+`[Man hört Wusl genüsslich Kekse mampfen.]`
+
+**MODERATOR:** `[lacht]` Na dann — guten Appetit, Wusl. Und bis zum nächsten Mal!
+
+**WUSL:** Bis baaaald!
+
+`[Wusl mampft weiter, mit vollem Mund.]`
+
+`[Fanfare, ein letztes „Pling", eine Feder boingt. Musik hoch, ausblenden.]`
 
 ---
 
@@ -324,4 +338,4 @@
 | 5 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 5 |
 | 6 | Das größte Rätsel | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde, kaputter Rechner „PLONK" | Einspieler 6 |
 | 7 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
-| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf; Anpeiler wirft letzte Scheibe Toast aus, Wusl sucht die Marmelade | — |
+| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf; Anpeiler wirft letzte Scheibe Toast aus, Wusl sucht die Marmelade; **AI-Reveal-Easteregg** (Fable 3002 + ElevenLabs, „Beni & Wusl im Urlaub"), Keks-Mampfen zum Schluss | — |
