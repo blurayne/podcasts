@@ -1,0 +1,140 @@
+slug: die-frau-vor-dem-recht/S01-11/podcast-vertiefung
+kind: podcast
+title: "Die Zahl vor dem Recht — Vertiefung (Nachsitzung)"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-11-die-zahl-vor-dem-recht/podcast-vertiefung.md
+strip_latex: true
+
+# ---------------------------------------------------------------- SPEAKERS
+# Main trio verbatim from S01-08/09/10 — continuity is mandatory.
+# Witnesses/experts cast from the professional scene-voice roster.
+speakers:
+  VORSITZENDE:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"   # Mila Winter (professional) — ERZÄHLERIN
+    speaker_key: s1
+    stability:   0.50
+  ANKLÄGER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"   # Wolf Spencer (professional) — ERZÄHLER
+    speaker_key: s2
+    stability:   0.55
+  VERTEIDIGERIN:
+    voice_id:    "BIvP0GN1cAtSRTxNHnWS"   # Ellen (professional) — ANWÄLTIN continuity
+    speaker_key: anwaeltin
+    stability:   0.45
+  # Einschub-Register (doc narration) — same voices, separate labels so the
+  # documentary takes get their own stems/settings.
+
+  # Zeuginnen & Sachverständige
+  STATISTIKERIN:
+    voice_id:    "7eVMgwCnXydb3CikjV7a"   # Lea (professional, f)
+    speaker_key: statistikerin
+    stability:   0.50
+  "ZEUGIN WEBER":
+    voice_id:    "uvysWDLbKpA4XvpD3GI6"   # Leonie (professional, f)
+    speaker_key: weber
+    stability:   0.45
+  "GUTACHTER HELLWIG":
+    voice_id:    "fehqjfT0R2fGKeUX2YeE"   # Gerry (professional, m)
+    speaker_key: hellwig
+    stability:   0.48
+
+# ---------------------------------------------------------------- AUDIO TAGS
+# Confidence markers stay unspoken (series convention) — stripped explicitly.
+audio_tags:
+  belegt:     ""
+  plausibel:  ""
+  umstritten: ""
+  spekulativ: ""
+  ruhig:      "[calm]"
+  lacht:      "[laughs]"
+  schmunzelt: "[chuckles]"
+
+# strip residual parentheticals (inline stage directions)
+replace:
+  "\\s*\\([^)]*\\)\\s*": " "
+
+# ---------------------------------------------------------------- SFX
+sfx:
+  saal_atmo:
+    prompt: "quiet German courtroom room tone, subtle paper shuffling, a chair creaks once, muted footsteps, sober, no music, no gavel"
+    dur: 10
+  glocke:
+    prompt: "single small courtroom session bell, one clean strike, dry, short decay"
+    dur: 2
+  aktenstempel:
+    prompt: "single heavy office ink stamp hitting paper on a wooden desk, dry, authoritative, short"
+    dur: 1
+  muenze:
+    prompt: "a single coin dropped on stone, bouncing then spinning out slowly to rest, close, clean, no reverb tail"
+    dur: 5
+  muenze_kurz:
+    prompt: "a single coin tipping over and settling on a wooden table, short, quiet, clean"
+    dur: 2
+  papier_riss:
+    prompt: "a small strip of paper being torn off slowly, quiet, close-miked, single tear"
+    dur: 2
+  akte_zu:
+    prompt: "a thick cardboard case file being closed softly and placed flat on a desk, quiet, final, no reverb"
+    dur: 2
+
+# ---------------------------------------------------------------- MUSIC
+music:
+  titel_motiv:
+    prompt: "sober documentary title motif, low strings and a sparse piano, dignified, restrained tension, courtroom gravity, no percussion, no vocals"
+    ms: 10000
+  doku_bett:
+    prompt: "calm documentary underscore bed, soft piano pulses and warm sustained strings, reflective, unobtrusive, loopable, no vocals"
+    ms: 30000
+  welt_bett:
+    prompt: "quiet travelling documentary bed, gentle plucked strings and soft airy pads, sense of maps and distance, unobtrusive, loopable, no vocals"
+    ms: 30000
+
+# ---------------------------------------------------------------- CUE RULES
+cue_rules:
+  # outro first (specific)
+  - keywords: ["ausblenden"]
+    action: outro
+  - keywords: ["musik hoch"]
+    action: outro
+  # music beds for the two inserts
+  - keywords: ["dokumentarisches musikbett"]
+    music: doku_bett
+    action: bed_on
+  - keywords: ["zweites", "musikbett"]
+    music: welt_bett
+    action: bed_on
+  - keywords: ["musikbett läuft aus"]
+    action: bed_off
+  - keywords: ["musikbett aus"]
+    action: bed_off
+  # sfx
+  - keywords: ["aktenstempel"]
+    sfx: aktenstempel
+  - keywords: ["glocke"]
+    sfx: glocke
+  - keywords: ["akte klappt"]
+    sfx: akte_zu
+  - keywords: ["papier reißt"]
+    sfx: papier_riss
+  - keywords: ["münze fällt"]
+    sfx: muenze
+  - keywords: ["münz-motiv"]
+    sfx: muenze
+  - keywords: ["münze trudelt"]
+    sfx: muenze_kurz
+  - keywords: ["münze kippt"]
+    sfx: muenze_kurz
+  - keywords: ["saal-atmo"]
+    sfx: saal_atmo
+  - keywords: ["stempel-serie"]
+    sfx: aktenstempel
+  - keywords: ["nur papier"]
+    sfx: saal_atmo
+
+gaps:
+  base: 0.55
+  switch: 0.90
+  sfx_tail: 0.35
+
+output:
+  final: s01e11-die-zahl-vor-dem-recht-vertiefung.mp3
