@@ -94,7 +94,7 @@
 
 **VORSITZENDE:** Zur letzten Frage hat die Kammer eine Fachfrau aus Dänemark geladen.
 
-**GUTACHTERIN SØRENSEN:** Wir können in unseren Daten Frauen und Männern beim Verdienen zusehen — über Jahrzehnte. Vor dem ersten Kind verdienen beide fast gleich. Dann kommt das Kind. Und dann passiert es: Ihre Kurve knickt ein und bleibt unten. Seine läuft weiter, als wäre nichts. Wir nennen das die Kinder-Strafe. In Dänemark kostet sie die Mutter langfristig rund ein Fünftel ihres Einkommens. In Deutschland — festhalten — über sechzig Prozent. `[belegt]` Das ist der tiefste Knick aller Länder, die wir untersucht haben.
+**GUTACHTERIN SØRENSEN:** Wir können in unseren Daten Frauen und Männern beim Verdienen zusehen — über Jahrzehnte. Vor dem ersten Kind verdienen beide fast gleich. Dann kommt das Kind. Und dann passiert es: Ihre Kurve knickt ein und bleibt unten. Seine läuft weiter, als wäre nichts. Wir nennen das die Kinder-Strafe. In Dänemark kostet sie die Mutter langfristig rund ein Fünftel ihres Einkommens. In Deutschland — festhalten — über sechzig Prozent. `[belegt]` Das ist der tiefste Knick aller Länder, die wir untersucht haben. Und noch eine Zahl: Bei uns in Dänemark geht heute rund achtzig Prozent der Lücke, die überhaupt noch übrig ist, aufs Konto der Kinder. `[belegt]`
 
 **VORSITZENDE:** Stempel zwei: „Der Kinder-Knick ist ein zentraler Grund für die Lücke" — **belegt**.
 
@@ -112,7 +112,7 @@
 
 **ANKLÄGER:** Ein Experiment leuchtet trotzdem hinein. Bei einem Fahrdienst, wo ein Computer die Fahrten verteilt und für alle gleich bezahlt, fanden Forscher trotzdem eine Lücke: sieben Prozent. Der Grund war nicht der Lohn — der war für alle gleich. Es waren Erfahrung, Fahrtempo und die Frage, wer wann und wo fahren kann. `[belegt]` Eine Lücke kann also ganz ohne Bosheit entstehen.
 
-**VERTEIDIGERIN:** Und das andere Experiment: Bewerbungen. Gleiche Unterlagen, einmal steht „Mutter" drin, einmal nicht. Wenn die Mutter seltener zurückgerufen wird — dann passiert dort etwas, das in keiner Lohnstatistik je auftaucht. Es passiert, bevor es überhaupt einen Lohn gibt. `[plausibel]`
+**VERTEIDIGERIN:** Und das andere Experiment: Bewerbungen. Gleiche Unterlagen, einmal steht „Mutter" drin, einmal nicht. Wenn die Mutter seltener zurückgerufen wird — dann passiert dort etwas, das in keiner Lohnstatistik je auftaucht. Es passiert, bevor es überhaupt einen Lohn gibt. `[plausibel]` Und noch ein Fund aus vierzig Jahren deutscher Daten: Fast überall ist die Lücke kleiner geworden — nur ganz oben, bei den Spitzengehältern, ist sie *gewachsen*. Gleiche Erfahrung, gleiche Betriebsjahre — weniger Geld. Forscher nennen das die gläserne Decke. `[belegt]`
 
 **VORSITZENDE:** Zwei Stempel. „Die sechs Prozent beweisen Diskriminierung" — **irreführend**. „Alles erklärbar, also kein Problem" — ebenfalls **irreführend**. Beide Lager tragen denselben Stempel. Nur spiegelverkehrt.
 

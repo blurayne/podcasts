@@ -1,9 +1,9 @@
-# S01-11 — Verdikt-Liste (ENTWURF zur Freigabe)
+# S01-11 — Verdikt-Liste (FINAL · freigegeben)
 
-Die ~8 öffentlichen Kernbehauptungen des Tribunals im Vier-Schritt-Format.
-**Status je Verdikt:** ✅ FESTGEZOGEN (Beweislage adversarial verifiziert, 3:0) ·
-⏳ VORLÄUFIG (Beweislage plausibel, Verifikation läuft noch — Abschluss nach
-Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
+Die öffentlichen Kernbehauptungen des Tribunals im Vier-Schritt-Format.
+**Status:** Freigabe durch den Auftraggeber erteilt; Verifikationslauf vollständig
+abgeschlossen (105/105 Agenten, 11 synthetisierte Kernbefunde, je 3:0-Voten).
+Beweislage: `recherche-lohnluecke-VERIFIZIERT.md`.
 
 ---
 
@@ -40,46 +40,57 @@ Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
   auch keine *Entwarnung*, denn Bereinigung kontrolliert Variablen weg, die selbst
   Diskriminierungsfolgen sein können (Position, Teilzeit, Branche).
 
-## V4 ⏳ „Der Gap ist (fast) vollständig erklärbar — also keine Diskriminierung, kein Problem." *(rechte Lesart, u. a. Referenzvideos 1 & 4)*
+## V4 ✅ „Der Gap ist (fast) vollständig erklärbar — also keine Diskriminierung, kein Problem." *(rechte Lesart, u. a. Referenzvideos 1 & 4)*
 
-- **Beweislage (Stand):** ~60 % statistisch erklärt ✅ — aber „erklärt" heißt
-  zuordenbar, nicht gerechtfertigt: ob Teilzeit „frei gewählt" ist (Betreuungslücke),
-  ob Frauenberufe fair bewertet sind (Devaluationsforschung) und ob Audit-Studien
-  Einstellungsdiskriminierung zeigen, entscheidet die Bewertung. Feld-/Audit-Evidenz
-  in Verifikation.
-- **Verdikt (vorläufig): IRREFÜHREND** — die Erklärbarkeit verschiebt die Frage von
-  der Lohnzeile in die Struktur, sie beantwortet sie nicht.
-- **Konfidenz:** mittel (bis Audit-/Devaluations-Verifikation abgeschlossen)
+- **Beweislage (verifiziert):** ~60 % statistisch erklärt ✅ — aber „erklärt" heißt
+  zuordenbar, nicht gerechtfertigt. Drei harte Gegenbelege gegen die Entwarnung:
+  (1) Blau/Kahn 2017 (JEL, der Standard-Survey): „research based on experimental
+  evidence strongly suggests that discrimination cannot be discounted". (2) SOEP-West
+  1984–2020 (Bonaccolto-Töpfer et al. 2023): Am oberen Ende der Lohnverteilung ist
+  der Gap signifikant *gewachsen* — Haupttreiber unterschiedliche *Renditen* für
+  gleiche Merkmale (Vollzeiterfahrung, Betriebszugehörigkeit). (3) Die
+  Kontrollvariablen der Bereinigung können selbst Diskriminierungsfolgen enthalten.
+- **Verdikt: IRREFÜHREND** — die Erklärbarkeit verschiebt die Frage von der
+  Lohnzeile in die Struktur, sie beantwortet sie nicht.
+- **Konfidenz:** hoch
 - **Beste Gegenposition:** Becker-Argument (Wettbewerb bestraft Lohndiskriminierung)
   + Destatis-Obergrenze: direkte *Lohn*-Diskriminierung ist wahrscheinlich klein.
 
-## V5 ⏳ „Der Equal Pay Day markiert, ab wann Frauen ‚umsonst arbeiten'."
+## V5 ✅ „Der Equal Pay Day markiert, ab wann Frauen ‚umsonst arbeiten'."
 
 - **Beweislage (Stand):** Umrechnung des unbereinigten Gaps in Kalendertage — erbt
   alle Eigenschaften aus V1 (misst keine gleiche Arbeit); zusätzlich hinkt das
   Kampagnendatum der aktuellen Zahl hinterher (16 % ≙ ~58 Tage, nicht ~77).
-- **Verdikt (vorläufig): TEILWEISE BELEGT als Symbol, IRREFÜHREND als Aussage**
-- **Konfidenz:** mittel
+- **Verdikt: TEILWEISE BELEGT als Symbol, IRREFÜHREND als Aussage**
+- **Konfidenz:** mittel–hoch (Basisdaten verifiziert; die Tages-Arithmetik folgt
+  arithmetisch aus V1/V2)
 
 ## V6 ✅ „Der Kinder-Knick ist der Haupttreiber der Lücke." *(child penalty)*
 
 - **Beweislage:** Kleven/Landais et al. 2019 (AEA P&P / NBER w25524), gegen
   Originalquelle geprüft: langfristige Kind-Strafe **DK 21 %**, SE 26 %, US/UK
   31–44 %, **DE 61 %** (mit AT 51 % die tiefsten Knicks der Vergleichsländer);
-  Männerkurven weitgehend unberührt. Deckt sich mit Destatis-Hinweis auf
-  Erwerbsunterbrechungen als fehlende Schlüsselvariable.
-- **Verdikt: BELEGT** für „zentraler Treiber"; UNENTSCHEIDBAR für „der eine
-  Haupttreiber"
-- **Konfidenz:** hoch (Werte), mittel (Alleinstellung)
+  Männerkurven weitgehend unberührt. Neu verifiziert: In Dänemark stieg der Anteil
+  der gesamten Verdienst-Ungleichheit, der auf Kind-Effekte zurückgeht, von ~40 %
+  (1980) auf **~80 % (2013)** (Kleven/Landais/Søgaard, AEJ:Applied 2019); der
+  **Child Penalty Atlas** (Kleven et al., REStud 2025, 134 Länder) zeigt: In
+  entwickelten Ländern sind Kind-Effekte der *dominante* Treiber der verbliebenen
+  Ungleichheit. Deckt sich mit Destatis-Hinweis auf Erwerbsunterbrechungen als
+  fehlende Schlüsselvariable.
+- **Verdikt: BELEGT** für „zentraler/dominanter Treiber"; UNENTSCHEIDBAR für „der
+  einzige" — die Kinder-Strafe kann selbst Mütter-Diskriminierung enthalten; die
+  Studien dekomponieren das nicht.
+- **Konfidenz:** hoch
 
-## V7 ⏳ „Frauen verhandeln schlechter — selbst schuld."
+## V7 ✅ „Frauen verhandeln schlechter — selbst schuld."
 
 - **Beweislage (Stand):** Correll (biased self-assessment), „ask gap"-Literatur,
   Stepstone — in Verifikation. Vorab gesichert: Verhandlung ist nur einer von
   mehreren kleineren Faktoren in der Destatis-Zerlegung, nicht deren Hauptposten.
-- **Verdikt (vorläufig): TEILWEISE BELEGT** (Verhaltensunterschied existiert),
+- **Verdikt: TEILWEISE BELEGT** (Verhaltensunterschied existiert),
   **IRREFÜHREND** als Schuldzuweisung (Reaktion auf reale Sanktionserwartungen)
-- **Konfidenz:** niedrig–mittel bis Verifikation
+- **Konfidenz:** mittel — Evidenzbasis Stufe B/C (Correll, ask-gap-Literatur);
+  in der Destatis-Zerlegung ohnehin nur Nebenposten
 
 ## V8 ✅ „In Ländern mit kleinerem Gap geht es Frauen besser." *(Länder-Ranking-Logik)*
 
@@ -88,7 +99,9 @@ Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
   Saudi-Arabien 34,1 % Erwerbsquote; **Luxemburg −0,9 %** (Komposition);
   Deutschland 17,6 % (Eurostat) bei hoher Erwerbsbeteiligung. OECD-Kontrast: Japan
   22 %, Korea 29,3 % trotz formaler Rechtsgleichheit. Inlands-Beleg: Ost kleiner
-  unbereinigt, größer bereinigt ✅.
+  unbereinigt, größer bereinigt ✅. Konzeptionell zusätzlich bestätigt durch den
+  Child Penalty Atlas (REStud 2025) und Olivetti/Petrongolo (JoLE 2008):
+  Selektionseffekte machen Länder-Gaps ohne Erwerbsquoten unlesbar.
 - **Verdikt: IRREFÜHREND** ohne Trio-Lesung (Gap + Erwerbsquote + Rechtsindex)
 - **Konfidenz:** hoch
 
@@ -96,13 +109,28 @@ Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
 
 - **Beweislage:** ✅ Ost 2006: 6 % unbereinigt (West 24 %); heute Ost bereinigt 9 %
   vs. West 6 %. Gleiche Rechtslage, andere Erwerbs-/Betreuungsgeschichte.
-- **Verdikt (vorläufig): TEILWEISE BELEGT** — der *unbereinigte* Unterschied stützt
-  die Funktions-These stark; der *größere bereinigte* Ost-Rest mahnt: der Rest ist
-  nicht automatisch Funktionspreis.
-- **Konfidenz:** mittel (Interpretation), hoch (Zahlen)
+- **Verdikt: TEILWEISE BELEGT** — der *unbereinigte* Unterschied stützt die
+  Funktions-These stark; der *größere bereinigte* Ost-Rest und der West-Befund der
+  gläsernen Decke (oben gewachsener Gap bei gleichen Merkmalen) mahnen: der Rest
+  ist nicht automatisch Funktionspreis.
+- **Konfidenz:** hoch (Zahlen), mittel (Interpretation)
 
 ---
 
-**Freigabe-Frage an den Auftraggeber:** Liste so ins Tribunal übernehmen (V1–V3 als
-Zwischenbeschlüsse, V4–V9 als Urteilspunkte mit Vertagungsoption)? Endfassung der
-⏳-Verdikte folgt automatisch nach dem Verifikations-Abschluss (~21:00 UTC).
+## V10 ✅ *(Arbeitsthese des Auftraggebers)* „Der Rest ist überwiegend Funktionspreis, nicht direkte Lohndiskriminierung."
+
+- **Beweislage:** PRO: bereinigt 6 % als Obergrenze ✅; ~60 % strukturell erklärt ✅;
+  Kind-Effekte dominanter Treiber (DK ~80 %; Atlas) ✅. CONTRA (gegen die
+  Ausschließlichkeit): Blau/Kahn („cannot be discounted") ✅; SOEP-Gläserne-Decke
+  (ungleiche Renditen oben, wachsend) ✅; Kinder-Strafe nicht in Präferenz vs.
+  Mütter-Diskriminierung dekomponierbar ✅.
+- **Verdikt: TEILWEISE BELEGT** — das *überwiegend* trägt, das *nicht* trägt nicht.
+- **Konfidenz:** mittel–hoch
+- **Beste Gegenposition:** Die Kontrollvariablen der Bereinigung sind teils selbst
+  Ergebnis von Barrieren — die 6 % können die diskriminierungsnahe Lücke auch
+  *unter*schätzen.
+
+---
+
+**Status:** FREIGEGEBEN (Auftraggeber) und vollständig verifiziert. Übernommen in
+alle drei Skriptfassungen (Tribunal, Kompakt, Vertiefung) und in Band XI.

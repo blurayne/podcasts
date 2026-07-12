@@ -132,7 +132,7 @@
 
 **VORSITZENDE:** Posten drei: die Erwerbsbiografie. Die Kammer hat dazu eine auswärtige Gutachterin geladen — aus Kopenhagen.
 
-**GUTACHTERIN SØRENSEN:** Wir haben in Dänemark etwas, das Statistiker glücklich macht: Registerdaten über Jahrzehnte. Man kann Frauen und Männern vor und nach dem ersten Kind zusehen — denselben Menschen. Vor dem ersten Kind laufen die Verdienstkurven fast parallel. Mit dem ersten Kind knickt eine der beiden Kurven ein — und bleibt unten. Bei uns kostet das erste Kind eine Frau langfristig rund einundzwanzig Prozent ihres Erwerbseinkommens. Die andere Kurve merkt das Kind kaum. Wir nennen es die Kinder-Strafe. Sie ist der Teil der Lücke, der am saubersten kausal belegt ist. `[belegt]` Und für Deutschland, das sage ich ohne Häme: Dieselbe Studie misst bei Ihnen einundsechzig Prozent. Nicht einundzwanzig. Einundsechzig — der tiefste Knick aller untersuchten Länder, noch vor Österreich.
+**GUTACHTERIN SØRENSEN:** Wir haben in Dänemark etwas, das Statistiker glücklich macht: Registerdaten über Jahrzehnte. Man kann Frauen und Männern vor und nach dem ersten Kind zusehen — denselben Menschen. Vor dem ersten Kind laufen die Verdienstkurven fast parallel. Mit dem ersten Kind knickt eine der beiden Kurven ein — und bleibt unten. Bei uns kostet das erste Kind eine Frau langfristig rund zwanzig Prozent ihres Erwerbseinkommens. Die andere Kurve merkt das Kind kaum. Wir nennen es die Kinder-Strafe. Sie ist der Teil der Lücke, der am saubersten kausal belegt ist. `[belegt]` Und ihr Gewicht wächst: Neunzehnhundertachtzig ging bei uns rund vierzig Prozent der gesamten Verdienst-Ungleichheit aufs Konto der Kinder — heute sind es rund achtzig. Fast alles, was an Lücke übrig ist, ist Kinder-Lücke. `[belegt]` Und für Deutschland, das sage ich ohne Häme: Dieselbe Studie misst bei Ihnen einundsechzig Prozent. Nicht einundzwanzig. Einundsechzig — der tiefste Knick aller untersuchten Länder, noch vor Österreich.
 
 **ANKLÄGER:** Frau Gutachterin, knickt die Kurve, weil ein Arbeitgeber diskriminiert?
 
@@ -174,7 +174,7 @@
 
 **GUTACHTER HELLWIG:** Der Fall ist berühmt geworden, weil Forscher die kompletten Fahrdaten von über einer Million Fahrern auswerten durften. Ergebnis: eine Lücke von rund sieben Prozent — bei blindem Algorithmus. Und sie ließ sich restlos auf drei Dinge zurückführen: Erfahrung auf der Plattform, die Wahl, wo man fährt — geprägt von Wohnort und Sicherheitsempfinden —, und das Fahrtempo. Keine Lohnsetzung. `[belegt]` Der Befund schneidet in beide Richtungen: Er zeigt, dass eine Lücke ganz ohne Diskriminierung entstehen kann — und er zeigt, dass „gleicher Tarif" die Lücke nicht schließt, solange Lebensumstände ungleich sind.
 
-**VERTEIDIGERIN:** Und die andere Sorte Experiment, Herr Sachverständiger — die Bewerbungsstudien. `[plausibel]` Gleiche Unterlagen, einmal mit Elternschafts-Signal, einmal ohne. Wenn die Rückrufe für Mütter einbrechen und für Väter nicht, dann findet dort etwas statt, das keine Zerlegung der Lohnzettel je sehen wird — es passiert, bevor ein Lohnzettel existiert.
+**VERTEIDIGERIN:** Und die andere Sorte Experiment, Herr Sachverständiger — die Bewerbungsstudien. `[plausibel]` Gleiche Unterlagen, einmal mit Elternschafts-Signal, einmal ohne. Wenn die Rückrufe für Mütter einbrechen und für Väter nicht, dann findet dort etwas statt, das keine Zerlegung der Lohnzettel je sehen wird — es passiert, bevor ein Lohnzettel existiert. Und ich lege zwei Langzeitbefunde nach. Der große amerikanische Forschungsüberblick — der Standardtext des Fachs — schließt mit dem Satz: Nach der Experimentallage lässt sich Diskriminierung *nicht* wegdiskutieren. `[belegt]` Und die westdeutschen Lebensverlaufsdaten, vierzig Jahre: Fast überall in der Lohnverteilung ist die Lücke geschrumpft — nur ganz oben ist sie *gewachsen*. Und der Haupttreiber dort sind nicht die Merkmale, es sind die Preise: gleiche Vollzeiterfahrung, gleiche Betriebszugehörigkeit — anders entlohnt. Die gläserne Decke ist kein Bild, hohes Gericht. Sie ist gemessen. `[belegt]`
 
 **VORSITZENDE:** Zwischenbeschluss zu den zwei Trophäen. Behauptung links: „Die bereinigten sechs Prozent sind der bewiesene Diskriminierungsanteil." Verdikt: **irreführend** — Obergrenze, Residuum, kein Nachweis. Behauptung rechts: „Alles erklärbar, also kein Problem." Verdikt: **irreführend** — erklärt ist nicht gerechtfertigt, und die Erklärung kann den Befund verschlucken. `[belegt]` Die Kammer stellt fest: Beide Lager tragen dasselbe Verdikt. Es ist nur spiegelverkehrt angezogen.
 
@@ -248,7 +248,11 @@
 
 `[Aktenstempel.]`
 
-**VORSITZENDE:** „Der Kinder-Knick ist ein zentraler Treiber": belegt — einundsechzig Prozent sprechen für sich. „Der einzige": unentscheidbar.
+**VORSITZENDE:** „Der Kinder-Knick ist ein zentraler Treiber": belegt — einundsechzig Prozent im Lebensverlauf, und in den besten Daten der Welt trägt das Kind inzwischen vier Fünftel der verbliebenen Ungleichheit. „Der einzige": unentscheidbar — denn in der Kinder-Strafe selbst kann Mütter-Benachteiligung stecken; die Daten trennen das nicht.
+
+`[Aktenstempel.]`
+
+**VORSITZENDE:** Und die These dieser Reihe — „der Rest ist überwiegend Funktionspreis, nicht Diskriminierung": teilweise belegt. Das *überwiegend* trägt. Das *nicht* trägt nicht.
 
 `[Aktenstempel.]`
 
