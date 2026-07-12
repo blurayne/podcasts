@@ -72,6 +72,8 @@ Erst die Warnung: Der unbereinigte Gap ist **kein Gerechtigkeits-Ranking** — e
 | Ostasien | JP, CN | JP: sehr großer Gap bei formaler Rechtsgleichheit — Funktionsnorm schlägt Recht; CN: post-sozialistische Erosion der Gleichstellung |
 | Rechtsungleichheit | SA | WBL weit unten; der Gap ist hier die *falsche* Kennzahl — die Lücke beginnt vor dem Lohn |
 
+Dazu das **Inlands-Exponat Ost/West** (⟨2023: Ost ~7 % / West ~19 %⟩ — prüfen): gleiche Rechtslage, gleiche Gesetze — aber andere Erwerbs- und Betreuungsgeschichte. Das ist das sauberste natürliche Experiment für die Funktions-These, ganz ohne Ländervergleichs-Definitionsprobleme.
+
 Pointe des Akts (These-Check, Teil 1): Ein kleiner gemessener Gap kann Rückstand bedeuten (Selektion), ein großer kann Fortschritt enthalten (Teilhabe). Deutschlands Position: Rechtsstellung ⟨WBL-Wert⟩ weit vorn — Funktionsstellung (Teilzeit, Care) als verbleibender Preistreiber.
 
 ### AKT V — Die These auf dem Prüfstand (ca. 8 Min.)
@@ -108,7 +110,8 @@ Observatory-Layout (LAYOUT-STUDIES.md), Inhalte: (1) Methodenkapitel unbereinigt
 
 - **Recherchebericht:** `studie/recherche-lohnluecke.md` (aus dem laufenden Deep-Research-Lauf; Primärquellen: Destatis, Eurostat, OECD, ILO, WBL, BMFSFJ, WSI, IW, IAB, Blau/Kahn 2017, Goldin, Kleven et al., Correll, Cook et al.)
 - **Referenzvideos (Didaktik-Vorbild, KEINE Inhaltsübernahme — eigene Beispiele, eigene Formulierungen):**
-  `youtu.be/_Ta6BH3e97I` · `youtu.be/W6IBFpVZIIE` · `youtu.be/PKq8MqrvYU8` · `youtu.be/Hm64iIOcAVM` · `youtu.be/_QL6yp3LWdc`
+  `youtu.be/_Ta6BH3e97I` · `youtu.be/W6IBFpVZIIE` · `youtu.be/PKq8MqrvYU8` · `youtu.be/Hm64iIOcAVM` · `youtu.be/_QL6yp3LWdc` · `youtu.be/PcEf2VMvrss` (nachgereicht)
+  Argument-Auswertung der vorliegenden Transkripte: [`quellen/ABGLEICH.md`](quellen/ABGLEICH.md)
   Kapitelstruktur laut Videobeschreibung: Equal Pay Day → bereinigt/unbereinigt → Männer-/Frauenberufe → Vollzeit/Teilzeit → Schichten → Überstunden → Berufsjahre → Gehaltsverhandlungen.
 - **Untertitel:** aus dieser Umgebung nicht abrufbar (YouTube/Transcript-Dienste vom Proxy blockiert). → Bitte lokal via downsub.com ziehen und als `.vtt`/`.srt` in `quellen/` ablegen; sie dienen nur dem Abgleich, nicht der Übernahme.
 
