@@ -12,7 +12,7 @@
 1. **Ausgewogene Aufbereitung** des Themas als Faktencheck mit Hörbeispielen — Vorbild ist die Didaktik der fünf Referenzvideos (s. Quellen unten), nicht deren Inhalt.
 2. **Eigener Schwerpunkt-Teil zum bereinigten Gender Pay Gap** (Akt III): was Bereinigung leistet, was nicht, in beide Richtungen.
 3. **These prüfen (adversarial, nicht bestätigen):** Deutschland ist bei der *Rechtsgleichheit* weiter als die meisten Vergleichsländer; die verbleibende unbereinigte Lücke ist überwiegend der ökonomische **Preis für die Abweichung von der traditionellen Funktionsteilung** (Care, Teilzeit, Berufswahl) — nicht direkte Lohndiskriminierung. Aus dem Ländervergleich muss erkennbar werden: *was Deutschland anderen Ländern voraus hat* und *wo der Funktionspreis noch sitzt.*
-4. **Ländervergleich:** Nachbarländer + Saudi-Arabien, Türkei, Russland, Brasilien, Mexiko, USA, Australien, Japan, China — sinnvoll geclustert.
+4. **Ländervergleich:** Nachbarländer + Saudi-Arabien, Türkei, Russland, Brasilien, Mexiko, USA, **Kanada**, Australien, Japan, China — sinnvoll geclustert. Erzählperspektive bleibt Deutschland.
 5. **Links/Rechts-Betrachtung:** die politischen Lager treten **nur als Ressourcen** auf (Argument- und Quellenlieferanten beider Seiten), nie als Autoritäten und nie als Rahmen. Jedes Lager-Argument durchläuft dieselbe Sachprüfung und endet in einem Verdikt.
 6. **Familienfreundlich im Rahmen des Formats:** ruhiger, sachlicher Ton, Alltagsbeispiele statt Polemik, kein Kampfvokabular. (Die Reihe bleibt ein Erwachsenenformat.)
 
@@ -68,7 +68,7 @@ Erst die Warnung: Der unbereinigte Gap ist **kein Gerechtigkeits-Ranking** — e
 | Nordisch/Frankreich | DK, (SE), FR, BE, LU | kleinere Gaps bei hoher Erwerbsquote — Betreuungsinfrastruktur |
 | Post-sozialistisch | PL, CZ, RU | hohe Erwerbsquoten-Tradition, mittlere Gaps, andere Berufssegregation |
 | Selektions-Paradox | IT (Referenz), TR, MX, BR | kleine *gemessene* Gaps bei niedriger Erwerbsquote — es verdienen nur die gut Qualifizierten; die Lücke versteckt sich in der Nichterwerbstätigkeit |
-| Angelsächsisch | USA, AU | mittlere Gaps, andere Messung (Median Vollzeit), schwächerer Kündigungsschutz/Elternzeit |
+| Angelsächsisch | USA, CA, AU | mittlere Gaps, andere Messung (Median Vollzeit), schwächerer Kündigungsschutz/Elternzeit; CA mit Pay-Equity-Gesetzgebung als Kontrast zu USA |
 | Ostasien | JP, CN | JP: sehr großer Gap bei formaler Rechtsgleichheit — Funktionsnorm schlägt Recht; CN: post-sozialistische Erosion der Gleichstellung |
 | Rechtsungleichheit | SA | WBL weit unten; der Gap ist hier die *falsche* Kennzahl — die Lücke beginnt vor dem Lohn |
 
