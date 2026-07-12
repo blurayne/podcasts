@@ -98,3 +98,16 @@ Fußnoten-Metapher aus K4.
 
 Entscheidung bitte durch den Auftraggeber; danach wird PLAN.md auf das gewählte
 Konzept festgezogen.
+
+---
+
+## ENTSCHEIDUNG (Auftraggeber)
+
+**K2 „Das Tribunal der Zahl"** als Rahmen — Titel: **„Die Zahl vor dem Recht"** — erweitert um:
+
+- **K4 „Biografie einer Zahl"** (Medienkritik) als Unterbrechung der Verhandlung (Einschub I),
+- **„Rechtsvergleichung"** als zweiten Einschub (wie wäre die Verhandlung in anderen Ländern ausgegangen),
+- Ende als **Teil-Urteil + Vertagung** des Kernpunkts,
+- **kein Wusl in der Hauptfolge** — Wusl-Gusl-Minifolge als eigenständiges Spin-off (K5 Teil B).
+
+Umgesetzt in PLAN.md (Ordner umbenannt zu `S01-11-die-zahl-vor-dem-recht`). Neu dazu per Auftraggeber-Wunsch: Beweisstück C „Branchen-Probe" (fraktales Maßband) und Beweisstück D „intersektionale Schnitte" (Material aus dem intersektionalen Feminismus als Ressource, gleiche Verdikt-Strenge).

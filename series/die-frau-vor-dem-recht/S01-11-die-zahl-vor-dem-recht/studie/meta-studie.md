@@ -63,6 +63,37 @@ Gap) als Folgelücke.⟩
 | Verhandlung | ⟨…⟩ | ⟨…⟩ | Correll biased self-assessment; „ask gap" |
 | **unerklärter Rest** | ⟨…⟩ | ⟨…⟩ | Obergrenze des Unerklärten, keine Diskriminierungsmessung |
 
+### 4b · Branchen-Schnitt: das Maßband ist fraktal
+
+⟨Aus Recherche: Branchen-Gaps Destatis nach WZ-Abschnitten; Goldin „greedy jobs"
+(Nichtlinearität der Stundenerträge als Kopplungsmechanismus); Kleven-artige
+Kinder-Knick-Schnitte nach Sektor, sofern verfügbar; Tarifbindung als Kompressor.⟩
+**These (Auftraggeber):** Branchen-Gap als Kopplungsmaß der Funktionszuweisung.
+**Methodischer Vorbehalt (festgehalten vorab):** Zusammenhang ist ein umgekehrtes U —
+bei extremer Kopplung verschwindet die *gemessene* Lücke durch Aussortierung
+(Kontrast: Baugewerbe klein trotz maximal traditioneller Normen vs. Gesundheitswesen
+groß durch vertikale Funktionssortierung). Der Branchen-Gap ist daher nur im Trio
+lesbar: Gap + Frauenanteil + vertikale Segregation/Teilzeitquote der Branche.
+Besseres direktes Kopplungsmaß: branchenspezifischer Kinder-Knick bzw.
+Stunden-Nichtlinearität.
+
+### 4c · Intersektionale Schnitte
+
+⟨Aus Recherche: Gap × Elternschaft (Mütter vs. kinderlose Frauen — der schärfste
+Binnen-Vergleich: wie nah sind kinderlose Frauen an der Parität?); Gap ×
+Migrationshintergrund (DE-Daten, sofern vorhanden); Gap × Ost/West-Biografie;
+US-Referenz: Gap nach race × gender (BLS/EPI) als Beleg, dass „die" Lücke keine
+Konstante ist; Devaluationsforschung (England; Levanon et al. Zeitreihen-Test:
+sinkt der Lohn, wenn der Frauenanteil eines Berufs steigt?).⟩
+Quelle-Behandlung: Material aus dem intersektionalen Feminismus (Crenshaw-Rahmen,
+empirische Schnitte) wird als **Ressource** geführt — gleiche Verdikt-Strenge und
+Stufen-Einordnung (A–D) wie alle anderen Quellen; normative Rahmungen werden von
+den empirischen Befunden getrennt. Anschluss an die Serien-Vorarbeit:
+`S01-08-die-funktionskritik/studie/studie-funktionslogik-intersektionalitaet.md`.
+Prüfrichtung in beide Seiten: Schnitte, die die Funktions-These stützen (Lücke folgt
+der Care-Rolle, nicht dem Geschlecht per se) UND Schnitte, die sie herausfordern
+(Residuen ohne Funktionsunterschied).
+
 ## 5 · Was „Bereinigung" kann — und was nicht (in beide Richtungen)
 
 ⟨Aus Recherche: RIF-/Oaxaca-Blinder-Dekomposition; unbeobachtete Variablen, die den
