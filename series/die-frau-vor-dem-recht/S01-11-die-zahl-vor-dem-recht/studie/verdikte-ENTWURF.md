@@ -61,15 +61,16 @@ Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
 - **Verdikt (vorläufig): TEILWEISE BELEGT als Symbol, IRREFÜHREND als Aussage**
 - **Konfidenz:** mittel
 
-## V6 ⏳ „Der Kinder-Knick ist der Haupttreiber der Lücke." *(child penalty)*
+## V6 ✅ „Der Kinder-Knick ist der Haupttreiber der Lücke." *(child penalty)*
 
-- **Beweislage (Stand):** Kleven et al. (DK): langfristige Kind-Strafe ~20 %,
-  Anteil an der Gesamtungleichheit stark gestiegen; DE-Werte laut Rohlauf höher
-  (⟨~61 % Langfrist-Penalty⟩ — **in Verifikation**). Deckt sich mit Destatis-Hinweis
-  auf Erwerbsunterbrechungen als fehlende Schlüsselvariable.
-- **Verdikt (vorläufig): BELEGT** für „zentraler Treiber", UNENTSCHEIDBAR für „der
-  eine Haupttreiber"
-- **Konfidenz:** mittel → hoch nach Verifikation
+- **Beweislage:** Kleven/Landais et al. 2019 (AEA P&P / NBER w25524), gegen
+  Originalquelle geprüft: langfristige Kind-Strafe **DK 21 %**, SE 26 %, US/UK
+  31–44 %, **DE 61 %** (mit AT 51 % die tiefsten Knicks der Vergleichsländer);
+  Männerkurven weitgehend unberührt. Deckt sich mit Destatis-Hinweis auf
+  Erwerbsunterbrechungen als fehlende Schlüsselvariable.
+- **Verdikt: BELEGT** für „zentraler Treiber"; UNENTSCHEIDBAR für „der eine
+  Haupttreiber"
+- **Konfidenz:** hoch (Werte), mittel (Alleinstellung)
 
 ## V7 ⏳ „Frauen verhandeln schlechter — selbst schuld."
 
@@ -80,14 +81,16 @@ Limit-Reset). Quellen: `recherche-lohnluecke-VERIFIZIERT.md` / `-ROHFASSUNG.md`.
   **IRREFÜHREND** als Schuldzuweisung (Reaktion auf reale Sanktionserwartungen)
 - **Konfidenz:** niedrig–mittel bis Verifikation
 
-## V8 ⏳ „In Ländern mit kleinerem Gap geht es Frauen besser." *(Länder-Ranking-Logik)*
+## V8 ✅ „In Ländern mit kleinerem Gap geht es Frauen besser." *(Länder-Ranking-Logik)*
 
-- **Beweislage (Stand):** Selektionseffekt (Italien-Paradox): niedrige
-  Frauenerwerbsquote → positiv selektierte Erwerbstätige → kleiner *gemessener* Gap.
-  Luxemburg ⟨−0,2 %⟩, Eurostat-Spannweite, Ländertabelle — in Verifikation.
-  Inlands-Beleg schon fest: Ost kleiner unbereinigt, größer bereinigt ✅.
-- **Verdikt (vorläufig): IRREFÜHREND** ohne Trio-Lesung (Gap + Erwerbsquote + WBL)
-- **Konfidenz:** mittel → hoch nach Verifikation
+- **Beweislage (gegen Primärquellen geprüft):** Eurostat 2023: **Italien 2,2 %**
+  Gap bei nur **41,3 %** Frauenerwerbsquote (ILO 15+); Türkei 35,8 %, Mexiko 46,8 %,
+  Saudi-Arabien 34,1 % Erwerbsquote; **Luxemburg −0,9 %** (Komposition);
+  Deutschland 17,6 % (Eurostat) bei hoher Erwerbsbeteiligung. OECD-Kontrast: Japan
+  22 %, Korea 29,3 % trotz formaler Rechtsgleichheit. Inlands-Beleg: Ost kleiner
+  unbereinigt, größer bereinigt ✅.
+- **Verdikt: IRREFÜHREND** ohne Trio-Lesung (Gap + Erwerbsquote + Rechtsindex)
+- **Konfidenz:** hoch
 
 ## V9 ✅/⏳ *(These-Exponat)* „Ost/West beweist: gleiche Rechte, anderer Funktionspreis."
 

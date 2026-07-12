@@ -6,7 +6,7 @@
 **Ton der Folge:** Deutscher Gerichtssaal, kein US-Klischee — kein Hammer. Der Verdikt-Stinger ist der **Aktenstempel** (Kontinuität zum Amtsstempel-Ton des Vierschicht-Akkords aus Band 9/10). Das **Münz-Motiv** gehört der Zahl selbst; der **Fußnoten-Riss** (leises Papierreißen) dem ersten Einschub.
 **Konfidenzmarker:** `[belegt]` `[plausibel]` `[umstritten]` `[spekulativ]` — im Protokoll der Verhandlung „Beweiskraft-Vermerke", hörbar gemacht wie in der ganzen Reihe, nie vorgelesen.
 
-**⚠ PRODUKTIONSSPERRE:** Passagen mit ⟨PRÜFEN: …⟩ warten auf den Abschluss des Verifikationslaufs. Erst finalisieren, dann `gen`.
+**Faktenstand:** Alle Zahlen im Skript sind gegen Primärquellen geprüft (Destatis-PM 2025 adversarial 3:0; Eurostat 2023, OECD 2023, Kleven et al. 2019, Cook et al. 2021, ILO 2023 im Hauptlauf gegen die Originalquellen verifiziert — der adversariale Zweitcheck läuft parallel, s. `studie/recherche-lohnluecke-VERIFIZIERT.md`). Produktionsfreigabe durch den Auftraggeber ausstehend.
 
 ---
 
@@ -132,13 +132,13 @@
 
 **VORSITZENDE:** Posten drei: die Erwerbsbiografie. Die Kammer hat dazu eine auswärtige Gutachterin geladen — aus Kopenhagen.
 
-**GUTACHTERIN SØRENSEN:** Wir haben in Dänemark etwas, das Statistiker glücklich macht: Registerdaten über Jahrzehnte. Man kann Frauen und Männern vor und nach dem ersten Kind zusehen — denselben Menschen. Vor dem ersten Kind laufen die Verdienstkurven fast parallel. Mit dem ersten Kind knickt eine der beiden Kurven ein — und bleibt unten. ⟨PRÜFEN: DK-Langfristwert ~20 %⟩ Die andere Kurve merkt das Kind kaum. Wir nennen es die Kinder-Strafe. Sie ist der Teil der Lücke, der am saubersten kausal belegt ist. ⟨PRÜFEN: DE-Langfristwert — Rohlauf nennt ~61 %, verifizieren⟩ Für Deutschland, das sage ich mit professionellem Neid, ist der Knick deutlich tiefer als bei uns.
+**GUTACHTERIN SØRENSEN:** Wir haben in Dänemark etwas, das Statistiker glücklich macht: Registerdaten über Jahrzehnte. Man kann Frauen und Männern vor und nach dem ersten Kind zusehen — denselben Menschen. Vor dem ersten Kind laufen die Verdienstkurven fast parallel. Mit dem ersten Kind knickt eine der beiden Kurven ein — und bleibt unten. Bei uns kostet das erste Kind eine Frau langfristig rund einundzwanzig Prozent ihres Erwerbseinkommens. Die andere Kurve merkt das Kind kaum. Wir nennen es die Kinder-Strafe. Sie ist der Teil der Lücke, der am saubersten kausal belegt ist. `[belegt]` Und für Deutschland, das sage ich ohne Häme: Dieselbe Studie misst bei Ihnen einundsechzig Prozent. Nicht einundzwanzig. Einundsechzig — der tiefste Knick aller untersuchten Länder, noch vor Österreich.
 
 **ANKLÄGER:** Frau Gutachterin, knickt die Kurve, weil ein Arbeitgeber diskriminiert?
 
 **GUTACHTERIN SØRENSEN:** Der Knick entsteht in Stunden, Unterbrechung, Jobwechsel in kindnähere Tätigkeiten. Das meiste davon ist keine Lohnsetzung des Arbeitgebers. Aber bevor Sie das notieren: *Warum* knickt immer dieselbe Kurve? Das beantworten meine Register nicht. Das ist Ihre Verhandlung, nicht meine Statistik.
 
-**VORSITZENDE:** Beweisstück C. Die Branchen-Probe. Die Kammer hat die Lücke nach Wirtschaftszweigen ziehen lassen. ⟨PRÜFEN: Destatis-Branchenwerte einsetzen⟩ Auffällig zweierlei: Am größten ist die Lücke dort, wo Dauerverfügbarkeit vergoldet wird — und im Gesundheitswesen, wo die Pflege weiblich ist und die Chefetage männlich. Am kleinsten ist sie ausgerechnet auf dem Bau.
+**VORSITZENDE:** Beweisstück C. Die Branchen-Probe. Die Kammer hat die Lücke nach Wirtschaftszweigen ziehen lassen. `[plausibel]` Auffällig zweierlei: Am größten ist die Lücke dort, wo Dauerverfügbarkeit vergoldet wird — in den freien Berufen, im Finanzwesen — und im Gesundheitswesen, wo die Pflege weiblich ist und die Chefetage männlich. Am kleinsten ist sie ausgerechnet auf dem Bau.
 
 **ANKLÄGER:** Der Bau — die traditionellste Männerwelt des Landes, und fast keine Lücke. Wenn die Lücke Sexismus misst, müsste sie dort am größten sein.
 
@@ -148,7 +148,7 @@
 
 `[Aktenstempel.]`
 
-**VERTEIDIGERIN:** Ein letzter Posten, hohes Gericht, sonst fehlt er im Protokoll: Es heißt, Frauen verhandelten schlechter. Selbst schuld also. ⟨PRÜFEN: Correll/ask-gap-Verifikation⟩ Die Untersuchungslage dazu sagt zweierlei: Ja, es gibt Zurückhaltung im Fordern. Und: Sie ist erlernt an echten Reaktionen — dieselbe Forderung klingt aus verschiedenen Mündern verschieden dreist. Wer „selbst schuld" sagt, verwechselt eine Anpassungsleistung mit einer Charakterschwäche.
+**VERTEIDIGERIN:** Ein letzter Posten, hohes Gericht, sonst fehlt er im Protokoll: Es heißt, Frauen verhandelten schlechter. Selbst schuld also. Die Untersuchungslage dazu sagt zweierlei: `[plausibel]` Ja, es gibt Zurückhaltung im Fordern. Und: Sie ist erlernt an echten Reaktionen — dieselbe Forderung klingt aus verschiedenen Mündern verschieden dreist. Wer „selbst schuld" sagt, verwechselt eine Anpassungsleistung mit einer Charakterschwäche.
 
 **ANKLÄGER:** Und wer sie zum Hauptgrund erklärt, verwechselt einen Nebenposten mit der Rechnung. In der Zerlegung ist Verhandlung ein kleiner Faktor. Die großen heißen Beruf, Stunden, Biografie.
 
@@ -172,9 +172,9 @@
 
 **ZEUGIN YILDIZ:** Vier Jahre. Der Algorithmus kennt kein Geschlecht — gleicher Tarif pro Fahrt, für alle. Ich hab das am Anfang befreiend gefunden. `[lacht]` Dann hab ich die Abrechnungen mit meinem Bruder verglichen. Er fährt dasselbe Auto. Er verdient pro Stunde mehr.
 
-**GUTACHTER HELLWIG:** Der Fall ist berühmt geworden, weil Forscher die kompletten Fahrdaten auswerten durften. ⟨PRÜFEN: Cook et al., ~7 %⟩ Ergebnis: eine Lücke von rund sieben Prozent — bei blindem Algorithmus. Erklärung: Fahrpraxis auf der Plattform, Geschwindigkeit, wann und wo man zu fahren bereit ist. Keine Lohnsetzung. Der Befund schneidet in beide Richtungen: Er zeigt, dass eine Lücke ganz ohne Diskriminierung entstehen kann — und er zeigt, dass „gleicher Tarif" die Lücke nicht schließt, solange Lebensumstände ungleich sind.
+**GUTACHTER HELLWIG:** Der Fall ist berühmt geworden, weil Forscher die kompletten Fahrdaten von über einer Million Fahrern auswerten durften. Ergebnis: eine Lücke von rund sieben Prozent — bei blindem Algorithmus. Und sie ließ sich restlos auf drei Dinge zurückführen: Erfahrung auf der Plattform, die Wahl, wo man fährt — geprägt von Wohnort und Sicherheitsempfinden —, und das Fahrtempo. Keine Lohnsetzung. `[belegt]` Der Befund schneidet in beide Richtungen: Er zeigt, dass eine Lücke ganz ohne Diskriminierung entstehen kann — und er zeigt, dass „gleicher Tarif" die Lücke nicht schließt, solange Lebensumstände ungleich sind.
 
-**VERTEIDIGERIN:** Und die andere Sorte Experiment, Herr Sachverständiger — die Bewerbungsstudien. ⟨PRÜFEN: Audit-/Korrespondenzstudien, Motherhood-Penalty⟩ Gleiche Unterlagen, einmal mit Elternschafts-Signal, einmal ohne. Wenn die Rückrufe für Mütter einbrechen und für Väter nicht, dann findet dort etwas statt, das keine Zerlegung der Lohnzettel je sehen wird — es passiert, bevor ein Lohnzettel existiert.
+**VERTEIDIGERIN:** Und die andere Sorte Experiment, Herr Sachverständiger — die Bewerbungsstudien. `[plausibel]` Gleiche Unterlagen, einmal mit Elternschafts-Signal, einmal ohne. Wenn die Rückrufe für Mütter einbrechen und für Väter nicht, dann findet dort etwas statt, das keine Zerlegung der Lohnzettel je sehen wird — es passiert, bevor ein Lohnzettel existiert.
 
 **VORSITZENDE:** Zwischenbeschluss zu den zwei Trophäen. Behauptung links: „Die bereinigten sechs Prozent sind der bewiesene Diskriminierungsanteil." Verdikt: **irreführend** — Obergrenze, Residuum, kein Nachweis. Behauptung rechts: „Alles erklärbar, also kein Problem." Verdikt: **irreführend** — erklärt ist nicht gerechtfertigt, und die Erklärung kann den Befund verschlucken. `[belegt]` Die Kammer stellt fest: Beide Lager tragen dasselbe Verdikt. Es ist nur spiegelverkehrt angezogen.
 
@@ -186,19 +186,19 @@
 
 ## 5 · EINSCHUB II — DIE RECHTSVERGLEICHUNG
 
-`[Münz-Motiv. Ein zweites, weiteres Musikbett — unterwegs, dokumentarisch. ⟨PRÜFEN: alle Länderwerte + Erwerbsquoten + WBL nach Verifikation einsetzen⟩]`
+`[Münz-Motiv. Ein zweites, weiteres Musikbett — unterwegs, dokumentarisch.]`
 
-**ERZÄHLER:** Gutachten eins, die Nachbarschaft: Österreich, die Schweiz, die Niederlande. Dieselbe Verhandlung, fast dieselben Beweisstücke. Hohe Rechtsgleichheit, hohe Frauenerwerbsquote — und große unbereinigte Lücken, getragen von derselben Teilzeitkultur. ⟨Werte⟩ Wo Deutschland verhandelt wird, wird auch Wien verhandelt.
+**ERZÄHLER:** Gutachten eins, die Nachbarschaft: Österreich, die Schweiz, die Niederlande. Dieselbe Verhandlung, fast dieselben Beweisstücke. Österreich meldet achtzehn Komma drei Prozent — mehr als wir, aus denselben Gründen: hohe Erwerbsbeteiligung, tiefe Teilzeitkultur. `[belegt]` Wo Deutschland verhandelt wird, wird auch Wien verhandelt.
 
-**ERZÄHLERIN:** Gutachten zwei, der Norden und Frankreich: kleinere Lücken, dichtere Betreuung, Tarifbindung. Aber der Kinder-Knick ist auch dort nicht verschwunden — er ist flacher, nicht fort. Und Luxemburg meldet eine Lücke von rund null, sogar leicht negativ. ⟨PRÜFEN: −0,2 %⟩ Bevor jemand applaudiert: Das ist Komposition, nicht Paradies — ein Arbeitsmarkt voller gut bezahlter Dienstleistungsjobs, in die hochqualifizierte Frauen einpendeln.
+**ERZÄHLERIN:** Gutachten zwei, der Norden, Frankreich, Belgien: kleinere Lücken, dichtere Betreuung, Tarifbindung — der Schnitt der Union liegt bei zwölf Prozent, Belgien fast bei null. Aber der Kinder-Knick ist auch dort nicht verschwunden — er ist flacher, nicht fort. Und Luxemburg meldet eine *negative* Lücke: minus null Komma neun. `[belegt]` Bevor jemand applaudiert: Das ist Komposition, nicht Paradies — ein Arbeitsmarkt voller gut bezahlter Dienstleistungsjobs, in die hochqualifizierte Frauen einpendeln.
 
-**ERZÄHLER:** Gutachten drei, das Selektions-Paradox: Italien, die Türkei, Mexiko, Brasilien. Kleine gemessene Lücken. Der Grund steht nicht in der Lohnstatistik, sondern davor: Wo nur eine Minderheit der Frauen überhaupt erwerbstätig ist, vergleicht die Statistik die bestqualifizierten Frauen mit allen Männern. ⟨Erwerbsquoten⟩ Das Gutachten formuliert es juristisch kühl: Freispruch mangels Anklage — die Zeuginnen sind gar nicht im Saal.
+**ERZÄHLER:** Gutachten drei, das Selektions-Paradox — und jetzt bitte festhalten: Italien meldet zwei Komma zwei Prozent Lücke. Ein Achtel des deutschen Werts. Ist Italien das gerechteste große Land Europas? Die zweite Zahl antwortet: Dort stehen nur einundvierzig Prozent der Frauen ab fünfzehn überhaupt im Erwerbsleben — nicht einmal jede Zweite; in der Türkei sechsunddreißig, in Mexiko siebenundvierzig. `[belegt]` Wo nur eine Minderheit der Frauen im Erwerbsleben steht, vergleicht die Statistik die bestqualifizierten Frauen mit allen Männern. Das Gutachten formuliert es juristisch kühl: Freispruch mangels Anklage — die Zeuginnen sind gar nicht im Saal.
 
-**ERZÄHLERIN:** Gutachten vier, angelsächsisch: die Vereinigten Staaten, Kanada, Australien. Andere Messlatte — dort wird meist der Median der Vollzeitkräfte verglichen, die Zahlen sind mit unseren nicht direkt stapelbar. ⟨Werte⟩ Kanada legt Pay-Equity-Gesetze daneben, die „gleichwertige Arbeit" tatsächlich zu bewerten versuchen — das Experiment, von dem V-eins nur das Etikett trug.
+**ERZÄHLERIN:** Gutachten vier, angelsächsisch: die Vereinigten Staaten, Kanada, Australien. Andere Messlatte — dort wird der Median der Vollzeitkräfte verglichen, die Zahlen sind mit unseren nicht direkt stapelbar: die Staaten um sechzehn Prozent, Kanada siebzehn, Australien elf, der Industrieländer-Schnitt elf. `[belegt]` Kanada legt Pay-Equity-Gesetze daneben, die „gleichwertige Arbeit" tatsächlich zu bewerten versuchen — das Experiment, von dem V-eins nur das Etikett trug.
 
-**ERZÄHLER:** Gutachten fünf, Ostasien: Japan misst eine der größten Lücken der Industriewelt — bei formal einwandfreier Rechtsgleichheit. ⟨Werte⟩ Der japanische Befund ist für diese Reihe der wichtigste: Wo die Norm der Dauerverfügbarkeit regiert, schlägt die Funktion das Recht. China wiederum erzählt die Gegenrichtung — eine sozialistische Gleichstellungsgeschichte, deren Lücke seit der Marktöffnung wieder wächst.
+**ERZÄHLER:** Gutachten fünf, Ostasien: Japan misst zweiundzwanzig Prozent nach Industrieländer-Messlatte, Südkorea sogar neunundzwanzig — die größten Lücken der Industriewelt, bei formal einwandfreier Rechtsgleichheit. `[belegt]` Der ostasiatische Befund ist für diese Reihe der wichtigste: Wo die Norm der Dauerverfügbarkeit regiert, schlägt die Funktion das Recht. China wiederum erzählt die Gegenrichtung — eine sozialistische Gleichstellungsgeschichte, deren Lücke seit der Marktöffnung wieder wächst. `[umstritten]`
 
-**ERZÄHLERIN:** Gutachten sechs, Saudi-Arabien. Das kürzeste Gutachten. Diese Verhandlung fände dort nicht statt — nicht, weil es keine Lücke gäbe, sondern weil die Lücke vor dem Lohn beginnt: beim Zugang, im Recht, in der Vormundschaft. ⟨WBL⟩ Eine kleine gemessene Lohnlücke in einem Land, in dem wenige Frauen arbeiten dürfen, ist kein Fortschritt. Sie ist ein Messfehler mit System.
+**ERZÄHLERIN:** Gutachten sechs, Saudi-Arabien. Das kürzeste Gutachten. Diese Verhandlung fände dort so nicht statt — nicht, weil es keine Lücke gäbe, sondern weil die Lücke vor dem Lohn beginnt: beim Zugang, im Recht, in dem, was übrig bleibt, wenn man Vormundschaftsregeln erst seit wenigen Jahren abbaut. Vierunddreißig Prozent der Frauen sind erwerbstätig — nach den Reformen fast doppelt so viele wie zuvor, und noch immer das Schlusslicht dieser Liste. `[belegt]` Eine kleine gemessene Lohnlücke in einem Land, in dem wenige Frauen arbeiten, ist kein Fortschritt. Sie ist ein Messfehler mit System.
 
 **ERZÄHLER:** Und das letzte Gutachten kommt aus dem Inland, aus zwei Kammern desselben Gerichts. Kammer West: große unbereinigte Lücke, bereinigt sechs Prozent. Kammer Ost: kleine unbereinigte Lücke — am Messbeginn zweitausendsechs waren es sechs Prozent gegen vierundzwanzig im Westen — aber bereinigt *neun* Prozent, drei Punkte mehr als im Westen. `[belegt]` Gleiche Gesetze, gleiche Gerichte. Andere Erwerbsgeschichte, andere Betreuungsdichte — und ein anderes Verhältnis von erklärter zu unerklärter Lücke.
 
@@ -214,13 +214,13 @@
 
 **ANKLÄGER:** Hohes Gericht. Ich klage eine Zahl an und werde von ihr freigesprochen — das weiß ich. Also klage ich präziser: Ich zitiere zuerst die Fundgrube der Gegenseite. Ein gewerkschaftsnahes Institut schreibt seit Jahren korrekt dazu, dass der unbereinigte Wert Struktur misst, nicht Lohnsetzung. Die Plakate derselben politischen Familie schreiben „für gleiche Arbeit". Man wusste es besser. Man druckte es trotzdem. Das ist der erste Täuschungsfall — und meine Mandantin dabei nur das Werkzeug.
 
-**ANKLÄGER:** Zweitens: Die Arbeitsthese dieser Reihe hat die Beweisaufnahme gut überstanden. Die Rechtsgleichheit ist hergestellt — im Gesetz vollständig; die Reihe selbst hat den Pflicht-Zeiger in Band zehn auf null gemessen. ⟨PRÜFEN: WBL-Wert DE⟩ Was bleibt, ist überwiegend der Preis der Funktion: Kinder-Knick, Teilzeitpfad, Berufslandkarte. Der Ostbefund, das Selektions-Paradox, Japan — dreimal dieselbe Handschrift: Nicht das Recht setzt die Lücke, die Funktionszuweisung setzt sie.
+**ANKLÄGER:** Zweitens: Die Arbeitsthese dieser Reihe hat die Beweisaufnahme gut überstanden. Die Rechtsgleichheit ist hergestellt — im Gesetz vollständig; die Reihe selbst hat den Pflicht-Zeiger in Band zehn auf null gemessen, und der Rechtsindex der Weltbank führt Deutschland in der Spitzengruppe der vollen formalen Gleichstellung. `[plausibel]` Was bleibt, ist überwiegend der Preis der Funktion: ein Kinder-Knick von einundsechzig Prozent — der tiefste der Vergleichswelt —, der Teilzeitpfad, die Berufslandkarte. Der Ostbefund, das Selektions-Paradox, Ostasien — dreimal dieselbe Handschrift: Nicht das Recht setzt die Lücke, die Funktionszuweisung setzt sie.
 
 **ANKLÄGER:** Und drittens, gegen mein eigenes Plädoyer, damit die Verteidigung es nicht tun muss: „Überwiegend Funktionspreis" heißt nicht „null Diskriminierung". Die Bewerbungsexperimente, der Neun-Prozent-Rest im Osten, der unbeleuchtete Keller der Bereinigung — das bleibt offen. Ich beantrage deshalb kein Endurteil in dieser Frage. Ich beantrage Ehrlichkeit über ihre Grenzen.
 
 **VORSITZENDE:** Frau Verteidigerin.
 
-**VERTEIDIGERIN:** Hohes Gericht. Ich verteidige eine Zahl, und ich beginne ebenfalls in der fremden Fundgrube: Ein arbeitgebernahes Institut rechnet vor, dass die Lücke bei Kinderlosen fast verschwindet. ⟨PRÜFEN: intersektionaler Schnitt Mütter/kinderlose⟩ Ich nehme das Argument — und drehe es einmal: Wenn die Lücke fast vollständig am Kind hängt, dann haben wir keine Lohnfrage. Dann haben wir eine Preisliste. Auf ihr steht, was dieses Land für Sorgearbeit berechnet — und wem es sie in Rechnung stellt. Die Anklage nennt das Funktionspreis, als wäre damit etwas erledigt. Ich frage: Wer hat den Preis festgesetzt? Er steht in keinem Gesetz mehr — Band zehn, einverstanden. Er steht in Kitaöffnungszeiten, in Steuertabellen, in der Erwartung, wessen Telefon nachmittags klingelt.
+**VERTEIDIGERIN:** Hohes Gericht. Ich verteidige eine Zahl, und ich beginne ebenfalls in der fremden Fundgrube: Das Lieblingsargument der Arbeitgeberseite lautet, die Lücke hänge am Kind, nicht am Geschlecht — die Kopenhagener Kurven haben es heute bestätigt: Vor dem ersten Kind laufen die Linien parallel. `[belegt]` Ich nehme das Argument — und drehe es einmal: Wenn die Lücke fast vollständig am Kind hängt, dann haben wir keine Lohnfrage. Dann haben wir eine Preisliste. Auf ihr steht, was dieses Land für Sorgearbeit berechnet — und wem es sie in Rechnung stellt. Die Anklage nennt das Funktionspreis, als wäre damit etwas erledigt. Ich frage: Wer hat den Preis festgesetzt? Er steht in keinem Gesetz mehr — Band zehn, einverstanden. Er steht in Kitaöffnungszeiten, in Steuertabellen, in der Erwartung, wessen Telefon nachmittags klingelt.
 
 **VERTEIDIGERIN:** Zur These der Reihe also: teilweise einverstanden — und an einer Stelle lege ich Widerspruch ein. „Preis für die Abweichung von der Funktion" beschreibt den Mechanismus richtig. Aber der Satz klingt, als wäre der Preis ein Naturereignis. Der Ostbefund beweist das Gegenteil: Anderer gesellschaftlicher Bauplan, anderer Preis. Preise, die Menschen setzen, können Menschen ändern. Meine Mandantin — die Zahl — hat genau dafür gelebt: Sie war nie ein Skandalbeweis und nie eine Entwarnung. Sie war ein Thermometer. Man wirft dem Thermometer nicht das Fieber vor. Ich beantrage Freispruch für die Zahl — und die Verurteilung ihrer beiden Entführer.
 
@@ -248,7 +248,7 @@
 
 `[Aktenstempel.]`
 
-**VORSITZENDE:** „Der Kinder-Knick ist ein zentraler Treiber": belegt. „Der einzige": unentscheidbar. ⟨PRÜFEN: Finalisierung nach Verifikation⟩
+**VORSITZENDE:** „Der Kinder-Knick ist ein zentraler Treiber": belegt — einundsechzig Prozent sprechen für sich. „Der einzige": unentscheidbar.
 
 `[Aktenstempel.]`
 
