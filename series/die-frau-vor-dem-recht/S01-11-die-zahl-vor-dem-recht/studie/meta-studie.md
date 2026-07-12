@@ -47,9 +47,33 @@ ein- und ausschließt; warum internationale Werte nicht direkt vergleichbar sind
 
 ## 3 · Deutschland: Zeitreihe und Stand
 
-⟨Aus Recherche: unbereinigter Gap Zeitreihe bis zum aktuellsten verfügbaren Jahr;
-bereinigter Gap; Methodenrevisionen; Ost/West-Kontrast; Rentenlücke (Gender Pension
-Gap) als Folgelücke.⟩
+**Verifiziert (Stufe A, adversarial 3:0 bestätigt — Quellen: Destatis-PM PD25_453,
+PD25_056, Themenseite Verdienste/GenderPayGap):**
+
+- **Unbereinigter GPG 2025: 16 %** — Frauen ø 22,81 €/h brutto, Männer 27,05 €/h
+  (Differenz 4,24 €). Gegenüber 2024 (16 %) konstant; 2023: 18 %.
+- **Zeitreihe seit Messbeginn 2006:** 23 % gesamt (West inkl. Berlin 24 %, **Ost 6 %**)
+  → 2025: 16 %. Der Rückgang 2023→2024 um 2 Punkte ist auch methodisch bedingt
+  (Erhebungsumstellung beachten).
+- **Bereinigter GPG 2025: 6 %** — bei vergleichbarer Tätigkeit, Qualifikation und
+  Erwerbsbiografie; **West 6 %, Ost 9 %**. 2024 ebenfalls 6 %.
+- **Erklärungsanteil:** rund 60 % (2025) bzw. ~63 % (2024: 2,58 € von 4,10 €) des
+  Abstands sind durch beobachtbare Merkmale erklärt; größte Einzelfaktoren 2024:
+  Berufs-/Branchenwahl ~21 % (0,87 €), Teilzeitquote ~19 % (0,79 €),
+  Anforderungsniveau ~12 % (0,48 €).
+- **Interpretations-Anker (Destatis wörtlich):** Der bereinigte Gap ist eine
+  **Obergrenze** für Verdienstdiskriminierung — Erwerbsunterbrechungen
+  (Mutterschutz, Elternzeit) und tatsächliche Berufserfahrung fehlen in der
+  Erhebung; lägen sie vor, fiele der Wert niedriger aus. Der 6-%-Wert ist ein
+  unerklärtes Residuum, kein Diskriminierungsnachweis. (Gegenrichtung — Bereinigung
+  kann Diskriminierung wegkontrollieren — bleibt als methodischer Vorbehalt in §5.)
+- **Kernbefund für das Ost/West-Exponat:** Der Osten hat den *kleineren
+  unbereinigten*, aber den *größeren bereinigten* Gap (9 % vs. 6 %) — weniger
+  Funktionspreis (Erwerbs-/Betreuungsgeschichte), mehr unerklärter Rest.
+
+⟨Noch aus Recherche zu ergänzen: Gender Gap Arbeitsmarkt / Gender Hours Gap
+(Indikatorenfamilie), Rentenlücke (Gender Pension Gap) als Folgelücke,
+Methodenrevision im Detail.⟩
 
 ## 4 · Die Zerlegung: Erklärfaktoren mit Effektgrößen
 
