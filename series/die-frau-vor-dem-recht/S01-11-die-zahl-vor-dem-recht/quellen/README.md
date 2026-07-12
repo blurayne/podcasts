@@ -1,6 +1,6 @@
 # Quellen S01-11 — Referenzvideo-Untertitel
 
-Sechs Referenzvideos (5 ursprüngliche + 1 nachgereichtes). Transkript-Status:
+Sechs Referenzvideo-**Links** (5 ursprüngliche + 1 nachgereichter) — Dedupe-Ergebnis: sie führen auf nur **4 verschiedene Videos** (mehrere Links waren Duplikate). **Transkripte vollständig.**
 
 | # | Video-Link | DownSub | Transkript |
 |---|-----------|---------|------------|
@@ -18,9 +18,7 @@ Vorhandene Transkripte (4):
 3. `video-3-three-gender-pay-gap-myths.en.txt` — "Three gender pay gap myths explained" (EN)
 4. `video-4-gender-pay-gap-crushed-shapiro-sowell-peterson.en.txt` — "Gender Pay Gap CRUSHED" (EN)
 
-→ **Es fehlen noch 2 Transkripte**: die beiden Links aus B–F, deren Titel nicht
-unter den vier vorhandenen sind. (Titel↔ID-Zuordnung ist aus der Remote-Umgebung
-nicht prüfbar — YouTube gesperrt.)
+→ **VOLLSTÄNDIG:** Alle sechs Links sind durch die vier Transkripte abgedeckt (per Byte-Vergleich der DownSub-Dateien bestätigt).
 
 Argument-Auswertung: [`ABGLEICH.md`](ABGLEICH.md). Die Untertitel dienen nur dem
 Abgleich der Argumentation — Beispiele und Formulierungen der Folge sind
