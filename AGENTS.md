@@ -63,6 +63,7 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   shared libs). A working system ffmpeg is at `/usr/bin/ffmpeg` (v4.4.2). The
   orchestrators auto-pick the first working `ffmpeg`/`ffprobe`
   (env `FFMPEG_BIN` > `PATH` > `/usr/bin`), so builds run regardless.
+- **Uhrzeiten in Europe/Berlin.** Alle Uhrzeiten gegenüber dem User in der Zeitzone Berlin (CET/CEST) angeben — UTC nur, wenn technisch nötig, dann mit Berlin-Umrechnung daneben.
 - **Watch the credit pool.** TTS, SFX and Music all draw from one shared balance
   (`python3 scripts/el.py balance`). Flag the user if credits run low. When reporting any spend or estimate, **also give the approximate cost in USD** (Creator plan ≈ $22 per 100,000 credits ≈ $0.00022/credit; label it an estimate).
 - **Respect caches; be efficient; compress assets, keep quality high.** Never regenerate cached stems (`skip_existing` everywhere; `mix` reuses whatever `gen` produced). Keep generated assets and finals as high-quality MP3 (`libmp3lame -q:a 2`); use FLAC (lossless *and* ~50% smaller) for ffmpeg intermediates in `work/` — never bulky WAV — and stay uncompressed PCM only where a filter genuinely requires it.
