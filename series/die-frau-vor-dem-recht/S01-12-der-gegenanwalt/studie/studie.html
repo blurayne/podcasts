@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Werkstattstudie II — Der Gegenanwalt</title>
+<style>
+  @font-face { font-family:'Space Grotesk'; src:url('fonts/SpaceGrotesk-Regular.otf'); font-weight:400; }
+  @font-face { font-family:'Space Grotesk'; src:url('fonts/SpaceGrotesk-Light.otf'); font-weight:300; }
+  @font-face { font-family:'Space Grotesk'; src:url('fonts/SpaceGrotesk-Medium.otf'); font-weight:500; }
+  @font-face { font-family:'Space Grotesk'; src:url('fonts/SpaceGrotesk-Bold.otf'); font-weight:700; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('fonts/IBMPlexMono-Regular.otf'); font-weight:400; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('fonts/IBMPlexMono-Medium.otf'); font-weight:500; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('fonts/IBMPlexMono-Bold.otf'); font-weight:700; }
+
+  :root {
+    --obsbg:#0F172A; --obscard:#1E293B; --obsink:#1A2333; --obsmuted:#64748B;
+    --obsline:#CBD5E1; --obsaccent:#38BDF8; --obsviolet:#818CF8; --obspaper:#F8FAFC;
+    --cbelegt:#059669; --cplausibel:#0284C7; --cumstritten:#D97706; --cspekulativ:#9333EA;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  @page { size:A4; margin:2.5cm 2.3cm; }
+  @page:first { margin:0; }
+  html { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body { font-family:'Space Grotesk',sans-serif; color:var(--obsink); font-size:10.4pt; line-height:1.52; }
+  p { margin:0 0 .55em 0; text-align:justify; hyphens:auto; }
+
+  /* ── Titelseite ── */
+  .cover { background:var(--obsbg); color:var(--obspaper); width:210mm; height:296mm;
+    padding:26mm 22mm; display:flex; flex-direction:column; page-break-after:always; }
+  .kicker { font-family:'IBM Plex Mono',monospace; font-size:8.5pt; letter-spacing:.12em;
+    color:var(--obsaccent); font-weight:500; }
+  .cover hr { border:none; border-top:.4pt solid var(--obsmuted); margin:1.1em 0 2.2em; }
+  .series { font-weight:300; font-size:13pt; color:var(--obsline); letter-spacing:.04em; }
+  .cover h1 { font-weight:500; font-size:34pt; line-height:1.12; margin:.35em 0 .4em; color:#fff; }
+  .cover .sub { font-weight:300; font-style:italic; font-size:12.5pt; color:var(--obsline); max-width:34em; }
+  .abstract { margin-top:2.4em; font-weight:300; font-size:10.5pt; color:var(--obsline);
+    max-width:41em; line-height:1.6; text-align:justify; }
+  .legend { margin-top:2.6em; font-family:'IBM Plex Mono',monospace; font-size:8pt; color:var(--obsline); }
+  .legend b { font-weight:700; }
+  .sq { display:inline-block; width:8px; height:8px; border-radius:2px; margin:0 .45em 0 0; }
+  .coverfoot { margin-top:auto; font-family:'IBM Plex Mono',monospace; font-size:8pt; color:var(--obsmuted); }
+
+  /* ── Chips ── */
+  .chip { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:6.8pt; font-weight:700;
+    color:#fff; padding:1px 5px 1.5px; border-radius:2.5pt; vertical-align:.12em; letter-spacing:.02em; }
+  .belegt { background:var(--cbelegt); } .plausibel { background:var(--cplausibel); }
+  .umstritten { background:var(--cumstritten); } .spekulativ { background:var(--cspekulativ); }
+  .interpret { background:var(--obsmuted); }
+
+  /* ── Struktur ── */
+  h2.part { font-weight:500; font-size:17pt; color:var(--obsink); margin:1.6em 0 .8em;
+    padding-top:.4em; page-break-after:avoid; }
+  h2.part .pnum { color:var(--obsviolet); font-family:'IBM Plex Mono',monospace; font-size:10pt;
+    display:block; letter-spacing:.14em; margin-bottom:.4em; }
+  h3.sec { font-weight:500; font-size:13.5pt; margin:1.5em 0 .35em; padding-bottom:.25em;
+    border-bottom:.4pt solid var(--obsline); page-break-after:avoid; }
+  h3.sec .snum { color:var(--obsaccent); margin-right:.55em; }
+  h4 { font-weight:500; font-size:11pt; color:var(--obsviolet); margin:1.1em 0 .3em; page-break-after:avoid; }
+
+  /* ── Boxen ── */
+  .merksatz { background:var(--obscard); color:var(--obspaper); border-radius:4px;
+    padding:14px 18px; margin:1em 0; font-weight:500; font-size:11.5pt; line-height:1.45;
+    page-break-inside:avoid; }
+  .datenbox, .gegen { background:var(--obspaper); border-left:3pt solid var(--obsaccent);
+    padding:10px 14px 8px; margin:1em 0; page-break-inside:avoid; font-size:9.8pt; }
+  .datenbox .dbt, .gegen .dbt { font-family:'IBM Plex Mono',monospace; font-size:7.5pt; font-weight:700;
+    letter-spacing:.06em; color:var(--obsaccent); display:block; margin-bottom:.5em; }
+  .gegen { border-left-color:var(--cumstritten); }
+  .gegen .dbt { color:var(--cumstritten); }
+
+  table { border-collapse:collapse; width:100%; font-size:8.6pt; margin:.8em 0 1em; }
+  th { font-family:'IBM Plex Mono',monospace; font-size:7.3pt; letter-spacing:.05em; text-align:left;
+    color:var(--obsmuted); border-bottom:1pt solid var(--obsink); padding:3px 7px 4px; }
+  td { border-bottom:.4pt solid var(--obsline); padding:4px 7px; vertical-align:top; }
+  tr { page-break-inside:avoid; }
+
+  ul,ol { margin:.2em 0 .7em 1.4em; } li { margin-bottom:.3em; text-align:justify; }
+  .quelle { font-size:8.6pt; color:var(--obsmuted); }
+  .lit { font-size:8.8pt; margin-bottom:.42em; text-align:left; padding-left:1.2em; text-indent:-1.2em; }
+  em { font-style:italic; } .mono { font-family:'IBM Plex Mono',monospace; font-size:.92em; }
+  .toc { page-break-after:always; }
+  .toc h2 { font-weight:500; font-size:15pt; margin:0 0 1em; }
+  .toc div { display:flex; justify-content:space-between; border-bottom:.3pt dotted var(--obsline);
+    padding:2.5px 0; font-size:9.6pt; }
+  .toc .t2 { padding-left:1.6em; } .toc .tp { font-weight:500; margin-top:.7em; }
+  .footer-note { margin-top:2em; border-top:.4pt solid var(--obsline); padding-top:.6em;
+    font-family:'IBM Plex Mono',monospace; font-size:7.4pt; color:var(--obsmuted); }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ TITELSEITE ═══════════ -->
+<div class="cover">
+  <div class="kicker">OBSERVATORY · GESCHLECHTERFORSCHUNG / WISSENSCHAFTSSOZIOLOGIE · WERKSTATTSTUDIE II · HINTERGRUNDRECHERCHE</div>
+  <hr>
+  <div class="series">Die Frau vor dem Recht</div>
+  <h1>Der Gegenanwalt</h1>
+  <div class="sub">Varnan Chandreswarans Thesen im Faktencheck · Opfermentalität und die Narzissmus-Frage · die Politisierung der Disziplinen · und die Kritik der Funktionskritik an sich selbst</div>
+  <div class="abstract">
+    Diese Werkstattstudie liefert die Hintergrundrecherche zur zweiten Werkstattfolge der Reihe. Teil I — der
+    ausführlichste — prüft die Studienbasis des Psychologen und Wissenschafts-YouTubers Varnan Chandreswaran
+    (varnan.de/thesen): die Opfermentalitäts- und Resilienzthesen, die Einstellungs-Meta-Analysen und den Block
+    „linkes Spektrum und Narzissmus" — bis zur Reanalyse von Cook, Meyer &amp; Asbrock (2026), die den zentralen
+    Narzissmus-Befund umkehrt. Teil II fragt knapper, aber grundsätzlicher: Aus welchen politischen Ecken kommen
+    die beteiligten Disziplinen, und was wird in Studien weggelassen, um Positionen zu untermauern — auf beiden
+    Seiten? Teil III wendet das Verfahren gegen die eigene Reihe: acht Einwände von links und rechts gegen die
+    Gutachterbank, zwei bleiben stehen. Ziel unverändert: die Entkopplung von Wert und Funktion — aber fundiert.
+  </div>
+  <div class="legend">
+    <span class="sq" style="background:var(--cbelegt)"></span><b>belegt</b> · quellennah/empirisch gesichert&nbsp;&nbsp;
+    <span class="sq" style="background:var(--cplausibel)"></span><b>plausibel</b> · begründete Deutung&nbsp;&nbsp;
+    <span class="sq" style="background:var(--cumstritten)"></span><b>umstritten</b> · aktive Forschungskontroverse&nbsp;&nbsp;
+    <span class="sq" style="background:var(--cspekulativ)"></span><b>spekulativ</b> · Hypothese jenseits der Evidenz
+  </div>
+  <div class="coverfoot">9. Juli 2026 · Leitformel: Rechtsstellung folgt Funktionsstellung · Ziel: Entkopplung — aber fundiert</div>
+</div>
+
+<!-- ═══════════ INHALT ═══════════ -->
+<div class="toc">
+  <h2>Inhalt</h2>
+  <div class="tp"><span>Teil I — Der Gegenanwalt: Varnan und seine Studienbasis</span></div>
+  <div class="t2"><span>§ 1 Person, Kanal, Arbeitsweise</span></div>
+  <div class="t2"><span>§ 2 Der Studienkatalog der Thesen-Seite</span></div>
+  <div class="t2"><span>§ 3 Das Opfer-Thema: Basisraten, Medien, Resilienz</span></div>
+  <div class="t2"><span>§ 4 Einstellungsdiskriminierung: der Schaerer-Komplex</span></div>
+  <div class="t2"><span>§ 5 Wokeness und Psyche: der Lahtinen-Komplex</span></div>
+  <div class="t2"><span>§ 6 „Links und narzisstisch"? Der DEVP-Komplex und die Cook-Reanalyse</span></div>
+  <div class="tp"><span>Teil II — Die Politisierung der Disziplinen</span></div>
+  <div class="t2"><span>§ 7 Die Schieflage der Fächer</span></div>
+  <div class="t2"><span>§ 8 Was weggelassen wird: Mechanismen selektiver Evidenz</span></div>
+  <div class="tp"><span>Teil III — Die Kritik der Funktionskritik</span></div>
+  <div class="t2"><span>§ 9 Acht Einwände gegen den Richter</span></div>
+  <div class="t2"><span>§ 10 Antworten, Zugeständnisse, das adversariale Register</span></div>
+  <div class="t2"><span>§ 11 Prüffragen dieser Werkstatt</span></div>
+  <div class="tp"><span>Quellen</span></div>
+</div>
+
+<!-- ═══════════ TEIL I ═══════════ -->
+<h2 class="part"><span class="pnum">TEIL I · SCHWERPUNKT</span>Der Gegenanwalt: Varnan und seine Studienbasis</h2>
+
+<h3 class="sec"><span class="snum">§ 1</span>Person, Kanal, Arbeitsweise</h3>
+<p>Varnan Chandreswaran (M.Sc. Psychologie, Doktorand der Neurowissenschaften an der Ruhr-Universität Bochum;
+Promotionsthema Alzheimer-Forschung, also fachfremd zu seinen öffentlichen Themen) ist der derzeit
+sichtbarste deutschsprachige Vertreter einer anti-woken Symmetrie-Position mit wissenschaftlichem Anspruch:
+YouTube-Kanal (@varnan.psycho, Reichweite im Millionenbereich), GWUP-/SkepKon-Referent, Buch „Gefangen in der
+Opferrolle: Warum Wokeness scheitert" (Eulogia 2024 — ein Dienstleisterverlag ohne Fachbegutachtung). Seine
+Website führt unter <span class="mono">varnan.de/thesen</span> eine „kompakte Übersicht wichtiger Studien für
+ein realistisches Weltbild" (Stand ~März 2025). <span class="chip belegt">belegt</span></p>
+<p>Zwei Eigenschaften machen ihn zur idealen Fallstudie statt zur bloßen Zielscheibe. Erstens: Seine Studienbasis
+ist echt — die zitierten Arbeiten existieren, sind peer-reviewt und werden im Kern meist korrekt referiert.
+Zweitens: Er hat öffentlich eine eigene Fehlprognose eingeräumt. Seine eigene Erhebung (Lahtinen-Fragebogen,
+deutsche Stichprobe, präsentiert Mai 2026 im GWUP-Umfeld) fand <em>keinen</em> negativen Zusammenhang zwischen
+Wokeness und psychischer Gesundheit — sein O-Ton: „Ich lag tatsächlich falsch."
+<span class="chip belegt">belegt</span> Das ist gelebtes Falsifikationsangebot — die Währung, in der die
+Gutachterbank rechnet. Die Erhebung selbst ist allerdings nicht peer-reviewt publiziert.
+<span class="chip belegt">belegt</span></p>
+<div class="merksatz">Das wiederkehrende Muster seiner Argumentation ist nicht Erfindung, sondern Selektion:
+echte Studien, einseitig ausgewählt; schwache Querschnittskorrelationen, kausal gedeutet; Callback-Daten,
+auf „das Patriarchat" hochgerechnet. Anwaltschaft — keine Gutachtertätigkeit.</div>
+
+<h3 class="sec"><span class="snum">§ 2</span>Der Studienkatalog der Thesen-Seite</h3>
+<p>Rekonstruiert über Suchindex-Snippets (Direktzugriff auf die Seite war zum Recherchezeitpunkt netzwerkseitig
+nicht möglich; Vollzitate teils zugeordnet, Zuordnung markiert):</p>
+<table>
+<tr><th>ZITAT</th><th>STUDIE (IDENTIFIKATION)</th><th>SEIN PUNKT</th><th>EINORDNUNG</th></tr>
+<tr><td>Kessler 2017</td><td>Kessler et al., WHO World Mental Health Surveys, <em>Eur. J. Psychotraumatology</em> 8(sup5)</td><td>~70 % Lebenszeit-Traumaexposition — Trauma ist Normalfall, nicht Ausnahme</td><td><span class="chip belegt">belegt</span></td></tr>
+<tr><td>Walter 2020</td><td>Walter, Conroy-Beam, Buss et al., <em>Psychological Science</em> 31(4); 45 Länder, N=14.399</td><td>Statuspräferenz bei Partnerwahl</td><td><span class="chip belegt">belegt</span> — von dieser Reihe selbst zitiert (Band VII)</td></tr>
+<tr><td>Schaerer et al. 2023</td><td><em>OBHDP</em> 179; Meta-Analyse, 85 Feldexperimente, 361.645 fiktive Bewerbungen</td><td>„seit 2009 keine nachweisbare Diskriminierung — Männer eher benachteiligt"</td><td>Kernbefund <span class="chip belegt">belegt</span>, Verallgemeinerung <span class="chip umstritten">umstritten</span> (§ 4)</td></tr>
+<tr><td>Lahtinen 2024</td><td><em>Scandinavian Journal of Psychology</em> 65(4); CSJAS-Skala, n≈5.900 (Finnland)</td><td>Wokeness korreliert mit Angst/Depression</td><td>Korrelation <span class="chip belegt">belegt</span>, Deutung <span class="chip umstritten">umstritten</span> (§ 5)</td></tr>
+<tr><td>Ok et al. 2021</td><td><em>JPSP</em> 120(6): virtuous victim signaling</td><td>Opfersignaling ↔ Dark Triad</td><td><span class="chip belegt">belegt</span> — misst Signalverhalten, kein politisches Lager</td></tr>
+<tr><td>Krispenz &amp; Bertrams 2024</td><td><em>Current Psychology</em> 43: LWA und dunkle Traits</td><td>Linksautoritarismus ↔ Narzissmus</td><td><span class="chip umstritten">umstritten</span> — Reanalyse kehrt Vorzeichen um (§ 6)</td></tr>
+<tr><td>Moss &amp; O'Connor 2020</td><td><em>Heliyon</em> 6(7)</td><td>PC-Autoritarismus ↔ Dark Triad</td><td><span class="chip belegt">belegt</span> — findet dasselbe für Alt-Right; kein Links-Befund</td></tr>
+<tr><td>Grubbs et al. 2019</td><td><em>PLoS ONE</em> 14(10): moral grandstanding</td><td>Moralisieren als Statussuche</td><td><span class="chip belegt">belegt</span> — ideologieübergreifend</td></tr>
+<tr><td>Armaly (&amp; Enders) 2022</td><td><em>Political Behavior</em> 44: perceived victimhood</td><td>Mediennarrative → Opfer-Selbstbild</td><td>Korrelation <span class="chip belegt">belegt</span>, Kausalkette <span class="chip spekulativ">spekulativ</span></td></tr>
+<tr><td>Leppin 2014 · Joyce 2018 · Pinto 2021 · Llistosella 2023</td><td>vier Resilienz-Meta-Analysen (<em>PLoS ONE</em>, <em>BMJ Open</em>, <em>Frontiers</em>)</td><td>Resilienztrainings wirken</td><td><span class="chip belegt">belegt</span>, kleine Effekte nach Bias-Korrektur (§ 3)</td></tr>
+</table>
+
+<h3 class="sec"><span class="snum">§ 3</span>Das Opfer-Thema: Basisraten, Medien, Resilienz</h3>
+<p>Varnans stärkster inhaltlicher Strang ist das Opfer-Thema, und er beginnt mit einer soliden Basisrate:
+Rund 70 % aller Menschen erleben im Lauf des Lebens mindestens ein traumatisches Ereignis (Kessler et al. 2017,
+WHO-Surveys, 24 Länder). <span class="chip belegt">belegt</span> Daraus folgt sein Kernargument: Wenn
+Widrigkeit der Normalfall ist, entscheidet der Umgang damit — und eine Kultur, die Verletzlichkeit prämiert,
+trainiert den falschen Umgang. Die therapeutische Literatur gibt der zweiten Hälfte teilweise recht:
+Resilienztrainings und positiv-psychologische Interventionen zeigen meta-analytisch robuste, aber
+<em>kleine bis mittlere</em> Effekte (Leppin 2014; Joyce 2018; Carr et al. 2021: Wohlbefinden g≈0,39,
+Angst g≈0,62). <span class="chip belegt">belegt</span></p>
+<div class="gegen"><span class="dbt">GEGENDARSTELLUNG</span>
+White, Uttl &amp; Holder (2019, <em>PLoS ONE</em>) zeigen massiven Small-Sample-Bias in den klassischen
+PPI-Meta-Analysen: Nach Korrektur schrumpft der Wohlbefindens-Effekt auf r ≈ 0,10; die Depressions-Effekte
+werden ausreißerabhängig und meist nicht signifikant. „Resilienz hilft" bleibt wahr — aber als leises
+Adjuvans, nicht als Gegenprogramm zur Sozialpolitik. Wer kleine Trainings-Effekte gegen strukturelle
+Maßnahmen ausspielt, wechselt unbemerkt die Größenordnung. <span class="chip belegt">belegt</span></div>
+<p>Die Medienthese — Opfernarrative erzeugen Opfermentalität — stützt er auf Armaly &amp; Enders (2022):
+Wahrgenommene eigene Opferschaft („perceived victimhood") ist ein messbares, politisch folgenreiches Konstrukt
+in der US-Politik, das von politischen Unternehmern beider Lager bewirtschaftet wird.
+<span class="chip belegt">belegt</span> Der Sprung von „Opferschaft ist politisch bewirtschaftbar" zu
+„Medien <em>erzeugen</em> Opfermentalität" ist damit nicht gedeckt: Es existiert keine Längsschnitt- oder
+Experimentalevidenz, die Medienkonsum kausal mit klinisch relevanter Opfermentalität verknüpft.
+<span class="chip spekulativ">spekulativ</span> Verwandt, aber eigenständig: Gabay et al. (2020) beschreiben
+die „Tendency for Interpersonal Victimhood" als stabiles Persönlichkeitsmerkmal (Anerkennungsbedürfnis,
+moralischer Elitismus, Rumination) — ein individualpsychologisches Konstrukt, keine Kulturdiagnose.
+<span class="chip belegt">belegt</span></p>
+<div class="merksatz">Der belastbare Kern des Opfer-Themas: Opferstatus ist eine <em>Währung</em> geworden —
+messbar bewirtschaftet in Politik (Armaly), Selbstdarstellung (Ok et al.) und Diskurs (Grubbs). Wer sie
+ausgibt, gewinnt Aufmerksamkeit, Schutz und moralischen Kredit. Das ist keine Links-Diagnose: Die Währung
+kursiert in allen Lagern.</div>
+
+<h3 class="sec"><span class="snum">§ 4</span>Einstellungsdiskriminierung: der Schaerer-Komplex</h3>
+<p>Die prominenteste Zeile der Thesen-Seite: „Eine Meta-Analyse von über 360.000 fiktiven Bewerbungen zeigt,
+dass es seit 2009 keine nachweisbare Diskriminierung gibt — Männer sind sogar eher benachteiligt (Schaerer
+et al., 2023)." Die Studie existiert und sagt im Kern das: Diskriminierung gegen Frauen bei Callback-Raten ist
+über 44 Jahre gesunken und in den jüngsten Perioden nicht mehr nachweisbar; die Benachteiligung von Männern
+in frauentypischen Berufen blieb stabil (methodisch aufwendig: Red Team, Forecasting-Survey).
+<span class="chip belegt">belegt</span> Konvergent: Lippens et al. 2023 (<em>European Economic Review</em>,
+Diskriminierungsratio 1,04 zugunsten von Frauen im Aggregat); Park &amp; Oh 2025 (<em>Sociological Science</em>,
+US-Audits, kein signifikanter Gesamteffekt). <span class="chip belegt">belegt</span></p>
+<div class="gegen"><span class="dbt">GEGENDARSTELLUNG · GALOS &amp; COPPOCK 2023, SCIENCE ADVANCES</span>
+Die Reanalyse von &gt;70 Audit-Experimenten aus 26 Ländern zeigt einen Berufskompositions-Gradienten von
+8,15 Prozentpunkten: In männerdominierten Berufen −3,0 pp <em>gegen</em> Frauen, in frauendominierten
++5,1 pp <em>für</em> Frauen. Der „Netto-Null"-Befund ist ein Aggregationsartefakt — Frauen werden weiterhin
+genau dort benachteiligt, wo Berufe männerdominiert und typischerweise besser bezahlt sind; der
+Männer-Nachteil liegt in schlechter bezahlten Feldern. Zudem messen Audits nur die erste Stufe (Callback) —
+Löhne, Beförderungen, Netzwerk-Rekrutierung und Führungspositionen sind methodisch unsichtbar.
+<span class="chip belegt">belegt</span></div>
+<p>Urteil: Der Kernbefund ist korrekt referiert; die Verallgemeinerung „keine Einstellungsdiskriminierung
+gegen Frauen mehr" ist <span class="chip umstritten">umstritten</span>, und der Sprung auf „wir leben in
+keinem Patriarchat" ist ein Ebenenwechsel, den die Daten nicht tragen (Führungsanteile, Gender Care Gap
+44,3 %, Partnerschaftsgewalt ~80 % weibliche Opfer, Child Penalty ~20 % — Kleven et al. 2019).
+<span class="chip umstritten">umstritten</span></p>
+
+<h3 class="sec"><span class="snum">§ 5</span>Wokeness und Psyche: der Lahtinen-Komplex</h3>
+<p>Lahtinen (2024) konstruierte die erste validierte Skala für „Critical Social Justice"-Einstellungen
+(CSJAS, 7 Items; zwei Studien, gesamt n = 5.878, Finnland) und fand: Höhere CSJ-Zustimmung korreliert mit
+mehr Angst (r ≈ 0,17–0,28), Depression (r ≈ 0,13–0,24) und geringerem Glück; am stärksten bei Studentinnen
+in Nicht-MINT-Fächern; Frauen stimmen der Skala mehr als doppelt so stark zu (d = 1,20).
+<span class="chip belegt">belegt</span></p>
+<div class="gegen"><span class="dbt">GEGENDARSTELLUNG</span>
+Vier Einschränkungen, die auf der Thesen-Seite fehlen: (1) Die Korrelationen sind schwach — durchweg unter
+9 % Varianzaufklärung. (2) Lahtinen berichtet selbst, dass die CSJAS nicht stärker mit Depression/Angst
+korreliert als schlichte linke politische Orientierung — der Befund ist womöglich der lange bekannte
+Links-konservativ-Wohlbefindens-Gap, nichts Wokeness-Spezifisches. (3) Querschnitt: mindestens drei
+Kausal-Lesarten (Einstellung→Distress; Distress→Attraktivität von Ungerechtigkeitsnarrativen;
+Drittvariablen Geschlecht/Alter). (4) Finnland-Stichprobe mit Selektionsbias (Zeitungsleserschaft,
+Bildungsniveau). Und: Varnans eigene deutsche Erhebung fand keinen Zusammenhang mit psychischer
+Gesundheit — sein eingeräumtes „Ich lag falsch". Kausale Deutung („Wokeness macht krank"):
+<span class="chip spekulativ">spekulativ</span></div>
+
+<h3 class="sec"><span class="snum">§ 6</span>„Links und narzisstisch"? Der DEVP-Komplex und die Cook-Reanalyse</h3>
+<p>Der Block, der Varnans Publikum am stärksten bindet, lautet: Wer sich dem linken Spektrum zuordnet — genauer:
+wer woke Positionen lautstark vertritt —, habe überdurchschnittlich oft eine narzisstische Natur. Als Beleg
+dienen vier echte Studien und ein Prinzip: das „Dark-Ego-Vehicle Principle" (DEVP) von Krispenz &amp; Bertrams —
+Menschen mit dunklen Persönlichkeitszügen suchen sich Ideologien als Vehikel für Ego-Bedürfnisse.</p>
+<h4>Was die vier Studien tatsächlich zeigen</h4>
+<ul>
+<li><strong>Ok et al. 2021 (JPSP):</strong> „Virtuous victim signaling" — die Kombination aus Opfer- und
+Tugendsignalen — korreliert mit Dark-Triad-Zügen und wird instrumentell zur Ressourcengewinnung eingesetzt.
+Untersucht wird <em>Signalverhalten</em>, kein politisches Lager. <span class="chip belegt">belegt</span></li>
+<li><strong>Grubbs et al. 2019 (PLoS ONE):</strong> Moralisches Grandstanding speist sich aus Statussuche
+und korreliert mit Narzissmus — <em>ideologieübergreifend</em>, bei Konservativen wie Progressiven.
+<span class="chip belegt">belegt</span></li>
+<li><strong>Moss &amp; O'Connor 2020 (Heliyon):</strong> Dark-Triad-Züge sagen autoritäre Political
+Correctness voraus — <em>und im selben Paper</em> Alt-Right-Einstellungen. Ein Autoritarismus-Befund in
+beide Richtungen, kein Links-Befund. <span class="chip belegt">belegt</span></li>
+<li><strong>Krispenz &amp; Bertrams 2024 (Current Psychology):</strong> berichteten Assoziationen zwischen
+Linksautoritarismus (LWA) und Narzissmus/Psychopathie und deuteten sie als Beleg des DEVP: Manche linke
+Aktivisten strebten nicht nach Gerechtigkeit, sondern bedienten „ego-focused, sometimes even antisocial
+needs". <span class="chip umstritten">umstritten</span> — siehe unten.</li>
+</ul>
+<div class="datenbox"><span class="dbt">REANALYSE · COOK, MEYER &amp; ASBROCK 2026 · CURRENT PSYCHOLOGY 45:1193 · DOI 10.1007/s12144-026-09655-9 · OSF: 7ktp3</span>
+Reanalyse der Originaldaten von Krispenz &amp; Bertrams 2024 (Study 2, N = 375, US-Sample) mit
+Strukturgleichungsmodell (SAM), alle Dark-Triad-Dimensionen simultan modelliert:
+<strong>Narzissmus ↔ LWA: negativ</strong> (β = −0,20; ebenso negativ mit anti-hierarchischer Aggression und
+Antikonventionalismus). Die kleine positive Gesamtassoziation Dark Triad ↔ LWA (β = 0,13) wird allein von
+<strong>Psychopathie</strong> getragen (β = 0,32) — bei geringer Psychopathie-Varianz im Sample und teils
+zirkulären Items („I have never gotten into trouble with the law" misst bei Aktivisten Protest, nicht
+Psychopathie). <strong>Social-Justice-Commitment ist konsistent positiv mit LWA assoziiert</strong> — das
+Gerechtigkeitsmotiv der Aktivisten erweist sich in denselben Daten als echt. Fazit der Autoren: Der
+Narzissmus-Befund des Originals ist ein methodisches Artefakt; die Daten stützen kein breites DEVP für
+linke Ideologie. Stehen bleibt: Virtue Signaling ↔ Top-down-Zensur. <span class="chip belegt">belegt</span></div>
+<div class="gegen"><span class="dbt">GEGENDARSTELLUNG ZUR GEGENDARSTELLUNG · DER GEGENPOL-TWIST</span>
+Auch die Reanalyse ist keine neutrale Instanz. Die Autoren kommen aus einer sozialpsychologischen Tradition,
+die primär Rechtsautoritarismus und Vorurteile erforscht; ein symmetrischer Test — hätten sie mit gleichem
+Aufwand eine Studie reanalysiert, die rechte Gruppen pathologisiert <em>entlastet</em>? — fällt vermutlich
+negativ aus. <span class="chip interpret">Interpretation, nicht belegbar</span> Zur Fairness: Das
+spiegelbildliche Framing-Problem hat das Original mindestens genauso (die „ego-focused"-Rhetorik plus die
+mediale Verwertung via PsyPost und Anti-Woke-YouTube). Und entscheidend: Offene Daten, offenes R-Skript und
+die transparente Berichterstattung gegenläufiger Befunde (die Psychopathie-Assoziation wird nicht versteckt)
+neutralisieren den Bias-Verdacht auf der <em>Analyseebene</em> weitgehend — wer die Rechnung anzweifelt, kann
+sie nachrechnen. Das Feld ist politisiert; dieses Paper ist ein Zug in einem adversarialen Schlagabtausch,
+keine neutrale Instanz. Genau daraus folgt Teil II. <span class="chip plausibel">plausibel</span></div>
+<div class="merksatz">Das Ego-Vehikel fährt nicht links. Es fährt dorthin, wo Status zu holen ist. Der
+belastbare Kern des gesamten Narzissmus-Blocks lautet „Moralisieren und Opfersignaling als Statusstrategie —
+in allen Lagern", nicht „linke Überzeugung als dunkles Persönlichkeitsmerkmal". Für Letzteres kehrt die
+beste verfügbare Analyse das Vorzeichen um.</div>
+
+<!-- ═══════════ TEIL II ═══════════ -->
+<h2 class="part"><span class="pnum">TEIL II · KOMPAKT</span>Die Politisierung der Disziplinen</h2>
+
+<h3 class="sec"><span class="snum">§ 7</span>Die Schieflage der Fächer</h3>
+<p>Der Verdacht des Gegenanwalts hat eine reale Grundlage: Die beteiligten Disziplinen sind politisch nicht
+repräsentativ besetzt. Duarte, Crawford, Stern, Haidt, Jussim &amp; Tetlock (2015, <em>Behavioral and Brain
+Sciences</em>) dokumentieren für die US-Sozialpsychologie eine Verschiebung des Links-rechts-Verhältnisses
+von etwa 4:1 (Mitte des 20. Jahrhunderts) auf gut 10:1 bis 14:1; in Befragungen bezeichnen sich nur wenige
+Prozent der Sozialpsychologen als konservativ. <span class="chip belegt">belegt</span> Inbar &amp; Lammers
+(2012, <em>Perspectives on Psychological Science</em>): Ein substanzieller Teil der befragten
+Sozialpsychologen räumt ein, konservative Kollegen bei Stellen, Begutachtung oder Einladungen zumindest
+etwas benachteiligen zu würden. <span class="chip belegt">belegt</span> Für die deutschsprachigen
+Sozialwissenschaften ist die Datenlage dünner, die Richtung ähnlich. <span class="chip plausibel">plausibel</span></p>
+<p>Die Folgen sind nach Duarte et al. nicht primär Betrug, sondern leiser: Werte wandern unbemerkt in
+Konstrukte und Item-Formulierungen ein; Hypothesen, die das eigene Lager stützen, werden bevorzugt geprüft
+(und ihre Alternativen seltener); unliebsame Befunde erfahren strengere Prüfung („motivated scrutiny").
+Klassische Belege: die asymmetrische Behandlung identischer Manuskripte je nach Ergebnisrichtung
+(Abramowitz et al. 1975; Ceci, Peters &amp; Plotkin 1985). <span class="chip belegt">belegt</span> Dass
+das Feld zugleich funktionierende Selbstkorrektur kennt, zeigt ausgerechnet der Fall dieser Studie:
+K&amp;B 2024 wurde binnen zwei Jahren von Fachkollegen mit offenen Daten reanalysiert und korrigiert —
+adversarial, aber regelkonform. <span class="chip belegt">belegt</span></p>
+
+<h3 class="sec"><span class="snum">§ 8</span>Was weggelassen wird: Mechanismen selektiver Evidenz</h3>
+<p>Die eigentliche Münze der Politisierung ist selten die gefälschte Zahl — es ist die <em>Auslassung</em>.
+Fünf wiederkehrende Mechanismen, alle in dieser Recherche konkret beobachtet, auf beiden Seiten:</p>
+<ul>
+<li><strong>Die fehlende Gegenstudie.</strong> Schaerer 2023 wird zitiert, Galos &amp; Coppock 2023
+(gleiches Feld, gegenläufige Dekomposition) nicht. Spiegelbildlich zitieren aktivistische Darstellungen
+den unbereinigten Pay Gap ohne die Dekompositionsliteratur. <span class="chip belegt">belegt</span></li>
+<li><strong>Die halbe Studie.</strong> Moss &amp; O'Connor 2020 belegt Dark-Triad-Assoziationen für
+PC-Autoritarismus <em>und</em> Alt-Right — zitiert wird die jeweils passende Hälfte.
+<span class="chip belegt">belegt</span></li>
+<li><strong>Der Framing-Überschuss.</strong> K&amp;Bs „ego-focused, sometimes even antisocial needs" geht
+über die eigenen Regressionstabellen hinaus; die mediale Verwertungskette (PsyPost → YouTube → Talkshow)
+verstärkt genau den Überschuss, nicht den Befund. <span class="chip belegt">belegt</span></li>
+<li><strong>Die Kontrollvariablen-Politik.</strong> Was man „wegkontrolliert", definiert das Ergebnis:
+Wer Beruf, Branche und Teilzeit kontrolliert, erklärt den Pay Gap „weg" — und behandelt damit genau die
+Kanäle als neutral, über die strukturelle Zuweisung läuft (Blau &amp; Kahn warnen selbst davor; Destatis
+nennt den bereinigten Wert eine Obergrenze der Messbarkeit, keinen Diskriminierungs-Freispruch).
+<span class="chip belegt">belegt</span></li>
+<li><strong>Das Konstrukt als Position.</strong> Skalen tragen Politik in sich: Was als „Autoritarismus",
+„Vorurteil" oder „kritische Einstellung" operationalisiert wird, entscheidet, wessen Lager pathologisierbar
+ist — LWA-Items wie Psychopathie-Items können Aktivismus statt Pathologie messen (Cook et al. zur
+Item-Zirkularität; Lahtinens selbst eingeräumte Formulierungsfehler). <span class="chip belegt">belegt</span></li>
+</ul>
+<div class="merksatz">Politisierung wirkt selten durch Fälschung und meist durch Auswahl: welche Studie
+zitiert, welche Hälfte erzählt, welche Variable kontrolliert, welches Konstrukt gebaut wird. Das Korrektiv
+ist nicht „neutrale Menschen", sondern adversariale Verfahren: offene Daten, präregistrierte Analysen,
+Gegendarstellung im selben Text — und Gegner, die nachrechnen dürfen.</div>
+
+<!-- ═══════════ TEIL III ═══════════ -->
+<h2 class="part"><span class="pnum">TEIL III · SELBSTPRÜFUNG</span>Die Kritik der Funktionskritik</h2>
+
+<h3 class="sec"><span class="snum">§ 9</span>Acht Einwände gegen den Richter</h3>
+<p>Wenn Teil I den Gegenanwalt prüft und Teil II die Disziplinen, muss Teil III das Verfahren selbst prüfen —
+sonst wäre die Gutachterbank genau die unkontrollierte Instanz, die sie allen anderen vorwirft. Acht
+Einwände, vorgetragen in stärkster Form; die ersten vier von links (Anwältin), die zweiten vier von rechts
+(Gegenanwalt):</p>
+<ol>
+<li><strong>Der Blick von nirgendwo existiert nicht.</strong> Die Meta-Position ist selbst ein Machtzug;
+wer „neutral" misst, hat entschieden, was messbar zählt. Prozeduralismus privilegiert die, die Zeit haben.</li>
+<li><strong>Verfrühte Symmetrie der Aufmerksamkeit.</strong> Sendeminuten sind knapp; jede Minute für den
+Death Gap fehlt der Femizid-Statistik. Die Waage selbst ist eine Verteilungsentscheidung.</li>
+<li><strong>Dringlichkeit.</strong> Konfidenzmarker sind Friedenspraxis. „Während Sie messen, stirbt
+jemand." Anwaltschaft ist die angemessene Form unter Zeitdruck — Triage statt Studiendesign.</li>
+<li><strong>False-Balance-Maschine.</strong> Ein Verfahren, das strukturell beiden Seiten Redezeit gibt,
+adelt die schwächere Evidenz (Klimadebatten-Analogie).</li>
+<li><strong>Verdeckte Anwaltschaft.</strong> Die Reihe heißt „Die Frau vor dem Recht"; ihre Prüfsteine
+(Partnermonate, Care-Berufe öffnen) sind ein Programm. Die Gutachterbank sei nur eine höflichere
+Anwaltschaft mit besserer Zitierpraxis.</li>
+<li><strong>Der Medieneinwand.</strong> „Sie werfen mir YouTube vor — was ist Ihr Medium?" Podcast plus
+selbstgesetzte PDFs, kein Peer-Review, keine Institution: exakt der Kanal-Vorwurf aus Teil I.</li>
+<li><strong>Funktionalismus-Zirkel.</strong> „Wert folgt Funktion" droht zirkulär zu werden („es besteht,
+weil es funktioniert") — die Rigorositätsforderung aus der eigenen These-C-Analyse, gegen die Leitformel
+gewendet.</li>
+<li><strong>Selektionsmacht.</strong> Wer wählt die Prüffragen? Die zehn Prüffragen der Folge 8 hat der
+Richter allein gestellt. Agenda-Setting ist die unsichtbarste Form der Anwaltschaft.</li>
+</ol>
+
+<h3 class="sec"><span class="snum">§ 10</span>Antworten, Zugeständnisse, das adversariale Register</h3>
+<p><strong>Angenommen — bleibt stehen: der Medieneinwand (6).</strong> Keine Verteidigung, sondern
+Offenlegung: Die Reihe unterwirft sich derselben Transparenzpflicht, an der sie Cook et al. gemessen hat —
+offene Quellen, offene Transkripte, die Einwände im selben Text. Das ersetzt Peer-Review nicht; nach eigenem
+Maßstab ist die Reihe vorläufig. Konsequenz: ausdrückliche Einladung zur Widerlegung, offenes Repository.</p>
+<p><strong>Angenommen — bleibt stehen: die Selektionsmacht (8).</strong> Konsequenz ist ein Mechanismus,
+kein Bekenntnis: das <em>adversariale Register</em>. Beide Anwaltschaften reichen eigene Prüffragen ein, die
+die Reihe unverändert und mit Priorität abarbeitet; die Werkstattfolge nimmt live je eine Frage von Anwältin
+und Gegenanwalt auf.</p>
+<p><strong>Teilweise angenommen (1, 5):</strong> Es gibt keinen Standpunkt ohne Standort; die Gutachterbank
+ist eine Rolle, kein Wesen, und die feministische Genese der Reihe wird als Herkunft markiert, nicht
+geleugnet — Herkunft ist kein Urteil. Antwort: Deshalb koppelt die Funktionskritik Urteile an
+nachvollziehbare Verfahren statt an Personen. Neutralität wird nicht behauptet, sondern prüfbar simuliert.</p>
+<p><strong>Zurückgewiesen mit Begründung (3, 4):</strong> Die Waage vergibt Redezeit nach Beleglage, nicht
+nach Parität — Konfidenzmarker sind das Gegenteil von False Balance, weil schwache Evidenz hörbar als
+schwach markiert wird. Und Triage ohne Diagnose amputiert das falsche Bein: Dringlichkeit ist ein Argument
+für schnellere Gutachten, nicht für keine.</p>
+<p><strong>Zurückgewiesen mit Prüfauftrag (7):</strong> Die Leitformel ist falsifizierbar formuliert
+(Axiom 1/2 der Funktionskritik); der Auftrag, eine Vorhersage zu benennen, die sie scheitern lassen könnte,
+<em>bevor</em> die Daten da sind, wandert ins Register.</p>
+<div class="merksatz">Der Richter gewinnt nicht. Er überlebt — als Verfahren, das sich selbst verhandeln
+lässt. Die Gutachterbank ist kein Ort; sie ist die Bereitschaft, den Platz zu tauschen.</div>
+
+<h3 class="sec"><span class="snum">§ 11</span>Prüffragen dieser Werkstatt</h3>
+<ol>
+<li>Wird Opferstatus selbst zur Funktion, an die Wert gekoppelt wird — messbar als Prämie für
+Opfersignaling in Aufmerksamkeit, Spenden, Reichweite? (Anschluss an Band IX: vierter Träger der
+Funktionswanderung neben Maschine, Staat, Tradition.)</li>
+<li>Repliziert sich der Galos-&amp;-Coppock-Gradient (Diskriminierung folgt Berufskomposition, nicht
+Geschlecht pauschal) in deutschen Korrespondenzdaten?</li>
+<li>Überlebt die Lahtinen-Korrelation die Kontrolle für allgemeine politische Orientierung — und
+repliziert sie sich außerhalb Finnlands mit präregistrierter Analyse?</li>
+<li>Cook-Test, symmetrisch: Findet sich eine ebenso sorgfältige offene Reanalyse einer Studie, die
+<em>rechte</em> Gruppen pathologisiert — und fällt sie gleich streng aus? (Prüfstein für § 7.)</li>
+<li>Register-Fragen der Anwaltschaften: je eine, unverändert übernommen (werden in der Folge diktiert).</li>
+</ol>
+
+<h3 class="sec"><span class="snum">§ 12</span>Quellen (Auswahl)</h3>
+<p class="lit">Armaly, M. T. &amp; Enders, A. M. (2022). „Why Me?" The Role of Perceived Victimhood in American Politics. <em>Political Behavior</em> 44.</p>
+<p class="lit">Blau, F. D. &amp; Kahn, L. M. (2017). The Gender Wage Gap: Extent, Trends, and Explanations. <em>Journal of Economic Literature</em> 55(3), 789–865.</p>
+<p class="lit">Carr, A. et al. (2021). Effectiveness of positive psychology interventions: a systematic review and meta-analysis. <em>Journal of Positive Psychology</em> 16.</p>
+<p class="lit">Ceci, S. J., Peters, D. &amp; Plotkin, J. (1985). Human subjects review, personal values, and the regulation of social science research. <em>American Psychologist</em> 40.</p>
+<p class="lit">Cook, A. (S.), Meyer, B. &amp; Asbrock, F. (2026). The whole picture: looking, again, at left-wing authoritarianism and its associations with dark personality traits. <em>Current Psychology</em> 45:1193. doi:10.1007/s12144-026-09655-9. Daten/R-Skript: osf.io/7ktp3. (PDF liegt dieser Studie bei, CC BY 4.0.)</p>
+<p class="lit">Duarte, J. L., Crawford, J. T., Stern, C., Haidt, J., Jussim, L. &amp; Tetlock, P. E. (2015). Political diversity will improve social psychological science. <em>Behavioral and Brain Sciences</em> 38, e130.</p>
+<p class="lit">Gabay, R., Hameiri, B., Rubel-Lifschitz, T. &amp; Nadler, A. (2020). The tendency for interpersonal victimhood. <em>Personality and Individual Differences</em> 165.</p>
+<p class="lit">Galos, D. R. &amp; Coppock, A. (2023). Gender composition predicts gender bias: A meta-reanalysis of hiring discrimination audit experiments. <em>Science Advances</em> 9(18), eade7979.</p>
+<p class="lit">Grubbs, J. B., Warmke, B., Tosi, J., James, A. S. &amp; Campbell, W. K. (2019). Moral grandstanding in public discourse. <em>PLoS ONE</em> 14(10).</p>
+<p class="lit">Inbar, Y. &amp; Lammers, J. (2012). Political diversity in social and personality psychology. <em>Perspectives on Psychological Science</em> 7(5).</p>
+<p class="lit">Joyce, S. et al. (2018). Road to resilience: a systematic review and meta-analysis of resilience training programmes. <em>BMJ Open</em> 8:e017858.</p>
+<p class="lit">Kessler, R. C. et al. (2017). Trauma and PTSD in the WHO World Mental Health Surveys. <em>European Journal of Psychotraumatology</em> 8(sup5).</p>
+<p class="lit">Kleven, H., Landais, C. &amp; Søgaard, J. E. (2019). Children and Gender Inequality: Evidence from Denmark. <em>AEJ: Applied Economics</em> 11(4).</p>
+<p class="lit">Krispenz, A. &amp; Bertrams, A. (2024). Understanding left-wing authoritarianism. <em>Current Psychology</em> 43.</p>
+<p class="lit">Lahtinen, O. (2024). Construction and validation of a scale for assessing critical social justice attitudes. <em>Scandinavian Journal of Psychology</em> 65(4).</p>
+<p class="lit">Leppin, A. L. et al. (2014). The efficacy of resiliency training programs: a systematic review and meta-analysis. <em>PLoS ONE</em> 9(10).</p>
+<p class="lit">Lippens, L., Vermeiren, S. &amp; Baert, S. (2023). The state of hiring discrimination: a meta-analysis of (almost) all recent correspondence experiments. <em>European Economic Review</em> 151.</p>
+<p class="lit">Moss, J. T. &amp; O'Connor, P. J. (2020). The Dark Triad traits predict authoritarian political correctness and alt-right attitudes. <em>Heliyon</em> 6(7).</p>
+<p class="lit">Ok, E., Qian, Y., Strejcek, B. &amp; Aquino, K. (2021). Signaling virtuous victimhood as indicators of Dark Triad personalities. <em>JPSP</em> 120(6).</p>
+<p class="lit">Park, S. Y. &amp; Oh, E. (2025). Getting a foot in the door: a meta-analysis of U.S. audit studies of gender bias in hiring. <em>Sociological Science</em> 12.</p>
+<p class="lit">Schaerer, M. et al. (2023). On the trajectory of discrimination: a meta-analysis and forecasting survey capturing 44 years of field experiments on gender and hiring decisions. <em>OBHDP</em> 179.</p>
+<p class="lit">Walter, K. V., Conroy-Beam, D., Buss, D. M. et al. (2020). Sex differences in mate preferences across 45 countries. <em>Psychological Science</em> 31(4).</p>
+<p class="lit">White, C. A., Uttl, B. &amp; Holder, M. D. (2019). Meta-analyses of positive psychology interventions: the effects are much smaller than previously reported. <em>PLoS ONE</em> 14(5).</p>
+<p class="lit">Primärmaterial Fallstudie: varnan.de/thesen (rekonstruiert via Suchindex, Stand ~03/2025); GWUP-Blog (SkepKon 2024; Studienpräsentation 05/2026); „Gefangen in der Opferrolle" (Eulogia 2024).</p>
+
+<div class="footer-note">OBSERVATORY · Werkstattstudie II „Der Gegenanwalt" · Hintergrundrecherche zur zweiten Werkstattfolge ·
+Leitformel: Rechtsstellung folgt Funktionsstellung · Ziel: Entkopplung — aber fundiert ·
+Produktionshinweis: mangels TeX-Toolchain in dieser Umgebung als Observatory-HTML gesetzt und über Chromium nach PDF gedruckt;
+bei Gelegenheit auf die LaTeX-Pipeline (LAYOUT-STUDIES.md) portieren.</div>
+
+</body>
+</html>
