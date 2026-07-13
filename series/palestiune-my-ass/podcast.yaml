@@ -1,0 +1,95 @@
+slug: palestiune-my-ass/podcast
+kind: podcast
+title: "Zwischen den Fronten — Der Fall Sophie von der Tann"
+model: eleven_v3
+transcript: series/palestiune-my-ass/podcast.md
+
+# ---------------------------------------------------------------- SPEAKERS
+# Zwei Erzählstimmen verbatim aus „Die Frau vor dem Recht" (Kontinuität):
+#   SPRECHERIN = Mila Winter, SPRECHER = Wolf Spencer.
+# Zwei getrennte, ebenfalls professionelle Zitatstimmen, damit gelesene
+# Originalzitate hörbar von der Erzählung abgesetzt sind.
+speakers:
+  SPRECHERIN:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"   # Mila Winter (professional) — Erzählerin
+    speaker_key: s1
+    stability:   0.50
+  SPRECHER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"   # Wolf Spencer (professional) — Erzähler / Analyse
+    speaker_key: s2
+    stability:   0.55
+  ZITATORIN:
+    voice_id:    "7eVMgwCnXydb3CikjV7a"   # Lea (professional, f) — gelesene Zitate
+    speaker_key: zitatorin
+    stability:   0.42
+  ZITATOR:
+    voice_id:    "fehqjfT0R2fGKeUX2YeE"   # Gerry (professional, m) — gelesene Zitate
+    speaker_key: zitator
+    stability:   0.42
+
+# ---------------------------------------------------------------- AUDIO TAGS
+audio_tags:
+  ruhig:      "[calm]"
+  betont:     "[emphatic]"
+
+# strip residual parentheticals (inline stage directions), keep spoken —Gedankenstriche
+replace:
+  "\\s*\\([^)]*\\)\\s*": " "
+
+# ---------------------------------------------------------------- SFX
+sfx:
+  applaus:
+    prompt: "warm auditorium applause in a large hall, dignified, gradually fading out, no whistles, no cheering"
+    dur: 5
+  jingle:
+    prompt: "very short abstract TV news studio ident sting, understated, cold, no voice, quick decay"
+    dur: 3
+  tastatur:
+    prompt: "quiet computer keyboard typing, soft close-miked key clicks, a few keystrokes, no room reverb"
+    dur: 4
+
+# ---------------------------------------------------------------- MUSIC
+music:
+  titel_motiv:
+    prompt: "sober documentary feature title motif, low strings and a sparse piano, dignified, restrained tension, journalistic gravity, no percussion, no vocals"
+    ms: 8000
+  akzent:
+    prompt: "one short dramatic musical accent, a low string swell that stops abruptly, tense, brief, no percussion, no vocals"
+    ms: 4000
+  reflect_bett:
+    prompt: "calm reflective documentary underscore bed, soft sustained strings and sparse piano, pensive and unobtrusive, loopable, no vocals"
+    ms: 40000
+
+# ---------------------------------------------------------------- CUE RULES
+# First match wins; ALL keywords must be present (lowercased substring).
+cue_rules:
+  - keywords: ["ausblenden"]
+    action: outro
+  - keywords: ["titelmotiv"]
+    music: titel_motiv
+    action: stinger
+  - keywords: ["akzent"]
+    music: akzent
+    action: stinger
+  - keywords: ["applaus"]
+    sfx: applaus
+  - keywords: ["jingle"]
+    sfx: jingle
+  - keywords: ["tastatur"]
+    sfx: tastatur
+  - keywords: ["nachdenklich"]
+    music: reflect_bett
+    action: bed_on
+  - keywords: ["ruhig"]
+    music: reflect_bett
+    action: bed_on
+
+gaps:
+  base: 0.55
+  switch: 0.90
+  sfx_tail: 0.35
+  act: 1.60
+
+output:
+  final: zwischen-den-fronten.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"

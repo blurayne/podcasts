@@ -1,0 +1,97 @@
+slug: die-frau-vor-dem-recht/S01-12/podcast
+kind: podcast
+title: "Der Gegenanwalt — Die Opferfunktion (Werkstattfolge II, Fassung E, lang)"
+model: eleven_v3
+transcript: series/die-frau-vor-dem-recht/S01-12-der-gegenanwalt/podcast-e.md
+
+# ---------------------------------------------------------------- SPEAKERS
+# Kontinuität aus der Reihe:
+#   ERZÄHLERIN = Mila Winter, ERZÄHLER = Wolf Spencer (wie S01-08..S01-11),
+#   ANWÄLTIN  = Ellen (VERTEIDIGERIN aus S01-08/11).
+# GEGENANWALT = neue dritte Stimme (professional, ruhig, präzise) — Otto/Igor.
+speakers:
+  ERZÄHLERIN:
+    voice_id:    "dCnu06FiOZma2KVNUoPZ"   # Mila Winter (professional)
+    speaker_key: s1
+    stability:   0.50
+  ERZÄHLER:
+    voice_id:    "2OcnG4mH3jIMtWz3vKus"   # Wolf Spencer (professional)
+    speaker_key: s2
+    stability:   0.55
+  ANWÄLTIN:
+    voice_id:    "BIvP0GN1cAtSRTxNHnWS"   # Ellen (professional) — Kontinuität Folge 8
+    speaker_key: anwaeltin
+    stability:   0.45
+  GEGENANWALT:
+    voice_id:    "FTNCalFNG5bRnkkaP5Ug"   # Otto / Igor Hartmann (professional, m) — ruhig, präzise
+    speaker_key: gegenanwalt
+    stability:   0.50
+
+# ---------------------------------------------------------------- SPOKEN-TEXT SUBSTITUTIONS
+# Ordered, case-sensitive regex → replacement. Applied before slug + TTS.
+# Konfidenzmarker werden GESPROCHEN (Produktionsnotiz Fassung E): [belegt] → "Belegt." usw.
+# Ausnahme zuerst: die eine inline-Stelle bleibt kleingeschrieben ("belegt als Beschreibung …").
+replace:
+  "\\[belegt\\] als Beschreibung, \\[umstritten\\] als Zeitdiagnose": "belegt als Beschreibung, umstritten als Zeitdiagnose"
+  # Regie-/Parenthesen (inkl. umschließender *…*) entfernen: *(Pause)*, *(trocken)*, *(aus dem Zeugenstand)*
+  "\\*?\\s*\\([^)]*\\)\\s*\\*?": " "
+  # Konfidenzmarker als gesprochene Verdikt-Stempel
+  "\\s*\\[belegt\\]":     " Belegt."
+  "\\s*\\[plausibel\\]":  " Plausibel."
+  "\\s*\\[umstritten\\]": " Umstritten."
+  "\\s*\\[spekulativ\\]": " Spekulativ."
+
+# ---------------------------------------------------------------- SFX
+# ATMO-Cues als kurze, einmalige Raumton-Einwürfe am Abschnittsbeginn (kein Dauer-Loop).
+sfx:
+  saal_atmo:
+    prompt: "quiet German courtroom room tone, subtle paper shuffling, a distant chair creak, sober, no music, no gavel"
+    dur: 6
+  werkstatt_atmo:
+    prompt: "quiet dry study/workshop room tone, faint hum, very sparse, intimate, no music"
+    dur: 6
+  akte:
+    prompt: "a thick cardboard case file opened and pages turned a few times on a wooden desk, dry, close, no reverb"
+    dur: 3
+
+# ---------------------------------------------------------------- MUSIC
+music:
+  titel_motiv:
+    prompt: "sober documentary title motif, low strings and a sparse piano, dignified, restrained tension, courtroom gravity, no percussion, no vocals"
+    ms: 8000
+  trenner:
+    prompt: "short neutral documentary transition sting, a low string swell resolving, brief, no percussion, no vocals"
+    ms: 3000
+  signatur:
+    prompt: "closing documentary signature motif, low strings and sparse piano resolving to calm, dignified finality, no percussion, no vocals"
+    ms: 6000
+
+# ---------------------------------------------------------------- CUE RULES
+# First match wins; ALL keywords must appear (lowercased substring).
+cue_rules:
+  - keywords: ["signatur"]      # Finale: [MUSIK: Signatur, ausblenden]
+    music: signatur
+    action: stinger
+  - keywords: ["titelmotiv"]    # Prolog: [MUSIK: Titelmotiv, kurz]
+    music: titel_motiv
+    action: stinger
+  - keywords: ["trenner"]       # Abschnittstrenner: [MUSIK: Trenner …]
+    music: trenner
+    action: stinger
+  - keywords: ["saal"]          # [ATMO: Saal] / [ATMO: Saal, Stühlerücken]
+    sfx: saal_atmo
+  - keywords: ["werkstatt"]     # [ATMO: Werkstatt …]
+    sfx: werkstatt_atmo
+  - keywords: ["akte"]          # [ATMO: Akte] / [ATMO: Akte, Blättern]
+    sfx: akte
+  # [MUSIK: ausblenden] (Ende Prolog) hat keine Regel → wird ignoriert (Stinger ist bereits aus).
+
+gaps:
+  base: 0.55
+  switch: 0.90
+  sfx_tail: 0.35
+  act: 1.60
+
+output:
+  final: s01e12-der-gegenanwalt.mp3
+  loudnorm: "I=-16:TP=-1.5:LRA=11"
