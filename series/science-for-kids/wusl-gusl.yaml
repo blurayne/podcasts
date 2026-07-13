@@ -90,6 +90,9 @@ sfx:
   jammern:
     prompt: "cartoon getting hurt jumping on needles"
     dur: 1
+  keks_mampf:
+    prompt: "close-up cookie crunching and happy munching, cute cartoon style, dry, no reverb tail"
+    dur: 3
 
 music:
   mystery_bed:
@@ -119,6 +122,8 @@ cue_rules:
     music: workshop_atmo
     action: bed_on
   # sfx cues
+  - keywords: ["mampf"]
+    sfx: keks_mampf
   - keywords: ["schwupp"]
     sfx: schwupp
   - keywords: ["fiepen"]

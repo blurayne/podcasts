@@ -15,3 +15,6 @@ series/science-for-kids/woozle-orig.txt
 
 # intro jingle (copyright-sensitive) — keep local, never commit
 series/science-for-kids/wusl-gusl-intro.mp3
+
+# Observatory study fonts — fetched locally per LAYOUT-STUDIES.md, never committed
+series/die-frau-vor-dem-recht/*/studie/fonts/

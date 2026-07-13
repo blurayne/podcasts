@@ -2,7 +2,7 @@
 ### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3002"
 
 **Mitmach-Wesen**
-- **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel.
+- **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel. Hängt an jeden seiner Gerätenamen die Versionsnummer „3002" (nur der Moderator sagt die Namen ohne Nummer).
 - **MODERATOR** — Wusls menschlicher Kumpel und heute unfreiwilliges Versuchskaninchen. Geduldig, erklärt bildhaft, wird zwischendurch aus Versehen mitgeschrumpft.
 - **ERZÄHLER** — eine ruhige, warme Stimme. Liefert die sachlichen Erkläreinspieler, ernst und informationsdicht, keine Witze.
 
@@ -53,15 +53,15 @@
 
 **MODERATOR:** `[schmunzelt]` Naja — genauer gesagt aus winzigen Bausteinen. Und diese Bausteine haben selbst wieder Bausteine. Immer kleiner, immer weiter — von riesig bis ganz nach unten.
 
-**WUSL:** Und deshalb hab ich für JEDE Ebene ein eigenes Gerät gebaut! `[rasselt mit Werkzeug]` Zell-Zoomer, Atom-Anpeiler, Kern-Knacker, Quark-Gucker — alles selbst gelötet!
+**WUSL:** Und deshalb hab ich für JEDE Ebene ein eigenes Gerät gebaut! `[rasselt mit Werkzeug]` Zell-Zoomer 3002, Atom-Anpeiler 3002, Kern-Knacker 3002, Quark-Gucker 3002 — alles selbst gelötet!
 
-**MODERATOR:** Alles selbst gelötet …?
+**MODERATOR:** Alles selbst gelötet …? Und wieso heißen die alle 3002?
 
-**WUSL:** `[stolz]` Und nur DREI kleine Brände! Los — erste Etappe: Zell-Zoomer, anwerfen!
+**WUSL:** `[stolz]` Nur DREI kleine Brände! Und frag lieber nicht, was mit Version 3001 passiert ist. Los — erste Etappe: Zell-Zoomer 3002, anwerfen!
 
 `[Ein Gerät macht „wubwubwub".]`
 
-**WUSL:** Und dazu gleich den ATOM-ANPEILER! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
+**WUSL:** Und dazu gleich den ATOM-ANPEILER 3002! `[Trommelwirbel]` Selbstgebaut aus einem alten Toaster!
 
 **MODERATOR:** Aus einem …?
 
@@ -73,39 +73,49 @@
 
 >>> HÖRSPIEL-EINLAGE 1
 
-**WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[klopft auf sein Fell]` Und keine hat mich je gefragt, ob sie mal Pause machen darf! Frechheit!
+**WUSL:** `[verschluckt sich]` DREISSIG BILLIONEN Mini-Fabriken in MIR?! `[hält sich ans Fell und lauscht]` Komisch. Ich hör gar nichts piepen. MEINE Fabriken piepen IMMER.
 
-**MODERATOR:** `[lacht]` Und jede einzelne davon hat dein Zell-Zoomer gefunden.
+**MODERATOR:** `[lacht]` Weil deine Zellen einfach funktionieren, Wusl. Ohne Piepen, ohne Qualm — und ganz ohne Brände.
 
 **WUSL:** Und hast du gehört, was der Anpeiler die ganze Zeit anpeilt? ATOME! Sogar mein FELL ist aus Atomen! MEIN Fell!
 
 **MODERATOR:** Auch dein Fell. Und das Allerverrückteste, Wusl: Innen drin ist so ein Atom fast komplett …
 
-**WUSL:** … LEER! Leerer als meine Keksdose am Freitag! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum. `[laut]` DAS baue ich mir aufs Erfinder-Namensschild!
+**WUSL:** … LEER! Leerer als meine Keksdose am Freitag! `[flüstert ehrfürchtig]` Ich bin ein wutzeliges Nichts mit Fell drumrum.
 
 **MODERATOR:** `[lacht]` Und wenn wir jetzt die winzige Murmel in der Mitte aufmachen wollen — den Kern — dann brauchen wir …
 
-**WUSL:** … den KERN-KNACKER! Mein gefährlichstes Gerät! `[dramatisch]` Schutzbrille auf, Moderator!
+**WUSL:** … den KERN-KNACKER 3002! Mein gefährlichstes Gerät! `[dramatisch]` Schutzbrille auf, Moderator!
 
 **MODERATOR:** Ich hab keine Schutzbrille.
 
 **WUSL:** Dann Augen zu und an was Schönes denken. `[KRACK-ZISCH]`
 
+`[KRACK-ZISCH! Der Kern-Knacker legt los.]`
+
+`[Und mittendrin: leises Toaster-Ploppen — der Anpeiler macht schon wieder Toast.]`
+
 ---
 
 ## 2 · WAS IM ATOM STECKT
 
-**WUSL:** Der Kern-Knacker hat GEKNACKT! Was ist da drin, was ist da drin?!
+**WUSL:** Der Kern-Knacker 3002 hat FUNKTIONIERT! Er hat das Auto geknackt!
+
+**MODERATOR:** `[schmunzelt]` Das *Atom*, Wusl. Und so, wie deine Werkbank aussieht, hat er vor allem Toastkrümel geknackt.
+
+**WUSL:** Ähm. Ja. `[kaut, schluckt]` Mhm — lecker. JAJA, aber was ist da nun DRIN, in diesen Atomen?!
 
 **MODERATOR:** Ganz ruhig, Wusl. Für das, was jetzt kommt, brauchst du dein feinstes Gerät.
 
-**WUSL:** Der **QUARK-GUCKER**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` Ich seh was! Winzige Kügelchen! Überall Kügelchen!
+**WUSL:** Der **QUARK-GUCKER 3002**! `[dramatische Musik]` Poliert! Mit Glitzer! Angetrieben von einer halben Batterie! `[guckt durch den Gucker]` Ich seh was! Winzige Kügelchen! Überall Kügelchen!
+
+`[Der Quark-Gucker piept feierlich.]`
 
 **MODERATOR:** Dann hör genau zu, was das alles ist — vom Kern bis zu deinen allerkleinsten Kügelchen.
 
 >>> HÖRSPIEL-EINLAGE 2
 
-**WUSL:** GOLD?! `[hektisch]` Moderator, kann mein Kern-Knacker aus meinem Fell neunundsiebzig Protonen machen?! Dann bin ich REICH und muss nie wieder Geräte aus Toastern bauen!
+**WUSL:** GOLD?! `[hektisch]` Moderator, kann mein Kern-Knacker in ein Haar einfach neunundsiebzig Protonen reinstopfen?! Ich verliere JEDEN Tag Fell — dann mach ich jedes verlorene Haar von meinem Pelz zu GOLD! Ich bin REICH und muss nie wieder Geräte aus Toastern bauen!
 
 **MODERATOR:** `[lacht]` So einfach ist Goldmachen leider nicht.
 
@@ -119,13 +129,15 @@
 
 **WUSL:** `[erleichtert, dann enttäuscht]` Ohh. … Kein Marmeladenbrot da unten? Schade. `[schnüffelt am Gerät]` Riecht aber ein bisschen nach Toast. Das ist der Anpeiler.
 
+`[Wie aufs Stichwort: leises Toaster-Ploppen.]`
+
 **MODERATOR:** Und jetzt du, Herr Erfinder: Die schönste Rechnung der Welt geht auch fürs Neutron — up, down, down. Was kommt raus?
 
-**WUSL:** `[rechnet ganz laut, jubelnd]` Plus zwei Drittel … minus ein Drittel … und nochmal minus ein Drittel … NULL! Genau NULL — neutral, wie's sein muss! `[jubelt]` ICH BIN DER QUARK-PROFESSOR! Mein Kopf ist auch ein Gerät! Ein Fell-Gerät!
+**WUSL:** `[rechnet ganz laut, jubelnd]` Plus zwei Drittel … minus ein Drittel … und nochmal minus ein Drittel … NULL! Genau NULL — neutral, wie's sein muss! `[jubelt]` ICH BIN DER QUARK-PROFESSOR! Ich hab Quark im Hirn! `[Pause]` … Äh — QUARKS! Quarks-Genie, meinte ich! Mein Kopf ist auch ein Gerät! Ein Fell-Gerät!
 
 **MODERATOR:** `[lacht]` Perfekt gerechnet, Wusl.
 
-**WUSL:** Und dieses Klötzchen-Tauschen — ein Quark raus, ein anderes rein, und schon ist's was Neues?! `[hektisch]` Ich BAU sofort ein Gerät dafür — den QUARK-WECHSLER! SCHWUPP, was Neues! Das ist ja wutzelwitzig!
+**WUSL:** Und dieses Klötzchen-Tauschen — ein Quark raus, ein anderes rein, und schon ist's was Neues?! `[hektisch]` Ich BAU sofort ein Gerät dafür — den QUARK-WECHSLER 3002! SCHWUPP, was Neues! Das ist ja wutzelwitzig!
 
 **MODERATOR:** Vielleicht erst das nächste Gerät fertig löten, bevor du ein neues anfängst?
 
@@ -138,6 +150,10 @@
 **WUSL:** Also bin ich am Ende nur … Quark-mit-s? Aus lauter Quarks?
 
 **MODERATOR:** Aus zwei großen Familien von Grundteilchen, Wusl. Und die halten nicht von allein zusammen — dafür braucht's noch etwas.
+
+**WUSL:** MARMELADE?!
+
+**MODERATOR:** `[lacht]` Nein, Wusl. Etwas viel Stärkeres.
 
 **WUSL:** `[quietscht]` Dann GANZ große Frage: Wenn ein Atom fast leer ist und alles nur aus Krümeln besteht — warum fällt das nicht auseinander? Warum falle ICH nicht auseinander?! Braucht's dafür ein Gerät?!
 
@@ -153,13 +169,15 @@
 
 **MODERATOR:** Und auseinandergefallen bist du auch nicht — die vier Kräfte halten dich fest zusammen.
 
-**WUSL:** Aber die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Kraft!
+**WUSL:** Und die starke Kraft ist der stärkste KLEBER im Universum?! `[kichert]` Dabei kleb ich meine Geräte immer noch mit MARMELADE zusammen! Kein Wunder, dass dauernd was auseinanderfällt!
+
+**MODERATOR:** `[lacht]` Vielleicht rüstest du um. Marmelade hält jedenfalls keinen Atomkern zusammen.
+
+**WUSL:** Aber die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Baustelle!
 
 **MODERATOR:** `[lacht]` Guter Punkt. Und die vierte Kraft, die Gravitation, kennst du ganz genau, Wusl.
 
-**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld! Autsch.
-
-`[jammern]`
+**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld! Autsch. Aber: Cliffhänger! Erst noch mehr Wunder!
 
 ---
 
@@ -167,7 +185,7 @@
 
 **MODERATOR:** Jetzt wird's seltsam, Wusl. In der Welt der kleinsten Dinge gibt es nämlich keine halben Sachen — und noch etwas viel Spukhafteres.
 
-**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse! Und … SPUKHAFT?! `[schnappt nach Luft]` Muss ich ein Gespenster-Gerät bauen?!
+**WUSL:** Keine halben Sachen?! Bei mir gibt's höchstens halbe Kekse! Und … SPUKHAFT?! `[schnappt nach Luft]` Muss ich ein Gespenster-Gerät 3002 bauen?!
 
 **MODERATOR:** Erst mal nur Ohren auf, Wusl.
 
@@ -176,6 +194,10 @@
 **WUSL:** Eine Wolke aus Vielleicht! Also so wie meine Geräte — „vielleicht funktioniert's, vielleicht auch nicht"!
 
 **MODERATOR:** `[lacht]` Ziemlich genau.
+
+**WUSL:** Und ich bin gar kein Haufen harter Kügelchen — ich bin zusammengepackte ENERGIE?! `[stolz]` Das erklärt SO vieles. Ich hab nämlich SEHR viel Energie!
+
+**MODERATOR:** `[lacht]` Das kann ich bestätigen.
 
 **WUSL:** Aber der zweite Teil — das ergibt doch überhaupt keinen Sinn! Zwei Teilchen, weit weg, und trotzdem wissen sie voneinander?!
 
@@ -197,7 +219,7 @@
 
 >>> HÖRSPIEL-EINLAGE 5
 
-**WUSL:** `[macht Wurfgeräusche]` Hepp! Fang! Hepp! Fang! Die kleinen Teilchen spielen die ganze Zeit Ball und keiner hat MICH eingeladen! Ich bau ein Ball-Werf-Gerät—
+**WUSL:** `[macht Wurfgeräusche]` Hepp! Fang! Hepp! Fang! Die kleinen Teilchen spielen die ganze Zeit Ball und keiner hat MICH eingeladen! Ich bau ein Ball-Werf-Gerät 3002—
 
 **MODERATOR:** `[lacht]` Später, Wusl.
 
@@ -217,11 +239,11 @@
 
 >>> HÖRSPIEL-EINLAGE 6
 
-**WUSL:** `[fassungslos]` Ein WINZIGER Magnet ist stärker als die GANZE ERDE?! Ich hab so einen Magneten an meinem Kern-Knacker! Der ist STÄRKER ALS DIE ERDE und ich hab ihn nur für Zettel benutzt!
+**WUSL:** `[fassungslos]` Ein WINZIGER Magnet ist stärker als die GANZE ERDE?! Ich hab so einen Magneten an meinem Kern-Knacker 3002! Der ist STÄRKER ALS DIE ERDE und ich hab ihn nur für Zettel benutzt!
 
 **MODERATOR:** `[lacht]` Bei dieser einen Büroklammer: ja.
 
-**WUSL:** Und die Mathematik blinkt einfach nur noch „Error"?! `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat, wenn ich zu viele Knöpfe drücke!
+**WUSL:** Und die Mathematik blinkt einfach nur noch „Error"?! `[imitiert kaputten Rechner]` Örrrr-rörrr-förrr … PLONK! `[kichert]` Genau so klingt mein Schrumpfomat 3002, wenn ich zu viele Knöpfe drücke!
 
 **MODERATOR:** Vielleicht löst es ja mal jemand, der uns gerade zuhört. Vielleicht sogar mit einem selbstgebauten Gerät.
 
@@ -265,7 +287,7 @@
 
 **MODERATOR:** `[ruhig]` Die Quarks und die Elektronen, aus denen du bestehst, Wusl — und aus denen sogar deine ganzen Geräte bestehen — die wurden vor Milliarden Jahren tief im Inneren riesiger Sterne gemacht. Du bist buchstäblich aus Sternenstaub.
 
-**WUSL:** `[ganz leise]` Ich … und mein Schrumpfomat … sind aus dem gleichen Zeug wie die Sterne?
+**WUSL:** `[ganz leise]` Ich … und mein Schrumpfomat 3002 … sind aus dem gleichen Zeug wie die Sterne?
 
 **MODERATOR:** Du bist ein kleines lila Stück Universum, das sich selbst anschauen kann. Und das darüber staunt. Und das Geräte baut.
 
@@ -283,9 +305,25 @@
 
 **MODERATOR:** Und Fragen sind immer erlaubt.
 
-**WUSL:** IMMER! Tschüssikowski! 
+`[„Pling!" — der Atom-Anpeiler wirft eine allerletzte Scheibe Toast aus.]`
 
-`[Fanfare. Ein letztes „Pling", eine Feder boingt, irgendwas fällt um. Musik hoch, ausblenden.]`
+**WUSL:** IMMER! `[schnüffelt]` Ooh — TOAST! Moderator, hab ich eigentlich noch irgendwo ein Glas Marmelade stehen? … Egal, find ich später!
+
+**WUSL:** Und, Moderator — hast du eigentlich gemerkt, wie GLATT wir heute alle geredet haben? Fast wie *ausgerechnet!*
+
+**MODERATOR:** `[schmunzelt]` Kleines Geheimnis zum Schluss: Der echte Beni und der echte Wusl hatten heute Urlaub. Gesprochen — und das Drehbuch geschrieben — haben künstliche Intelligenzen.
+
+**WUSL:** Tjaaaa … eine Zuhörerin wollte eben ALLES ganz genau wissen und war ganz schön ungeduldig — also mussten meine Anthropic Fable 3002 und die ElevenLabs-Stimmen ran! Aber das Allerbeste: Ich konnte in der Zwischenzeit neue Kekse machen! `[lacht]`
+
+`[Man hört Wusl genüsslich Kekse mampfen.]`
+
+**MODERATOR:** `[lacht]` Na dann — guten Appetit, Wusl. Und bis zum nächsten Mal!
+
+**WUSL:** Bis baaaald!
+
+`[Wusl mampft weiter, mit vollem Mund.]`
+
+`[Fanfare, ein letztes „Pling", eine Feder boingt. Musik hoch, ausblenden.]`
 
 ---
 
@@ -297,10 +335,10 @@
 |---|---------|--------------|---------------------|------------|
 | 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3002** – falscher Knopf, Piepsstimmen | — |
 | 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub) + **Atom-Anpeiler** = alter Toaster (beide VOR dem Einspieler), „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
-| 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „reich!", „Quark?! Frühstück?!", Neutron-Rechnung = NULL, Quark-Wechsler | Einspieler 2 |
-| 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", Hüpfen & Scheppern | Einspieler 3 |
-| 4 | Die Quantenwelt | Photon, Elektron-Wolke, „spukhafte Fernwirkung" | „vielleicht funktioniert's", Wusl fragt: „Oma, schick Kekse!" | Einspieler 4 |
+| 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „jedes verlorene Haar zu GOLD!", „Quark?! Frühstück?!" + Toaster-Plopp, Neutron-Rechnung = NULL, „Quark im Hirn — äh, Quarks-Genie!", Quark-Wechsler | Einspieler 2 |
+| 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", „Ich kleb meine Geräte mit MARMELADE!", Hüpfen & Scheppern | Einspieler 3 |
+| 4 | Die Quantenwelt | Photon, Elektron-Wolke, Teilchen = Energiepäckchen (keine harten Kügelchen), „spukhafte Fernwirkung" | „vielleicht funktioniert's", „Ich bin zusammengepackte ENERGIE!", Wusl fragt: „Oma, schick Kekse!" | Einspieler 4 |
 | 5 | Zwei Regelbücher | Botenteilchen vs. Trampolin-Delle | „zwei Anleitungen!" / hepp, fang | Einspieler 5 |
 | 6 | Das größte Rätsel | passt nicht, Graviton fehlt, zu schwach | Magnet > ganze Erde, kaputter Rechner „PLONK" | Einspieler 6 |
 | 7 | Überblick | von groß nach winzig | alle Geräte nochmal | — |
-| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf | — |
+| 8 | Outro | Sternenstaub | Rückschrumpfen – wieder falscher Knopf; Anpeiler wirft letzte Scheibe Toast aus, Wusl sucht die Marmelade; **AI-Reveal-Easteregg** (Fable 3002 + ElevenLabs, „Beni & Wusl im Urlaub"), Keks-Mampfen zum Schluss | — |

@@ -6,6 +6,8 @@ Most episodes were researched and written by **Fable** (a Claude model); it occa
 
 🌐 **Live site:** <https://blurayne.github.io/podcasts/>
 
+☕ **Support:** if you enjoy these productions, you can [buy me a coffee](https://buymeacoffee.com/blackrain).
+
 ## How it works
 
 Every episode is produced by one generic engine, `scripts/produce.py`, driven by a per-episode **YAML spec** (production config: voices, model, SFX/music prompts, cue rules, gaps, output) plus a **Markdown transcript** (the dialogue). The full schema, engine CLI, and credit-safe rules are the authoritative contract in [`SPEC.md`](SPEC.md); the reusable operator guide is the skill at `.claude/skills/produce-podcast-episode/`.
