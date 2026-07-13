@@ -1,5 +1,5 @@
 # WUSL GUSL
-### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3000"
+### Die Sendung mit dem lila Wuschel · Folge: „Wusls Schrumpfomat 3002"
 
 **Mitmach-Wesen**
 - **WUSL** — das lila Fellknäuel. Heute: GENIALER ERFINDER (findet er). Hat eine ganze Werkstatt voller selbstgebauter Schrumpf-Apparate, die alle piepen, rauchen und meistens das Falsche tun. Übermütig, stolz, kichert viel.
@@ -16,11 +16,11 @@
 
 `[Fanfare. Dann ein wildes Durcheinander: Schrauben klimpern, etwas zischt, eine Feder boingt.]`
 
-**WUSL:** WUSL GUSL! Hallohallo! Moderator — KOMM SCHNELL — ich hab was ERFUNDEN! Das Größte, das Beste, das WUTZELIGSTE aller Zeiten!
+**WUSL:** Hallohallo! Moderator — KOMM SCHNELL — ich hab was ERFUNDEN! Das Größte, das Beste, das WUTZELIGSTE aller Zeiten!
 
 **MODERATOR:** `[betritt hörbar die Werkstatt]` Meine Güte, Wusl, was ist das denn alles? Es blinkt ja an allen Ecken.
 
-**WUSL:** `[stolz]` Das, mein Freund, ist meine ERFINDER-WERKSTATT! Und DAS hier — `[klopft auf Blech]` — ist mein Meisterwerk: der **SCHRUMPFOMAT 3000**! Damit machen wir uns heute klein. Ganz klein. NOCH kleiner. Und dann finden wir raus, wie klein „klein" überhaupt geht!
+**WUSL:** `[stolz]` Das, mein Freund, ist meine ERFINDER-WERKSTATT! Und DAS hier — `[klopft auf Blech]` — ist mein Meisterwerk: der **SCHRUMPFOMAT 3002**! Damit machen wir uns heute klein. Ganz klein. NOCH kleiner. Und dann finden wir raus, wie klein „klein" überhaupt geht!
 
 **MODERATOR:** `[überlegt]` Wie klein „klein" geht? Das weiß tatsächlich niemand ganz genau, Wusl. Aber ich weiß: Ganz unten, am Ende dieser Reise, wartet das größte ungelöste Rätsel der ganzen Physik.
 
@@ -32,6 +32,8 @@
 
 `[Fiepen, das immer höher wird. Ein „SCHWUPP". Beide werden gaaanz klein.]`
 
+`[explosion]`
+
 **BENI_MAUS:** `[jetzt mit Mini-Piepsstimme]` … Wusl. Warum klingen wir jetzt beide wie Mäuschen?
 
 **WUSL_MAUS:** `[piepsig, jubelnd]` ES FUNKTIONIERT! Zum ERSTEN Mal! Notieren! Grüner Knopf ist der richtige!
@@ -39,6 +41,7 @@
 **BENI_MAUS:** Du hast den roten gedrückt.
 
 **WUSL_MAUS:** `[hustet]` … Roter Knopf. Notiert.
+
 
 ---
 
@@ -150,11 +153,13 @@
 
 **MODERATOR:** Und auseinandergefallen bist du auch nicht — die vier Kräfte halten dich fest zusammen.
 
-**WUSL:** Aber die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Baustelle!
+**WUSL:** Aber die SCHWACHE Kraft macht die SONNE an?! Für „schwach" hat die aber eine ganz schön große Kraft!
 
 **MODERATOR:** `[lacht]` Guter Punkt. Und die vierte Kraft, die Gravitation, kennst du ganz genau, Wusl.
 
-**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld! Autsch. Aber: Cliffhänger! Erst noch mehr Wunder!
+**WUSL:** Die zieht mich immer runter, wenn ich von meiner Werkbank hüpfe! `[hüpft, plumpst, ein Gerät scheppert]` Siehste?! Immer die Gravitation! Nie meine Schuld! Autsch.
+
+`[jammern]`
 
 ---
 
@@ -278,7 +283,7 @@
 
 **MODERATOR:** Und Fragen sind immer erlaubt.
 
-**WUSL:** IMMER! Tschüssikowski! WUSL GUSL!
+**WUSL:** IMMER! Tschüssikowski! 
 
 `[Fanfare. Ein letztes „Pling", eine Feder boingt, irgendwas fällt um. Musik hoch, ausblenden.]`
 
@@ -290,7 +295,7 @@
 
 | # | Segment | Kernbegriffe | Wusls Gerät / Gag | Einspieler |
 |---|---------|--------------|---------------------|------------|
-| 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3000** – falscher Knopf, Piepsstimmen | — |
+| 0 | Intro / Werkstatt | Reinzoomen, größtes Rätsel | **Schrumpfomat 3002** – falscher Knopf, Piepsstimmen | — |
 | 1 | Von riesig bis zum Atom | Alles aus Kleinerem, 30 Billionen Zellen, H₂O, Kern+Hülle, fast leer | **Zell-Zoomer** (wubwubwub) + **Atom-Anpeiler** = alter Toaster (beide VOR dem Einspieler), „nur drei Brände", „wutzeliges Nichts mit Fell" | Einspieler 1 |
 | 2 | Was im Atom steckt | Proton(+), Neutron(0), Elektron(−), Gold=79, Quarks, up +⅔/down −⅓, Proton +1 | **Kern-Knacker**, **Quark-Gucker** mit Glitzer (VOR dem Einspieler), „reich!", „Quark?! Frühstück?!", Neutron-Rechnung = NULL, Quark-Wechsler | Einspieler 2 |
 | 3 | Zwei Familien, vier Kräfte | Quarks & Leptonen, Neutrino, stark/em/schwach/Gravitation | „Warum falle ICH nicht auseinander?" (Frage VOR dem Einspieler), Neutrino-Fangnetz scheitert, „DURCH MICH DURCH?!", Hüpfen & Scheppern | Einspieler 3 |

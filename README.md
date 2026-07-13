@@ -29,6 +29,14 @@ Scripts run via a uv shebang (`#!/usr/bin/env -S uv run --script`) with PEP 723 
 
 Historical documentary podcast + Hörspiel series on the legal status of persons — women *and* men — across cultures and centuries, each episode paired with a peer-reviewed-style study PDF (the „Bände", Observatory layout). *(Formerly „Die Frau vor dem Recht"; renamed as the series broadened from the woman to the person before the law.)*
 
+> **Kurzbefund**
+
+> Die Reihe lässt sich **keinem Lager** zuordnen — sie ist eine **bewusste Triangulation**: ein *links-materialistischer Erklärungsapparat*, ein *klassisch-liberaler normativer Fluchtpunkt* und eine *ungewöhnlich faire, aber entwaffnende Aufnahme rechter/biologischer Argumente*. Der Schwerpunkt liegt auf einem **materialistisch fundierten Links-Liberalismus mit heterodox-zentristischer Streitkultur**, der sich programmatisch vom „woke"-Register absetzt, ohne dessen strukturanalytischen Gehalt aufzugeben. Am nächsten steht das einem **heterodoxen Zentrum** im Sinne von Nancy Fraser, Martha Nussbaum und Richard Reeves — nicht der Identitätslinken, nicht der Männerrechts-/traditionalistischen Rechten.
+> 
+> In Folge 8 erfindet die Reihe schließlich eine eigene „Disziplin" — die **Funktionskritik** —, als „zweites Auge" *komplementär* zum intersektionalen Feminismus, das dessen „Leerstelle" beim Mann kritisiert, aber ausdrücklich „kein Anti-Feminismus" sein will.
+
+
+
 | # | Folder slug | Topic | Spielzeit | Anhören |
 |---|---|---|---|---|
 | S01-01 | `germanen-europa` | Germanen bis Europa (3 Hörspiele + podcast) — produced | 25:20 | [▶ Drive](https://drive.google.com/file/d/1rYvdheXtUlleIMsMta8CpAT0NwFDKE5b/view) |
@@ -46,7 +54,7 @@ Podcast continuity: STIMME 1 = Mila Winter, STIMME 2 = Wolf Spencer.
 
 ### Science for Kids
 
-Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3000* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/science-for-kids/wusl-gusl.yaml`). The Wusl Gusl audio is produced; its [Drive link](https://drive.google.com/file/d/1BQpkJJqdM1kaLwVEAlpzdLfNnHRWT3d5/view) still needs to be shared publicly by the author before it plays.
+Kids' science podcast. Ep. 1 *„Kleiner geht's nicht"* — a journey from cells to quarks (produced). *Wusl Gusl — Schrumpfomat 3002* — a manic character-driven version of the same physics (inspired by "Woozle Goozle"; v3 spec in `series/science-for-kids/wusl-gusl.yaml`). The Wusl Gusl audio is produced; its [Drive link](https://drive.google.com/file/d/1BQpkJJqdM1kaLwVEAlpzdLfNnHRWT3d5/view) still needs to be shared publicly by the author before it plays.
 
 ## Study PDFs
 

@@ -24,11 +24,15 @@
 
 ## Wusl Gusl (Mäusestimme)
 
-- Voice ID TU66eqOHxLbh8iieomGh
-
+- Voice ID: AVYJxaX5Uon5HKPfdVo9
+- „Lumi – Tiny & Sweet" (professional, de, cute/tiny-mouse)
 - Speed 0.95
 
 ## Wusl Gusl Beni (Mäusestimme)
 
-- Voice ID: Uh8xleV5p5p5VeBjbG6O
+- Voice ID: dfZGXKiIzjizWtJ0NgPy
+- „Michael Mouse – Pitchy, Energetic Comic" (high_quality, en)
 
+# Wusl eRzähler
+
+- VoiceID: K5arewo38ONWm2uEeek2

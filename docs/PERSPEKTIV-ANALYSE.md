@@ -190,4 +190,34 @@ Und symmetrisch gilt die Gegenrichtung: Die **Standpunkt-Epistemologie**, die di
 - [`NO-WOKE.md`](NO-WOKE.md) — warum „woke" als *Register* und nicht als *Theorieposition* aus der Feminismus-Definition ausgelagert wird.
 - Diese Datei erweitert beide auf die **gesamte Reihe (10 Folgen + Koda)** und stellt der wertgeladenen Sozialtheorie die wertneutrale Kinder-Wissenschaftsfolge als methodischen Kontrast gegenüber.
 
+---
+
+## 12. Exkurs: Systemtheoretische Lesart (Niklas Luhmann)
+
+Die Parallelen zur **Systemtheorie** sind auffällig — aber auf **zwei zu trennenden Ebenen**: der *Objekt-Theorie* der Reihe („Status folgt Funktion") und der *Methode* dieses Dokuments. An den entscheidenden Stellen ist die Reihe **prä-luhmannsch**, während das Dokument selbst eher **genuin luhmannsch** operiert.
+
+### 12.1 Wo die Reihe luhmannsch klingt
+
+- **Funktionalismus — aber der falsche.** Das Reihenmotto ist funktionalistisch im *materialistischen* Sinn (Funktion als **Ursache**: „Die Ursachen waren materiell"). Luhmanns **Äquivalenzfunktionalismus** ist etwas anderes: Funktion ist kein Kausalgrund, sondern ein **Vergleichsgesichtspunkt** — man fragt nach einem *Bezugsproblem* und den *funktional äquivalenten* Lösungen. Faktisch tut die Reihe genau das, wenn sie Munt und Wilaya, Wergeld und Diya als isomorphe Lösungen desselben Problems („Kontrolle des Allianzknotens Frau") nebeneinanderstellt. Der Gestus ist luhmannsch; die *Begründung* (Basis/Überbau) ist es nicht.
+- **Herrschaft ohne Subjekt** (stärkste Parallele). „Das Patriarchat ist nicht der *Täter*, sondern der *Tatbestand*" / „Es braucht keine Bösewichte" ist Luhmanns **Entsubjektivierung**: Gesellschaft besteht nicht aus intentional Handelnden, sondern aus sich selbst reproduzierenden Strukturen; der Mensch ist **Umwelt** des Systems, nicht sein Baustein. „Herrschaft ohne Herr."
+- **Autopoiesis / Homöostase.** Das „patriarchale Gleichgewicht" — „viel Bewegung, wenig Verschiebung; das Achtel bleibt ein Achtel" — beschreibt ein **operativ geschlossenes, sich selbst reproduzierendes** System, das Störungen absorbiert und restabilisiert. (Präzisierung: „Gleichgewicht" ist eigentlich noch *Parsons* — Equilibrium; Luhmanns Autopoiesis ist gerade *nicht* Gleichgewicht, sondern fortlaufende Selbsterzeugung. Die Reihe schwankt zwischen beiden.)
+- **Funktionale Differenzierung, Codes, Medien.** Folge 9/10 verfolgt, wie „die Funktion wandert" — vom Recht übers Begehren zur Maschine, zum Staat, zum Feed: das Durchwandern **ausdifferenzierter Funktionssysteme mit eigenen Codes**. „**Man kann kein Begehren vor Gericht bringen**" ist fast lehrbuchhaft: Das Medium der Intimität (Luhmann: *Liebe als Passion*, Code lieben/nicht-lieben) ist nicht in den Code des Rechts (Recht/Unrecht) übersetzbar. Und „Recht über Religion — der Geltungsgrund ändert die Kopplung nicht" ist die **operative Schließung** des Rechtssystems: Recht erkennt nur Recht, der Geltungsanspruch der Religion durchdringt den Rechtscode nicht.
+- **Kontingenz.** „Kein Fortschrittsgesetz, nur Kräfteverhältnisse" / Reversibilität (Iran 1979) ist Luhmanns **Kontingenzformel** — „alles könnte auch anders sein", radikal anti-teleologisch.
+- **Re-entry.** Folge 8 wendet die Leitunterscheidung *auf sich selbst* an (kollidiert die Reihe mit dem intersektionalen Feminismus?) und installiert mit der ANWÄLTIN einen internen Beobachter — ein **re-entry** der Unterscheidung in sich selbst (Spencer-Brown/Luhmann), mit der Paradoxie, die es erzeugt.
+
+### 12.2 Wo das *Dokument* luhmannscher ist als sein Gegenstand
+
+`PERSPEKTIV-ANALYSE.md` ist strukturell eine **Beobachtung zweiter Ordnung**: Es beobachtet nicht die Sache (Rechtsgeschichte), sondern *wie die Reihe beobachtet* — ihre Leitunterscheidung „Funktion/Nicht-Funktion" und deren **blinde Flecken**. §9.4 formuliert exakt Luhmanns Theorem: Jeder Beobachter hat einen blinden Fleck (die Einheit der Unterscheidung, mit der er sieht), es gibt **keinen „view from nowhere"** — auch „der Blick vom Register ist selbst ein Standpunkt mit blinden Flecken". Das Dokument *vollzieht* Luhmann, während die Reihe ihn nur *ähnelt*.
+
+### 12.3 Wo es bricht (die ehrlichen Divergenzen)
+
+- **Funktion als Ursache vs. als Methode.** Die Reihe macht Funktion zum Kausalgrund — genau daraus entsteht das Zirkularitäts-/Unfalsifizierbarkeitsproblem aus §9. **Konstruktive Pointe:** Übernähme die Reihe die *echte* luhmannsche Lesart (Funktion als Vergleichsheuristik, nicht als Gesetz), löste sich dieses Problem auf — eine Heuristik muss nicht popperianisch falsifizierbar sein. Der Weg *tiefer* in Luhmann wäre eine **Reparatur der in §9 diagnostizierten Falsifizierbarkeitslücke**, kein Bruch.
+- **Akteur vs. Kommunikation.** Mikrologisch arbeitet die Reihe mit **Rational-Choice-Akteuren** (Exit-Optionen, *bargaining*, entscheidende Individuen). Luhmann kennt keine Akteure, nur Kommunikation. Die Reihe ist ein **Hybrid**: luhmannsch auf der Makro-, methodologisch-individualistisch auf der Mikroebene — eine Spannung, die Luhmann nicht dulden würde.
+- **Kritik vs. Deskription.** Luhmann war betont **anti-kritisch** (die Habermas-Debatte: Theorie beschreibt, sie emanzipiert nicht). Die Reihe hat einen **normativen Telos** (liberale „Entkopplung", „die Person"). Damit sitzt sie zwischen **Frankfurt** (Emanzipation) und **Bielefeld** (Systembeschreibung) — luhmannsch im Apparat, kritisch-theoretisch in der Absicht.
+- **Materialismus vs. Konstruktivismus.** Luhmann ist radikaler Konstruktivist (Realität = was Beobachtung per Unterscheidung erzeugt); die Reihe ist materialistisch (materielle Basis *verursacht*). Sie liebäugelt mit Konstruktivismus („Begriffe sind Legitimationsinstrumente, bevor ein Archiv geöffnet wird"), bleibt aber ontologisch materialistisch.
+
+### 12.4 Fazit
+
+Die Reihe ist am besten als **kryptonormativer Funktionalismus mit materialistischem Kausalmotor und Rational-Choice-Mikrofundierung** zu fassen — **luhmannsch im *Gestus*** (subjektlose Funktion, Kontingenz, Selbstreproduktion, re-entry) und **prä-luhmannsch im *Fundament*** (Funktion als Ursache, Akteure, Telos). Genealogisch steht sie näher bei **Parsons/Merton** (Strukturfunktionalismus, latente Funktionen, Gleichgewicht) als bei Luhmann — trägt aber dessen Vokabular an der Oberfläche. Das *Dokument* dagegen ist reiner luhmannsch, weil **Beobachtung zweiter Ordnung seine native Operation** ist.
+
 ​	

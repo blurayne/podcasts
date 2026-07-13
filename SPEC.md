@@ -92,7 +92,7 @@ fields are an error (typo protection). All paths are repo-root-relative.
 ```yaml
 slug:  quarks-for-kids/wusl-gusl    # REQUIRED. output dir = out/<slug>/
 kind:  podcast                      # REQUIRED. "podcast" | "hoerspiel"
-title: "Wusl Gusl — Schrumpfomat 3000"       # REQUIRED. human label
+title: "Wusl Gusl — Schrumpfomat 3002"       # REQUIRED. human label
 model: eleven_multilingual_v2       # OPTIONAL. default: eleven_v3
 
 speakers:                           # REQUIRED. role name (as in transcript) → voice

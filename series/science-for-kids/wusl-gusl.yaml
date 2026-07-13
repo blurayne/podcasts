@@ -1,6 +1,6 @@
 slug: quarks-for-kids/wusl-gusl   # unchanged out/-cache key — renaming would orphan the generated stems
 kind: podcast
-title: "Wusl Gusl — Schrumpfomat 3000"
+title: "Wusl Gusl — Schrumpfomat 3002"
 model: eleven_v3
 transcript: series/science-for-kids/wusl-gusl.md
 
@@ -84,6 +84,12 @@ sfx:
   trommelwirbel:
     prompt: "short comedic drumroll building to a tiny cymbal, dramatic reveal, dry"
     dur: 2
+  explosion:
+    prompt: "short explosion like a device exploding and shattering"
+    dur: 2
+  jammern:
+    prompt: "cartoon getting hurt jumping on needles"
+    dur: 1
 
 music:
   mystery_bed:
@@ -131,6 +137,10 @@ cue_rules:
     sfx: krawumms
   - keywords: ["trommelwirbel"]
     sfx: trommelwirbel
+  - keywords: ["explosion"]
+    sfx: explosion
+  - keywords: ["jammern"]
+    sfx: jammern
   - keywords: ["boing"]
     sfx: boing
   - keywords: ["feder"]
