@@ -6,7 +6,7 @@
 ≈ 35 Min.; E2 mit kurzer Reprise des Antrags aus Teil II eröffnen).
 **Aufbau (E = D-Rückgrat + C-Substanz + A-Kreuzverhör):**
 I. Wieso, weshalb — Psychologie des Opferstatus, mit kompakter Lahtinen-Prüfung (~10 Min.) ·
-II. Der Narzissmus-Verdacht — DEVP-Block und Cook-Reanalyse aus C; Varnans „Ich lag falsch"
+II. Der Narzissmus-Verdacht — DEVP-Block und Reanalyse aus C; Varnans „Ich lag falsch"
 als Waffe → Antrag „das Fach in den Zeugenstand" (~9 Min.) ·
 III. Die gerechte Welt (~11 Min., Herzstück, aus D) ·
 IV. Von links und rechts befeuert (~11 Min., aus D) ·
@@ -76,7 +76,7 @@ Tatbestand/Währung/Rolle, Rührungsprofit) · Finale (~3 Min.).
 
 **ERZÄHLER:** Und das Protokoll der Fairness, bevor Sie antworten: Im Mai haben Sie eine eigene Erhebung vorgestellt — Wokeness und psychische Gesundheit, Lahtinens Instrument, deutsche Stichprobe. Ihr erwarteter Befund blieb aus, und Sie haben es öffentlich gesagt: „Ich lag tatsächlich falsch."
 
-**GEGENANWALT:** Das habe ich. Und jetzt passen Sie auf, was ich damit mache. Sie loben mein Eingeständnis — gelebte Falsifikation, Ihre Lieblingswährung. Gut. Dann fordere ich denselben Mut von der Wissenschaft, mit der Sie mich eben geschlagen haben. Die Reanalyse, die meinen Kronzeugen fällt, kommt aus einem Fach, das seit fünfzig Jahren fast nur in eine Richtung rechnet. Ich beantrage: das Fach in den Zeugenstand. Bevor Sie mit Cook argumentieren, will ich wissen, aus welcher Ecke Cook kommt.
+**GEGENANWALT:** Das habe ich. Und jetzt passen Sie auf, was ich damit mache. Sie loben mein Eingeständnis — gelebte Falsifikation, Ihre Lieblingswährung. Gut. Dann fordere ich denselben Mut von der Wissenschaft, mit der Sie mich eben geschlagen haben. Die Reanalyse, die meinen Kronzeugen fällt, kommt aus einem Fach, das seit fünfzig Jahren fast nur in eine Richtung rechnet. Ich beantrage: das Fach in den Zeugenstand. Bevor Sie mit dieser Reanalyse argumentieren, will ich wissen, aus welcher Ecke sie kommt.
 
 **ANWÄLTIN:** Dem Antrag schließe ich mich an — aus dem entgegengesetzten Motiv. Er glaubt, das Fach sei gegen ihn. Ich glaube, die Prüfung zeigt, dass es besser ist als sein Ruf.
 
@@ -146,7 +146,7 @@ Tatbestand/Währung/Rolle, Rührungsprofit) · Finale (~3 Min.).
 
 **GEGENANWALT:** Danke. Das ist mein Punkt.
 
-**ERZÄHLERIN:** Es ist die Hälfte Ihres Punkts — denn sehen Sie sich an, wer korrigiert hat. Die LWA-Skala, ohne die es Ihren Kronzeugen nie gegeben hätte: gebaut vom Feld. Die Reanalyse, die ihn gefällt hat: Cook, Meyer und Asbrock — derselbe Asbrock, Herz der Tradition, mit offenen Daten und offenem Rechenskript. [belegt] Die Kritik des Fernglases und der bessere Blick hindurch: beides von innen. Merken Sie sich diese Figur für Teil sechs.
+**ERZÄHLERIN:** Es ist die Hälfte Ihres Punkts — denn sehen Sie sich an, wer korrigiert hat. Die LWA-Skala, ohne die es Ihren Kronzeugen nie gegeben hätte: gebaut vom Feld. Die Reanalyse, die ihn gefällt hat — Asbrock, Herz der Tradition, mit offenen Daten und offenem Rechenskript. [belegt] Die Kritik des Fernglases und der bessere Blick hindurch: beides von innen. Merken Sie sich diese Figur für Teil sechs.
 
 ## AKT V.2 — Die Schieflage, gemessen (ca. 4 Min.)
 
@@ -200,9 +200,9 @@ Tatbestand/Währung/Rolle, Rührungsprofit) · Finale (~3 Min.).
 
 **ANWÄLTIN:** Sinkt die Statuspräferenz, wo Pay Gap und Care-Risiko sinken? Registerdaten, nicht Selbstauskunft.
 
-**GEGENANWALT:** Der Cook-Test, gespiegelt: eine ebenso offene, ebenso strenge Reanalyse einer Studie, die rechte Gruppen pathologisiert. Existiert sie — zeigen Sie sie. Existiert sie nicht — markieren Sie die Lücke. Und ich nehme vorweg, was Sie einwenden werden: Stern und Crawford zählen nur halb. Eine Kollaboration ist kein Kreuzverhör.
+**GEGENANWALT:** Derselbe Test bei Cook, Meyer und Asbrock, gespiegelt: eine ebenso offene, ebenso strenge Reanalyse einer Studie, die rechte Gruppen pathologisiert. Existiert sie — zeigen Sie sie. Existiert sie nicht — markieren Sie die Lücke. Und ich nehme vorweg, was Sie einwenden werden: Stern und Crawford zählen nur halb. Eine Kollaboration ist kein Kreuzverhör.
 
-**ERZÄHLERIN:** Beides notiert, beides mit Vorrang. Teilweise angenommen: der Blick von nirgendwo und die verdeckte Anwaltschaft. Es gibt keinen Standpunkt ohne Standort; die Bank ist eine Rolle, kein Wesen, und die feministische Herkunft dieser Reihe wird markiert, nicht geleugnet. Aber Herkunft ist kein Urteil — und dafür hat der heutige Tag das doppelte Beispiel geliefert: Wäre Herkunft ein Urteil, dann wäre die Cook-Reanalyse widerlegt, weil Asbrock aus dem Herzen der Autoritarismus-Tradition kommt — und Ihre Kronzeugin gleich mit, Herr Kollege, weil die LWA-Skala von Skeptikern dieser Tradition gebaut wurde. Es zählt die Rechnung, nicht der Absender. Deshalb hängen unsere Urteile an Verfahren, nicht an Personen: Neutralität wird hier nicht behauptet — sie wird prüfbar simuliert.
+**ERZÄHLERIN:** Beides notiert, beides mit Vorrang. Teilweise angenommen: der Blick von nirgendwo und die verdeckte Anwaltschaft. Es gibt keinen Standpunkt ohne Standort; die Bank ist eine Rolle, kein Wesen, und die feministische Herkunft dieser Reihe wird markiert, nicht geleugnet. Aber Herkunft ist kein Urteil — und dafür hat der heutige Tag das doppelte Beispiel geliefert: Wäre Herkunft ein Urteil, dann wäre die Reanalyse widerlegt, weil Asbrock aus dem Herzen der Autoritarismus-Tradition kommt — und Ihre Kronzeugin gleich mit, Herr Kollege, weil die LWA-Skala von Skeptikern dieser Tradition gebaut wurde. Es zählt die Rechnung, nicht der Absender. Deshalb hängen unsere Urteile an Verfahren, nicht an Personen: Neutralität wird hier nicht behauptet — sie wird prüfbar simuliert.
 
 **ERZÄHLERIN:** Zurückgewiesen, mit Begründung: Dringlichkeit und False Balance. Die Waage vergibt Redezeit nach Beleglage, nicht nach Parität — als die Symmetrie heute Befund war, Noor, Armaly, haben wir sie Symmetrie genannt; als sie keiner war, Lahtinen, haben wir die Schwäche hörbar markiert. Konfidenzmarker sind das Gegenteil von False Balance: Sie machen schwache Evidenz hörbar schwach. Und Triage ohne Diagnose amputiert das falsche Bein — Dringlichkeit ist ein Argument für schnellere Gutachten, nicht für keine. Zurückgewiesen, mit Prüfauftrag: der Zirkel. Die Leitformel ist falsifizierbar formuliert — Axiom eins und zwei stehen seit Folge acht —, aber der Auftrag geht ins Register: eine Vorhersage benennen, die die Formel scheitern lassen kann, bevor die Daten da sind.
 
@@ -243,7 +243,7 @@ Tatbestand/Währung/Rolle, Rührungsprofit) · Finale (~3 Min.).
 Abwertung ↔ Adelung als zwei Ventile, Campbell &amp; Manning), Links-rechts-Markt (Teil IV,
 Noor, Volkan, Armaly, Kimmel, Dolchstoß) und der D-Richterstoff (Opfernarrativ-Frage,
 Tatbestand/Währung/Rolle, Rührungsprofit — integriert in Teil VI). Aus **C** stammen: der
-Narzissmus-Verdacht als eigene Szene (Teil II: Ok/Grubbs/Moss-Prüfung, Cook-Reanalyse,
+Narzissmus-Verdacht als eigene Szene (Teil II: Ok/Grubbs/Moss-Prüfung, Reanalyse,
 „Ego-Vehikel"), der Traditions-Akt (Teil V.1: Adorno → Altemeyer RWA → Duckitt/Sibley/
 **Asbrock**; LWA-Skala erst 2021, Costello/Lilienfeld; „Korrektur von innen"), die
 Schieflage (V.2: Duarte 2015, Inbar &amp; Lammers 2012, **Eitan 2018**), die
