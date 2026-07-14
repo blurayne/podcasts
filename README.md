@@ -36,6 +36,8 @@ Historical documentary podcast + Hörspiel series on the legal status of persons
 > Die Reihe lässt sich **keinem Lager** zuordnen — sie ist eine **bewusste Triangulation**: ein *links-materialistischer Erklärungsapparat*, ein *klassisch-liberaler normativer Fluchtpunkt* und eine *ungewöhnlich faire, aber entwaffnende Aufnahme rechter/biologischer Argumente*. Der Schwerpunkt liegt auf einem **materialistisch fundierten Links-Liberalismus mit heterodox-zentristischer Streitkultur**, der sich programmatisch vom „woke"-Register absetzt, ohne dessen strukturanalytischen Gehalt aufzugeben. Am nächsten steht das einem **heterodoxen Zentrum** im Sinne von Nancy Fraser, Martha Nussbaum und Richard Reeves — nicht der Identitätslinken, nicht der Männerrechts-/traditionalistischen Rechten.
 > 
 > In Folge 8 erfindet die Reihe schließlich eine eigene „Disziplin" — die **Funktionskritik** —, als „zweites Auge" *komplementär* zum intersektionalen Feminismus, das dessen „Leerstelle" beim Mann kritisiert, aber ausdrücklich „kein Anti-Feminismus" sein will.
+> 
+> In Folge 12 (*Der Gegenanwalt*) begibt sich die Funktionskritik selbst auf die Anklagebank — sie stellt sich der gleichen Kritik, die sie an anderen übt.
 
 
 
