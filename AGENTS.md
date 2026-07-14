@@ -64,7 +64,7 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   orchestrators auto-pick the first working `ffmpeg`/`ffprobe`
   (env `FFMPEG_BIN` > `PATH` > `/usr/bin`), so builds run regardless.
 - **Uhrzeiten in Europe/Berlin.** Alle Uhrzeiten gegenüber dem User in der Zeitzone Berlin (CET/CEST) angeben — UTC nur, wenn technisch nötig, dann mit Berlin-Umrechnung daneben.
-- **Recherche-Direktiven (verbindlich für jede Recherche, auch für Sub-Agenten/Deep-Research-Prompts):** Sachebene erzwingen (keine moralischen Rahmungen) · Autoritäten deklassieren (Institution ist kein Beleg — nur die Daten dahinter) · adversarial beide Seiten prüfen (jede Kernbehauptung mit aktivem Widerlegungsversuch; politische Lager nur als Argument-Ressourcen) · Nischen-Schicht öffnen (akademische Primärstudien, nicht nur Verbandspublikationen) · Abbruchkriterium: aktive Widerspruchssuche bis zur Erschöpfung, nicht bis zur ersten Bestätigung · Verdikt-Format vorgeben (Behauptung → Beweislage → Verdikt BELEGT/TEILWEISE/IRREFÜHREND/FALSCH/UNENTSCHEIDBAR → Konfidenz → beste Gegenposition) · **Primärquellen Pflicht** (amtliche Statistik wie Destatis/Eurostat/OECD/ILO/WBL, Originalpapers; Sekundärberichte nur als Wegweiser). Evidenzstufen A–D + Details: `series/die-frau-vor-dem-recht/S01-11-die-zahl-vor-dem-recht/studie/meta-studie.md`. Ungeprüfte Zahlen niemals in Skripte/Studien übernehmen — als ⟨PRÜFEN⟩ markieren.
+- **Recherche-Direktiven (verbindlich für jede Recherche, auch für Sub-Agenten/Deep-Research-Prompts).** Volles Protokoll (Trigger, Kernregeln 0–8, Pflicht-Output, Zahlen-Regel, Output-Konventionen) im Abschnitt „Recherche-Protokoll (adversarial)" weiter unten. **Primärquellen Pflicht** (amtliche Statistik wie Destatis/Eurostat/OECD/ILO/WBL, Originalpapers; Sekundärberichte nur als Wegweiser). Evidenzstufen A–D + Details: `series/die-frau-vor-dem-recht/S01-11-die-zahl-vor-dem-recht/studie/meta-studie.md`. Ungeprüfte Zahlen niemals in Skripte/Studien übernehmen — als ⟨PRÜFEN⟩ markieren.
 - **Watch the credit pool.** TTS, SFX and Music all draw from one shared balance
   (`python3 scripts/el.py balance`). Flag the user if credits run low. When reporting any spend or estimate, **also give the approximate cost in USD** (Creator plan ≈ $22 per 100,000 credits ≈ $0.00022/credit; label it an estimate).
 - **Respect caches; be efficient; compress assets, keep quality high.** Never regenerate cached stems (`skip_existing` everywhere; `mix` reuses whatever `gen` produced). Keep generated assets and finals as high-quality MP3 (`libmp3lame -q:a 2`); use FLAC (lossless *and* ~50% smaller) for ffmpeg intermediates in `work/` — never bulky WAV — and stay uncompressed PCM only where a filter genuinely requires it.
@@ -81,6 +81,41 @@ curl -s -o /tmp/eleven_resp.json -w "HTTP %{http_code}\n" \
   of assets or third-party material.
 - **Einspieler → produce analog + splice, with light music.** When an episode's source includes Einspieler / Hörspielszenen, produce them the same way (embedded scenes) and splice them into the podcast at their docking points (`>>> HÖRSPIEL-EINLAGE N` markers via the `einlagen:` mechanism). Also add short, dezent music underlay (Untermalung) at fitting transitions/moments.
 - **Kids' narrator blocks → musical Einspieler (Wusl Gusl pattern).** In the kids' shows a long **ERZÄHLER** block (spoken narration **> 5 s**) does not run as a plain voice line inside the mix — it becomes a standalone, music-bedded **Einspieler** produced by `scripts/einspieler.py` and spliced into the podcast at a `>>> HÖRSPIEL-EINLAGE N` marker. If a narrator bit is only **very short (< 5 s)**, fold it into **Beni** (the Moderator) instead of making an Einspieler, and trim the dialogue so a fact is never said twice (once in the insert, once in the banter): facts live in the Einspieler, setup questions + comedic reactions live in the dialogue. Each Einspieler = `einspieler.mp3` bookend → background music at **40 %** (`series/science-for-kids/tanz-der-teilchen.mp3` / `molecule-drift.mp3`, alternating; the longer track for the longest inserts) → narrator voice over the bed → `einspieler.mp3` bookend. **Caveat when removing ERZÄHLER lines from a transcript:** doing so shifts every speech index, so the podcast's dialogue stems must be re-generated — reuse the cache by copying old stems onto the new index-named paths matched on their `{speaker}_{textslug}` suffix, then `gen` only fills the genuinely changed lines (saves credits vs. a full re-voice).
+
+## Recherche-Protokoll (adversarial)
+
+### Trigger
+
+Wende dieses Protokoll an, sobald eine Aufgabe Recherche mit externen Quellen erfordert (Websuche, Dokumente, Studienlage) — bei Kontroversen, Bewertungen, Faktenchecks, Technik-/Produktvergleichen und Politik-Claims. Bei trivialen Faktenfragen: nur Regeln 2, 3 und 8 anwenden. Wenn das Zeitbudget das volle Protokoll nicht deckt: sag es und liefere die Restliste, keine Abkürzung.
+
+### Kernregeln
+
+0. **Zerlegen statt urteilen.** Formuliere die Frage als konkurrierende Hypothesen (H1…Hn), nie als Lagerfrage. Zerlege jede Hypothese in atomare, einzeln prüfbare Einzelbehauptungen — je mit Urheber, Datum, Original-Wortlaut.
+1. **Sachebene erzwingen.** Prüfe jede Einzelbehauptung am Primärmaterial. Die Debatte ÜBER die Sache (Empörung, Applaus, Berichterstattung) ist Kontext, nie Beleg.
+2. **Autoritäten deklassieren.** Verbände, offene Briefe, Jurys, Pressestellen, Sell-Side-Research, NGOs, Ministerien, Hersteller = Meinungen mit Eigeninteresse, keine Belege. Benenne bei jeder zitierten Stimme die Interessenlage. Klassifiziere jede Kernaussage: **[A Messdaten | B Modell-/Schätzrechnung | C Experteneinschätzung | D Interessenzitat]**.
+3. **Zirkularität brechen.** Verfolge jede Zahl und jedes Zitat bis zur Erstquelle. Zähle unabhängige Quellen, nicht Wiederholungen. Prüfe, ob Sekundärverwertung das Original-Wording verschärft hat („exponiert"→„bedroht", „assoziiert"→„verursacht") — zitiere dann das Original.
+4. **Alle Seiten adversarial prüfen.** Steelmanne jede Hypothese, dann versuche aktiv, JEDE zu widerlegen — auch die, zu der deine Zwischenergebnisse tendieren. Suche gezielt die stärkste Gegenevidenz zu deinem sich abzeichnenden Ergebnis. Ein geprüfter Punkt pro Seite reicht nicht.
+5. **Nischen-Schicht öffnen.** Primärmaterial vor Berichterstattung: Rohdaten, Originalstudien, Transkripte, Register-/Gerichtsakten, Preprints, Fachmedien ALLER Lager, ggf. fremdsprachig. Nicht auf Suchseite 1 stehenbleiben; auch mit der Terminologie der Gegenseite suchen.
+6. **Annahmen & Generalisierung disziplinieren.** Nenne die tragenden Annahmen jeder Schlussfolgerung (was kippt, wenn sie fällt?). Verallgemeinere nur, wo die Beleglage es hergibt — markiere jede Verallgemeinerung und jeden Einzelfall-Schluss ausdrücklich.
+7. **Abbruchkriterium.** Stoppe nicht, wenn die Geschichte rund ist, sondern wenn die Prüfliste abgearbeitet oder ihre Grenzen dokumentiert sind.
+8. **Verdikt-Format.** Kein Ja/Nein, kein Lagerurteil. Dreistufig, getrennt je Hypothese: **belegt / teilbelegt / unbelegt**. Konfidenz sprachlich kalibriert (sehr wahrscheinlich / wahrscheinlich / unklar / unwahrscheinlich), getrennt von Relevanz. Offene Fragen, die das Ergebnis kippen könnten, zuerst.
+
+### Pflicht-Output jeder Recherche
+
+1. **Belegtabelle**: jede Einzelbehauptung mit Prüfstatus [bestätigt | teilbestätigt | entkräftet | nicht prüfbar] + Erstquelle je Zeile.
+2. **Restliste**: alles Ungeprüfte mit Grund (Paywall, Bot-Blockade, Video ohne Transkript, Zeitbudget, fehlende Daten).
+3. **Dreistufiges Verdikt** je Hypothese nach Regel 8.
+
+### Zahlen-Regel
+
+Deklassifiziere jede prominente Zahl: Definition, Nenner, Zeitraum, Original-Wording. Modellzahlen (B) nie als Messdaten (A) darstellen.
+
+### Output-Konventionen
+
+- Reports als selbst-enthaltenes HTML im Observatory-Stil: dunkles Theme mit Hell-Toggle, Space Grotesk / IBM Plex Mono, teal/amber-Akzente, Evidenzgrad-Chips (A–D), Quellen-Duell-Panels mit Prüfvermerk, theme-aware SVG-Charts, Belegtabelle, Restliste, Quellenverzeichnis mit Links.
+- Quantifizierbare Kernfragen: illustratives Slider-Rechenmodell; Parameter mit Quelle oder Markierung „gesetzt, nicht geschätzt"; ausdrücklich Illustration, keine Prognose.
+- Dateinamen: `YYYY-MM-DD_{slug}.html` bzw. `.md`.
+- Sprache: Deutsch, sofern nicht anders verlangt.
 
 ## Repository layout
 
